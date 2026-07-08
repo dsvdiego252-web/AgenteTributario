@@ -43,16 +43,28 @@
   <section id="tab-icms" class="tab-panel" role="tabpanel">
     <nav class="sub-tabs" role="tablist" aria-label="Sub-seções ICMS">
       <button class="subtab-btn active" data-subtab="novidades" role="tab" aria-selected="true">Novidades</button>
+      <button class="subtab-btn" data-subtab="base-legal" role="tab" aria-selected="false">Base Legal</button>
     </nav>
 
     <div id="subtab-novidades" class="subtab-panel active">
-      <p class="section-note">Todas as Portarias SRE publicadas pela SEFAZ-SP referentes ao ICMS. Atualizado diariamente.</p>
+      <p class="section-note">Repercussão e novidades sobre Portarias SRE publicadas pela SEFAZ-SP referentes ao ICMS. Atualizado diariamente.</p>
       <div class="panel-toolbar">
         <input type="search" id="search-icms" class="search-input" placeholder="Buscar por número, assunto…">
         <span class="count-badge" id="count-icms">0 itens</span>
       </div>
       <div id="list-icms" class="card-list">
         <p class="loading">Carregando Portarias SRE…</p>
+      </div>
+    </div>
+
+    <div id="subtab-base-legal" class="subtab-panel">
+      <p class="section-note">Registro oficial completo das Portarias SRE, extraído diretamente da legislação da SEFAZ-SP (legislacao.fazenda.sp.gov.br). Atualizado diariamente com as novas publicações.</p>
+      <div class="panel-toolbar">
+        <input type="search" id="search-base-legal" class="search-input" placeholder="Buscar por número, assunto…">
+        <span class="count-badge" id="count-base-legal">0 itens</span>
+      </div>
+      <div id="list-base-legal" class="card-list">
+        <p class="loading">Carregando base legal…</p>
       </div>
     </div>
   </section>

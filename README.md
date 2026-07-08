@@ -3,22 +3,26 @@
 Portal estático (HTML/CSS/JS) com duas abas principais:
 
 - **Reforma Tributária** — novidades sobre a Reforma Tributária (IBS, CBS, Imposto Seletivo, Comitê Gestor do IBS), reunidas de fontes oficiais e da imprensa especializada.
-- **ICMS → Novidades** — todas as Portarias SRE (SEFAZ-SP) referentes ao ICMS.
+- **ICMS**
+  - **Novidades** — repercussão na imprensa sobre Portarias SRE (SEFAZ-SP) do ICMS.
+  - **Base Legal** — registro oficial completo das Portarias SRE, extraído diretamente da listagem da SEFAZ-SP.
 
-O conteúdo é lido de `data/reforma_tributaria.json` e `data/icms_sre.json`. Esses arquivos
-são atualizados automaticamente todos os dias por um GitHub Action
-(`.github/workflows/update-data.yml`), que roda `scripts/update_data.py`, faz commit
-das novidades e assim o site já nasce atualizado quando alguém acessa.
+O conteúdo é lido de `data/reforma_tributaria.json`, `data/icms_sre.json` e
+`data/icms_base_legal.json`. Esses arquivos são atualizados automaticamente
+todos os dias por um GitHub Action (`.github/workflows/update-data.yml`), que
+roda `scripts/update_data.py`, faz commit das novidades e assim o site já
+nasce atualizado quando alguém acessa.
 
 ## Estrutura
 
 ```
-index.html                     portal (abas Reforma Tributária / ICMS > Novidades)
-assets/style.css                estilos
-assets/app.js                   carrega os JSON e controla abas/busca
-data/reforma_tributaria.json    novidades da reforma tributária
-data/icms_sre.json              portarias SRE (ICMS)
-scripts/update_data.py          coleta diária (Python 3, só biblioteca padrão)
+index.html                        portal (abas Reforma Tributária / ICMS > Novidades, Base Legal)
+assets/style.css                   estilos
+assets/app.js                      carrega os JSON e controla abas/busca
+data/reforma_tributaria.json       novidades da reforma tributária
+data/icms_sre.json                 portarias SRE (ICMS) — repercussão/notícias
+data/icms_base_legal.json          portarias SRE (ICMS) — registro legal oficial completo
+scripts/update_data.py             coleta diária (Python 3, só biblioteca padrão)
 .github/workflows/update-data.yml  agenda diária (cron) + commit automático
 ```
 
@@ -29,12 +33,19 @@ scripts/update_data.py          coleta diária (Python 3, só biblioteca padrão
 1. **Reforma Tributária**: consulta o Google News RSS com buscas separadas para
    fontes oficiais (gov.br, Comitê Gestor do IBS, Receita Federal, Congresso) e
    para a imprensa especializada em tributos.
-2. **ICMS / Portarias SRE**: tenta primeiro raspar diretamente o portal oficial
-   `legislacao.fazenda.sp.gov.br`. Como esse site pode bloquear tráfego
-   automatizado (WAF), há um fallback via Google News RSS que localiza matérias
-   de portais especializados (LegisWeb, Contábeis, etc.) citando o número da
-   Portaria SRE.
-3. Os itens novos são mesclados aos já existentes (sem duplicar, por link ou
+2. **ICMS → Novidades**: combina as portarias do ano corrente extraídas da
+   listagem oficial com uma busca no Google News RSS por matérias de portais
+   especializados (LegisWeb, Contábeis, etc.) citando o número da Portaria SRE.
+3. **ICMS → Base Legal**: raspa diretamente a listagem oficial da SEFAZ-SP em
+   `legislacao.fazenda.sp.gov.br/Paginas/Atos.aspx?Tipo=Portarias%20CAT/SRE`,
+   uma página por ano. Na primeira execução (arquivo vazio) percorre todo o
+   histórico disponível (2011 em diante); nas execuções seguintes checa apenas
+   o ano corrente e o anterior — suficiente para pegar as novas portarias
+   assim que são publicadas. A data exata (dia/mês) de cada portaria é obtida
+   visitando a página de detalhe, em lotes pequenos por execução (para não
+   sobrecarregar o site oficial), com autopreenchimento gradual ao longo dos
+   dias até que todo o histórico tenha data precisa.
+4. Os itens novos são mesclados aos já existentes (sem duplicar, por link ou
    por número da portaria) e ordenados por data, mantendo os mais recentes.
 
 O script é incremental e idempotente: pode ser rodado manualmente quantas
@@ -42,9 +53,9 @@ vezes quiser (`python3 scripts/update_data.py`) sem perder dados já coletados.
 
 > Nota: o ambiente onde este portal foi criado tem acesso de rede restrito, então
 > não foi possível validar ao vivo o scraping de `legislacao.fazenda.sp.gov.br` a
-> partir daqui. O GitHub Actions roda em uma rede sem essa restrição. Se, ainda
-> assim, o site oficial continuar bloqueando o robô, o fallback de notícias
-> continua garantindo que novas Portarias SRE apareçam no portal.
+> partir daqui. O GitHub Actions roda em uma rede sem essa restrição — e já
+> validamos que funciona: a primeira execução automática em produção coletou
+> novidades reais direto do site oficial.
 
 ## Publicar no GitHub Pages
 
