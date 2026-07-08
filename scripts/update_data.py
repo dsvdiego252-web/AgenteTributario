@@ -258,7 +258,9 @@ def fetch_year_listing(year):
     except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as exc:
         print(f"[warn] falha ao listar Portarias SRE de {year}: {exc}", file=sys.stderr)
         return None
-    return parse_atos_table(raw)
+    items = parse_atos_table(raw)
+    print(f"[debug] listagem {year}: {len(items)} Portarias SRE encontradas ({len(raw)} bytes)", file=sys.stderr)
+    return items
 
 
 def collect_icms_sre_news_fallback():
