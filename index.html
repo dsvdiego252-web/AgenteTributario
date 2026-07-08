@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agente Tributário</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%93%8B</text></svg>">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <span class="brand-icon">📋</span>
+      <div>
+        <h1>Agente Tributário</h1>
+        <p class="tagline">Reforma Tributária &amp; ICMS &mdash; monitoramento diário</p>
+      </div>
+    </div>
+    <div class="global-status">
+      <span id="global-updated">Carregando…</span>
+    </div>
+  </div>
+  <nav class="main-tabs" role="tablist" aria-label="Seções principais">
+    <button class="tab-btn active" data-tab="reforma" role="tab" aria-selected="true">Reforma Tributária</button>
+    <button class="tab-btn" data-tab="icms" role="tab" aria-selected="false">ICMS</button>
+  </nav>
+</header>
+
+<main>
+  <!-- ABA REFORMA TRIBUTÁRIA -->
+  <section id="tab-reforma" class="tab-panel active" role="tabpanel">
+    <div class="panel-toolbar">
+      <input type="search" id="search-reforma" class="search-input" placeholder="Buscar por palavra-chave…">
+      <span class="count-badge" id="count-reforma">0 itens</span>
+    </div>
+    <div id="list-reforma" class="card-list">
+      <p class="loading">Carregando novidades da Reforma Tributária…</p>
+    </div>
+  </section>
+
+  <!-- ABA ICMS -->
+  <section id="tab-icms" class="tab-panel" role="tabpanel">
+    <nav class="sub-tabs" role="tablist" aria-label="Sub-seções ICMS">
+      <button class="subtab-btn active" data-subtab="novidades" role="tab" aria-selected="true">Novidades</button>
+    </nav>
+
+    <div id="subtab-novidades" class="subtab-panel active">
+      <p class="section-note">Todas as Portarias SRE publicadas pela SEFAZ-SP referentes ao ICMS. Atualizado diariamente.</p>
+      <div class="panel-toolbar">
+        <input type="search" id="search-icms" class="search-input" placeholder="Buscar por número, assunto…">
+        <span class="count-badge" id="count-icms">0 itens</span>
+      </div>
+      <div id="list-icms" class="card-list">
+        <p class="loading">Carregando Portarias SRE…</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Fontes: Ministério da Fazenda, Receita Federal, Comitê Gestor do IBS, SEFAZ-SP (legislação e notícias) e portais especializados em tributos. Conteúdo gerado automaticamente para fins informativos — não substitui a consulta ao texto oficial.</p>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

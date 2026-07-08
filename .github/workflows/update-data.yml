@@ -1,0 +1,45 @@
+name: Atualizar dados diários
+
+on:
+  schedule:
+    # 09:15 UTC = 06:15 em Brasília (horário padrão)
+    - cron: "15 9 * * *"
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Rodar coleta de novidades
+        run: python3 scripts/update_data.py
+
+      - name: Commitar dados atualizados
+        run: |
+          git config user.name "agente-tributario-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/reforma_tributaria.json data/icms_sre.json
+          if git diff --cached --quiet; then
+            echo "Sem novidades hoje."
+          else
+            git commit -m "chore: atualizar novidades (reforma tributária e ICMS/SRE)"
+            git push
+          fi
