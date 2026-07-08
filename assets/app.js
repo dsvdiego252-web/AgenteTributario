@@ -6,6 +6,13 @@
   const state = {
     reforma: [],
     icms: [],
+    baselegal: [],
+  };
+
+  const KIND_CONFIG = {
+    reforma: { list: "#list-reforma", count: "#count-reforma", search: "#search-reforma", numberBadge: false },
+    icms: { list: "#list-icms", count: "#count-icms", search: "#search-icms", numberBadge: true },
+    baselegal: { list: "#list-base-legal", count: "#count-base-legal", search: "#search-base-legal", numberBadge: true },
   };
 
   function qs(sel, ctx) { return (ctx || document).querySelector(sel); }
@@ -48,7 +55,7 @@
     const badgeNew = isRecent(item.date) ? '<span class="item-badge-new">Novo</span>' : "";
     const summary = item.summary ? `<p class="item-summary">${escapeHtml(item.summary)}</p>` : "";
     const source = item.source ? `<span class="item-source">${escapeHtml(item.source)}</span>` : "";
-    const number = kind === "icms" && item.number
+    const number = KIND_CONFIG[kind].numberBadge && item.number
       ? `<span class="item-number">Portaria SRE ${escapeHtml(item.number)}</span>`
       : "";
 
@@ -64,9 +71,10 @@
   }
 
   function renderList(kind) {
-    const listEl = qs(kind === "icms" ? "#list-icms" : "#list-reforma");
-    const countEl = qs(kind === "icms" ? "#count-icms" : "#count-reforma");
-    const searchEl = qs(kind === "icms" ? "#search-icms" : "#search-reforma");
+    const cfg = KIND_CONFIG[kind];
+    const listEl = qs(cfg.list);
+    const countEl = qs(cfg.count);
+    const searchEl = qs(cfg.search);
     const query = (searchEl && searchEl.value || "").trim().toLowerCase();
 
     let items = state[kind] || [];
@@ -102,6 +110,7 @@
   async function init() {
     let reformaMeta = null;
     let icmsMeta = null;
+    let baseLegalMeta = null;
 
     try {
       reformaMeta = await loadData("data/reforma_tributaria.json");
@@ -117,12 +126,21 @@
       qs("#list-icms").innerHTML = '<p class="error">Não foi possível carregar as Portarias SRE.</p>';
     }
 
+    try {
+      baseLegalMeta = await loadData("data/icms_base_legal.json");
+      state.baselegal = (baseLegalMeta.items || []).slice().sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+    } catch (err) {
+      qs("#list-base-legal").innerHTML = '<p class="error">Não foi possível carregar a base legal.</p>';
+    }
+
     renderList("reforma");
     renderList("icms");
+    renderList("baselegal");
 
     const lastUpdate = mostRecentUpdate([
       reformaMeta && reformaMeta.last_updated,
       icmsMeta && icmsMeta.last_updated,
+      baseLegalMeta && baseLegalMeta.last_updated,
     ]);
     qs("#global-updated").textContent = lastUpdate
       ? `Última atualização: ${formatDateTime(lastUpdate.toISOString())}`
@@ -130,6 +148,7 @@
 
     qs("#search-reforma").addEventListener("input", () => renderList("reforma"));
     qs("#search-icms").addEventListener("input", () => renderList("icms"));
+    qs("#search-base-legal").addEventListener("input", () => renderList("baselegal"));
   }
 
   function setupTabs() {
