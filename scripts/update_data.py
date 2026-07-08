@@ -245,7 +245,21 @@ def fetch_year_listing(year):
     except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as exc:
         print(f"[warn] falha ao listar Portarias SRE de {year}: {exc}", file=sys.stderr)
         return []
-    return parse_atos_table(raw)
+    items = parse_atos_table(raw)
+    mentions = raw.count("Portaria SRE")
+    print(
+        f"[debug] listagem {year}: {len(raw)} bytes, {mentions} ocorrências de 'Portaria SRE', "
+        f"{raw.count('<tr')} <tr>, {len(items)} itens extraídos",
+        file=sys.stderr,
+    )
+    if mentions and not items:
+        idx = raw.find("Portaria SRE")
+        print(
+            f"[debug] {year} trecho ao redor da 1ª ocorrência de 'Portaria SRE':\n"
+            f"{raw[max(0, idx - 400):idx + 400]}",
+            file=sys.stderr,
+        )
+    return items
 
 
 def fetch_detail_date(url):
@@ -258,10 +272,14 @@ def fetch_detail_date(url):
     text = strip_html(raw)
     m = DETAIL_DATE_RE.search(text)
     if not m:
+        idx = text.lower().find("portaria sre")
+        snippet = text[max(0, idx - 60):idx + 120] if idx >= 0 else text[:180]
+        print(f"[debug] data não encontrada em {url}: {snippet!r}", file=sys.stderr)
         return None
     dia, mes, ano = m.groups()
     mes_num = MESES_PT.get(mes.lower())
     if not mes_num:
+        print(f"[debug] mês não reconhecido em {url}: {mes!r}", file=sys.stderr)
         return None
     try:
         return f"{int(ano):04d}-{mes_num:02d}-{int(dia):02d}"
