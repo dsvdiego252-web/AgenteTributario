@@ -58,9 +58,12 @@
     </div>
 
     <div id="subtab-base-legal" class="subtab-panel">
-      <p class="section-note">Registro oficial completo das Portarias SRE, extraído diretamente da legislação da SEFAZ-SP (legislacao.fazenda.sp.gov.br). Atualizado diariamente com as novas publicações.</p>
+      <p class="section-note">Registro oficial completo das Portarias SRE, extraído diretamente da legislação da SEFAZ-SP (legislacao.fazenda.sp.gov.br). Atualizado diariamente com as novas publicações. O setor de cada portaria é uma classificação automática por palavras-chave da ementa — não é uma informação oficial da SEFAZ.</p>
       <div class="panel-toolbar">
         <input type="search" id="search-base-legal" class="search-input" placeholder="Buscar por número, assunto…">
+        <select id="filter-sector-base-legal" class="sector-select" aria-label="Filtrar por setor">
+          <option value="">Todos os setores</option>
+        </select>
         <span class="count-badge" id="count-base-legal">0 itens</span>
       </div>
       <div id="list-base-legal" class="card-list">

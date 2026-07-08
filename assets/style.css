@@ -151,6 +151,17 @@ main {
 }
 .search-input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
 
+.sector-select {
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.9rem;
+  max-width: 260px;
+}
+.sector-select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+
 .count-badge {
   font-size: 0.78rem;
   color: var(--text-muted);
@@ -229,6 +240,19 @@ main {
 
 @media (prefers-color-scheme: dark) {
   .item-number { color: #9fc7e8; background: #1c2e3f; }
+}
+
+.item-sector {
+  font-size: 0.72rem;
+  color: #6a4a17;
+  background: #f6e6c8;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+@media (prefers-color-scheme: dark) {
+  .item-sector { color: #e8c98a; background: #3a2f16; }
 }
 
 .item-badge-new {

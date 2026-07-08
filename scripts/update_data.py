@@ -146,6 +146,50 @@ def save_json(path, payload):
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def sort_key_date_number(item):
+    """Sort by date desc; ties (same date) broken by Portaria number desc, so
+    e.g. 34/2026 comes before 33/2026 even when both were scraped with the
+    same publication date."""
+    m = re.match(r"(\d+)", item.get("number") or "")
+    number = int(m.group(1)) if m else -1
+    return (item.get("date") or "", number)
+
+
+# ---------------------------------------------------------------------------
+# Classificação por setor (best-effort, baseada em palavras-chave da ementa)
+# ---------------------------------------------------------------------------
+#
+# A SEFAZ-SP não publica um "setor" oficial para cada Portaria SRE — a
+# maioria delas trata de segmentos específicos de Substituição Tributária do
+# ICMS (que afetam a cadeia toda, de indústria a varejo) ou de obrigações
+# acessórias gerais. Por isso a classificação abaixo é por segmento/assunto
+# (mais fiel ao conteúdo real das ementas) em vez de "indústria vs. varejo".
+# É apenas uma etiqueta automática para facilitar a busca; não substitui a
+# leitura do texto oficial. Fácil de ajustar: é só editar a lista abaixo.
+
+SECTOR_KEYWORDS = [
+    ("Bebidas", ["cerveja", "chope", "refrigerante", "água mineral", "bebida", "cachaça", "vinho", "energético"]),
+    ("Cosméticos e Higiene Pessoal", ["perfumaria", "higiene pessoal", "cosmético"]),
+    ("Materiais de Construção", ["material de construção", "materiais de construção", "cimento", "tinta", "verniz", "vidro plano", "ferragens", "argamassa"]),
+    ("Combustíveis e Lubrificantes", ["combustível", "combustíveis", "lubrificante", "gasolina", "etanol", "óleo diesel", "glp", "gás liquefeito"]),
+    ("Veículos e Autopeças", ["autopeça", "autopeças", "veículo automotor", "veículos automotores", "pneu", "pneus", "câmara de ar", "veículo novo"]),
+    ("IPVA", ["ipva", "propriedade de veículos automotores"]),
+    ("Alimentos", ["produto alimentício", "alimentício", "ração animal", "ração para animais", "leite", "achocolatado", "bebida láctea"]),
+    ("Medicamentos", ["medicamento", "produto farmacêutico", "farmacêutico"]),
+    ("Comércio Eletrônico", ["comércio eletrônico", "e-commerce", "marketplace", "operações logísticas"]),
+    ("Eletrônicos e Eletrodomésticos", ["eletrodoméstico", "eletroeletrônico", "material elétrico"]),
+    ("Papelaria e Brinquedos", ["papelaria", "brinquedo", "instrumento musical"]),
+    ("Obrigações Acessórias / Administração Tributária", ["obrigações acessórias", "arrecadação de tributos", "prestação de contas", "manifesto eletrônico", "nota fiscal eletrônica", "escrituração fiscal", "regimes especiais"]),
+    ("Substituição Tributária (geral)", ["substituição tributária"]),
+]
+
+
+def classify_sectors(text):
+    text_low = (text or "").lower()
+    sectors = [name for name, keywords in SECTOR_KEYWORDS if any(k in text_low for k in keywords)]
+    return sectors or ["Outros"]
+
+
 # ---------------------------------------------------------------------------
 # Reforma Tributária
 # ---------------------------------------------------------------------------
@@ -234,7 +278,7 @@ def parse_atos_table(html_text):
         ementa = ""
         ementa_match = EMENTA_RE.search(window)
         if ementa_match:
-            ementa = _json_unescape(ementa_match.group(1))
+            ementa = strip_html(_json_unescape(ementa_match.group(1)))
 
         link = f"{LEGISLACAO_BASE}/Paginas/Portaria-SRE-{number}-de-{year}.aspx"
         items.append({
@@ -277,6 +321,7 @@ def collect_icms_sre_news_fallback():
             "date": it["date"],
             "source": it["source"],
             "summary": it["summary"],
+            "sectors": classify_sectors(f"{it['title']} {it['summary']}"),
         })
     return normalized
 
@@ -293,6 +338,7 @@ def collect_icms_sre_official_recentes():
             "date": it["date"],
             "source": LEGISLACAO_SOURCE_LABEL,
             "summary": "",
+            "sectors": classify_sectors(it["title"]),
         })
     return results
 
@@ -363,6 +409,7 @@ def collect_icms_base_legal(store):
             "date": it["date"],
             "source": LEGISLACAO_SOURCE_LABEL,
             "summary": "",
+            "sectors": classify_sectors(it["title"]),
         }
         previous = by_number.get(it["number"])
         if previous is None:
@@ -394,14 +441,14 @@ def main():
     icms_store = load_json(ICMS_FILE)
     new_icms = collect_icms_sre()
     merged_icms, added_i = merge_icms_items(icms_store.get("items", []), new_icms)
-    merged_icms.sort(key=lambda it: it.get("date") or "", reverse=True)
+    merged_icms.sort(key=sort_key_date_number, reverse=True)
     merged_icms = merged_icms[:MAX_ITEMS]
     save_json(ICMS_FILE, {"items": merged_icms})
     print(f"[icms_sre] +{added_i} novos itens, total {len(merged_icms)}")
 
     base_legal_store = load_json(ICMS_BASE_LEGAL_FILE)
     merged_base_legal, added_bl, updated_bl, backfill_complete = collect_icms_base_legal(base_legal_store)
-    merged_base_legal.sort(key=lambda it: it.get("date") or "", reverse=True)
+    merged_base_legal.sort(key=sort_key_date_number, reverse=True)
     save_json(ICMS_BASE_LEGAL_FILE, {"items": merged_base_legal, "backfill_complete": backfill_complete})
     print(
         f"[icms_base_legal] +{added_bl} novos itens, {updated_bl} atualizados, "
