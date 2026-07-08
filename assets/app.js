@@ -10,9 +10,9 @@
   };
 
   const KIND_CONFIG = {
-    reforma: { list: "#list-reforma", count: "#count-reforma", search: "#search-reforma", numberBadge: false },
-    icms: { list: "#list-icms", count: "#count-icms", search: "#search-icms", numberBadge: true },
-    baselegal: { list: "#list-base-legal", count: "#count-base-legal", search: "#search-base-legal", numberBadge: true },
+    reforma: { list: "#list-reforma", count: "#count-reforma", search: "#search-reforma", numberBadge: false, sectorFilter: null },
+    icms: { list: "#list-icms", count: "#count-icms", search: "#search-icms", numberBadge: true, sectorFilter: null },
+    baselegal: { list: "#list-base-legal", count: "#count-base-legal", search: "#search-base-legal", numberBadge: true, sectorFilter: "#filter-sector-base-legal" },
   };
 
   function qs(sel, ctx) { return (ctx || document).querySelector(sel); }
@@ -43,6 +43,19 @@
     return diffDays >= 0 && diffDays <= NEW_ITEM_WINDOW_DAYS;
   }
 
+  function parseNumber(item) {
+    const m = /(\d+)/.exec(item.number || "");
+    return m ? parseInt(m[1], 10) : -Infinity;
+  }
+
+  function sortItems(items) {
+    return items.slice().sort((a, b) => {
+      const dateCmp = (b.date || "").localeCompare(a.date || "");
+      if (dateCmp !== 0) return dateCmp;
+      return parseNumber(b) - parseNumber(a);
+    });
+  }
+
   function escapeHtml(str) {
     return String(str || "").replace(/[&<>"']/g, (c) => ({
       "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
@@ -58,6 +71,9 @@
     const number = KIND_CONFIG[kind].numberBadge && item.number
       ? `<span class="item-number">Portaria SRE ${escapeHtml(item.number)}</span>`
       : "";
+    const sectors = (item.sectors || [])
+      .map((s) => `<span class="item-sector">${escapeHtml(s)}</span>`)
+      .join("");
 
     return `
       <article class="item-card">
@@ -65,7 +81,7 @@
           <h3 class="item-title"><a href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">${title}</a></h3>
           <span class="item-date">${formatDate(item.date)}</span>
         </div>
-        <div class="item-meta">${number}${source}${badgeNew}</div>
+        <div class="item-meta">${number}${source}${sectors}${badgeNew}</div>
         ${summary}
       </article>`;
   }
@@ -75,9 +91,14 @@
     const listEl = qs(cfg.list);
     const countEl = qs(cfg.count);
     const searchEl = qs(cfg.search);
+    const sectorEl = cfg.sectorFilter && qs(cfg.sectorFilter);
     const query = (searchEl && searchEl.value || "").trim().toLowerCase();
+    const sector = (sectorEl && sectorEl.value) || "";
 
     let items = state[kind] || [];
+    if (sector) {
+      items = items.filter((it) => (it.sectors || []).includes(sector));
+    }
     if (query) {
       items = items.filter((it) => {
         const haystack = [it.title, it.summary, it.number, it.source].join(" ").toLowerCase();
@@ -101,6 +122,22 @@
     return res.json();
   }
 
+  function populateSectorFilter(kind) {
+    const cfg = KIND_CONFIG[kind];
+    if (!cfg.sectorFilter) return;
+    const selectEl = qs(cfg.sectorFilter);
+    if (!selectEl) return;
+
+    const sectors = new Set();
+    (state[kind] || []).forEach((it) => (it.sectors || []).forEach((s) => sectors.add(s)));
+
+    const sorted = Array.from(sectors).sort((a, b) => a.localeCompare(b, "pt-BR"));
+    const previousValue = selectEl.value;
+    selectEl.innerHTML = '<option value="">Todos os setores</option>' +
+      sorted.map((s) => `<option value="${escapeHtml(s)}">${escapeHtml(s)}</option>`).join("");
+    if (sorted.includes(previousValue)) selectEl.value = previousValue;
+  }
+
   function mostRecentUpdate(dates) {
     const valid = dates.filter(Boolean).map((d) => new Date(d)).filter((d) => !isNaN(d));
     if (!valid.length) return null;
@@ -114,24 +151,26 @@
 
     try {
       reformaMeta = await loadData("data/reforma_tributaria.json");
-      state.reforma = (reformaMeta.items || []).slice().sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+      state.reforma = sortItems(reformaMeta.items || []);
     } catch (err) {
       qs("#list-reforma").innerHTML = '<p class="error">Não foi possível carregar as novidades da Reforma Tributária.</p>';
     }
 
     try {
       icmsMeta = await loadData("data/icms_sre.json");
-      state.icms = (icmsMeta.items || []).slice().sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+      state.icms = sortItems(icmsMeta.items || []);
     } catch (err) {
       qs("#list-icms").innerHTML = '<p class="error">Não foi possível carregar as Portarias SRE.</p>';
     }
 
     try {
       baseLegalMeta = await loadData("data/icms_base_legal.json");
-      state.baselegal = (baseLegalMeta.items || []).slice().sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+      state.baselegal = sortItems(baseLegalMeta.items || []);
     } catch (err) {
       qs("#list-base-legal").innerHTML = '<p class="error">Não foi possível carregar a base legal.</p>';
     }
+
+    populateSectorFilter("baselegal");
 
     renderList("reforma");
     renderList("icms");
@@ -149,6 +188,7 @@
     qs("#search-reforma").addEventListener("input", () => renderList("reforma"));
     qs("#search-icms").addEventListener("input", () => renderList("icms"));
     qs("#search-base-legal").addEventListener("input", () => renderList("baselegal"));
+    qs("#filter-sector-base-legal").addEventListener("change", () => renderList("baselegal"));
   }
 
   function setupTabs() {
