@@ -192,99 +192,73 @@ ATOS_LIST_URL = f"{LEGISLACAO_BASE}/Paginas/Atos.aspx"
 LEGISLACAO_SOURCE_LABEL = "SEFAZ-SP (legislação oficial)"
 
 FIRST_YEAR_AVAILABLE = 2011
-BASE_LEGAL_ENRICH_BUDGET = 25
 
-MESES_PT = {
-    "janeiro": 1, "fevereiro": 2, "marco": 3, "março": 3, "abril": 4, "maio": 5,
-    "junho": 6, "julho": 7, "agosto": 8, "setembro": 9, "outubro": 10,
-    "novembro": 11, "dezembro": 12,
-}
-
-ROW_RE = re.compile(r"<tr[^>]*>(.*?)</tr>", re.IGNORECASE | re.DOTALL)
-CELL_RE = re.compile(r"<td[^>]*>(.*?)</td>", re.IGNORECASE | re.DOTALL)
-LINK_RE = re.compile(r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>', re.IGNORECASE | re.DOTALL)
+# A listagem de Atos.aspx não é uma tabela HTML simples: cada ato aparece como
+# um objeto JSON (serializado no estilo .NET, com \/ e \uXXXX escapados)
+# embutido na página para renderização em JavaScript. Extraímos os campos
+# "Title" (ex.: "Portaria SRE 1 de 2026"), "DataPublicacao." (data ISO exata)
+# e "Ementa" (resumo) diretamente desses blocos.
+ROW_TITLE_RE = re.compile(r'"Title"\s*:\s*"((?:\\.|[^"\\])*)"')
+DATA_PUBLICACAO_RE = re.compile(r'"DataPublicacao\."\s*:\s*"((?:\\.|[^"\\])*)"')
+EMENTA_RE = re.compile(r'"Ementa"\s*:\s*"((?:\\.|[^"\\])*)"')
 PORTARIA_SRE_LISTING_RE = re.compile(r"Portaria\s+SRE\s+(\d+)\s+de\s+(\d{4})", re.IGNORECASE)
-DETAIL_DATE_RE = re.compile(
-    r"Portaria\s+SRE\s*n?[ºo°]?\s*\d+\s*,?\s*de\s+(\d{1,2})º?\s+de\s+(\w+)\s+de\s+(\d{4})",
-    re.IGNORECASE,
-)
+
+
+def _json_unescape(value):
+    """Decode a .NET/JS-style escaped string (\\uXXXX, \\/) captured from the page."""
+    try:
+        return json.loads(f'"{value}"')
+    except (json.JSONDecodeError, ValueError):
+        return value
 
 
 def parse_atos_table(html_text):
-    """Parse the 'Ato Legal | Ementa' table from an Atos.aspx listing page."""
+    """Parse the embedded per-item JSON blocks from an Atos.aspx listing page."""
     items = []
-    for row_match in ROW_RE.finditer(html_text):
-        cells = CELL_RE.findall(row_match.group(1))
-        if len(cells) < 2:
-            continue
-        link_match = LINK_RE.search(cells[0])
-        if not link_match:
-            continue
-        href, link_text = link_match.groups()
-        link_text = strip_html(link_text)
-        m = PORTARIA_SRE_LISTING_RE.search(link_text)
+    title_matches = list(ROW_TITLE_RE.finditer(html_text))
+    for idx, title_match in enumerate(title_matches):
+        title_raw = _json_unescape(title_match.group(1))
+        m = PORTARIA_SRE_LISTING_RE.search(title_raw)
         if not m:
             continue
         number, year = m.groups()
-        ementa = strip_html(cells[1])
-        link = href if href.startswith("http") else f"{LEGISLACAO_BASE}/{href.lstrip('/')}"
+
+        window_end = title_matches[idx + 1].start() if idx + 1 < len(title_matches) else min(len(html_text), title_match.end() + 4000)
+        window = html_text[title_match.end():window_end]
+
+        date_iso = None
+        date_match = DATA_PUBLICACAO_RE.search(window)
+        if date_match:
+            date_iso = _json_unescape(date_match.group(1))[:10]
+
+        ementa = ""
+        ementa_match = EMENTA_RE.search(window)
+        if ementa_match:
+            ementa = _json_unescape(ementa_match.group(1))
+
+        link = f"{LEGISLACAO_BASE}/Paginas/Portaria-SRE-{number}-de-{year}.aspx"
         items.append({
             "number": f"{number}/{year}",
-            "title": ementa or link_text,
+            "title": ementa or title_raw,
             "link": link,
-            "_year": year,
+            "date": date_iso or f"{year}-01-01",
         })
     return items
 
 
 def fetch_year_listing(year):
-    """Fetch and parse the official Portarias SRE listing for a given year."""
+    """Fetch and parse the official Portarias SRE listing for a given year.
+
+    Returns None (not []) on a fetch failure, so callers can tell "the site
+    didn't answer" apart from "this year genuinely has no Portaria SRE".
+    """
     url = f"{ATOS_LIST_URL}?Tipo=Portarias%20CAT/SRE&StartDate={year}-01-01&EndDate={year}-12-31"
     try:
         raw = http_get(url).decode("utf-8", errors="ignore")
     except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as exc:
         print(f"[warn] falha ao listar Portarias SRE de {year}: {exc}", file=sys.stderr)
-        return []
-    items = parse_atos_table(raw)
-    mentions = raw.count("Portaria SRE")
-    print(
-        f"[debug] listagem {year}: {len(raw)} bytes, {mentions} ocorrências de 'Portaria SRE', "
-        f"{raw.count('<tr')} <tr>, {len(items)} itens extraídos",
-        file=sys.stderr,
-    )
-    if mentions and not items:
-        idx = raw.find("Portaria SRE")
-        print(
-            f"[debug] {year} trecho ao redor da 1ª ocorrência de 'Portaria SRE':\n"
-            f"{raw[max(0, idx - 400):idx + 400]}",
-            file=sys.stderr,
-        )
-    return items
-
-
-def fetch_detail_date(url):
-    """Visit a Portaria SRE detail page and extract its exact publication date."""
-    try:
-        raw = http_get(url).decode("utf-8", errors="ignore")
-    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as exc:
-        print(f"[warn] falha ao abrir {url}: {exc}", file=sys.stderr)
         return None
-    text = strip_html(raw)
-    m = DETAIL_DATE_RE.search(text)
-    if not m:
-        idx = text.lower().find("portaria sre")
-        snippet = text[max(0, idx - 60):idx + 120] if idx >= 0 else text[:180]
-        print(f"[debug] data não encontrada em {url}: {snippet!r}", file=sys.stderr)
-        return None
-    dia, mes, ano = m.groups()
-    mes_num = MESES_PT.get(mes.lower())
-    if not mes_num:
-        print(f"[debug] mês não reconhecido em {url}: {mes!r}", file=sys.stderr)
-        return None
-    try:
-        return f"{int(ano):04d}-{mes_num:02d}-{int(dia):02d}"
-    except ValueError:
-        return None
+    return parse_atos_table(raw)
 
 
 def collect_icms_sre_news_fallback():
@@ -309,12 +283,12 @@ def collect_icms_sre_official_recentes():
     """Portarias SRE do ano corrente, direto da listagem oficial (para a aba Novidades)."""
     current_year = datetime.now(timezone.utc).year
     results = []
-    for it in fetch_year_listing(current_year):
+    for it in fetch_year_listing(current_year) or []:
         results.append({
             "number": it["number"],
             "title": it["title"],
             "link": it["link"],
-            "date": f"{it['_year']}-01-01",
+            "date": it["date"],
             "source": LEGISLACAO_SOURCE_LABEL,
             "summary": "",
         })
@@ -352,54 +326,56 @@ def merge_icms_items(existing_items, new_items):
 # ICMS - Base Legal (registro oficial completo das Portarias SRE)
 # ---------------------------------------------------------------------------
 
-def collect_icms_base_legal(existing_items):
+def collect_icms_base_legal(store):
+    existing_items = store.get("items", [])
     by_number = {it["number"]: it for it in existing_items if it.get("number")}
     current_year = datetime.now(timezone.utc).year
+    backfill_complete = store.get("backfill_complete", False)
+    doing_backfill = not backfill_complete
 
-    if not existing_items:
-        # Primeira execução: percorre todo o histórico disponível.
+    if doing_backfill:
+        # Primeira vez: percorre todo o histórico disponível.
         years = list(range(FIRST_YEAR_AVAILABLE, current_year + 1))
     else:
-        # Execuções seguintes: só o ano corrente e o anterior já bastam para
+        # Depois do backfill: só o ano corrente e o anterior já bastam para
         # pegar novas portarias assim que forem publicadas.
         years = [current_year, current_year - 1]
 
     discovered = []
+    all_years_ok = True
     for year in years:
-        discovered.extend(fetch_year_listing(year))
+        year_items = fetch_year_listing(year)
+        if year_items is None:
+            all_years_ok = False
+            continue
+        discovered.extend(year_items)
         time.sleep(1)
 
     added = 0
+    updated = 0
     for it in discovered:
-        if it["number"] in by_number:
-            continue
-        by_number[it["number"]] = {
+        canonical = {
             "number": it["number"],
             "title": it["title"],
             "link": it["link"],
-            "date": f"{it['_year']}-01-01",
-            "date_precise": False,
+            "date": it["date"],
             "source": LEGISLACAO_SOURCE_LABEL,
             "summary": "",
         }
-        added += 1
+        previous = by_number.get(it["number"])
+        if previous is None:
+            added += 1
+        elif previous != canonical:
+            updated += 1
+        by_number[it["number"]] = canonical
 
     merged = list(by_number.values())
-
-    # Enriquecimento gradual: busca a data exata (dia/mês) de itens que ainda
-    # só têm o ano, sem sobrecarregar o site oficial em uma única execução.
-    pending = [it for it in merged if not it.get("date_precise")]
-    pending.sort(key=lambda it: it.get("date") or "", reverse=True)
-    enriched = 0
-    for it in pending[:BASE_LEGAL_ENRICH_BUDGET]:
-        exact_date = fetch_detail_date(it["link"])
-        time.sleep(1)
-        if exact_date:
-            it["date"] = exact_date
-            it["date_precise"] = True
-            enriched += 1
-
-    return merged, added, enriched
+    # Só marca o backfill como concluído se todas as buscas do histórico
+    # completo realmente funcionaram; caso contrário, tenta de novo no
+    # próximo dia em vez de assumir sucesso silenciosamente.
+    if doing_backfill and all_years_ok:
+        backfill_complete = True
+    return merged, added, updated, backfill_complete
 
 
 def main():
@@ -422,12 +398,12 @@ def main():
     print(f"[icms_sre] +{added_i} novos itens, total {len(merged_icms)}")
 
     base_legal_store = load_json(ICMS_BASE_LEGAL_FILE)
-    merged_base_legal, added_bl, enriched_bl = collect_icms_base_legal(base_legal_store.get("items", []))
+    merged_base_legal, added_bl, updated_bl, backfill_complete = collect_icms_base_legal(base_legal_store)
     merged_base_legal.sort(key=lambda it: it.get("date") or "", reverse=True)
-    save_json(ICMS_BASE_LEGAL_FILE, {"items": merged_base_legal})
+    save_json(ICMS_BASE_LEGAL_FILE, {"items": merged_base_legal, "backfill_complete": backfill_complete})
     print(
-        f"[icms_base_legal] +{added_bl} novos itens, {enriched_bl} datas exatas "
-        f"enriquecidas, total {len(merged_base_legal)}"
+        f"[icms_base_legal] +{added_bl} novos itens, {updated_bl} atualizados, "
+        f"total {len(merged_base_legal)} (backfill_complete={backfill_complete})"
     )
 
 
