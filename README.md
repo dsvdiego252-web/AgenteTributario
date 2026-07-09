@@ -35,6 +35,10 @@ data/icms_alimenticios_sp.json              Anexo XVI da CAT 68/2019 (ST de prod
                                              revogações + IVA-ST vigente (Portaria SRE 12/2026), curado
 data/icms_reducoes_alimenticios_sp.json     reduções de BC da Cesta Básica (Art. 3º) e de Produtos Alimentícios
                                              (Art. 39) do Anexo II do RICMS/SP, curado
+data/icms_limpeza_sp.json                   Anexo XIII da CAT 68/2019 (ST de produtos de limpeza) + IVA-ST
+                                             (Portaria SRE 55/2025) + PMPF da água sanitária (Portaria SRE
+                                             57/2025) — todo o anexo e as duas portarias são revogados a partir
+                                             de 01/08/2026 pela Portaria SRE-20/26, curado
 scripts/update_data.py                      coleta diária (Python 3, só biblioteca padrão)
 scripts/update_produto_data.py              coleta semanal de dados de produto (precisa de openpyxl)
 scripts/requirements.txt                    dependências Python (openpyxl)
@@ -83,6 +87,7 @@ importante saber qual é qual antes de confiar no resultado:
 | **Alíquota interna do ICMS por categoria** | `data/icms_aliquotas_sp.json` | **Curado manualmente** a partir do texto oficial dos artigos 52 a 56-C do RICMS/SP — cobre as alíquotas diferenciadas mais comuns (7%/12%/20%/25%/30% + adicional FECOEP), não todas as exceções pontuais |
 | **ST de Produtos Alimentícios (Anexo XVI da CAT 68/2019) + IVA-ST** | `data/icms_alimenticios_sp.json` | **Curado manualmente** a partir do texto oficial da CAT 68/2019 (com histórico de revogações, incluindo a revogação em massa da Portaria SRE 64/2025) e da Portaria SRE 12/2026 (IVA-ST vigente) |
 | **Reduções de BC de Cesta Básica (Art. 3º) e Produtos Alimentícios (Art. 39) do Anexo II** | `data/icms_reducoes_alimenticios_sp.json` | **Curado manualmente** a partir do texto oficial do RICMS/SP |
+| **ST de Produtos de Limpeza (Anexo XIII da CAT 68/2019) + IVA-ST/PMPF** | `data/icms_limpeza_sp.json` | **Curado manualmente** a partir do texto oficial da CAT 68/2019, da Portaria SRE 55/2025 (IVA-ST) e da Portaria SRE 57/2025 (PMPF da água sanitária) — todo o anexo e as duas portarias são revogados a partir de 01/08/2026 pela Portaria SRE-20/26, o que a tela já avisa |
 
 **A consulta é automática e não substitui a leitura do texto oficial nem a
 orientação de um profissional.** Isso vale especialmente para os dois últimos

@@ -456,8 +456,13 @@ def parse_cest_rows_from_html(raw, anexo_label):
 def parse_cest_rows_from_text(text, anexo_label):
     """Igual a parse_cest_rows_from_html, mas para texto corrido (sem <tr>/<td>)
     — usado para o texto extraído do PDF de anexos, que não tem estrutura de
-    tabela HTML. Procura, linha a linha, CEST + NCM (+ MVA, se houver) juntos."""
-    rows = []
+    tabela HTML. Procura, linha a linha, CEST + NCM (+ MVA, se houver) juntos.
+
+    O PDF costuma repetir o mesmo CEST+NCM várias vezes (histórico de redações
+    embutido no próprio texto, como nos anexos da CAT 68/2019) — mantém só uma
+    linha por par (CEST, NCM), preferindo a descrição mais completa (mais
+    longa)."""
+    by_key = {}
     for line in text.splitlines():
         line = line.strip()
         if not line:
@@ -467,14 +472,20 @@ def parse_cest_rows_from_text(text, anexo_label):
         if not cest_match or not ncm_match:
             continue
         mva_match = MVA_RE.search(line)
-        rows.append({
-            "cest": cest_match.group(1),
-            "ncm": only_digits(ncm_match.group(1)),
+        cest = cest_match.group(1)
+        ncm = only_digits(ncm_match.group(1))
+        row = {
+            "cest": cest,
+            "ncm": ncm,
             "segmento": anexo_label,
             "descricao": line[:200],
             "mva_original": mva_match.group(1).replace(",", ".") if mva_match else None,
-        })
-    return rows
+        }
+        key = (cest, ncm)
+        existente = by_key.get(key)
+        if not existente or len(row["descricao"]) > len(existente["descricao"]):
+            by_key[key] = row
+    return list(by_key.values())
 
 
 CONVENIO_142_ANEXOS_PDF_URL = "https://www.normaslegais.com.br/legislacao/Anexos-Convenio-ICMS-142-2018.pdf"

@@ -22,6 +22,7 @@
     aliquotasRicms: null,
     alimenticios: null,
     reducoesAlimenticios: null,
+    limpeza: null,
     loaded: false,
   };
 
@@ -38,7 +39,7 @@
   }
 
   function normalize(str) {
-    return stripAccents(String(str || "").toLowerCase()).trim();
+    return stripAccents(String(str || "").toLowerCase()).replace(/\./g, "").trim();
   }
 
   function formatIpi(value) {
@@ -69,7 +70,7 @@
   }
 
   async function loadAll() {
-    const [ncmData, cestData, pisCofinsData, beneficiosData, aliquotasData, alimenticiosData, reducoesData] = await Promise.all([
+    const [ncmData, cestData, pisCofinsData, beneficiosData, aliquotasData, alimenticiosData, reducoesData, limpezaData] = await Promise.all([
       loadJson("data/ncm_tipi.json", { items: [] }),
       loadJson("data/cest_st_sp.json", { items: [] }),
       loadJson("data/pis_cofins_especial.json", { items: [] }),
@@ -77,10 +78,12 @@
       loadJson("data/icms_aliquotas_sp.json", null),
       loadJson("data/icms_alimenticios_sp.json", null),
       loadJson("data/icms_reducoes_alimenticios_sp.json", null),
+      loadJson("data/icms_limpeza_sp.json", null),
     ]);
     state.aliquotasRicms = aliquotasData;
     state.alimenticios = alimenticiosData;
     state.reducoesAlimenticios = reducoesData;
+    state.limpeza = limpezaData;
 
     state.ncmList = (ncmData.items || []).map((it) => ({
       ...it,
@@ -91,7 +94,17 @@
     (cestData.items || []).forEach((it) => {
       if (!it.ncm) return;
       if (!state.cestByNcm.has(it.ncm)) state.cestByNcm.set(it.ncm, []);
-      state.cestByNcm.get(it.ncm).push(it);
+      const lista = state.cestByNcm.get(it.ncm);
+      // A fonte (PDF do Convênio 142/2018) costuma repetir o mesmo CEST várias
+      // vezes — provavelmente histórico de redações embutido no texto. Mantém
+      // só uma linha por CEST, preferindo a descrição mais completa (mais
+      // longa), que tende a ser a de verdade em vez de um fragmento truncado.
+      const existente = lista.find((r) => r.cest && r.cest === it.cest);
+      if (!existente) {
+        lista.push(it);
+      } else if ((it.descricao || "").length > (existente.descricao || "").length) {
+        lista[lista.indexOf(existente)] = it;
+      }
     });
 
     state.pisCofinsByNcm = new Map();
@@ -288,6 +301,63 @@
     return html;
   }
 
+  function matchAnexoXIII(ncm) {
+    const itens = (state.limpeza && state.limpeza.itens) || [];
+    const candidatos = [];
+    itens.forEach((it) => {
+      const prefixos = it.ncm || [];
+      let melhor = 0;
+      prefixos.forEach((p) => {
+        const digits = p.replace(/\D/g, "");
+        if (ncm.startsWith(digits) && digits.length > melhor) melhor = digits.length;
+      });
+      if (melhor > 0) candidatos.push({ item: it, especificidade: melhor });
+    });
+    if (!candidatos.length) return [];
+    const max = Math.max(...candidatos.map((c) => c.especificidade));
+    return candidatos.filter((c) => c.especificidade === max).map((c) => c.item);
+  }
+
+  function renderProdutosLimpeza(ncm) {
+    const matches = matchAnexoXIII(ncm);
+    if (!matches.length) return "";
+
+    const revFutura = state.limpeza && state.limpeza.revogacao_futura;
+    const jaRevogado = revFutura && new Date() >= new Date(revFutura.data + "T00:00:00");
+
+    let html = `<div class="produto-subsection"><h4>Produtos de Limpeza — regras específicas do RICMS/SP</h4>`;
+
+    if (revFutura) {
+      html += jaRevogado
+        ? `<p class="produto-beneficio-tag" style="color:#a3450b;background:#fde8d8;">❌ O Anexo XIII inteiro (produtos de limpeza) foi revogado desde ${escapeHtml(revFutura.data)} pela ${escapeHtml(revFutura.por)} — este produto não é mais ST em SP.</p>`
+        : `<p class="produto-beneficio-tag" style="color:#8a6d00;background:#fff3cd;">⚠️ Atenção: todo o Anexo XIII (produtos de limpeza) será revogado a partir de ${escapeHtml(revFutura.data)} pela ${escapeHtml(revFutura.por)} — até lá este produto segue sendo ST normalmente.</p>`;
+    }
+
+    html += matches.map((it) => {
+      const ivaSt = state.limpeza.iva_st_sre_55_2025 && state.limpeza.iva_st_sre_55_2025[it.cest];
+      const pmpf = state.limpeza.pmpf_agua_sanitaria_sre_57_2025 && state.limpeza.pmpf_agua_sanitaria_sre_57_2025.cest === it.cest
+        ? state.limpeza.pmpf_agua_sanitaria_sre_57_2025
+        : null;
+      let detalhe;
+      if (pmpf) {
+        detalhe = `Base de cálculo por PMPF (Portaria SRE 57/2025): ${pmpf.faixas.map((f) => `${escapeHtml(f.embalagem)} — ${escapeHtml(f.pmpf_por_100ml)}/100ml`).join("; ")} (ou IVA-ST de ${escapeHtml(pmpf.iva_st_alternativo)} nas hipóteses do art. 2º dessa portaria)`;
+      } else if (ivaSt) {
+        detalhe = `IVA-ST ${escapeHtml(ivaSt)} (Portaria SRE 55/2025)`;
+      } else {
+        detalhe = "IVA-ST não localizado na Portaria SRE 55/2025 para este CEST";
+      }
+      return `
+        <p class="produto-resumo">
+          <strong>CEST ${escapeHtml(it.cest)}</strong> (item ${escapeHtml(it.item)} do Anexo XIII) —
+          ${escapeHtml(it.descricao)}
+        </p>
+        ${jaRevogado ? "" : `<p class="produto-beneficio-tag">✅ Sujeito a ICMS-ST — ${detalhe}</p>`}`;
+    }).join("");
+
+    html += `</div>`;
+    return html;
+  }
+
   function renderIcmsBenefits(ncm) {
     const matches = state.beneficios.filter((b) => ncm.startsWith(b.ncm_prefixo));
     if (!matches.length) {
@@ -433,6 +503,7 @@
         </div>
 
         ${renderProdutosAlimenticios(item.ncm)}
+        ${renderProdutosLimpeza(item.ncm)}
         ${renderIcmsBenefits(item.ncm)}
         ${renderSubstituicaoTributaria(item.ncm)}
         ${renderPisCofins(item.ncm)}
