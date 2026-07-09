@@ -287,3 +287,127 @@ footer {
   font-size: 0.78rem;
   color: var(--text-muted);
 }
+
+/* Consulta Produto */
+
+.produto-candidatos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.produto-candidato {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  text-align: left;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.6rem 0.9rem;
+  cursor: pointer;
+  font: inherit;
+  color: var(--text);
+}
+.produto-candidato:hover { border-color: var(--accent); }
+
+.produto-candidato-ncm {
+  font-weight: 700;
+  color: var(--brand);
+  white-space: nowrap;
+}
+@media (prefers-color-scheme: dark) {
+  .produto-candidato-ncm { color: #6cb6e8; }
+}
+
+.produto-candidato-desc {
+  color: var(--text);
+  font-size: 0.92rem;
+}
+
+.produto-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.produto-header h3 {
+  margin: 0 0 0.2rem;
+  color: var(--brand);
+  font-size: 1.3rem;
+}
+@media (prefers-color-scheme: dark) {
+  .produto-header h3 { color: #6cb6e8; }
+}
+.produto-header p {
+  margin: 0 0 1rem;
+  color: var(--text-muted);
+}
+
+.produto-subsection {
+  border-top: 1px solid var(--border);
+  padding-top: 0.9rem;
+  margin-top: 0.9rem;
+}
+.produto-subsection h4 {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.produto-resumo {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+}
+
+.produto-obs {
+  margin: 0.2rem 0;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.produto-beneficio-tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  margin: 0 0 0.5rem;
+}
+
+.produto-entrada-saida {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.produto-es-col {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.85rem;
+}
+.produto-es-col strong { display: block; margin-bottom: 0.25rem; }
+.produto-es-col p { margin: 0.2rem 0; }
+
+.produto-tabela {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin-top: 0.4rem;
+}
+.produto-tabela th, .produto-tabela td {
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+}
+.produto-tabela th {
+  background: var(--bg);
+}

@@ -15,12 +15,13 @@ Fontes:
     portarias do ano corrente extraídas direto da listagem oficial.
   - ICMS/SRE (Base Legal): raspagem direta da listagem oficial da SEFAZ-SP em
     legislacao.fazenda.sp.gov.br/Paginas/Atos.aspx?Tipo=Portarias%20CAT/SRE,
-    uma página por ano. Na primeira execução (arquivo vazio) percorre todo o
-    histórico disponível (2011 em diante); nas execuções seguintes checa
-    apenas o ano corrente e o anterior, o suficiente para pegar as novas
-    portarias assim que forem publicadas. A data exata (dia/mês) de cada
-    portaria é obtida visitando a página de detalhe, mas em lote pequeno por
-    execução (para não sobrecarregar o site), com autopreenchimento gradual.
+    uma página por ano. Cada portaria vem com título, ementa e data exata de
+    publicação já embutidos na própria listagem (não é preciso visitar a
+    página de detalhe de cada uma). Na primeira execução (ou se o backfill
+    anterior não tiver completado com sucesso) percorre todo o histórico
+    disponível (2011 em diante); depois disso, checa apenas o ano corrente e
+    o anterior, suficiente para pegar as novas portarias assim que forem
+    publicadas.
 
 O script é incremental: itens já conhecidos (mesmo link, ou mesmo número de
 portaria) são preservados e apenas novos itens são adicionados.

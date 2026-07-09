@@ -1,0 +1,86 @@
+{
+  "aviso": "Amostra pequena e curada manualmente, com base em pesquisa (não em leitura direta do texto integral do RICMS/SP a partir deste ambiente). Cobre poucos exemplos ilustrativos — a ausência de um produto aqui NÃO significa que ele não tenha benefício. Confirme sempre no RICMS/SP oficial (legislacao.fazenda.sp.gov.br) ou com um profissional antes de aplicar.",
+  "items": [
+    {
+      "ncm_prefixo": "1902",
+      "descricao_produto": "Massas alimentícias",
+      "tipo": "reducao_bc",
+      "anexo": "II",
+      "artigo": "39",
+      "carga_tributaria_efetiva": "12%",
+      "resumo": "Redução da base de cálculo nas saídas internas de produtos alimentícios promovidas por estabelecimento fabricante ou atacadista, resultando em carga tributária efetiva de 12%.",
+      "entrada": {
+        "aplica_beneficio": false,
+        "observacao": "O artigo trata da saída do fabricante/atacadista; a entrada segue a tributação praticada pelo fornecedor."
+      },
+      "saida": {
+        "aplica_beneficio": true,
+        "observacao": "Aplica-se à saída interna promovida por estabelecimento fabricante ou atacadista, quando o destinatário não for consumidor final nem optante pelo Simples Nacional."
+      },
+      "saida_consumidor_final": {
+        "aplica_beneficio": false,
+        "observacao": "Não se aplica a saídas destinadas a consumidor final, nem a estabelecimentos optantes pelo Simples Nacional — nesses casos incide a alíquota integral (carga cheia, sem a redução)."
+      }
+    },
+    {
+      "ncm_prefixo": "0808",
+      "descricao_produto": "Maçãs e peras frescas",
+      "tipo": "isencao",
+      "anexo": "I",
+      "artigo": "36",
+      "resumo": "Isenção do ICMS nas operações internas com maçãs, peras e diversas hortaliças (quiabo, rabanete, agrião, repolho, chicória, escarola, salsa, aipo e outras folhas usadas na alimentação humana).",
+      "entrada": {
+        "aplica_beneficio": true,
+        "observacao": "Isenção aplicável às operações internas em geral, incluindo a entrada no estabelecimento adquirente."
+      },
+      "saida": {
+        "aplica_beneficio": true,
+        "observacao": "Isenção aplicável às operações internas em geral."
+      },
+      "saida_consumidor_final": {
+        "aplica_beneficio": true,
+        "observacao": "A isenção deste artigo não é restrita a operações entre contribuintes; alcança também a venda a consumidor final."
+      }
+    },
+    {
+      "ncm_prefixo": "2309",
+      "descricao_produto": "Rações e insumos para alimentação animal",
+      "tipo": "isencao",
+      "anexo": "I",
+      "artigo": "41",
+      "resumo": "Isenção do ICMS em operações internas com insumos agropecuários (rações, farinhas, sal mineralizado, calcário e outros) destinados ao uso na pecuária, avicultura, apicultura, aquicultura, cunicultura, ranicultura ou sericicultura.",
+      "entrada": {
+        "aplica_beneficio": true,
+        "observacao": "Isenção condicionada à comprovação de destinação para uso na atividade agropecuária indicada no artigo."
+      },
+      "saida": {
+        "aplica_beneficio": true,
+        "observacao": "Isenção condicionada à comprovação de destinação para uso na atividade agropecuária indicada no artigo."
+      },
+      "saida_consumidor_final": {
+        "aplica_beneficio": false,
+        "observacao": "A isenção pressupõe destinação a uso produtivo agropecuário; venda avulsa a consumidor final sem essa destinação não está amparada pelo artigo."
+      }
+    },
+    {
+      "ncm_prefixo": "3004",
+      "descricao_produto": "Medicamentos (amostra grátis)",
+      "tipo": "isencao",
+      "anexo": "I",
+      "artigo": "3",
+      "resumo": "Isenção do ICMS na distribuição de amostra grátis de medicamento, atendidas as condições e limites de quantidade previstos no RICMS/SP.",
+      "entrada": {
+        "aplica_beneficio": false,
+        "observacao": "A isenção é específica para a distribuição de amostra grátis, não para a entrada/compra normal do medicamento."
+      },
+      "saida": {
+        "aplica_beneficio": true,
+        "observacao": "Aplica-se somente à saída caracterizada como distribuição de amostra grátis, dentro dos limites e requisitos do RICMS/SP."
+      },
+      "saida_consumidor_final": {
+        "aplica_beneficio": false,
+        "observacao": "Amostra grátis não se destina a consumidor final; venda comum de medicamento para consumidor final não é amparada por este artigo (segue a tributação normal, incluindo eventual ICMS-ST)."
+      }
+    }
+  ]
+}
