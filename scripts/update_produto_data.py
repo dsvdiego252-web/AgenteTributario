@@ -313,6 +313,25 @@ NCM_TEXT_RE = re.compile(r"(\d{4}\.?\d{2}\.?\d{2})")
 MVA_RE = re.compile(r"(\d{1,3}(?:,\d{1,2})?)\s*%")
 
 
+def extract_pdf_text(raw_bytes):
+    """Extrai o texto de um PDF (bytes). Retorna None se pdfplumber não estiver
+    disponível ou se o arquivo não puder ser lido (não é um PDF de texto, por
+    exemplo — pode ser um PDF escaneado como imagem)."""
+    try:
+        import pdfplumber
+    except ImportError:
+        print("[warn] pdfplumber não instalado; não é possível extrair texto de PDF.", file=sys.stderr)
+        return None
+    try:
+        import io
+        with pdfplumber.open(io.BytesIO(raw_bytes)) as pdf:
+            pages_text = [page.extract_text() or "" for page in pdf.pages]
+        return "\n".join(pages_text)
+    except Exception as exc:
+        print(f"[warn] falha ao extrair texto do PDF: {exc}", file=sys.stderr)
+        return None
+
+
 def extract_table_rows(html_text):
     """Genérico: retorna uma lista de linhas de tabela, cada uma como lista de
     texto de célula (tags já removidas). Usado tanto para CEST/MVA quanto para
@@ -397,12 +416,55 @@ def parse_cest_rows_from_html(raw, anexo_label):
     return rows
 
 
+def parse_cest_rows_from_text(text, anexo_label):
+    """Igual a parse_cest_rows_from_html, mas para texto corrido (sem <tr>/<td>)
+    — usado para o texto extraído do PDF de anexos, que não tem estrutura de
+    tabela HTML. Procura, linha a linha, CEST + NCM (+ MVA, se houver) juntos."""
+    rows = []
+    for line in text.splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        cest_match = CEST_RE.search(line)
+        ncm_match = NCM_TEXT_RE.search(line)
+        if not cest_match or not ncm_match:
+            continue
+        mva_match = MVA_RE.search(line)
+        rows.append({
+            "cest": cest_match.group(1),
+            "ncm": only_digits(ncm_match.group(1)),
+            "segmento": anexo_label,
+            "descricao": line[:200],
+            "mva_original": mva_match.group(1).replace(",", ".") if mva_match else None,
+        })
+    return rows
+
+
+CONVENIO_142_ANEXOS_PDF_URL = "https://www.normaslegais.com.br/legislacao/Anexos-Convenio-ICMS-142-2018.pdf"
+
+
 def fetch_cest_st_sp():
     """CEST/NCM: fonte primária é o Convênio ICMS 142/2018 (nacional, define os
     segmentos/CEST/NCM sujeitos à ST em todo o país). O MVA específico de SP,
     quando presente na mesma tabela, é só um valor de referência — pode ter
     sido atualizado depois por portaria estadual (aviso já fica na tela)."""
     all_rows = []
+
+    try:
+        pdf_raw = http_get(CONVENIO_142_ANEXOS_PDF_URL)
+    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as exc:
+        print(f"[warn] falha ao acessar o PDF de anexos do Convênio 142/2018: {exc}", file=sys.stderr)
+        pdf_raw = None
+
+    if pdf_raw is not None:
+        print(f"[debug] PDF anexos Convênio 142/2018: {len(pdf_raw)} bytes, assinatura {pdf_raw[:8]!r}", file=sys.stderr)
+        pdf_text = extract_pdf_text(pdf_raw)
+        if pdf_text:
+            rows = parse_cest_rows_from_text(pdf_text, "Convênio ICMS 142/2018 (anexos)")
+            print(f"[debug] PDF anexos Convênio 142/2018: {len(pdf_text)} chars de texto extraído, {len(rows)} linhas CEST/NCM extraídas", file=sys.stderr)
+            if not rows:
+                print(f"[debug] trecho do texto do PDF (2000 chars): {pdf_text[:2000]!r}", file=sys.stderr)
+            all_rows.extend(rows)
 
     try:
         raw = http_get(CONVENIO_142_URL).decode("utf-8", errors="ignore")
@@ -441,9 +503,20 @@ def fetch_cest_st_sp():
 # PIS/COFINS monofásico / alíquota zero (tabelas do SPED Contribuições)
 # ---------------------------------------------------------------------------
 
+# "/arquivo/show/{id}" é uma página SPA que só carrega os dados via JS (não
+# tem <tr>/<td> nem texto da tabela no HTML bruto). "/arquivo/download/{id}"
+# é um padrão comum em sites gov.br para servir o arquivo de verdade (PDF ou
+# xlsx) por trás dessa página — tentamos essa primeiro, com "show" como
+# variante de reserva caso o padrão não valha para essas tabelas específicas.
 SPED_TABELAS = [
-    ("monofasico", "http://sped.rfb.gov.br/arquivo/show/1638"),   # Tabela 4.3.10
-    ("aliquota_zero", "http://sped.rfb.gov.br/arquivo/show/1643"),  # Tabela 4.3.13
+    ("monofasico", [
+        "http://sped.rfb.gov.br/arquivo/download/1638",
+        "http://sped.rfb.gov.br/arquivo/show/1638",
+    ]),  # Tabela 4.3.10
+    ("aliquota_zero", [
+        "http://sped.rfb.gov.br/arquivo/download/1643",
+        "http://sped.rfb.gov.br/arquivo/show/1643",
+    ]),  # Tabela 4.3.13
 ]
 
 # Célula de "código da natureza da receita" isolada (ex.: "01.01"), e âncora
@@ -514,40 +587,54 @@ def parse_sped_table(raw_text, regime, rows_are_html):
 
 def fetch_pis_cofins_especial():
     all_rows = []
-    for regime, url in SPED_TABELAS:
-        try:
-            raw = http_get(url)
-        except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as exc:
-            print(f"[warn] falha ao acessar tabela SPED ({regime}) {url}: {exc}", file=sys.stderr)
-            continue
-
-        print(f"[debug] tabela SPED {regime} ({url}): {len(raw)} bytes, assinatura {raw[:10]!r}", file=sys.stderr)
-
-        rows_are_html = True
-        if raw[:2] == b"PK":
+    for regime, urls in SPED_TABELAS:
+        rows = []
+        for url in urls:
             try:
-                import io
-                import openpyxl
-                wb = openpyxl.load_workbook(io.BytesIO(raw), read_only=True, data_only=True)
-                sheet = wb[wb.sheetnames[0]]
-                text_lines = []
-                for row in sheet.iter_rows(values_only=True):
-                    text_lines.append(" | ".join(str(c) for c in row if c is not None))
-                raw_text = "\n".join(text_lines)
-                rows_are_html = False
-            except Exception as exc:
-                print(f"[warn] falha ao abrir tabela SPED ({regime}) como xlsx: {exc}", file=sys.stderr)
+                raw = http_get(url)
+            except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as exc:
+                print(f"[warn] falha ao acessar tabela SPED ({regime}) {url}: {exc}", file=sys.stderr)
                 continue
-        else:
-            raw_text = raw.decode("utf-8", errors="ignore")
 
-        rows, table_row_count = parse_sped_table(raw_text, regime, rows_are_html)
-        print(
-            f"[debug] tabela SPED {regime}: {table_row_count} linhas de tabela encontradas, "
-            f"{len(rows)} com NCM/natureza extraídos",
-            file=sys.stderr,
-        )
-        if not rows:
+            print(f"[debug] tabela SPED {regime} ({url}): {len(raw)} bytes, assinatura {raw[:10]!r}", file=sys.stderr)
+
+            rows_are_html = True
+            raw_text = None
+            if raw[:2] == b"PK":
+                try:
+                    import io
+                    import openpyxl
+                    wb = openpyxl.load_workbook(io.BytesIO(raw), read_only=True, data_only=True)
+                    sheet = wb[wb.sheetnames[0]]
+                    text_lines = []
+                    for row in sheet.iter_rows(values_only=True):
+                        text_lines.append(" | ".join(str(c) for c in row if c is not None))
+                    raw_text = "\n".join(text_lines)
+                    rows_are_html = False
+                except Exception as exc:
+                    print(f"[warn] falha ao abrir tabela SPED ({regime}) como xlsx: {exc}", file=sys.stderr)
+            elif raw[:5] == b"%PDF-":
+                pdf_text = extract_pdf_text(raw)
+                if pdf_text:
+                    raw_text = pdf_text
+                    rows_are_html = False
+                    print(f"[debug] tabela SPED {regime} ({url}): PDF com {len(pdf_text)} chars de texto extraído", file=sys.stderr)
+            else:
+                raw_text = raw.decode("utf-8", errors="ignore")
+
+            if raw_text is None:
+                continue
+
+            url_rows, table_row_count = parse_sped_table(raw_text, regime, rows_are_html)
+            print(
+                f"[debug] tabela SPED {regime} ({url}): {table_row_count} linhas de tabela encontradas, "
+                f"{len(url_rows)} com NCM/natureza extraídos",
+                file=sys.stderr,
+            )
+            if url_rows:
+                rows = url_rows
+                break  # essa URL funcionou, não precisa tentar a próxima variante
+
             # Se nem achamos linhas de tabela, a página pode mesmo carregar os
             # dados via JavaScript/AJAX depois do carregamento inicial — procura
             # pistas de endpoint para orientar o próximo ajuste.
@@ -555,10 +642,10 @@ def fetch_pis_cofins_especial():
                 r'(?:src|href|action|url)\s*[:=]\s*"([^"]*(?:\.asmx|\.ashx|\.json|/api/)[^"]*)"',
                 raw_text, re.IGNORECASE,
             )
-            print(f"[debug] tabela SPED {regime}: pistas de endpoint de dados: {service_hints[:10]}", file=sys.stderr)
-            print(f"[debug] trecho da tabela SPED {regime} (1500 chars): {raw_text[:1500]!r}", file=sys.stderr)
+            print(f"[debug] tabela SPED {regime} ({url}): pistas de endpoint de dados: {service_hints[:10]}", file=sys.stderr)
+            print(f"[debug] trecho da tabela SPED {regime} ({url}) (1500 chars): {raw_text[:1500]!r}", file=sys.stderr)
+            time.sleep(1)
         all_rows.extend(rows)
-        time.sleep(1)
     return all_rows
 
 
