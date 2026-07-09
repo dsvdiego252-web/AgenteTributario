@@ -251,15 +251,24 @@
 
   function setupSearch() {
     const input = qs("#search-produto");
+    const form = qs("#form-produto");
     if (!input) return;
     let timer = null;
+    const runSearch = () => {
+      clearTimeout(timer);
+      qs("#produto-resultado").innerHTML = "";
+      renderCandidatos(searchCandidatos(input.value), input.value);
+    };
     input.addEventListener("input", () => {
       clearTimeout(timer);
-      timer = setTimeout(() => {
-        qs("#produto-resultado").innerHTML = "";
-        renderCandidatos(searchCandidatos(input.value), input.value);
-      }, 200);
+      timer = setTimeout(runSearch, 200);
     });
+    if (form) {
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        runSearch();
+      });
+    }
   }
 
   document.addEventListener("DOMContentLoaded", async () => {
