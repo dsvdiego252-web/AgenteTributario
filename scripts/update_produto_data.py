@@ -349,7 +349,7 @@ def extract_doc_text(raw_bytes):
             tmp.write(raw_bytes)
             tmp.flush()
             result = subprocess.run(
-                ["antiword", tmp.name],
+                ["antiword", "-m", "UTF-8.txt", tmp.name],
                 capture_output=True,
                 timeout=30,
             )
