@@ -266,7 +266,12 @@ def fetch_tipi_ipi_rates():
         codigo = only_digits(str(row[col_ncm] or ""))
         if len(codigo) != 8:
             continue
-        aliquota = str(row[col_aliquota] or "").strip() if col_aliquota < len(row) else ""
+        aliquota_raw = row[col_aliquota] if col_aliquota < len(row) else None
+        if isinstance(aliquota_raw, float):
+            # Evita artefatos de precisão de ponto flutuante (ex.: 3.9000000000000004).
+            aliquota = f"{round(aliquota_raw, 2):g}"
+        else:
+            aliquota = str(aliquota_raw or "").strip()
         if not aliquota:
             continue
         ipi_map[codigo] = aliquota

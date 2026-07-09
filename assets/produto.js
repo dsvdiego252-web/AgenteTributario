@@ -38,6 +38,18 @@
     return stripAccents(String(str || "").toLowerCase()).trim();
   }
 
+  function formatIpi(value) {
+    if (value == null) return null;
+    if (typeof value === "number") {
+      return `${Math.round(value * 100) / 100}%`;
+    }
+    const str = String(value);
+    if (/^\d+(\.\d+)?$/.test(str)) {
+      return `${Math.round(parseFloat(str) * 100) / 100}%`;
+    }
+    return escapeHtml(str);
+  }
+
   function formatNcm(ncm) {
     if (!ncm || ncm.length !== 8) return ncm || "";
     return `${ncm.slice(0, 4)}.${ncm.slice(4, 6)}.${ncm.slice(6, 8)}`;
@@ -149,9 +161,9 @@
 
   function summarizeSubstituicaoTributaria(ncm) {
     const rows = state.cestByNcm.get(ncm);
-    if (!rows || !rows.length) return "Não localizado nesta base (ver observação abaixo)";
+    if (!rows || !rows.length) return "Não localizado nesta base — confirme na Portaria CAT 68/2019 (ver observação abaixo)";
     return rows
-      .map((r) => `CEST ${escapeHtml(r.cest || "—")}${r.mva_original ? ` · MVA ${escapeHtml(r.mva_original)}%` : ""}`)
+      .map((r) => `CEST ${escapeHtml(r.cest || "—")}${r.mva_original ? ` · MVA ${escapeHtml(r.mva_original)}%` : ""} — confirmar vigência na CAT 68/2019`)
       .join("; ");
   }
 
@@ -202,24 +214,32 @@
 
   function renderSubstituicaoTributaria(ncm) {
     const rows = state.cestByNcm.get(ncm);
+    const regraCat68 = `
+      <p class="produto-obs"><strong>Regra:</strong> quem decide se um item tem ICMS-ST em São Paulo é a
+      <strong>Portaria CAT 68/2019</strong> (e suas alterações posteriores) — não o Convênio ICMS 142/2018 por si só.
+      O Convênio é a base nacional (define o que <em>pode</em> ter CEST); a CAT 68/2019 é quem lista o que
+      <em>efetivamente</em> tem ST em SP e o MVA aplicável. Um item pode constar no Convênio e mesmo assim já ter
+      sido <strong>revogado</strong> da ST em SP por uma alteração posterior da CAT 68/2019 — nesse caso ele deixa
+      de ser ST a partir da data da revogação, mesmo continuando na tabela nacional.</p>`;
     if (!rows || !rows.length) {
       return `
         <div class="produto-subsection">
           <h4>Substituição Tributária (ICMS-ST)</h4>
-          <p class="empty">NCM não localizado nos anexos da Portaria CAT 68/2019 — não sujeito à ST em São Paulo (ou ainda não mapeado nesta base).</p>
+          <p class="empty">NCM não localizado na base nacional (Convênio ICMS 142/2018) usada nesta consulta.</p>
+          ${regraCat68}
         </div>`;
     }
     return `
       <div class="produto-subsection">
-        <h4>Substituição Tributária (ICMS-ST) — Portaria CAT 68/2019</h4>
+        <h4>Substituição Tributária (ICMS-ST)</h4>
         ${rows.map((r) => `
           <p class="produto-resumo">
             <strong>CEST ${escapeHtml(r.cest || "—")}</strong> · ${escapeHtml(r.segmento || "")}
-            ${r.mva_original ? ` · MVA original: <strong>${escapeHtml(r.mva_original)}%</strong>` : ""}
+            ${r.mva_original ? ` · MVA de referência: <strong>${escapeHtml(r.mva_original)}%</strong>` : ""}
           </p>
           ${r.descricao ? `<p class="produto-obs">${escapeHtml(r.descricao)}</p>` : ""}
         `).join("")}
-        <p class="produto-obs">O MVA pode ter sido atualizado por portarias posteriores à CAT 68/2019 — confirme o valor vigente na Base Legal (aba ICMS).</p>
+        ${regraCat68}
       </div>`;
   }
 
@@ -256,9 +276,7 @@
     const item = state.ncmList.find((it) => it.ncm === ncm);
     if (!item) return;
 
-    const ipiTexto = item.ipi_aliquota != null
-      ? `${escapeHtml(String(item.ipi_aliquota))}${/^\d/.test(String(item.ipi_aliquota)) ? "%" : ""}`
-      : "Não localizada na TIPI";
+    const ipiTexto = formatIpi(item.ipi_aliquota) || "Não localizada na TIPI";
 
     const html = `
       <article class="produto-card">
@@ -285,7 +303,7 @@
 
         <div class="produto-subsection">
           <h4>IPI</h4>
-          <p class="produto-resumo">${item.ipi_aliquota != null ? `Alíquota: <strong>${escapeHtml(String(item.ipi_aliquota))}${/^\d/.test(String(item.ipi_aliquota)) ? "%" : ""}</strong>` : "Alíquota de IPI não localizada na TIPI para este NCM."}</p>
+          <p class="produto-resumo">${formatIpi(item.ipi_aliquota) ? `Alíquota: <strong>${formatIpi(item.ipi_aliquota)}</strong>` : "Alíquota de IPI não localizada na TIPI para este NCM."}</p>
         </div>
 
         <div class="produto-subsection">
