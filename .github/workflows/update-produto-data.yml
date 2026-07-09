@@ -48,5 +48,13 @@ jobs:
             echo "Sem novidades nesta semana."
           else
             git commit -m "chore: atualizar dados de produto (NCM/TIPI/CEST/PIS-COFINS)"
-            git push
+            for i in 1 2 3 4 5; do
+              if git push; then
+                break
+              fi
+              echo "Push rejeitado (provável corrida com outro workflow), tentando novamente após rebase..."
+              sleep $((i * 5))
+              git fetch origin main
+              git rebase origin/main
+            done
           fi

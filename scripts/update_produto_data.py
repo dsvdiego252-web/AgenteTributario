@@ -111,22 +111,42 @@ def fetch_ncm_table():
     if isinstance(data, list):
         rows = data
     elif isinstance(data, dict):
-        for value in data.values():
-            if isinstance(value, list) and value and isinstance(value[0], dict) and "codigo" in value[0]:
-                rows = value
-                break
+        # A resposta real observada em produção tem a lista na chave
+        # "Nomenclaturas" (ao lado de metadados como "Data_Ultima_Atualizacao_NCM"
+        # e "Ato"). Prioriza esse nome, mas aceita qualquer lista de dicts como
+        # alternativa, caso o nome da chave mude no futuro.
+        if isinstance(data.get("Nomenclaturas"), list):
+            rows = data["Nomenclaturas"]
+        else:
+            for value in data.values():
+                if isinstance(value, list) and value and isinstance(value[0], dict):
+                    rows = value
+                    break
     if rows is None:
         print(f"[warn] não encontrei a lista de NCMs na resposta; chaves de topo: {list(data.keys()) if isinstance(data, dict) else type(data)}", file=sys.stderr)
         return {}
 
     print(f"[debug] NCM Siscomex: {len(rows)} linhas brutas recebidas", file=sys.stderr)
+    if rows:
+        print(f"[debug] NCM Siscomex: campos do primeiro item: {list(rows[0].keys())}", file=sys.stderr)
+
+    # Os nomes dos campos podem variar (Codigo/codigo, Descricao/descricao).
+    def field(row, *names):
+        for name in names:
+            if name in row:
+                return row[name]
+        lowered = {k.lower(): v for k, v in row.items()}
+        for name in names:
+            if name.lower() in lowered:
+                return lowered[name.lower()]
+        return None
 
     ncm_map = {}
     for row in rows:
-        codigo = only_digits(str(row.get("codigo", "")))
+        codigo = only_digits(str(field(row, "codigo", "Codigo", "co_ncm") or ""))
         if len(codigo) != 8:
             continue
-        descricao = strip_html(row.get("descricao") or "")
+        descricao = strip_html(field(row, "descricao", "Descricao", "no_ncm_por") or "")
         if not descricao:
             continue
         ncm_map[codigo] = descricao
@@ -140,8 +160,10 @@ def fetch_ncm_table():
 # ---------------------------------------------------------------------------
 
 TIPI_CANDIDATE_URLS = [
-    "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/documentos-e-arquivos/tipi.xlsx/view",
+    # A URL sem "/view" é a que funciona de fato (confirmado em produção); a
+    # com "/view" só devolve a página HTML de pré-visualização do Plone.
     "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/documentos-e-arquivos/tipi.xlsx",
+    "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/documentos-e-arquivos/tipi.xlsx/view",
     "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/documentos-e-arquivos/tipi.xlsx/@@download/file",
 ]
 
@@ -269,7 +291,26 @@ def fetch_cat68_annex_links():
 
     print(f"[debug] Portaria CAT 68/2019: {len(links)} links de anexo encontrados", file=sys.stderr)
     if not links:
-        print(f"[debug] trecho da página principal (1500 chars): {raw[:1500]!r}", file=sys.stderr)
+        # Diagnóstico extra: a página é SharePoint (mesmo motor do Atos.aspx),
+        # então o conteúdo pode estar embutido em blocos de dados em vez de
+        # <a href> simples. Procura ocorrências de "anexo"/"cest"/"mva" e
+        # qualquer link para arquivo (pdf/doc/xls), para orientar o próximo ajuste.
+        anexo_count = len(re.findall(r"anexo", raw, re.IGNORECASE))
+        cest_count = len(re.findall(r"\bcest\b", raw, re.IGNORECASE))
+        mva_count = len(re.findall(r"\bmva\b", raw, re.IGNORECASE))
+        file_links = re.findall(r'href="([^"]+\.(?:pdf|docx?|xlsx?))"', raw, re.IGNORECASE)
+        print(
+            f"[debug] CAT 68/2019: ocorrências — 'anexo'={anexo_count}, 'cest'={cest_count}, "
+            f"'mva'={mva_count}, links de arquivo (pdf/doc/xls)={len(file_links)}",
+            file=sys.stderr,
+        )
+        if file_links:
+            print(f"[debug] primeiros links de arquivo: {file_links[:10]}", file=sys.stderr)
+        idx = raw.lower().find("anexo")
+        if idx >= 0:
+            print(f"[debug] trecho ao redor da 1ª ocorrência de 'anexo': {raw[max(0, idx - 300):idx + 300]!r}", file=sys.stderr)
+        else:
+            print(f"[debug] trecho da página principal (1500 chars): {raw[:1500]!r}", file=sys.stderr)
     return links
 
 
@@ -385,6 +426,15 @@ def fetch_pis_cofins_especial():
         rows = parse_sped_table(raw_text, regime)
         print(f"[debug] tabela SPED {regime}: {len(rows)} linhas NCM/natureza extraídas", file=sys.stderr)
         if not rows:
+            # A página costuma ser só uma casca HTML que carrega os dados via
+            # JavaScript/AJAX. Procura pistas de onde os dados realmente vêm
+            # (chamadas a serviços .asmx/.ashx/.json/api) para orientar o
+            # próximo ajuste, em vez de só mostrar o HTML da casca.
+            service_hints = re.findall(
+                r'(?:src|href|action|url)\s*[:=]\s*"([^"]*(?:\.asmx|\.ashx|\.json|/api/)[^"]*)"',
+                raw_text, re.IGNORECASE,
+            )
+            print(f"[debug] tabela SPED {regime}: pistas de endpoint de dados: {service_hints[:10]}", file=sys.stderr)
             print(f"[debug] trecho da tabela SPED {regime} (1000 chars): {raw_text[:1000]!r}", file=sys.stderr)
         all_rows.extend(rows)
         time.sleep(1)
