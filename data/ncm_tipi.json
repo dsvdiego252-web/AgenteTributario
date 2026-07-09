@@ -6358,7 +6358,7 @@
     {
       "ncm": "22029100",
       "descricao": "-- Cerveja sem álcool",
-      "ipi_aliquota": "3.9000000000000004"
+      "ipi_aliquota": "3.9"
     },
     {
       "ncm": "22029900",
@@ -6368,7 +6368,7 @@
     {
       "ncm": "22030000",
       "descricao": "Cervejas de malte.",
-      "ipi_aliquota": "3.9000000000000004"
+      "ipi_aliquota": "3.9"
     },
     {
       "ncm": "22041010",
@@ -21063,7 +21063,7 @@
     {
       "ncm": "33030020",
       "descricao": "Águas-de-colônia",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "33041000",
@@ -21088,7 +21088,7 @@
     {
       "ncm": "33049100",
       "descricao": "-- Pós, incluindo os compactos",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "33049910",
@@ -21098,7 +21098,7 @@
     {
       "ncm": "33049990",
       "descricao": "Outros",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "33051000",
@@ -21168,7 +21168,7 @@
     {
       "ncm": "33079000",
       "descricao": "- Outros",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "34011110",
@@ -25603,12 +25603,12 @@
     {
       "ncm": "40161010",
       "descricao": "Partes de veículos automóveis ou tratores e de máquinas ou aparelhos, não domésticos, dos Capítulos 84, 85 ou 90",
-      "ipi_aliquota": "11.700000000000001"
+      "ipi_aliquota": "11.7"
     },
     {
       "ncm": "40161090",
       "descricao": "Outras",
-      "ipi_aliquota": "11.700000000000001"
+      "ipi_aliquota": "11.7"
     },
     {
       "ncm": "40169100",
@@ -25643,7 +25643,7 @@
     {
       "ncm": "40169910",
       "descricao": "Tampões vedadores para condensadores, de EPDM, com perfurações para terminais",
-      "ipi_aliquota": "11.700000000000001"
+      "ipi_aliquota": "11.7"
     },
     {
       "ncm": "40169990",
@@ -31493,7 +31493,7 @@
     {
       "ncm": "59039090",
       "descricao": "Outros",
-      "ipi_aliquota": "3.256"
+      "ipi_aliquota": "3.26"
     },
     {
       "ncm": "59041000",
@@ -34623,7 +34623,7 @@
     {
       "ncm": "70071100",
       "descricao": "-- De dimensões e formatos que permitam a sua aplicação em automóveis, veículos aéreos, barcos ou outros veículos",
-      "ipi_aliquota": "1.9500000000000002"
+      "ipi_aliquota": "1.95"
     },
     {
       "ncm": "70071900",
@@ -34633,7 +34633,7 @@
     {
       "ncm": "70072100",
       "descricao": "-- De dimensões e formatos que permitam a sua aplicação em automóveis, veículos aéreos, barcos ou outros veículos",
-      "ipi_aliquota": "1.9500000000000002"
+      "ipi_aliquota": "1.95"
     },
     {
       "ncm": "70072900",
@@ -34648,7 +34648,7 @@
     {
       "ncm": "70091000",
       "descricao": "- Espelhos retrovisores para veículos",
-      "ipi_aliquota": "1.9500000000000002"
+      "ipi_aliquota": "1.95"
     },
     {
       "ncm": "70099100",
@@ -35043,27 +35043,27 @@
     {
       "ncm": "71041000",
       "descricao": "- Quartzo piezelétrico",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "71042100",
       "descricao": "-- Diamantes",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "71042900",
       "descricao": "-- Outras",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "71049100",
       "descricao": "-- Diamantes",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "71049900",
       "descricao": "-- Outras",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "71051000",
@@ -35223,7 +35223,7 @@
     {
       "ncm": "71131100",
       "descricao": "-- De prata, mesmo revestida, folheada ou chapeada de outros metais preciosos (plaquê)",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "71131900",
@@ -35233,22 +35233,22 @@
     {
       "ncm": "71132000",
       "descricao": "- De metais comuns folheados ou chapeados de metais preciosos (plaquê)",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "71141100",
       "descricao": "-- De prata, mesmo revestida, folheada ou chapeada de outros metais preciosos (plaquê)",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "71141900",
       "descricao": "-- De outros metais preciosos, mesmo revestidos, folheados ou chapeados de metais preciosos (plaquê)",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "71142000",
       "descricao": "- De metais comuns folheados ou chapeados de metais preciosos (plaquê)",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "71151000",
@@ -35263,37 +35263,37 @@
     {
       "ncm": "71161000",
       "descricao": "- De pérolas naturais ou cultivadas",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "71162010",
       "descricao": "De diamantes sintéticos",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "71162020",
       "descricao": "Guias de agulhas, de rubi, para cabeças de impressão",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "71162090",
       "descricao": "Outras",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "71171100",
       "descricao": "-- Abotoaduras (botões de punho) e artigos semelhantes",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "71171900",
       "descricao": "-- Outras",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "71179000",
       "descricao": "- Outras",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "71181010",
@@ -38773,42 +38773,42 @@
     {
       "ncm": "82111000",
       "descricao": "- Sortidos",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "82119100",
       "descricao": "-- Facas de mesa, de lâmina fixa",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "82119210",
       "descricao": "Para cozinha e açougue",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "82119220",
       "descricao": "Para caça",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "82119290",
       "descricao": "Outras",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "82119310",
       "descricao": "Podadeiras e suas partes",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "82119320",
       "descricao": "Canivetes com uma ou várias lâminas ou outras peças",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "82119390",
       "descricao": "Outras",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "82119400",
@@ -38823,7 +38823,7 @@
     {
       "ncm": "82121010",
       "descricao": "Navalhas",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "82121020",
@@ -38838,17 +38838,17 @@
     {
       "ncm": "82122020",
       "descricao": "Esboços em tiras",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "82129000",
       "descricao": "- Outras partes",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "82130000",
       "descricao": "Tesouras e suas lâminas.",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "82141000",
@@ -38998,7 +38998,7 @@
     {
       "ncm": "83061000",
       "descricao": "- Sinos, campainhas, gongos e artigos semelhantes",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "83062100",
@@ -39013,7 +39013,7 @@
     {
       "ncm": "83063000",
       "descricao": "- Molduras para fotografias, gravuras ou semelhantes; espelhos",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "83071010",
@@ -39048,7 +39048,7 @@
     {
       "ncm": "83089020",
       "descricao": "Contas e lantejoulas",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "83089090",
@@ -40308,7 +40308,7 @@
     {
       "ncm": "84211990",
       "descricao": "Outros",
-      "ipi_aliquota": "15.600000000000001"
+      "ipi_aliquota": "15.6"
     },
     {
       "ncm": "84212100",
@@ -42543,7 +42543,7 @@
     {
       "ncm": "84518000",
       "descricao": "- Outras máquinas e aparelhos",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84519010",
@@ -42558,7 +42558,7 @@
     {
       "ncm": "84521000",
       "descricao": "- Máquinas de costura de uso doméstico",
-      "ipi_aliquota": "1.9500000000000002"
+      "ipi_aliquota": "1.95"
     },
     {
       "ncm": "84522110",
@@ -42623,7 +42623,7 @@
     {
       "ncm": "84529020",
       "descricao": "Móveis, bases e tampas, para máquinas de costura, e suas partes",
-      "ipi_aliquota": "1.9500000000000002"
+      "ipi_aliquota": "1.95"
     },
     {
       "ncm": "84529081",
@@ -44008,32 +44008,32 @@
     {
       "ncm": "84762100",
       "descricao": "-- Com dispositivo de aquecimento ou de refrigeração incorporado",
-      "ipi_aliquota": "11.700000000000001"
+      "ipi_aliquota": "11.7"
     },
     {
       "ncm": "84762900",
       "descricao": "-- Outras",
-      "ipi_aliquota": "11.700000000000001"
+      "ipi_aliquota": "11.7"
     },
     {
       "ncm": "84768100",
       "descricao": "-- Com dispositivo de aquecimento ou de refrigeração incorporado",
-      "ipi_aliquota": "11.700000000000001"
+      "ipi_aliquota": "11.7"
     },
     {
       "ncm": "84768910",
       "descricao": "Máquinas automáticas de venda de selos postais",
-      "ipi_aliquota": "11.700000000000001"
+      "ipi_aliquota": "11.7"
     },
     {
       "ncm": "84768990",
       "descricao": "Outras",
-      "ipi_aliquota": "11.700000000000001"
+      "ipi_aliquota": "11.7"
     },
     {
       "ncm": "84769000",
       "descricao": "- Partes",
-      "ipi_aliquota": "11.700000000000001"
+      "ipi_aliquota": "11.7"
     },
     {
       "ncm": "84771011",
@@ -44393,7 +44393,7 @@
     {
       "ncm": "84818091",
       "descricao": "Válvulas tipo aerossol",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84818092",
@@ -44433,7 +44433,7 @@
     {
       "ncm": "84819010",
       "descricao": "De válvulas tipo aerossol ou dos dispositivos do item 8481.80.1",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84819090",
@@ -44443,82 +44443,82 @@
     {
       "ncm": "84821010",
       "descricao": "De carga radial",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84821090",
       "descricao": "Outros",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84822010",
       "descricao": "De carga radial",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84822090",
       "descricao": "Outros",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84823000",
       "descricao": "- Rolamentos de roletes em forma de tonel",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84824000",
       "descricao": "- Rolamentos de agulhas, incluindo as montagens de gaiolas e agulhas",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84825010",
       "descricao": "De carga radial",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84825090",
       "descricao": "Outros",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84828000",
       "descricao": "- Outros, incluindo os rolamentos combinados",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84829111",
       "descricao": "Para carga de canetas esferográficas",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84829119",
       "descricao": "Outras",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84829120",
       "descricao": "Roletes cilíndricos",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84829130",
       "descricao": "Roletes cônicos",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84829190",
       "descricao": "Outros",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84829910",
       "descricao": "Selos, capas e porta-esferas de aço",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84829990",
       "descricao": "Outras",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84831011",
@@ -44548,7 +44548,7 @@
     {
       "ncm": "84831050",
       "descricao": "Árvores de transmissão providas de acoplamentos dentados com entalhes de proteção contra sobrecarga, de comprimento igual ou superior a 1500 mm e diâmetro do eixo igual ou superior a 400 mm",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84831090",
@@ -44558,27 +44558,27 @@
     {
       "ncm": "84832000",
       "descricao": "- Mancais (chumaceiras) com rolamentos incorporados",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84833010",
       "descricao": "Montados com \"bronzes\" de metal antifricção",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84833021",
       "descricao": "De diâmetro interno igual ou superior a 200 mm",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84833029",
       "descricao": "Outros",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84833090",
       "descricao": "Outros",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84834010",
@@ -44593,12 +44593,12 @@
     {
       "ncm": "84835010",
       "descricao": "Polias, exceto as de rolamentos reguladoras de tensão",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84835090",
       "descricao": "Outros",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84836011",
@@ -44623,7 +44623,7 @@
     {
       "ncm": "84841000",
       "descricao": "- Juntas metaloplásticas",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84842000",
@@ -44633,7 +44633,7 @@
     {
       "ncm": "84849000",
       "descricao": "- Outros",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "84851000",
@@ -45713,22 +45713,22 @@
     {
       "ncm": "85167100",
       "descricao": "-- Aparelhos para preparação de café ou de chá",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "85167200",
       "descricao": "-- Torradeiras de pão",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "85167910",
       "descricao": "Panelas",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "85167920",
       "descricao": "Fritadoras",
-      "ipi_aliquota": "7.800000000000001"
+      "ipi_aliquota": "7.8"
     },
     {
       "ncm": "85167990",
@@ -46088,7 +46088,7 @@
     {
       "ncm": "85198900",
       "descricao": "-- Outros",
-      "ipi_aliquota": "11.700000000000001"
+      "ipi_aliquota": "11.7"
     },
     {
       "ncm": "85211010",
@@ -51198,7 +51198,7 @@
     {
       "ncm": "91040000",
       "descricao": "Relógios para painéis de instrumentos e relógios semelhantes, para automóveis, veículos aéreos, embarcações ou para outros veículos.",
-      "ipi_aliquota": "11.700000000000001"
+      "ipi_aliquota": "11.7"
     },
     {
       "ncm": "91051100",
@@ -52468,7 +52468,7 @@
     {
       "ncm": "96180000",
       "descricao": "Manequins e artigos semelhantes; autômatos e cenas animadas, para vitrines e mostruários.",
-      "ipi_aliquota": "11.700000000000001"
+      "ipi_aliquota": "11.7"
     },
     {
       "ncm": "96190000",

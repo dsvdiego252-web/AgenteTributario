@@ -26,7 +26,8 @@ data/reforma_tributaria.json                novidades da reforma tributária
 data/icms_sre.json                          portarias SRE (ICMS) — repercussão/notícias
 data/icms_base_legal.json                   portarias SRE (ICMS) — registro legal oficial completo
 data/ncm_tipi.json                          NCM + descrição (Siscomex) + alíquota de IPI (TIPI)
-data/cest_st_sp.json                        CEST/segmento/MVA original (Portaria CAT 68/2019 — ICMS-ST/SP)
+data/cest_st_sp.json                        CEST/segmento/MVA (base nacional, Convênio ICMS 142/2018) — vigência
+                                             em SP é sempre da Portaria CAT 68/2019 e suas alterações
 data/pis_cofins_especial.json               NCMs com PIS/COFINS monofásico ou alíquota zero (tabelas SPED)
 data/icms_beneficios_sample.json            amostra curada manualmente de isenção/redução de BC (Anexos I/II RICMS-SP)
 scripts/update_data.py                      coleta diária (Python 3, só biblioteca padrão)
@@ -70,7 +71,7 @@ importante saber qual é qual antes de confiar no resultado:
 |---|---|---|
 | NCM + descrição | Portal Único Siscomex | API pública, automática, cobertura completa |
 | Alíquota de IPI | TIPI (Receita Federal) | Planilha oficial, automática, cobertura completa |
-| CEST / NCM (segmento de ST) | Convênio ICMS 142/2018 (CONFAZ, nacional) | Raspagem automática; MVA, quando presente, é só valor de referência — pode ter sido atualizado depois por portaria estadual |
+| CEST / NCM (segmento de ST) | Convênio ICMS 142/2018 (CONFAZ, nacional) | Raspagem automática. **É só a base nacional (o que pode ter ST) — quem decide o que efetivamente tem ICMS-ST em SP e o MVA é a Portaria CAT 68/2019 e suas alterações.** Um item pode constar aqui e já ter sido revogado da ST em SP por uma alteração posterior da CAT 68/2019; a tela sempre avisa disso e recomenda confirmar na CAT 68/2019 vigente |
 | PIS/COFINS monofásico / alíquota zero | Tabelas 4.3.10/4.3.13 do SPED Contribuições | Automática |
 | PIS/COFINS regime geral (Lucro Real/Presumido) | Lei 10.637/02, Lei 10.833/03, Lei 9.718/98 | Alíquotas fixas (1,65%/7,60% e 0,65%/3,00%), não variam por produto |
 | **Isenção / redução de base de cálculo do ICMS (Anexos I e II do RICMS/SP)** | `data/icms_beneficios_sample.json` | **Amostra pequena, curada manualmente** — os anexos são texto legal, não uma tabela "NCM → benefício"; exigem interpretação jurídica |
