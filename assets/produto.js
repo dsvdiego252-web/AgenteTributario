@@ -175,10 +175,17 @@
 
   function summarizeBeneficio(ncm) {
     const matches = state.beneficios.filter((b) => ncm.startsWith(b.ncm_prefixo));
-    if (!matches.length) return "Nenhum benefício mapeado nesta amostra (ver detalhes abaixo)";
-    return matches
-      .map((b) => `${b.tipo === "isencao" ? "Isenção" : "Redução de BC"} (Anexo ${escapeHtml(b.anexo)}, art. ${escapeHtml(b.artigo)}) — ver detalhes abaixo`)
-      .join("; ");
+    const partes = matches
+      .map((b) => `${b.tipo === "isencao" ? "Isenção" : "Redução de BC"} (Anexo ${escapeHtml(b.anexo)}, art. ${escapeHtml(b.artigo)}) — ver detalhes abaixo`);
+
+    const cestaBasica = matchReducaoCestaBasica(ncm);
+    if (cestaBasica) partes.push(`Redução de BC — Cesta Básica (Anexo II, art. 3º) — carga efetiva ${escapeHtml(cestaBasica.regra.carga_tributaria)} — ver detalhes abaixo`);
+
+    const art39 = matchReducaoArt39(ncm);
+    if (art39) partes.push(`Redução de BC — Produtos Alimentícios (Anexo II, art. 39) — carga efetiva ${escapeHtml(art39.carga_tributaria)} — ver detalhes abaixo`);
+
+    if (!partes.length) return "Nenhum benefício mapeado nesta amostra (ver detalhes abaixo)";
+    return partes.join("; ");
   }
 
   function summarizeSubstituicaoTributaria(ncm) {
