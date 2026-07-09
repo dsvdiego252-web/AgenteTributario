@@ -386,13 +386,6 @@
       "mva_original": null
     },
     {
-      "cest": "01.090.00",
-      "ncm": "87082999",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "90.0 01.090.00 8708.29.99 veículos, atuando como dispositivos refletivos de segurança rodoviários",
-      "mva_original": null
-    },
-    {
       "cest": "01.091.00",
       "ncm": "84123110",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
@@ -523,13 +516,6 @@
       "ncm": "70072900",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "109.0 01.109.00 7007.29.00 Moldura com espelho",
-      "mva_original": null
-    },
-    {
-      "cest": "01.110.00",
-      "ncm": "73145000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "110.0 01.110.00 7314.50.00 REVOGADO",
       "mva_original": null
     },
     {
@@ -795,21 +781,7 @@
       "cest": "03.001.00",
       "ncm": "22011000",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1.0 03.001.00 2201.10.00 REVOGADO",
-      "mva_original": null
-    },
-    {
-      "cest": "03.002.00",
-      "ncm": "22011000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2.0 03.002.00 2201.10.00 REVOGADO",
-      "mva_original": null
-    },
-    {
-      "cest": "03.001.00",
-      "ncm": "22011000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1.0 03.001.00 2201.10.00 500 ml",
+      "descricao": "1.0 03.001.00 2201.10.00 vidro, retornável ou não, com capacidade de até 500 ml",
       "mva_original": null
     },
     {
@@ -823,14 +795,7 @@
       "cest": "03.003.00",
       "ncm": "22011000",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3.0 03.003.00 2201.10.00 embalagem de vidro descartável",
-      "mva_original": null
-    },
-    {
-      "cest": "03.003.00",
-      "ncm": "22011000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3.0 03.003.00 2201.10.00 até 300 ml",
+      "descricao": "3.0 03.003.00 2201.10.00 vidro, não retornável, com capacidade de até 300 ml",
       "mva_original": null
     },
     {
@@ -844,13 +809,6 @@
       "cest": "03.004.00",
       "ncm": "22011000",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "4.0 03.004.00 2201.10.00 REVOGADO",
-      "mva_original": null
-    },
-    {
-      "cest": "03.004.00",
-      "ncm": "22011000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "4.0 03.004.00 2201.10.00 garrafa plástica de 1.500 ml",
       "mva_original": null
     },
@@ -858,14 +816,7 @@
       "cest": "03.005.00",
       "ncm": "22011000",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "5.0 03.005.00 2201.10.00 copo plástico descartável",
-      "mva_original": null
-    },
-    {
-      "cest": "03.005.00",
-      "ncm": "22011000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "5.0 03.005.00 2201.10.00 até 500 ml",
+      "descricao": "5.0 03.005.00 2201.10.00 e embalagem plástica com capacidade de até 500 ml",
       "mva_original": null
     },
     {
@@ -907,28 +858,14 @@
       "cest": "03.006.00",
       "ncm": "22011000",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "6.0 03.006.00 2201.10.00 CEST 03.024.00 e 03.025.00",
+      "descricao": "6 03.006.00 2201.10.00 gaseificadas; exceto as classificadas no CEST 03.024.00 e 03.025.00",
       "mva_original": null
     },
     {
       "cest": "03.007.00",
       "ncm": "22021000",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "7.0 03.007.00 2202.10.00 refrigerantes",
-      "mva_original": null
-    },
-    {
-      "cest": "03.007.00",
-      "ncm": "22021000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "7.0 03.007.00 2202.10.00 exceto os refrescos e refrigerantes",
-      "mva_original": null
-    },
-    {
-      "cest": "03.008.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "8.0 03.008.00 2202.99.00 artificialmente, exceto os refrescos e refrigerantes",
+      "descricao": "7.0 03.007.00 2202.10.00 Água aromatizada artificialmente, exceto os refrescos e refrigerantes",
       "mva_original": null
     },
     {
@@ -963,13 +900,6 @@
       "cest": "03.010.03",
       "ncm": "22029900",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "10.3 03.010.03 2202.99.00 REVOGADO",
-      "mva_original": null
-    },
-    {
-      "cest": "03.010.03",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "10.3 03.010.03 2202.99.00 Cápsula de refrigerante",
       "mva_original": null
     },
@@ -977,21 +907,7 @@
       "cest": "03.011.00",
       "ncm": "22029900",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "11.0 03.011.00 2202.99.00 03.010.00, 03.010.01, 03.010.02 e 03.011.01",
-      "mva_original": null
-    },
-    {
-      "cest": "03.011.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "11.0 03.011.00 2202.99.00 03.010.00, 03.010.01, 03.010.02, 03.010.03 e 03.011.01",
-      "mva_original": null
-    },
-    {
-      "cest": "03.012.00",
-      "ncm": "21069010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "12.0 03.012.00 2106.90.10 classificado no CEST 03.012.01",
       "mva_original": null
     },
     {
@@ -1012,14 +928,7 @@
       "cest": "03.013.00",
       "ncm": "22029900",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "13.0 03.013.00 2202.99.00 Bebidas energéticas em lata",
-      "mva_original": null
-    },
-    {
-      "cest": "03.013.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "13.0 03.013.00 2202.99.00 inferior a 600ml",
+      "descricao": "12.0 03.013.00 2202.99.00 Bebidas energéticas em embalagem com capacidade inferior a 600ml",
       "mva_original": null
     },
     {
@@ -1040,28 +949,7 @@
       "cest": "03.014.00",
       "ncm": "22029900",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "14.0 03.014.00 2202.99.00 REVOGADO",
-      "mva_original": null
-    },
-    {
-      "cest": "03.014.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "14.0 03.014.00 2202.99.00 a 600ml",
-      "mva_original": null
-    },
-    {
-      "cest": "03.015.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "15.0 03.015.00 2202.99.00 Bebidas hidroeletrolíticas",
-      "mva_original": null
-    },
-    {
-      "cest": "03.015.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "15.0 03.015.00 2202.99.00 inferior a 600ml",
+      "descricao": "15.0 03.014.00 2202.99.00 superior a 600ml",
       "mva_original": null
     },
     {
@@ -1069,20 +957,6 @@
       "ncm": "22029900",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "15.0 03.015.00 2202.99.00 capacidade inferior a 600ml",
-      "mva_original": null
-    },
-    {
-      "cest": "03.016.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "16.0 03.016.00 2202.99.00 REVOGADO",
-      "mva_original": null
-    },
-    {
-      "cest": "03.016.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "16.0 03.016.00 2202.99.00 igual ou superior a 600ml",
       "mva_original": null
     },
     {
@@ -1097,13 +971,6 @@
       "ncm": "22030000",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "21.0 03.021.00 2203.00.00 Cerveja em garrafa de vidro retornável",
-      "mva_original": null
-    },
-    {
-      "cest": "03.021.00",
-      "ncm": "22030000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "21.0 03.021.00 2203.00.00 Cerveja",
       "mva_original": null
     },
     {
@@ -1153,13 +1020,6 @@
       "ncm": "22029100",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "22.0 03.022.00 2202.91.00 Cerveja sem álcool em garrafa de vidro retornável",
-      "mva_original": null
-    },
-    {
-      "cest": "03.022.00",
-      "ncm": "22029100",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "22.0 03.022.00 2202.91.00 Cerveja sem álcool",
       "mva_original": null
     },
     {
@@ -1537,7 +1397,7 @@
       "cest": "10.025.00",
       "ncm": "69010000",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "25.0 10.025.00 6901.00.00 siliciosas semelhantes",
+      "descricao": "1 10.025.00 6901.00.00 terras siliciosas semelhantes",
       "mva_original": null
     },
     {
@@ -1737,24 +1597,10 @@
       "mva_original": null
     },
     {
-      "cest": "11.001.00",
-      "ncm": "38089419",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1.0 11.001.00 3808.94.19 Água sanitária, branqueador e outros alvejantes",
-      "mva_original": null
-    },
-    {
       "cest": "11.002.00",
       "ncm": "38089419",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "2.0 11.002.00 3808.94.19 grânulos ou outras formas semelhantes, para lavar roupas",
-      "mva_original": null
-    },
-    {
-      "cest": "11.002.00",
-      "ncm": "38089419",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2.0 11.002.00 3808.94.19 desinfetantes ou sanitizantes.",
       "mva_original": null
     },
     {
@@ -1769,13 +1615,6 @@
       "ncm": "38089419",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "3.0 11.003.00 3808.94.19 Sabões, desinfetantes e sanitizantes, todos líquidos para lavar roupas",
-      "mva_original": null
-    },
-    {
-      "cest": "11.003.00",
-      "ncm": "38089419",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3.0 11.003.00 3808.94.19 propriedades desinfetantes ou sanitizantes.",
       "mva_original": null
     },
     {
@@ -1838,7 +1677,7 @@
       "cest": "11.006.00",
       "ncm": "34022000",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "6.0 11.006.00 3402.20.00 Detergente líquido para lavar roupa",
+      "descricao": "3 11.006.00 3402.20.00 propriedades desinfetantes ou sanitizantes",
       "mva_original": null
     },
     {
@@ -1887,21 +1726,7 @@
       "cest": "13.005.00",
       "ncm": "30066000",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "5.0 13.005.00 3006.60.00 positiva.",
-      "mva_original": null
-    },
-    {
-      "cest": "13.005.00",
-      "ncm": "30066000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "5.0 13.005.00 3006.60.00 produtos da posição 29.37 ou de espermicidas - positiva",
-      "mva_original": null
-    },
-    {
-      "cest": "13.005.01",
-      "ncm": "30066000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "5.1 13.005.01 3006.60.00 negativa.",
       "mva_original": null
     },
     {
@@ -1951,13 +1776,6 @@
       "ncm": "30051010",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "10.1 13.010.01 3005.10.10 Lista Negativa",
-      "mva_original": null
-    },
-    {
-      "cest": "13.012.00",
-      "ncm": "40151900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "12.0 13.012.00 4015.19.00 Luvas cirúrgicas e luvas de procedimento - neutra",
       "mva_original": null
     },
     {
@@ -2076,27 +1894,6 @@
       "cest": "17.001.00",
       "ncm": "17049010",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1.0 17.001.00 1704.90.10 1 kg, exceto os classificados no CEST 17.005.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.001.00",
-      "ncm": "17049090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1.0 17.001.00 1704.90.90 CEST 17.005.00 e 17.008.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.001.00",
-      "ncm": "17049090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1.0 17.001.00 1704.90.90 CEST 17.005.00 e 17.008.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.001.00",
-      "ncm": "17049010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "1.0 17.001.00 1704.90.10 1 kg, exceto os classificados nos CEST 17.005.00 e 17.008.00",
       "mva_original": null
     },
@@ -2105,13 +1902,6 @@
       "ncm": "17049090",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "1.0 17.001.00 1704.90.90 CEST 17.005.00 e 17.008.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.001.00",
-      "ncm": "17049010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1 17.001.00 1704.90.10 1 kg, excluídos os ovos de páscoa de chocolate",
       "mva_original": null
     },
     {
@@ -2129,59 +1919,24 @@
       "mva_original": null
     },
     {
-      "cest": "17.001.01",
-      "ncm": "17049090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1.1 17.001.01 1704.90.90 classificados nos CEST 17.005.00 e 17.008.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.001.01",
-      "ncm": "17049010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1.1 17.001.01 1704.90.10 e 17.008.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.001.01",
-      "ncm": "17049090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1.1 17.001.01 1704.90.90 CEST 17.005.00 e 17.008.00",
-      "mva_original": null
-    },
-    {
       "cest": "17.001.02",
       "ncm": "17049090",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1.2 17.001.02 1704.90.90 igual a 1 kg, exceto os classificados no CEST 17.008.00",
+      "descricao": "1.2 17.001.02 1704.90.90 kg, exceto os classificados nos CEST 17.005.00 e 17.008.00",
       "mva_original": null
     },
     {
       "cest": "17.005.00",
       "ncm": "17049010",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1704.90.10 igual a 1 kg, exceto os classificados nos CEST 17.005.00 e",
-      "mva_original": null
-    },
-    {
-      "cest": "17.001.02",
-      "ncm": "17049090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1.2 17.001.02 1704.90.90 17.008.00",
+      "descricao": "1704.90.10 inferior ou igual a 1 kg, exceto os classificados nos CEST 17.005.00",
       "mva_original": null
     },
     {
       "cest": "17.001.03",
       "ncm": "17049090",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1.3 17.001.03 1704.90.90 17.008.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.001.03",
-      "ncm": "17049090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1.3 17.001.03 1704.90.90 17.005.00 e 17.008.00",
+      "descricao": "1.3 17.001.03 1704.90.90 inferior ou igual a 2 kg, exceto os classificados no CEST 17.008.00",
       "mva_original": null
     },
     {
@@ -2195,70 +1950,21 @@
       "cest": "17.002.00",
       "ncm": "18063120",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2.0 17.002.00 1806.31.20 embalagens imediatas de conteúdo inferior ou igual a 1 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.002.00",
-      "ncm": "18063120",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2.0 17.002.00 1806.31.20 embalagens imediatas de conteúdo inferior ou igual a 1 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.002.00",
-      "ncm": "18063120",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "2.0 17.002.00 1806.31.20 ou embalagens imediatas de conteúdo inferior ou igual a 1 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.002.00",
-      "ncm": "18063120",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2.0 17.002.00 1806.31.20 embalagens imediatas de conteúdo inferior ou igual a 1 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.002.00",
-      "ncm": "18063120",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2 17.002.00 1806.31.20 ou igual a 1 kg",
       "mva_original": null
     },
     {
       "cest": "17.002.01",
       "ncm": "18063110",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2.1 17.002.01 1806.31.10 kg",
+      "descricao": "2.1 17.002.01 1806.31.10 ou embalagens de conteúdo superior a 1 kg e inferior ou igual a 2 kg",
       "mva_original": null
     },
     {
       "cest": "17.002.01",
       "ncm": "18063120",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2.1 17.002.01 1806.31.20 a 2 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.002.01",
-      "ncm": "18063120",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2.1 17.002.01 1806.31.20 a 2 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.002.01",
-      "ncm": "18063120",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2.1 17.002.01 1806.31.20 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.002.01",
-      "ncm": "18063120",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2.1 17.002.01 1806.31.20 a 2 kg",
+      "descricao": "2.1 17.002.01 1806.31.20 ou embalagens de conteúdo superior a 1 kg e inferior ou igual a 2 kg",
       "mva_original": null
     },
     {
@@ -2266,20 +1972,6 @@
       "ncm": "18063120",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "2.2 17.002.02 1806.31.20 imediatas de conteúdo inferior ou igual a 1 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.002.02",
-      "ncm": "18063120",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2.2 17.002.02 1806.31.20 imediatas de conteúdo inferior ou igual a 1 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.002.03",
-      "ncm": "18063120",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2.3 17.002.03 1806.31.20 de conteúdo superior a 1 kg e inferior ou igual a 2 kg",
       "mva_original": null
     },
     {
@@ -2304,41 +1996,6 @@
       "mva_original": null
     },
     {
-      "cest": "17.003.00",
-      "ncm": "18063220",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3.0 17.003.00 1806.32.20 ou embalagens imediatas de conteúdo inferior ou igual a 2 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.003.00",
-      "ncm": "18063220",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3.0 17.003.00 1806.32.20 a 2 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.003.00",
-      "ncm": "18063220",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3.0 17.003.00 1806.32.20 ou embalagens imediatas de conteúdo inferior ou igual a 2 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.003.00",
-      "ncm": "18063220",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3 17.003.00 1806.32.20 embalagens imediatas de conteúdo inferior ou igual a 2 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.003.01",
-      "ncm": "18063220",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3.1 17.003.01 1806.32.20 embalagens imediatas de conteúdo inferior ou igual a 2 kg",
-      "mva_original": null
-    },
-    {
       "cest": "17.003.01",
       "ncm": "18063220",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
@@ -2349,21 +2006,7 @@
       "cest": "17.004.00",
       "ncm": "18069000",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "4.0 17.004.00 1806.90.00 17.007.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.004.00",
-      "ncm": "18069000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "4.0 17.004.00 1806.90.00 17.007.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.004.00",
-      "ncm": "18069000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "4 17.004.00 1806.90.00 achocolatados em pó e ovos de páscoa de chocolate",
+      "descricao": "4 17.004.00 1806.90.00 classificados nos CEST 17.005.01, 17.006.00, 17.006.02 e 17.007.00",
       "mva_original": null
     },
     {
@@ -2371,20 +2014,6 @@
       "ncm": "18069000",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "4.1 17.004.01 1806.90.00 e 17.007.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.004.01",
-      "ncm": "18069000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "4.1 17.004.01 1806.90.00 e 17.007.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.005.00",
-      "ncm": "17049010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "5.0 17.005.00 1704.90.10 Ovos de páscoa de chocolate branco",
       "mva_original": null
     },
     {
@@ -2559,7 +2188,7 @@
       "cest": "17.025.00",
       "ncm": "04051000",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "25.0 17.025.00 0405.10.00 g",
+      "descricao": "24 17.025.00 0405.10.00 as embalagens individuais de conteúdo inferior ou igual a 10 g",
       "mva_original": null
     },
     {
@@ -2629,21 +2258,7 @@
       "cest": "17.031.00",
       "ncm": "19059090",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "31.0 17.031.00 1905.90.90 17.031.02",
-      "mva_original": null
-    },
-    {
-      "cest": "17.031.00",
-      "ncm": "19059090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "31.0 17.031.00 1905.90.90 Salgadinhos diversos, exceto os classificados no CEST 17.031.01",
-      "mva_original": null
-    },
-    {
-      "cest": "17.031.00",
-      "ncm": "19059090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "31.0 17.031.00 1905.90.90 Salgadinhos diversos",
       "mva_original": null
     },
     {
@@ -2958,7 +2573,7 @@
       "cest": "17.046.04",
       "ncm": "19019090",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "46.4 17.046.04 1901.90.90 Kg",
+      "descricao": "17 17.046.04 1901.90.90 Misturas e preparações para bolos, em embalagem superior a 50 Kg",
       "mva_original": null
     },
     {
@@ -3039,13 +2654,6 @@
       "mva_original": null
     },
     {
-      "cest": "17.046.15",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "46.15 17.046.15 1901.90.90 exceto os previstos nos CEST 17.046.00 a 17.046.14 e 17.109.00",
-      "mva_original": null
-    },
-    {
       "cest": "17.046.10",
       "ncm": "19012000",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
@@ -3057,13 +2665,6 @@
       "ncm": "19019090",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "46.16 17.046.16 1901.90.90 17.046.15.",
-      "mva_original": null
-    },
-    {
-      "cest": "17.047.00",
-      "ncm": "19023000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "47.0 17.047.00 1902.30.00 17047.01.",
       "mva_original": null
     },
     {
@@ -3105,21 +2706,21 @@
       "cest": "17.049.03",
       "ncm": "19021900",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "49.3 17.049.03 1902.19.00 ovos, derivadas de farinha de trigo",
+      "descricao": "7 17.049.03 1902.19.00 de farinha de trigo, exceto as descritas no CEST17.049.08",
       "mva_original": null
     },
     {
       "cest": "17.049.04",
       "ncm": "19021900",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "49.4 17.049.04 1902.19.00 ovos, derivadas do trigo",
+      "descricao": "8 17.049.04 1902.19.00 de farinha de trigo, exceto as descritas no CEST 17.049.09",
       "mva_original": null
     },
     {
       "cest": "17.049.05",
       "ncm": "19021900",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "49.5 17.049.05 1902.19.00 ovos",
+      "descricao": "9 17.049.05 1902.19.00 recheadas, nem preparadas de outro modo, que não contenham ovos",
       "mva_original": null
     },
     {
@@ -3134,41 +2735,6 @@
       "ncm": "19021100",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "49.7 17.049.07 1902.11.00 trigo",
-      "mva_original": null
-    },
-    {
-      "cest": "17.049.03",
-      "ncm": "19021900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "49.3 17.049.03 1902.19.00 CEST17.049.08",
-      "mva_original": null
-    },
-    {
-      "cest": "17.049.04",
-      "ncm": "19021900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "49.4 17.049.04 1902.19.00 17.049.09",
-      "mva_original": null
-    },
-    {
-      "cest": "17.049.03",
-      "ncm": "19021900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "49.3 17.049.03 1902.19.00 nem preparadas de outro modo, que não contenham ovos",
-      "mva_original": null
-    },
-    {
-      "cest": "17.049.04",
-      "ncm": "19021900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "49.4 17.049.04 1902.19.00 nem preparadas de outro modo, que não contenham ovos",
-      "mva_original": null
-    },
-    {
-      "cest": "17.049.05",
-      "ncm": "19021900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "49.5 17.049.05 1902.19.00 ovos",
       "mva_original": null
     },
     {
@@ -3441,7 +3007,7 @@
       "cest": "17.079.05",
       "ncm": "16024900",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "79.5 17.079.05 1602.49.00 descritos no CEST 17.079.07",
+      "descricao": "9 17.079.05 1602.49.00 sangue, da espécie suína: outras, incluindo as misturas",
       "mva_original": null
     },
     {
@@ -3483,7 +3049,7 @@
       "cest": "17.093.00",
       "ncm": "20060000",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "93.0 17.093.00 2006.00.00 kg",
+      "descricao": "22 17.093.00 2006.00.00 cristalizados), em embalagens de conteúdo inferior ou igual a 1 kg",
       "mva_original": null
     },
     {
@@ -3637,7 +3203,7 @@
       "cest": "17.110.00",
       "ncm": "22021000",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "110.0 17.110.00 2202.10.00 mate",
+      "descricao": "19 17.110.00 2202.10.00 Refrescos e outras bebidas prontas para beber à base de chá e mate",
       "mva_original": null
     },
     {
@@ -3652,13 +3218,6 @@
       "ncm": "22029900",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "112.0 17.112.00 2202.99.00 beber, exceto bebidas hidroeletrolíticas e energéticos",
-      "mva_original": null
-    },
-    {
-      "cest": "17.112.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "112.0 17.112.00 2202.99.00 beber, exceto isotônicos e energéticos",
       "mva_original": null
     },
     {
@@ -3680,13 +3239,6 @@
       "ncm": "22029900",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "115.0 17.115.00 2202.99.00 os produtos denominados bebidas lácteas",
-      "mva_original": null
-    },
-    {
-      "cest": "17.117.00",
-      "ncm": "18062000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "117.0 17.117.00 1806.20.00 superior a 2kg",
       "mva_original": null
     },
     {
@@ -4121,13 +3673,6 @@
       "ncm": "33079000",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "33.0 20.033.00 3307.90.00 Soluções para lentes de contato ou para olhos artificiais",
-      "mva_original": null
-    },
-    {
-      "cest": "20.034.00",
-      "ncm": "34011190",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "34.0 20.034.00 3401.11.90 CEST 20.034.01",
       "mva_original": null
     },
     {
@@ -4680,13 +4225,6 @@
       "cest": "21.063.00",
       "ncm": "85235200",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "63.0 21.063.00 8523.52.00 CEST 21.064.00",
-      "mva_original": null
-    },
-    {
-      "cest": "21.063.00",
-      "ncm": "85235200",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "63.0 21.063.00 8523.52.00 Cartões inteligentes (\"smartcards\")",
       "mva_original": null
     },
@@ -4779,13 +4317,6 @@
       "ncm": "85176262",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "84.0 21.084.00 8517.62.62 Aparelhos emissores com receptor incorporado de tecnologia celular",
-      "mva_original": null
-    },
-    {
-      "cest": "21.084.00",
-      "ncm": "85176262",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "84.0 21.084.00 8517.62.62 troncalizado (“trunking”), de tecnologia celular",
       "mva_original": null
     },
     {
@@ -4989,13 +4520,6 @@
       "ncm": "32061110",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "2.0 24.002.00 3206 no código NCM 3206.11.10",
-      "mva_original": null
-    },
-    {
-      "cest": "24.002.00",
-      "ncm": "32061119",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2.0 24.002.00 3206 no código 3206.11.19",
       "mva_original": null
     },
     {
@@ -5345,13 +4869,6 @@
       "cest": "28.016.00",
       "ncm": "33072010",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "16.0 28.016.00 3307.20.10 classificados no CEST 28.016.01",
-      "mva_original": null
-    },
-    {
-      "cest": "28.016.00",
-      "ncm": "33072010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "16.0 28.016.00 3307.20.10 Desodorantes corporais e antiperspirantes, líquidos",
       "mva_original": null
     },
@@ -5367,13 +4884,6 @@
       "ncm": "33072010",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "16.2 28.016.02 3307.20.10 Antiperspirantes líquidos",
-      "mva_original": null
-    },
-    {
-      "cest": "28.017.00",
-      "ncm": "33072090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "17.0 28.017.00 3307.20.90 classificados no CEST 28.017.01",
       "mva_original": null
     },
     {
@@ -5409,13 +4919,6 @@
       "ncm": "33079000",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "19.0 28.019.00 3307.90.00 Outras preparações cosméticas",
-      "mva_original": null
-    },
-    {
-      "cest": "28.020.00",
-      "ncm": "34011190",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "20.0 28.020.00 3401.11.90 exceto CEST 28.020.01",
       "mva_original": null
     },
     {
@@ -5692,1760 +5195,10 @@
       "mva_original": null
     },
     {
-      "cest": "03.001.00",
-      "ncm": "22011000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1.0 03.001.00 2201.10.00 REVOGADO",
-      "mva_original": null
-    },
-    {
-      "cest": "03.002.00",
-      "ncm": "22011000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2.0 03.002.00 2201.10.00 REVOGADO",
-      "mva_original": null
-    },
-    {
-      "cest": "03.001.00",
-      "ncm": "22011000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1.0 03.001.00 2201.10.00 vidro, retornável ou não, com capacidade de até 500 ml",
-      "mva_original": null
-    },
-    {
-      "cest": "03.002.00",
-      "ncm": "22011000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2.0 03.002.00 2201.10.00 no CEST 03.024.00 e 03.025.00",
-      "mva_original": null
-    },
-    {
-      "cest": "03.003.00",
-      "ncm": "22011000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3.0 03.003.00 2201.10.00 vidro descartável",
-      "mva_original": null
-    },
-    {
-      "cest": "03.003.00",
-      "ncm": "22011000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3.0 03.003.00 2201.10.00 vidro, não retornável, com capacidade de até 300 ml",
-      "mva_original": null
-    },
-    {
-      "cest": "03.004.00",
-      "ncm": "22011000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "4.0 03.004.00 2201.10.00 REVOGADO",
-      "mva_original": null
-    },
-    {
-      "cest": "03.004.00",
-      "ncm": "22011000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "4.0 03.004.00 2201.10.00 de 1.500 ml",
-      "mva_original": null
-    },
-    {
-      "cest": "03.005.00",
-      "ncm": "22011000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "5.0 03.005.00 2201.10.00 descartável",
-      "mva_original": null
-    },
-    {
-      "cest": "03.005.00",
-      "ncm": "22011000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "5.0 03.005.00 2201.10.00 e embalagem plástica com capacidade de até 500 ml",
-      "mva_original": null
-    },
-    {
-      "cest": "03.006.00",
-      "ncm": "22011000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "6.0 03.006.00 2201.10.00 03.025.00",
-      "mva_original": null
-    },
-    {
-      "cest": "03.007.00",
-      "ncm": "22021000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "7.0 03.007.00 2202.10.00 Água aromatizada artificialmente, exceto os refrescos e refrigerantes",
-      "mva_original": null
-    },
-    {
-      "cest": "03.007.00",
-      "ncm": "22021000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "7.0 03.007.00 2202.10.00 refrigerantes",
-      "mva_original": null
-    },
-    {
-      "cest": "03.008.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "8.0 03.008.00 2202.99.00 refrescos e refrigerantes",
-      "mva_original": null
-    },
-    {
-      "cest": "03.008.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "8.0 03.008.00 2202.99.00 inclusive gaseificadas ou aromatizadas artificialmente",
-      "mva_original": null
-    },
-    {
-      "cest": "03.010.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "10.0 03.010.00 2202.99.00 Refrigerante em vidro descartável",
-      "mva_original": null
-    },
-    {
       "cest": "03.010.00",
       "ncm": "22021000",
       "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "2202.10.00 Demais refrigerantes, exceto os classificados no CEST 03.010.00,",
-      "mva_original": null
-    },
-    {
-      "cest": "03.011.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "11.0 03.011.00 2202.99.00 03.010.01, 03.010.02 e 03.011.01",
-      "mva_original": null
-    },
-    {
-      "cest": "03.010.00",
-      "ncm": "22021000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2202.10.00 Demais refrigerantes, exceto os classificados no CEST 03.010.00,",
-      "mva_original": null
-    },
-    {
-      "cest": "03.011.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "11.0 03.011.00 2202.99.00 03.010.01, 03.010.02, 03.010.03 e 03.011.01",
-      "mva_original": null
-    },
-    {
-      "cest": "03.012.00",
-      "ncm": "21069010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "11.0 03.012.00 2106.90.10 em máquina “pré-mix” ou “post-mix”",
-      "mva_original": null
-    },
-    {
-      "cest": "03.013.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "12.0 03.013.00 2202.99.00 Bebidas energéticas em lata",
-      "mva_original": null
-    },
-    {
-      "cest": "03.013.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "12.0 03.013.00 2202.99.00 Bebidas energéticas em embalagem com capacidade inferior a 600ml",
-      "mva_original": null
-    },
-    {
-      "cest": "03.014.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "15.0 03.014.00 2202.99.00 REVOGADO",
-      "mva_original": null
-    },
-    {
-      "cest": "03.014.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "15.0 03.014.00 2202.99.00 superior a 600ml",
-      "mva_original": null
-    },
-    {
-      "cest": "03.015.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "16.0 03.015.00 2202.99.00 Bebidas hidroeletrolíticas",
-      "mva_original": null
-    },
-    {
-      "cest": "03.015.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "16.0 03.015.00 2202.99.00 600ml",
-      "mva_original": null
-    },
-    {
-      "cest": "03.015.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "16 03.015.00 2202.99.00 capacidade inferior a 600ml",
-      "mva_original": null
-    },
-    {
-      "cest": "03.016.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "17.0 03.016.00 2202.99.00 REVOGADO",
-      "mva_original": null
-    },
-    {
-      "cest": "03.016.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "17.0 03.016.00 2202.99.00 superior a 600ml",
-      "mva_original": null
-    },
-    {
-      "cest": "03.016.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "17 03.016.00 2202.99.00 capacidade igual ou superior a 600ml",
-      "mva_original": null
-    },
-    {
-      "cest": "03.022.00",
-      "ncm": "22029100",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "18 03.022.00 2202.91.00 Cerveja sem álcool em garrafa de vidro retornável",
-      "mva_original": null
-    },
-    {
-      "cest": "03.022.00",
-      "ncm": "22029100",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "18 03.022.00 2202.91.00 Cerveja sem álcool",
-      "mva_original": null
-    },
-    {
-      "cest": "17.110.00",
-      "ncm": "22021000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "19 17.110.00 2202.10.00 Refrescos e outras bebidas prontas para beber à base de chá e mate",
-      "mva_original": null
-    },
-    {
-      "cest": "17.111.00",
-      "ncm": "22021000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "20 17.111.00 2202.10.00 as demais bebidas nos CEST 03.007.00 e 17.110.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.112.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "21.0 17.112.00 2202.99.00 beber, exceto bebidas hidroeletrolíticas e energéticos",
-      "mva_original": null
-    },
-    {
-      "cest": "17.112.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "21 17.112.00 2202.99.00 beber, exceto isotônicos e energéticos",
-      "mva_original": null
-    },
-    {
-      "cest": "17.113.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "22 17.113.00 2202.99.00 Bebidas prontas à base de mate ou chá",
-      "mva_original": null
-    },
-    {
-      "cest": "17.114.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "23 17.114.00 2202.99.00 Bebidas prontas à base de café",
-      "mva_original": null
-    },
-    {
-      "cest": "17.115.00",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "25 17.115.00 2202.99.00 os produtos denominados bebidas lácteas",
-      "mva_original": null
-    },
-    {
-      "cest": "03.024.00",
-      "ncm": "22011000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "26 03.024.00 2201.10.00 superior a 10 (dez) e inferior a 20 (vinte) litros",
-      "mva_original": null
-    },
-    {
-      "cest": "03.025.00",
-      "ncm": "22011000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "27 03.025.00 2201.10.00 superior a 20 (vinte) litros",
-      "mva_original": null
-    },
-    {
-      "cest": "03.003.01",
-      "ncm": "22011000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "28 03.003.01 2201.10.00 sais, em embalagem de vidro descartável",
-      "mva_original": null
-    },
-    {
-      "cest": "03.005.01",
-      "ncm": "22011000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "29 03.005.01 2201.10.00 sais, em copo plástico descartável",
-      "mva_original": null
-    },
-    {
-      "cest": "03.005.02",
-      "ncm": "22011000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "30 03.005.02 2201.10.00 descartável",
-      "mva_original": null
-    },
-    {
-      "cest": "03.005.03",
-      "ncm": "22011000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "31 03.005.03 2201.10.00 sais, em jarra descartável",
-      "mva_original": null
-    },
-    {
-      "cest": "03.005.04",
-      "ncm": "22011000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "32 03.005.04 2201.10.00 embalagens descartáveis",
-      "mva_original": null
-    },
-    {
-      "cest": "03.005.05",
-      "ncm": "22011000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "33 03.005.05 2201.10.00 sais, em demais embalagens descartáveis",
-      "mva_original": null
-    },
-    {
-      "cest": "03.010.01",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "34 03.010.01 2202.99.00 Refrigerante em embalagem pet",
-      "mva_original": null
-    },
-    {
-      "cest": "03.010.02",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "35 03.010.02 2202.99.00 Refrigerante em lata",
-      "mva_original": null
-    },
-    {
-      "cest": "03.010.03",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "36 03.010.03 2202.99.00 REVOGADO",
-      "mva_original": null
-    },
-    {
-      "cest": "03.010.03",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "36 03.010.03 2202.99.00 Cápsula de refrigerante",
-      "mva_original": null
-    },
-    {
-      "cest": "03.013.01",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "37 03.013.01 2202.99.00 Bebidas energéticas em embalagem PET",
-      "mva_original": null
-    },
-    {
-      "cest": "03.013.02",
-      "ncm": "22029900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "38 03.013.02 2202.99.00 Bebidas energéticas em vidro",
-      "mva_original": null
-    },
-    {
-      "cest": "03.022.01",
-      "ncm": "22029100",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "39 03.022.01 2202.91.00 Cerveja sem álcool em garrafa de vidro descartável",
-      "mva_original": null
-    },
-    {
-      "cest": "03.022.02",
-      "ncm": "22029100",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "40 03.022.02 2202.91.00 Cerveja sem álcool em garrafa de alumínio",
-      "mva_original": null
-    },
-    {
-      "cest": "03.022.03",
-      "ncm": "22029100",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "41 03.022.03 2202.91.00 Cerveja sem álcool em lata",
-      "mva_original": null
-    },
-    {
-      "cest": "03.022.04",
-      "ncm": "22029100",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "42 03.022.04 2202.91.00 Cerveja sem álcool em barril",
-      "mva_original": null
-    },
-    {
-      "cest": "03.022.05",
-      "ncm": "22029100",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "43 03.022.05 2202.91.00 Cerveja sem álcool em embalagem PET",
-      "mva_original": null
-    },
-    {
-      "cest": "03.022.06",
-      "ncm": "22029100",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "44 03.022.06 2202.91.00 Cerveja sem álcool em outras embalagens",
-      "mva_original": null
-    },
-    {
-      "cest": "17.047.00",
-      "ncm": "19023000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1 17.047.00 1902.30.00 17047.01.",
-      "mva_original": null
-    },
-    {
-      "cest": "17.047.00",
-      "ncm": "19023000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1 17.047.00 1902.30.00 Massas alimentícias tipo instantânea",
-      "mva_original": null
-    },
-    {
-      "cest": "17.047.01",
-      "ncm": "19023000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1.1 17.047.01 1902.30.00 Massas alimentícias tipo instantânea, derivadas de farinha de trigo.",
-      "mva_original": null
-    },
-    {
-      "cest": "17.048.02",
-      "ncm": "19022000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3 17.048.02 1902.20.00 outro modo)",
-      "mva_original": null
-    },
-    {
-      "cest": "17.049.02",
-      "ncm": "19021100",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "6 17.049.02 1902.11.00 nem preparadas de outro modo, que contenham ovos",
-      "mva_original": null
-    },
-    {
-      "cest": "17.049.03",
-      "ncm": "19021900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "7 17.049.03 1902.19.00 ovos, derivadas de farinha de trigo",
-      "mva_original": null
-    },
-    {
-      "cest": "17.049.03",
-      "ncm": "19021900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "7 17.049.03 1902.19.00 de farinha de trigo, exceto as descritas no CEST17.049.08",
-      "mva_original": null
-    },
-    {
-      "cest": "17.049.03",
-      "ncm": "19021900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "7 17.049.03 1902.19.00 nem preparadas de outro modo, que não contenham ovos",
-      "mva_original": null
-    },
-    {
-      "cest": "17.049.04",
-      "ncm": "19021900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "8 17.049.04 1902.19.00 ovos, derivadas do trigo",
-      "mva_original": null
-    },
-    {
-      "cest": "17.049.04",
-      "ncm": "19021900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "8 17.049.04 1902.19.00 de farinha de trigo, exceto as descritas no CEST 17.049.09",
-      "mva_original": null
-    },
-    {
-      "cest": "17.049.04",
-      "ncm": "19021900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "8 17.049.04 1902.19.00 nem preparadas de outro modo, que não contenham ovos",
-      "mva_original": null
-    },
-    {
-      "cest": "17.049.05",
-      "ncm": "19021900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "9 17.049.05 1902.19.00 recheadas, nem preparadas de outro modo, que não contenham ovos",
-      "mva_original": null
-    },
-    {
-      "cest": "17.049.05",
-      "ncm": "19021900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "9 17.049.05 1902.19.00 nem preparadas de outro modo, que não contenham ovos",
-      "mva_original": null
-    },
-    {
-      "cest": "17.049.06",
-      "ncm": "19021100",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "10 17.049.06 1902.11.00 farinha de trigo",
-      "mva_original": null
-    },
-    {
-      "cest": "17.049.07",
-      "ncm": "19021100",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "11 17.049.07 1902.11.00 trigo",
-      "mva_original": null
-    },
-    {
-      "cest": "17.049.08",
-      "ncm": "19021900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "12 17.049.08 1902.19.00 REVOGADO",
-      "mva_original": null
-    },
-    {
-      "cest": "17.049.09",
-      "ncm": "19021900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "13 17.049.09 1902.19.00 REVOGADO",
-      "mva_original": null
-    },
-    {
-      "cest": "17.049.08",
-      "ncm": "19021900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "12 17.049.08 1902.19.00 de farinha de trigo",
-      "mva_original": null
-    },
-    {
-      "cest": "17.049.09",
-      "ncm": "19021900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "13 17.049.09 1902.19.00 de farinha de trigo",
-      "mva_original": null
-    },
-    {
-      "cest": "17.014.00",
-      "ncm": "19011010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2 17.014.00 1901.10.10 Leite modificado para alimentação de crianças",
-      "mva_original": null
-    },
-    {
-      "cest": "17.016.00",
-      "ncm": "04012010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3 17.016.00 0401.20.10 conteúdo inferior ou igual a 2 litros",
-      "mva_original": null
-    },
-    {
-      "cest": "17.016.01",
-      "ncm": "04012010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "4 17.016.01 0401.20.10 conteúdo superior a 2 litros e inferior ou igual a 5 litros",
-      "mva_original": null
-    },
-    {
-      "cest": "17.017.00",
-      "ncm": "04015010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "5 17.017.00 0401.50.10 Leite em recipiente de conteúdo inferior ou igual a 1 litro",
-      "mva_original": null
-    },
-    {
-      "cest": "17.017.01",
-      "ncm": "04015010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "6 17.017.01 0401.50.10 5 litros",
-      "mva_original": null
-    },
-    {
-      "cest": "17.018.00",
-      "ncm": "04012090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "7 17.018.00 0401.20.90 a 1 litro",
-      "mva_original": null
-    },
-    {
-      "cest": "17.018.01",
-      "ncm": "04012090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "8 17.018.01 0401.20.90 e inferior ou igual a 5 litros",
-      "mva_original": null
-    },
-    {
-      "cest": "17.019.02",
-      "ncm": "04022920",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "11 17.019.02 0402.29.20 1kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.019.03",
-      "ncm": "04022920",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "11.1 17.019.03 0402.29.20 Outros cremes de leite, em recipiente de conteúdo superior a 1kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.022.00",
-      "ncm": "04039000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "16 17.022.00 0403.90.00 Coalhada",
-      "mva_original": null
-    },
-    {
-      "cest": "17.024.01",
-      "ncm": "04061010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "20 17.024.01 0406.10.10 Queijo muçarela",
-      "mva_original": null
-    },
-    {
-      "cest": "17.024.02",
-      "ncm": "04061090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "21 17.024.02 0406.10.90 Queijo minas frescal",
-      "mva_original": null
-    },
-    {
-      "cest": "17.024.03",
-      "ncm": "04061090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "22 17.024.03 0406.10.90 Queijo ricota",
-      "mva_original": null
-    },
-    {
-      "cest": "17.024.04",
-      "ncm": "04061090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "23 17.024.04 0406.10.90 Queijo petitsuisse",
-      "mva_original": null
-    },
-    {
-      "cest": "17.024.05",
-      "ncm": "04061090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "23.1 17.024.05 0406.10.90 Queijo cremoso (“cream cheese”)",
-      "mva_original": null
-    },
-    {
-      "cest": "17.025.00",
-      "ncm": "04051000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "24 17.025.00 0405.10.00 as embalagens individuais de conteúdo inferior ou igual a 10 g",
-      "mva_original": null
-    },
-    {
-      "cest": "17.025.01",
-      "ncm": "04051000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "25 17.025.01 0405.10.00 Manteiga, em embalagem de conteúdo superior a 1 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.025.02",
-      "ncm": "04059090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "26 17.025.02 0405.90.90 Manteiga de garrafa",
-      "mva_original": null
-    },
-    {
-      "cest": "17.029.00",
-      "ncm": "19019020",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "27 17.029.00 1901.90.20 Doces de leite",
-      "mva_original": null
-    },
-    {
-      "cest": "17.076.00",
-      "ncm": "16010000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1 17.076.00 1601.00.00 ou sangue; exceto salsicha, linguiça e mortadela",
-      "mva_original": null
-    },
-    {
-      "cest": "17.077.00",
-      "ncm": "16010000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2 17.077.00 1601.00.00 Salsicha e linguiça, exceto as descritas nos CEST 17.077.01",
-      "mva_original": null
-    },
-    {
-      "cest": "17.077.00",
-      "ncm": "16010000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2 17.077.00 1601.00.00 Salsicha e lingüiça",
-      "mva_original": null
-    },
-    {
-      "cest": "17.077.01",
-      "ncm": "16010000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2.1 17.077.01 1601.00.00 Salsicha em lata",
-      "mva_original": null
-    },
-    {
-      "cest": "17.078.00",
-      "ncm": "16010000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3 17.078.00 1601.00.00 Mortadela",
-      "mva_original": null
-    },
-    {
-      "cest": "17.079.01",
-      "ncm": "16023100",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "5 17.079.01 1602.31.00 sangue, de aves da posição 01.05: de peruas e de perus.",
-      "mva_original": null
-    },
-    {
-      "cest": "17.079.02",
-      "ncm": "16023210",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "6 17.079.02 1602.32.10 não cozidas",
-      "mva_original": null
-    },
-    {
-      "cest": "17.079.03",
-      "ncm": "16023220",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "7 17.079.03 1602.32.20 cozidas",
-      "mva_original": null
-    },
-    {
-      "cest": "17.079.04",
-      "ncm": "16024100",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "8 17.079.04 1602.41.00 sangue, da espécie suína: pernas e respectivos pedaços",
-      "mva_original": null
-    },
-    {
-      "cest": "17.079.05",
-      "ncm": "16024900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "9 17.079.05 1602.49.00 sangue, da espécie suína: outras, incluindo as misturas",
-      "mva_original": null
-    },
-    {
-      "cest": "17.079.06",
-      "ncm": "16025000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "10 17.079.06 1602.50.00 sangue, da espécie bovina",
-      "mva_original": null
-    },
-    {
-      "cest": "17.079.07",
-      "ncm": "16024900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "10.1 17.079.07 1602.49.00 Apresuntado",
-      "mva_original": null
-    },
-    {
-      "cest": "17.080.01",
-      "ncm": "16042010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "12 17.080.01 1604.20.10 Outras preparações e conservas de atuns",
-      "mva_original": null
-    },
-    {
-      "cest": "17.083.01",
-      "ncm": "02102000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "15.1 17.083.01 0210.20.00 Charque e jerkedbeef",
-      "mva_original": null
-    },
-    {
-      "cest": "17.086.00",
-      "ncm": "15029000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "18 17.086.00 1502.90.00 caprinos",
-      "mva_original": null
-    },
-    {
-      "cest": "17.013.00",
-      "ncm": "19011020",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1 17.013.00 1901.10.20 Farinha láctea",
-      "mva_original": null
-    },
-    {
-      "cest": "17.015.00",
-      "ncm": "19011030",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2 17.015.00 1901.10.30 sêmolas ou amidos e outros",
-      "mva_original": null
-    },
-    {
-      "cest": "17.030.00",
-      "ncm": "19049000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3 17.030.00 1904.90.00 Produtos à base de cereais, obtidos por expansão ou torrefação",
-      "mva_original": null
-    },
-    {
-      "cest": "17.031.00",
-      "ncm": "19059090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "4 17.031.00 1905.90.90 17.031.02",
-      "mva_original": null
-    },
-    {
-      "cest": "17.031.00",
-      "ncm": "19059090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "4 17.031.00 1905.90.90 Salgadinhos diversos, exceto os classificados no CEST 17.031.01",
-      "mva_original": null
-    },
-    {
-      "cest": "17.031.00",
-      "ncm": "19059090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "4 17.031.00 1905.90.90 Salgadinhos diversos",
-      "mva_original": null
-    },
-    {
-      "cest": "17.031.01",
-      "ncm": "19059090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "4.1 17.031.01 1905.90.90 Salgadinhos diversos, derivados de farinha de trigo",
-      "mva_original": null
-    },
-    {
-      "cest": "17.031.02",
-      "ncm": "19059090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "4.2 17.031.02 1905.90.90 Biscoitos de polvilho",
-      "mva_original": null
-    },
-    {
-      "cest": "17.042.00",
-      "ncm": "19049000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "5 17.042.00 1904.90.00 Barra de cereais",
-      "mva_original": null
-    },
-    {
-      "cest": "17.043.00",
-      "ncm": "18069000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "6 17.043.00 1806.90.00 Barra de cereais contendo cacau",
-      "mva_original": null
-    },
-    {
-      "cest": "17.048.01",
-      "ncm": "19024000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "7 17.048.01 1902.40.00 Cuscuz",
-      "mva_original": null
-    },
-    {
-      "cest": "17.001.00",
-      "ncm": "17049010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1 17.001.00 1704.90.10 kg, exceto os classificados no CEST 17.005.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.001.00",
-      "ncm": "17049010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1 17.001.00 1704.90.10 kg, exceto os classificados nos CEST 17.005.00 e 17.008.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.001.00",
-      "ncm": "17049010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1 17.001.00 1704.90.10 kg, exceto os classificados nos CEST 17.005.00 e 17.008.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.001.00",
-      "ncm": "17049010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1 17.001.00 1704.90.10 kg, exceto os classificados nos CEST 17.005.00 e 17.008.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.005.00",
-      "ncm": "17049010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1704.90.10 inferior ou igual a 1 kg, exceto os classificados nos CEST 17.005.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.001.00",
-      "ncm": "17049090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1 17.001.00 1704.90.90 e 17.008.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.001.00",
-      "ncm": "17049010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1 17.001.00 1704.90.10 kg, excluídos os ovos de páscoa de chocolate",
-      "mva_original": null
-    },
-    {
-      "cest": "17.001.01",
-      "ncm": "17049010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1.1 17.001.01 1704.90.10 inferior ou igual a 2 kg, exceto os classificados no CEST 17.005.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.001.01",
-      "ncm": "17049090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1.1 17.001.01 1704.90.90 CEST 17.005.00 e 17.008.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.001.01",
-      "ncm": "17049090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1.1 17.001.01 1704.90.90 CEST 17.005.00 e 17.008.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.001.01",
-      "ncm": "17049010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1.1 17.001.01 1704.90.10 e 17.008.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.001.01",
-      "ncm": "17049090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1.1 17.001.01 1704.90.90 CEST 17.005.00 e 17.008.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.001.02",
-      "ncm": "17049090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1.2 17.001.02 1704.90.90 kg, exceto os classificados no CEST 17.008.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.001.02",
-      "ncm": "17049090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1.2 17.001.02 1704.90.90 kg, exceto os classificados nos CEST 17.005.00 e 17.008.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.001.03",
-      "ncm": "17049090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1.3 17.001.03 1704.90.90 inferior ou igual a 2 kg, exceto os classificados no CEST 17.008.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.005.00",
-      "ncm": "17049010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1704.90.10 inferior ou igual a 2 kg, exceto os classificados nos CEST 17.005.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.001.03",
-      "ncm": "17049090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1.3 17.001.03 1704.90.90 e 17.008.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.002.00",
-      "ncm": "18063110",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2 17.002.00 1806.31.10 ou embalagens imediatas de conteúdo inferior ou igual a 1 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.002.00",
-      "ncm": "18063120",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2 17.002.00 1806.31.20 embalagens imediatas de conteúdo inferior ou igual a 1 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.002.00",
-      "ncm": "18063120",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2 17.002.00 1806.31.20 embalagens imediatas de conteúdo inferior ou igual a 1 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.002.00",
-      "ncm": "18063120",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2 17.002.00 1806.31.20 ou embalagens imediatas de conteúdo inferior ou igual a 1 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.002.00",
-      "ncm": "18063120",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2 17.002.00 1806.31.20 embalagens imediatas de conteúdo inferior ou igual a 1 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.002.00",
-      "ncm": "18063120",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2 17.002.00 1806.31.20 igual a 1 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.002.01",
-      "ncm": "18063110",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2.1 17.002.01 1806.31.10 ou embalagens de conteúdo superior a 1 kg e inferior ou igual a 2 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.002.01",
-      "ncm": "18063120",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2.1 17.002.01 1806.31.20 a 2 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.002.01",
-      "ncm": "18063120",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2.1 17.002.01 1806.31.20 a 2 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.002.01",
-      "ncm": "18063120",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2.1 17.002.01 1806.31.20 ou embalagens de conteúdo superior a 1 kg e inferior ou igual a 2 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.002.01",
-      "ncm": "18063120",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2.1 17.002.01 1806.31.20 a 2 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.002.02",
-      "ncm": "18063120",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2.2 17.002.02 1806.31.20 de conteúdo inferior ou igual a 1 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.002.02",
-      "ncm": "18063120",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2.2 17.002.02 1806.31.20 de conteúdo inferior ou igual a 1 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.002.03",
-      "ncm": "18063120",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2.3 17.002.03 1806.31.20 conteúdo superior a 1 kg e inferior ou igual a 2 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.002.03",
-      "ncm": "18063120",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2.3 17.002.03 1806.31.20 conteúdo superior a 1 kg e inferior ou igual a 2 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.003.00",
-      "ncm": "18063210",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3 17.003.00 1806.32.10 2 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.003.00",
-      "ncm": "18063220",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3 17.003.00 1806.32.20 ou embalagens imediatas de conteúdo inferior ou igual a 2 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.003.00",
-      "ncm": "18063220",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3 17.003.00 1806.32.20 ou embalagens imediatas de conteúdo inferior ou igual a 2 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.003.00",
-      "ncm": "18063220",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3 17.003.00 1806.32.20 2 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.003.00",
-      "ncm": "18063220",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3 17.003.00 1806.32.20 ou embalagens imediatas de conteúdo inferior ou igual a 2 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.003.00",
-      "ncm": "18063220",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3 17.003.00 1806.32.20 embalagens imediatas de conteúdo inferior ou igual a 2 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.003.01",
-      "ncm": "18063220",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3.1 17.003.01 1806.32.20 imediatas de conteúdo inferior ou igual a 2 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.003.01",
-      "ncm": "18063220",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3.1 17.003.01 1806.32.20 imediatas de conteúdo inferior ou igual a 2 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.004.00",
-      "ncm": "18069000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "4 17.004.00 1806.90.00 17.007.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.004.00",
-      "ncm": "18069000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "4 17.004.00 1806.90.00 classificados nos CEST 17.005.01, 17.006.00, 17.006.02 e 17.007.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.004.00",
-      "ncm": "18069000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "4 17.004.00 1806.90.00 achocolatados em pó e ovos de páscoa de chocolate",
-      "mva_original": null
-    },
-    {
-      "cest": "17.004.01",
-      "ncm": "18069000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "4.1 17.004.01 1806.90.00 e 17.007.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.004.01",
-      "ncm": "18069000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "4.1 17.004.01 1806.90.00 17.007.00",
-      "mva_original": null
-    },
-    {
-      "cest": "17.005.00",
-      "ncm": "17049010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "5 17.005.00 1704.90.10 Ovos de páscoa de chocolate branco",
-      "mva_original": null
-    },
-    {
-      "cest": "17.005.01",
-      "ncm": "18069000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "6 17.005.01 1806.90.00 Ovos de páscoa de chocolate",
-      "mva_original": null
-    },
-    {
-      "cest": "17.006.00",
-      "ncm": "18069000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "7 17.006.00 1806.90.00 a 1 kg, exceto os classificados no CEST 17.006.02",
-      "mva_original": null
-    },
-    {
-      "cest": "17.006.01",
-      "ncm": "18061000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "8 17.006.01 1806.10.00 embalagens de conteúdo inferior ou igual a 1 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.006.02",
-      "ncm": "18069000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "9 17.006.02 1806.90.00 Achocolatados em pó, em cápsulas",
-      "mva_original": null
-    },
-    {
-      "cest": "17.007.00",
-      "ncm": "18069000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "10 17.007.00 1806.90.00 inferior ou igual a 1 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.008.00",
-      "ncm": "17049090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "11 17.008.00 1704.90.90 Bombons, inclusive à base de chocolate branco sem cacau",
-      "mva_original": null
-    },
-    {
-      "cest": "17.009.00",
-      "ncm": "18069000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "12 17.009.00 1806.90.00 confeitaria, contendo cacau",
-      "mva_original": null
-    },
-    {
-      "cest": "17.117.00",
-      "ncm": "18062000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "13 17.117.00 1806.20.00 superior a 2kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.117.00",
-      "ncm": "18062000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "13 17.117.00 1806.20.00 superior a 2kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.00",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1 17.046.00 1901.90.90 Misturas e preparações para bolos, em embalagem inferior a 5 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.01",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2 17.046.01 1901.90.90 Misturas e preparações para bolos, em embalagem igual a 5 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.02",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3 17.046.02 1901.90.90 inferior ou igual a 25 Kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.03",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "4 17.046.03 1901.90.90 e inferior ou igual a 50 Kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.04",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "5 17.046.04 1901.90.90 Misturas e preparações para bolos, em embalagem superior a 50 Kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.05",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "6 17.046.05 1901.90.90 trigo na sua composição final, em embalagem inferior a 5 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.06",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "7 17.046.06 1901.90.90 trigo na sua composição final, em embalagem igual a 5 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.07",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "8 17.046.07 1901.90.90 inferior ou igual a 25 Kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.08",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "9 17.046.08 1901.90.90 inferior ou igual a 50 Kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.09",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "10 17.046.09 1901.90.90 trigo na sua composição final, em embalagem superior a 50 Kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.10",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "11 17.046.10 1901.90.90 de trigo na sua composição final, em embalagem inferior a 5 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.11",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "12 17.046.11 1901.90.90 de trigo na sua composição final, em embalagem igual a 5 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.12",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "13 17.046.12 1901.90.90 inferior ou igual a 25 Kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.13",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "14 17.046.13 1901.90.90 inferior ou igual a 50 Kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.14",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "15 17.046.14 1901.90.90 de trigo na sua composição final, em embalagem superior a 50 Kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.03",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "16 17.046.03 1901.90.90 REVOGADO",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.04",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "17 17.046.04 1901.90.90",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.05",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "18 17.046.05 1901.90.90",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.06",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "19 17.046.06 1901.90.90",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.07",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "20 17.046.07 1901.90.90",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.08",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "21 17.046.08 1901.90.90",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.09",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "22 17.046.09 1901.90.90",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.10",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "23 17.046.10 1901.90.90",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.11",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "24 17.046.11 1901.90.90",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.12",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "25 17.046.12 1901.90.90",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.13",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "26 17.046.13 1901.90.90",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.14",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "27 17.046.14 1901.90.90",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.03",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "16 17.046.03 1901.90.90 e inferior ou igual a 50 Kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.04",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "17 17.046.04 1901.90.90 Misturas e preparações para bolos, em embalagem superior a 50 Kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.05",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "18 17.046.05 1901.90.90 trigo na sua composição final, em embalagem inferior a 5 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.06",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "19 17.046.06 1901.90.90 trigo na sua composição final, em embalagem igual a 5 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.07",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "20 17.046.07 1901.90.90 inferior ou igual a 25 Kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.08",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "21 17.046.08 1901.90.90 inferior ou igual a 50 Kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.09",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "22 17.046.09 1901.90.90 trigo na sua composição final, em embalagem superior a 50 Kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.10",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "23 17.046.10 1901.90.90 de trigo na sua composição final, em embalagem inferior a 5 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.11",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "24 17.046.11 1901.90.90 de trigo na sua composição final, em embalagem igual a 5 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.12",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "25 17.046.12 1901.90.90 inferior ou igual a 25 Kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.13",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "26 17.046.13 1901.90.90 inferior ou igual a 50 Kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.14",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "27 17.046.14 1901.90.90 de trigo na sua composição final, em embalagem superior a 50 Kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.051.00",
-      "ncm": "19052090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "29 17.051.00 1905.20.90 Bolo de forma, inclusive de especiarias",
-      "mva_original": null
-    },
-    {
-      "cest": "17.052.00",
-      "ncm": "19052010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "30 17.052.00 1905.20.10 Panetones",
-      "mva_original": null
-    },
-    {
-      "cest": "17.053.00",
-      "ncm": "19053100",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "31 17.053.00 1905.31.00 denominação comercial)",
-      "mva_original": null
-    },
-    {
-      "cest": "17.053.01",
-      "ncm": "19053100",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "32 17.053.01 1905.31.00 17.053.02",
-      "mva_original": null
-    },
-    {
-      "cest": "17.053.02",
-      "ncm": "19053100",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "33 17.053.02 1905.31.00 cracker\" e \"água e sal\" de consumo popular",
-      "mva_original": null
-    },
-    {
-      "cest": "17.054.00",
-      "ncm": "19053100",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "34 17.054.00 1905.31.00 denominação comercial)",
-      "mva_original": null
-    },
-    {
-      "cest": "17.054.01",
-      "ncm": "19053100",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "35 17.054.01 1905.31.00 17.054.02",
-      "mva_original": null
-    },
-    {
-      "cest": "17.054.02",
-      "ncm": "19053100",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "36 17.054.02 1905.31.00 \"cream cracker\" e \"água e sal\" de consumo popular",
-      "mva_original": null
-    },
-    {
-      "cest": "17.056.00",
-      "ncm": "19059020",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "37 17.056.00 1905.90.20 cracker\" e \"água e sal\"",
-      "mva_original": null
-    },
-    {
-      "cest": "17.056.01",
-      "ncm": "19059020",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "38 17.056.01 1905.90.20 \"cream cracker\" e \"água e sal\"",
-      "mva_original": null
-    },
-    {
-      "cest": "17.056.02",
-      "ncm": "19059020",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "39 17.056.02 1905.90.20 bolachas relacionados nos CEST 17.056.00 e 17.056.01",
-      "mva_original": null
-    },
-    {
-      "cest": "17.057.00",
-      "ncm": "19053200",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "40 17.057.00 1905.32.00 “Waffles” e “wafers” - sem cobertura",
-      "mva_original": null
-    },
-    {
-      "cest": "17.058.00",
-      "ncm": "19053200",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "41 17.058.00 1905.32.00 “Waffles” e “wafers” - com cobertura",
-      "mva_original": null
-    },
-    {
-      "cest": "17.059.00",
-      "ncm": "19054000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "42 17.059.00 1905.40.00 Torradas, pão torrado e produtos semelhantes torrados",
-      "mva_original": null
-    },
-    {
-      "cest": "17.060.00",
-      "ncm": "19059010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "43 17.060.00 1905.90.10 Outros pães de forma",
-      "mva_original": null
-    },
-    {
-      "cest": "17.062.00",
-      "ncm": "19059090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "44 17.062.00 1905.90.90 Outros pães, exceto o classificado no CEST 17.062.03",
-      "mva_original": null
-    },
-    {
-      "cest": "17.062.01",
-      "ncm": "19059090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "45 17.062.01 1905.90.90 classificados nos CEST 17.062.02 e 17.062.03",
-      "mva_original": null
-    },
-    {
-      "cest": "17.062.02",
-      "ncm": "19059090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "46 17.062.02 1905.90.90 Casquinhas para sorvete",
-      "mva_original": null
-    },
-    {
-      "cest": "17.062.03",
-      "ncm": "19059090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "47 17.062.03 1905.90.90 Pão francês até 200g",
-      "mva_original": null
-    },
-    {
-      "cest": "17.063.00",
-      "ncm": "19051000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "48 17.063.00 1905.10.00 Pão denominado knackebrot",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.15",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "50 17.046.15 1901.90.90 exceto os previstos nos CEST 17.046.00 a 17.046.14 e 17.046.16.",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.15",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "50 17.046.15 1901.90.90 exceto os previstos nos CEST 17.046.00 a 17.046.14",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.10",
-      "ncm": "19012000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1901.20.00 sua composição final, exceto as descritas nos CEST 17.046.10 a",
-      "mva_original": null
-    },
-    {
-      "cest": "17.046.16",
-      "ncm": "19019090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "51 17.046.16 1901.90.90 17.046.15.",
-      "mva_original": null
-    },
-    {
-      "cest": "17.034.00",
-      "ncm": "21032010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1 17.034.00 2103.20.10 (sachês) de conteúdo inferior ou igual a 10 g",
-      "mva_original": null
-    },
-    {
-      "cest": "17.035.00",
-      "ncm": "21039091",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2 17.035.00 2103.90.91 individualizados (sachês) de conteúdo inferior ou igual a 3 g",
-      "mva_original": null
-    },
-    {
-      "cest": "17.036.00",
-      "ncm": "21031010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3 17.036.00 2103.10.10 individualizados (sachês) de conteúdo inferior ou igual a 10 g",
-      "mva_original": null
-    },
-    {
-      "cest": "17.038.00",
-      "ncm": "21033021",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "4 17.038.00 2103.30.21 individualizados (sachês) de conteúdo inferior ou igual a 10 g",
-      "mva_original": null
-    },
-    {
-      "cest": "17.039.00",
-      "ncm": "21039011",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "5 17.039.00 2103.90.11 (sachês) de conteúdo inferior ou igual a 10 g",
-      "mva_original": null
-    },
-    {
-      "cest": "17.041.00",
-      "ncm": "21032010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "6 17.041.00 2103.20.10 igual a 1 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.026.00",
-      "ncm": "15171000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3 17.026.00 1517.10.00 igual a 10 g",
-      "mva_original": null
-    },
-    {
-      "cest": "17.027.00",
-      "ncm": "15171000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "4 17.027.00 1517.10.00 conteúdo inferior ou igual a 10 g",
-      "mva_original": null
-    },
-    {
-      "cest": "17.027.01",
-      "ncm": "15171000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "5 17.027.01 1517.10.00 kg",
       "mva_original": null
     },
     {
@@ -7454,154 +5207,7 @@
       "segmento": "Convênio ICMS 142/2018 (anexos)",
       "descricao": "7 17.032.00 2005.20.00 Batata frita, inhame e mandioca fritos",
       "mva_original": null
-    },
-    {
-      "cest": "17.037.00",
-      "ncm": "21033010",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "10 17.037.00 2103.30.10 1 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.093.00",
-      "ncm": "20060000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "22 17.093.00 2006.00.00 cristalizados), em embalagens de conteúdo inferior ou igual a 1 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.093.01",
-      "ncm": "20060000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "23 17.093.01 2006.00.00 cristalizados), em embalagens de conteúdo superior a 1 kg",
-      "mva_original": null
-    },
-    {
-      "cest": "17.097.00",
-      "ncm": "21069090",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "28 17.097.00 2106.90.90 Chá, mesmo aromatizado",
-      "mva_original": null
-    },
-    {
-      "cest": "17.106.00",
-      "ncm": "20081900",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "29 17.106.00 2008.19.00 Milho para pipoca (micro-ondas)",
-      "mva_original": null
-    },
-    {
-      "cest": "10.025.00",
-      "ncm": "69010000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1 10.025.00 6901.00.00 terras siliciosas semelhantes",
-      "mva_original": null
-    },
-    {
-      "cest": "10.029.00",
-      "ncm": "69060000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "5 10.029.00 6906.00.00 cerâmica",
-      "mva_original": null
-    },
-    {
-      "cest": "11.004.00",
-      "ncm": "34025000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1 11.004.00 3402.50.00 sanitizantes",
-      "mva_original": null
-    },
-    {
-      "cest": "11.004.00",
-      "ncm": "38089419",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1 11.004.00 3808.94.19 sanitizantes.",
-      "mva_original": null
-    },
-    {
-      "cest": "11.004.00",
-      "ncm": "34022000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "1 11.004.00 3402.20.00 semelhantes",
-      "mva_original": null
-    },
-    {
-      "cest": "11.005.00",
-      "ncm": "34025000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2 11.005.00 3402.50.00 Detergentes líquidos, exceto para lavar roupa",
-      "mva_original": null
-    },
-    {
-      "cest": "11.005.00",
-      "ncm": "34022000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "2 11.005.00 3402.20.00 Detergentes líquidos, exceto para lavar roupa",
-      "mva_original": null
-    },
-    {
-      "cest": "11.006.00",
-      "ncm": "34025000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3 11.006.00 3402.50.00 propriedades desinfetantes ou sanitizantes",
-      "mva_original": null
-    },
-    {
-      "cest": "11.006.00",
-      "ncm": "34022000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3 11.006.00 3402.20.00 propriedades desinfetantes ou sanitizantes",
-      "mva_original": null
-    },
-    {
-      "cest": "11.006.00",
-      "ncm": "38089419",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3 11.006.00 3808.94.19 propriedades desinfetantes ou sanitizantes",
-      "mva_original": null
-    },
-    {
-      "cest": "11.006.00",
-      "ncm": "34022000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "3 11.006.00 3402.20.00 Detergente líquido para lavar roupa",
-      "mva_original": null
-    },
-    {
-      "cest": "03.006.00",
-      "ncm": "22011000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "6 03.006.00 2201.10.00 gaseificadas; exceto as classificadas no CEST 03.024.00 e 03.025.00",
-      "mva_original": null
-    },
-    {
-      "cest": "03.006.00",
-      "ncm": "22011000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "6 03.006.00 2201.10.00 gaseificadas",
-      "mva_original": null
-    },
-    {
-      "cest": "03.007.00",
-      "ncm": "22021000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "7 03.007.00 2202.10.00 refrigerantes",
-      "mva_original": null
-    },
-    {
-      "cest": "03.006.00",
-      "ncm": "22011000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "6 03.006.00 2201.10.00 gaseificadas; exceto as classificadas no CEST 03.024.00 e 03.025.00",
-      "mva_original": null
-    },
-    {
-      "cest": "03.007.00",
-      "ncm": "22021000",
-      "segmento": "Convênio ICMS 142/2018 (anexos)",
-      "descricao": "7 03.007.00 2202.10.00 refrigerantes",
-      "mva_original": null
     }
   ],
-  "last_updated": "2026-07-09T10:09:28+00:00"
+  "last_updated": "2026-07-09T10:46:44+00:00"
 }
