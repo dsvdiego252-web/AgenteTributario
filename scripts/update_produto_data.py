@@ -556,12 +556,15 @@ SPED_TABELAS = [
     ]),  # Tabela 4.3.13
 ]
 
-# Célula de "código da natureza da receita" isolada (ex.: "01.01"), e âncora
-# no rótulo "natureza da receita" como estratégia alternativa para quando o
-# código aparece em texto corrido em vez de uma célula própria de tabela.
-NATUREZA_CELL_RE = re.compile(r"^\d{1,2}\.\d{2}$")
+# Célula de "código da natureza da receita" isolada, e âncora no rótulo
+# "natureza da receita" como estratégia alternativa para quando o código
+# aparece em texto corrido em vez de uma célula própria de tabela. As tabelas
+# reais do SPED (extraídas do .doc via antiword) usam a coluna "Código" com
+# um número simples (ex. "100", "101"), não o formato "NN.NN" que eu tinha
+# suposto inicialmente — aceita os dois formatos.
+NATUREZA_CELL_RE = re.compile(r"^(?:\d{1,2}\.\d{2}|\d{1,4})$")
 NATUREZA_RECEITA_RE = re.compile(
-    r"natureza\s*(?:da)?\s*receita[^\d]{0,20}(\d{1,2}\.\d{2})", re.IGNORECASE
+    r"natureza\s*(?:da)?\s*receita[^\d]{0,20}(\d{1,2}(?:\.\d{2})?)", re.IGNORECASE
 )
 
 
@@ -596,17 +599,19 @@ def parse_sped_table(raw_text, regime, rows_are_html):
     """Extrai NCM + código da natureza da receita. Tenta, em ordem, algumas
     formas de dividir o texto em "linhas de tabela" (lista de células por
     linha) até achar NCM + natureza na mesma linha: tabela HTML real; texto
-    "célula | célula" (vindo de xlsx); colunas separadas por 2+ espaços ou
-    tab (texto extraído de .doc via antiword costuma preservar colunas
-    assim). Se nenhuma bater, cai para uma busca por texto corrido ancorada
-    no rótulo "natureza da receita", como rede de segurança para formatos
-    inesperados."""
+    "célula | célula" (vindo de xlsx); linhas delimitadas por "|" sem espaço
+    ao redor (é assim que o antiword renderiza tabelas do Word extraídas de
+    .doc, ex. "|100  |Descrição...|2309.90.10   |01/2011    |"); colunas
+    separadas por 2+ espaços ou tab, como variante adicional. Se nenhuma
+    bater, cai para uma busca por texto corrido ancorada no rótulo "natureza
+    da receita", como rede de segurança para formatos inesperados."""
     if rows_are_html:
         row_strategies = [extract_table_rows(raw_text)]
     else:
         lines = [line for line in raw_text.splitlines() if line.strip()]
         row_strategies = [
             [line.split(" | ") for line in lines],
+            [[c.strip() for c in line.split("|")] for line in lines if "|" in line],
             [re.split(r"\s{2,}|\t", line.strip()) for line in lines],
         ]
 
