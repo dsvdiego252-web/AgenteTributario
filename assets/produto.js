@@ -129,8 +129,40 @@
     `).join("");
 
     el.querySelectorAll(".produto-candidato").forEach((btn) => {
-      btn.addEventListener("click", () => renderResultado(btn.dataset.ncm));
+      btn.addEventListener("click", () => {
+        el.querySelectorAll(".produto-candidato").forEach((b) => b.classList.remove("selected"));
+        btn.classList.add("selected");
+        renderResultado(btn.dataset.ncm);
+        const resultado = qs("#produto-resultado");
+        if (resultado) resultado.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
     });
+  }
+
+  function summarizeBeneficio(ncm) {
+    const matches = state.beneficios.filter((b) => ncm.startsWith(b.ncm_prefixo));
+    if (!matches.length) return "Nenhum benefício mapeado nesta amostra (ver detalhes abaixo)";
+    return matches
+      .map((b) => `${b.tipo === "isencao" ? "Isenção" : "Redução de BC"} (Anexo ${escapeHtml(b.anexo)}, art. ${escapeHtml(b.artigo)}) — ver detalhes abaixo`)
+      .join("; ");
+  }
+
+  function summarizeSubstituicaoTributaria(ncm) {
+    const rows = state.cestByNcm.get(ncm);
+    if (!rows || !rows.length) return "Não localizado nesta base (ver observação abaixo)";
+    return rows
+      .map((r) => `CEST ${escapeHtml(r.cest || "—")}${r.mva_original ? ` · MVA ${escapeHtml(r.mva_original)}%` : ""}`)
+      .join("; ");
+  }
+
+  function summarizePisCofins(ncm) {
+    const rows = state.pisCofinsByNcm.get(ncm);
+    if (rows && rows.length) {
+      return rows
+        .map((r) => `${escapeHtml(REGIME_LABELS[r.regime] || r.regime)}${r.codigo_natureza_receita ? ` (nat. ${escapeHtml(r.codigo_natureza_receita)})` : ""}`)
+        .join("; ");
+    }
+    return "Regime geral — ver alíquotas de Lucro Real/Presumido abaixo";
   }
 
   function renderIcmsBenefits(ncm) {
@@ -224,11 +256,31 @@
     const item = state.ncmList.find((it) => it.ncm === ncm);
     if (!item) return;
 
+    const ipiTexto = item.ipi_aliquota != null
+      ? `${escapeHtml(String(item.ipi_aliquota))}${/^\d/.test(String(item.ipi_aliquota)) ? "%" : ""}`
+      : "Não localizada na TIPI";
+
     const html = `
       <article class="produto-card">
         <div class="produto-header">
           <h3>${escapeHtml(formatNcm(item.ncm))}</h3>
           <p>${escapeHtml(item.descricao)}</p>
+        </div>
+
+        <div class="produto-subsection">
+          <h4>Resumo</h4>
+          <table class="produto-tabela produto-tabela-resumo">
+            <tbody>
+              <tr><th>Produto</th><td>${escapeHtml(item.descricao)}</td></tr>
+              <tr><th>NCM</th><td>${escapeHtml(formatNcm(item.ncm))}</td></tr>
+              <tr><th>IPI</th><td>${ipiTexto}</td></tr>
+              <tr><th>ICMS interna (SP)</th><td>18% (regra geral — ver observação abaixo)</td></tr>
+              <tr><th>Benefício ICMS (Anexo I/II)</th><td>${summarizeBeneficio(item.ncm)}</td></tr>
+              <tr><th>Substituição Tributária</th><td>${summarizeSubstituicaoTributaria(item.ncm)}</td></tr>
+              <tr><th>PIS/COFINS</th><td>${summarizePisCofins(item.ncm)}</td></tr>
+            </tbody>
+          </table>
+          <p class="produto-obs">Resumo rápido — os detalhes, ressalvas e diferenças entre entrada e saída estão nas seções abaixo.</p>
         </div>
 
         <div class="produto-subsection">

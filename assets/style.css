@@ -329,6 +329,7 @@ footer {
   color: var(--text);
 }
 .produto-candidato:hover { border-color: var(--accent); }
+.produto-candidato.selected { border-color: var(--accent); background: var(--accent-soft); }
 
 .produto-candidato-ncm {
   font-weight: 700;
@@ -429,3 +430,11 @@ footer {
 .produto-tabela th {
   background: var(--bg);
 }
+
+.produto-tabela-resumo th {
+  width: 40%;
+  white-space: nowrap;
+  vertical-align: top;
+  font-size: 0.85rem;
+}
+.produto-tabela-resumo td { font-size: 0.85rem; }
