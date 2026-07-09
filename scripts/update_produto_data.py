@@ -265,10 +265,30 @@ def build_ncm_tipi():
 CAT68_URL = "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-CAT-68-de-2019.aspx"
 LEGISLACAO_BASE = "https://legislacao.fazenda.sp.gov.br"
 
+# O Convênio ICMS 142/2018 (CONFAZ) é a fonte nacional que define CEST + NCM
+# por segmento (Anexos II a XXVI). O MVA específico de São Paulo pode ter sido
+# atualizado depois por portarias estaduais — por isso o MVA aqui é só o valor
+# de referência encontrado na tabela, não necessariamente o vigente (o aviso
+# disso já aparece na tela de resultado).
+CONVENIO_142_URL = "https://www.normaslegais.com.br/legislacao/convenio-icms-142-2018.htm"
+
 ANEXO_LINK_RE = re.compile(r'href="([^"]*[Aa]nexo[^"]*)"[^>]*>([^<]*)</a>', re.IGNORECASE)
 CEST_RE = re.compile(r"(\d{2}\.\d{3}\.\d{2})")
 NCM_TEXT_RE = re.compile(r"(\d{4}\.?\d{2}\.?\d{2})")
 MVA_RE = re.compile(r"(\d{1,3}(?:,\d{1,2})?)\s*%")
+
+
+def extract_table_rows(html_text):
+    """Genérico: retorna uma lista de linhas de tabela, cada uma como lista de
+    texto de célula (tags já removidas). Usado tanto para CEST/MVA quanto para
+    as tabelas do SPED — mais robusto do que tentar casar texto corrido, já
+    que não depende de suposições sobre o layout específico de cada página."""
+    rows = []
+    for row_match in re.finditer(r"<tr[^>]*>(.*?)</tr>", html_text, re.IGNORECASE | re.DOTALL):
+        cells = re.findall(r"<td[^>]*>(.*?)</td>", row_match.group(1), re.IGNORECASE | re.DOTALL)
+        if cells:
+            rows.append([strip_html(c) for c in cells])
+    return rows
 
 
 def fetch_cat68_annex_links():
@@ -315,14 +335,11 @@ def fetch_cat68_annex_links():
 
 
 def parse_cest_rows_from_html(raw, anexo_label):
-    """Best-effort: procura linhas de tabela contendo CEST + NCM + MVA."""
+    """Best-effort: procura linhas de tabela contendo CEST + NCM (+ MVA, se houver)."""
     rows = []
-    for row_match in re.finditer(r"<tr[^>]*>(.*?)</tr>", raw, re.IGNORECASE | re.DOTALL):
-        row_html = row_match.group(1)
-        cells = re.findall(r"<td[^>]*>(.*?)</td>", row_html, re.IGNORECASE | re.DOTALL)
-        if len(cells) < 3:
+    for cells_text in extract_table_rows(raw):
+        if len(cells_text) < 2:
             continue
-        cells_text = [strip_html(c) for c in cells]
         joined = " | ".join(cells_text)
 
         cest_match = CEST_RE.search(joined)
@@ -333,7 +350,7 @@ def parse_cest_rows_from_html(raw, anexo_label):
         mva_match = MVA_RE.search(joined)
         # A célula de descrição costuma ser a que tem mais letras (as outras são
         # majoritariamente números: item, CEST, NCM, MVA) — mais robusto do que
-        # supor uma posição fixa de coluna, que pode variar entre anexos.
+        # supor uma posição fixa de coluna, que pode variar entre anexos/fontes.
         descricao_cell = max(cells_text, key=lambda c: sum(ch.isalpha() for ch in c), default="")
         rows.append({
             "cest": cest_match.group(1),
@@ -346,8 +363,31 @@ def parse_cest_rows_from_html(raw, anexo_label):
 
 
 def fetch_cest_st_sp():
-    annex_links = fetch_cat68_annex_links()
+    """CEST/NCM: fonte primária é o Convênio ICMS 142/2018 (nacional, define os
+    segmentos/CEST/NCM sujeitos à ST em todo o país). O MVA específico de SP,
+    quando presente na mesma tabela, é só um valor de referência — pode ter
+    sido atualizado depois por portaria estadual (aviso já fica na tela)."""
     all_rows = []
+
+    try:
+        raw = http_get(CONVENIO_142_URL).decode("utf-8", errors="ignore")
+    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as exc:
+        print(f"[warn] falha ao acessar o Convênio ICMS 142/2018: {exc}", file=sys.stderr)
+        raw = None
+
+    if raw is not None:
+        rows = parse_cest_rows_from_html(raw, "Convênio ICMS 142/2018")
+        print(f"[debug] Convênio ICMS 142/2018: {len(raw)} bytes, {len(rows)} linhas CEST/NCM extraídas", file=sys.stderr)
+        if not rows:
+            table_rows = extract_table_rows(raw)
+            print(f"[debug] Convênio ICMS 142/2018: {len(table_rows)} linhas de tabela encontradas (nenhuma com CEST+NCM)", file=sys.stderr)
+            print(f"[debug] trecho da página (1500 chars): {raw[:1500]!r}", file=sys.stderr)
+        all_rows.extend(rows)
+
+    # Mantém a tentativa na própria página da CAT 68/2019 como complemento —
+    # já confirmamos que ela normalmente não tem os anexos em <a href>
+    # simples, mas isso é barato de tentar e pode mudar no futuro.
+    annex_links = fetch_cat68_annex_links()
     for url, label in annex_links:
         try:
             raw = http_get(url).decode("utf-8", errors="ignore")
@@ -356,10 +396,9 @@ def fetch_cest_st_sp():
             continue
         rows = parse_cest_rows_from_html(raw, label)
         print(f"[debug] anexo {label!r} ({url}): {len(raw)} bytes, {len(rows)} linhas CEST/NCM extraídas", file=sys.stderr)
-        if not rows:
-            print(f"[debug] trecho do anexo {label!r} (1000 chars): {raw[:1000]!r}", file=sys.stderr)
         all_rows.extend(rows)
         time.sleep(1)
+
     return all_rows
 
 
@@ -372,28 +411,70 @@ SPED_TABELAS = [
     ("aliquota_zero", "http://sped.rfb.gov.br/arquivo/show/1643"),  # Tabela 4.3.13
 ]
 
-# Âncora no rótulo "natureza da receita" para não confundir com pedaços do
-# próprio código NCM (que também tem o formato NN.NN em algumas posições).
+# Célula de "código da natureza da receita" isolada (ex.: "01.01"), e âncora
+# no rótulo "natureza da receita" como estratégia alternativa para quando o
+# código aparece em texto corrido em vez de uma célula própria de tabela.
+NATUREZA_CELL_RE = re.compile(r"^\d{1,2}\.\d{2}$")
 NATUREZA_RECEITA_RE = re.compile(
     r"natureza\s*(?:da)?\s*receita[^\d]{0,20}(\d{1,2}\.\d{2})", re.IGNORECASE
 )
 
 
-def parse_sped_table(raw_text, regime):
-    """Best-effort: extrai NCM + código da natureza da receita de um texto tabular."""
-    rows = []
+def extract_ncm_natureza_from_rows(table_rows, regime):
+    """Procura, célula a célula, uma célula que seja só um NCM de 8 dígitos e
+    outra que seja só um código de natureza da receita (ex.: "01.01") na
+    mesma linha — mais preciso do que buscar em texto corrido, porque exige
+    que a célula inteira bata com o padrão (não só um trecho dela)."""
+    results = []
+    for cells in table_rows:
+        ncm = None
+        natureza = None
+        for cell in cells:
+            cell_stripped = cell.strip()
+            digits = only_digits(cell_stripped)
+            if len(digits) == 8 and NCM_TEXT_RE.fullmatch(cell_stripped):
+                ncm = digits
+            elif NATUREZA_CELL_RE.fullmatch(cell_stripped):
+                natureza = cell_stripped
+        if ncm and natureza:
+            descricao = max(cells, key=lambda c: sum(ch.isalpha() for ch in c), default="")
+            results.append({
+                "ncm": ncm,
+                "regime": regime,
+                "codigo_natureza_receita": natureza,
+                "descricao": descricao.strip()[:200],
+            })
+    return results
+
+
+def parse_sped_table(raw_text, regime, rows_are_html):
+    """Extrai NCM + código da natureza da receita. Tenta primeiro célula a
+    célula (tabela HTML real ou texto "célula | célula" vindo de xlsx); se não
+    achar nada, cai para uma busca por texto corrido ancorada no rótulo
+    "natureza da receita", como rede de segurança para formatos inesperados."""
+    if rows_are_html:
+        table_rows = extract_table_rows(raw_text)
+    else:
+        table_rows = [line.split(" | ") for line in raw_text.splitlines() if line.strip()]
+
+    rows = extract_ncm_natureza_from_rows(table_rows, regime)
+    if rows:
+        return rows, len(table_rows)
+
+    # Rede de segurança: busca em texto corrido.
+    fallback_rows = []
     for line in raw_text.splitlines():
         ncm_match = NCM_TEXT_RE.search(line)
         codigo_match = NATUREZA_RECEITA_RE.search(line)
         if not ncm_match or not codigo_match:
             continue
-        rows.append({
+        fallback_rows.append({
             "ncm": only_digits(ncm_match.group(1)),
             "regime": regime,
             "codigo_natureza_receita": codigo_match.group(1),
             "descricao": strip_html(line)[:200],
         })
-    return rows
+    return fallback_rows, len(table_rows)
 
 
 def fetch_pis_cofins_especial():
@@ -407,6 +488,7 @@ def fetch_pis_cofins_especial():
 
         print(f"[debug] tabela SPED {regime} ({url}): {len(raw)} bytes, assinatura {raw[:10]!r}", file=sys.stderr)
 
+        rows_are_html = True
         if raw[:2] == b"PK":
             try:
                 import io
@@ -417,25 +499,29 @@ def fetch_pis_cofins_especial():
                 for row in sheet.iter_rows(values_only=True):
                     text_lines.append(" | ".join(str(c) for c in row if c is not None))
                 raw_text = "\n".join(text_lines)
+                rows_are_html = False
             except Exception as exc:
                 print(f"[warn] falha ao abrir tabela SPED ({regime}) como xlsx: {exc}", file=sys.stderr)
                 continue
         else:
             raw_text = raw.decode("utf-8", errors="ignore")
 
-        rows = parse_sped_table(raw_text, regime)
-        print(f"[debug] tabela SPED {regime}: {len(rows)} linhas NCM/natureza extraídas", file=sys.stderr)
+        rows, table_row_count = parse_sped_table(raw_text, regime, rows_are_html)
+        print(
+            f"[debug] tabela SPED {regime}: {table_row_count} linhas de tabela encontradas, "
+            f"{len(rows)} com NCM/natureza extraídos",
+            file=sys.stderr,
+        )
         if not rows:
-            # A página costuma ser só uma casca HTML que carrega os dados via
-            # JavaScript/AJAX. Procura pistas de onde os dados realmente vêm
-            # (chamadas a serviços .asmx/.ashx/.json/api) para orientar o
-            # próximo ajuste, em vez de só mostrar o HTML da casca.
+            # Se nem achamos linhas de tabela, a página pode mesmo carregar os
+            # dados via JavaScript/AJAX depois do carregamento inicial — procura
+            # pistas de endpoint para orientar o próximo ajuste.
             service_hints = re.findall(
                 r'(?:src|href|action|url)\s*[:=]\s*"([^"]*(?:\.asmx|\.ashx|\.json|/api/)[^"]*)"',
                 raw_text, re.IGNORECASE,
             )
             print(f"[debug] tabela SPED {regime}: pistas de endpoint de dados: {service_hints[:10]}", file=sys.stderr)
-            print(f"[debug] trecho da tabela SPED {regime} (1000 chars): {raw_text[:1000]!r}", file=sys.stderr)
+            print(f"[debug] trecho da tabela SPED {regime} (1500 chars): {raw_text[:1500]!r}", file=sys.stderr)
         all_rows.extend(rows)
         time.sleep(1)
     return all_rows
