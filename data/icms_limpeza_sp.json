@@ -1,0 +1,47 @@
+{
+  "aviso": "Dados curados manualmente a partir do texto oficial da Portaria CAT 68/2019 (Anexo XIII, artigo 313-K do RICMS), da Portaria SRE 55/2025 (IVA-ST) e da Portaria SRE 57/2025 (PMPF da água sanitária), fornecidos pelo usuário em 09/07/2026. Não é uma raspagem automática — para produtos de limpeza não cobertos aqui, ou para confirmar a vigência em uma data futura, consulte o texto oficial em legislacao.fazenda.sp.gov.br.",
+  "fonte_anexo_xiii": "Portaria CAT 68/2019, Anexo XIII (artigo 313-K do RICMS)",
+  "fonte_iva_st": "Portaria SRE 55/2025 (DOE 05-09-2025), Anexo Único — IVA-ST para os itens 2 a 12 do Anexo XIII (todos exceto água sanitária); vigente de 01/10/2025 a 30/06/2028",
+  "fonte_pmpf_agua_sanitaria": "Portaria SRE 57/2025 (DOE 08-09-2025), Anexo Único — PMPF (base de cálculo em R$) para o item 1 do Anexo XIII (água sanitária, branqueador e outros alvejantes); vigente de 01/10/2025 a 30/09/2026. Alternativamente, aplica-se um IVA-ST de 52,68% nas hipóteses do artigo 2º dessa portaria (quando o PMPF não puder ser usado)",
+  "revogacao_futura": {
+    "por": "Portaria SRE-20/26, de 04-05-2026 (DOE 05-05-2026)",
+    "data": "2026-08-01",
+    "aviso": "Todo o Anexo XIII (produtos de limpeza, artigo 313-K) será revogado a partir dessa data — os produtos abaixo deixarão de estar sujeitos a ICMS-ST em SP. As Portarias SRE 55/2025 (IVA-ST) e SRE 57/2025 (PMPF) também são revogadas na mesma data, pelo mesmo motivo."
+  },
+  "itens": [
+    {"item": "1", "cest": "11.001.00", "ncm": ["28289011", "28289019", "32064100", "34022000", "38089419"], "descricao": "Água sanitária, branqueador e outros alvejantes"},
+    {"item": "2", "cest": "11.002.00", "ncm": ["34012090"], "descricao": "Sabões em pó, flocos, palhetas, grânulos ou outras formas semelhantes, para lavar roupas"},
+    {"item": "3", "cest": "11.003.00", "ncm": ["34012090"], "descricao": "Sabões líquidos para lavar roupas"},
+    {"item": "4", "cest": "11.004.00", "ncm": ["34022000"], "descricao": "Detergentes em pó, flocos, palhetas, grânulos ou outras formas semelhantes"},
+    {"item": "5", "cest": "11.005.00", "ncm": ["34022000"], "descricao": "Detergentes líquidos, exceto para lavar roupa"},
+    {"item": "6", "cest": "11.006.00", "ncm": ["34022000"], "descricao": "Detergente líquido para lavar roupa"},
+    {"item": "7", "cest": "11.007.00", "ncm": ["3402"], "descricao": "Outros agentes orgânicos de superfície (exceto sabões); preparações tensoativas, preparações para lavagem e preparações para limpeza (inclusive multiuso e limpadores), mesmo contendo sabão, exceto os produtos dos CEST 11.001.00, 11.004.00, 11.005.00 e 11.006.00; em embalagem de conteúdo inferior ou igual a 50 litros ou 50 kg"},
+    {"item": "8", "cest": "11.008.00", "ncm": ["38099190"], "descricao": "Amaciante/suavizante"},
+    {"item": "9", "cest": "11.009.00", "ncm": ["39241000", "39249000", "68053010", "68053090"], "descricao": "Esponjas para limpeza"},
+    {"item": "11", "cest": "11.010.00", "ncm": ["2207", "22089000"], "descricao": "Álcool etílico para limpeza"},
+    {"item": "12", "cest": "11.011.00", "ncm": ["73231000"], "descricao": "Esponjas e palhas de aço; esponjas para limpeza, polimento ou uso semelhante; todas de uso doméstico"},
+    {"item": "13", "cest": "11.012.00", "ncm": ["39232"], "descricao": "Sacos de lixo de conteúdo igual ou inferior a 100 litros"}
+  ],
+  "iva_st_sre_55_2025": {
+    "11.002.00": "45,83%",
+    "11.003.00": "48,67%",
+    "11.004.00": "40,74%",
+    "11.005.00": "41,85%",
+    "11.006.00": "39,63%",
+    "11.007.00": "48,63%",
+    "11.008.00": "46,78%",
+    "11.009.00": "60,91%",
+    "11.010.00": "61,56%",
+    "11.011.00": "51,11%",
+    "11.012.00": "67,06%"
+  },
+  "pmpf_agua_sanitaria_sre_57_2025": {
+    "cest": "11.001.00",
+    "iva_st_alternativo": "52,68%",
+    "faixas": [
+      {"embalagem": "até 1000 ml", "pmpf_por_100ml": "R$ 0,35"},
+      {"embalagem": "de 1001 a 2000 ml", "pmpf_por_100ml": "R$ 0,28"},
+      {"embalagem": "acima de 2000 ml", "pmpf_por_100ml": "R$ 0,26"}
+    ]
+  }
+}
