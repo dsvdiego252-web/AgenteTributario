@@ -1,0 +1,30 @@
+{
+  "aviso": "Curado manualmente a partir do texto oficial do RICMS/SP (Decreto 45.490/2000), artigos 52 a 56-C, fornecido pelo usuário em 09/07/2026. Cobre as alíquotas diferenciadas mais comuns; RICMS tem dezenas de exceções pontuais (ex.: ferros/aços específicos do §1º do art. 54, produtos cerâmicos do §2º) não totalmente detalhadas aqui — sempre confirme casos de fronteira no texto oficial.",
+  "fonte": "RICMS/SP (Decreto 45.490/2000), artigos 52 a 56-C",
+  "aliquota_geral": "18%",
+  "regras": [
+    {"aliquota": "7%", "artigo": "53-A", "descricao": "Preservativos (NCM 4014.10.00); ovo integral pasteurizado/desidratado, clara e gema pasteurizadas desidratadas ou resfriadas; embalagens para ovo in natura (bandeja/estojo ≤30 unidades)", "ncm_prefixos": ["40141000"]},
+    {"aliquota": "12%", "artigo": "54, I", "descricao": "Serviços de transporte (não se aplica a mercadorias)"},
+    {"aliquota": "12%", "artigo": "54, III", "descricao": "Farinha de trigo, mistura pré-preparada de farinha de trigo (NCM 1901.20.9900), massas alimentícias não cozidas/recheadas/preparadas", "ncm_prefixos": ["1101", "19012099", "190211", "190219"]},
+    {"aliquota": "12%", "artigo": "54, VI", "descricao": "Óleo diesel"},
+    {"aliquota": "12%", "artigo": "54, XII", "descricao": "Fornecimento de alimentação (refeições), exceto bebidas"},
+    {"aliquota": "12%", "artigo": "54, XIII", "descricao": "Assentos (capítulo 9401, exceto 9401.20.00), móveis (9403), suportes elásticos para camas (9404.10), colchões (9404.2)", "ncm_prefixos": ["9401", "9403", "940410", "94042"]},
+    {"aliquota": "12%", "artigo": "54, XVI", "descricao": "Pão (não abrangido pelo art. 53) das subposições 1905.10, 1905.20 ou 1905.90, e pão torrado/torradas da subposição 1905.40", "ncm_prefixos": ["190510", "190520", "190590", "190540"]},
+    {"aliquota": "12%", "artigo": "54, XVII", "descricao": "Soluções parenterais especificadas (glicose, cloreto de sódio, ringer, manitol, bicarbonato de sódio, etc.), NCM 3004.90.99", "ncm_prefixos": ["30049099"]},
+    {"aliquota": "12%", "artigo": "54, XVIII", "descricao": "Dentifrício (3306.10.00) e escovas de dente/dentadura exceto elétricas (9603.21.00)", "ncm_prefixos": ["33061000", "96032100"]},
+    {"aliquota": "12%", "artigo": "54, XIX", "descricao": "Medicamentos genéricos (conforme definição de lei federal)"},
+    {"aliquota": "20%", "artigo": "54-A", "descricao": "Bebidas alcoólicas classificadas na posição 2203 da NCM (cerveja, chope)", "ncm_prefixos": ["2203"]},
+    {"aliquota": "25%", "artigo": "55, I", "descricao": "Prestações onerosas de serviço de comunicação (não se aplica a mercadorias)"},
+    {"aliquota": "25%", "artigo": "55, II", "descricao": "Bebidas alcoólicas das posições 2204, 2205 e 2208, exceto códigos 2208.40.0200 e 2208.40.0300", "ncm_prefixos": ["2204", "2205", "2208"], "ncm_excecoes": ["22084002", "22084003"]},
+    {"aliquota": "25%", "artigo": "55, IV", "descricao": "Perfumes e cosméticos das posições 3303, 3304, 3305 e 3307, exceto 3305.10, 3307.20, 3307.10.0100, 3307.90.0500 e preparações antissolares/bronzeadores da posição 3304", "ncm_prefixos": ["3303", "3304", "3305", "3307"], "ncm_excecoes": ["330510", "330720"]},
+    {"aliquota": "25%", "artigo": "55, IX", "descricao": "Armas e munições, suas partes e acessórios (capítulo 93)", "ncm_prefixos": ["93"]},
+    {"aliquota": "25%", "artigo": "55, XXVI", "descricao": "Etanol anidro combustível, querosene de aviação (exceto hipótese do art. 54, XX) e gasolina", "ncm_prefixos": ["22071001", "27100401", "27100301", "27100302", "27100303", "27100399"]},
+    {"aliquota": "30%", "artigo": "55-A", "descricao": "Fumo e seus sucedâneos manufaturados (capítulo 24)", "ncm_prefixos": ["24"]}
+  ],
+  "adicional_fecoep": {
+    "percentual": "2%",
+    "artigo": "56-C",
+    "descricao": "Adicional de 2% (destinado ao FECOEP) sobre as operações destinadas a consumidor final em SP com bebidas alcoólicas (posição 2203) e fumo/sucedâneos (capítulo 24) — soma-se à alíquota normal do produto",
+    "ncm_prefixos": ["2203", "24"]
+  }
+}
