@@ -85,6 +85,36 @@ def save_json(path, payload):
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def load_existing_items(path):
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        return []
+    return data.get("items") or []
+
+
+def save_or_keep(path, new_items, label):
+    """Salva new_items, exceto quando a coleta veio vazia e já existem dados salvos.
+
+    Evita que uma falha transitória de rede (timeout, indisponibilidade de uma
+    fonte) apague dados bons já coletados em execuções anteriores.
+    """
+    if new_items:
+        save_json(path, {"items": new_items})
+        print(f"[{label}] {len(new_items)} itens salvos")
+        return
+    existing = load_existing_items(path)
+    if existing:
+        print(
+            f"[warn] [{label}] coleta retornou 0 itens (provável falha de rede); "
+            f"mantendo os {len(existing)} itens já salvos em {path.name}",
+            file=sys.stderr,
+        )
+        return
+    save_json(path, {"items": []})
+    print(f"[{label}] 0 itens salvos (nenhum dado existente para preservar)")
+
+
 # ---------------------------------------------------------------------------
 # NCM + descrição (Portal Único Siscomex)
 # ---------------------------------------------------------------------------
@@ -531,16 +561,13 @@ def main():
     DATA_DIR.mkdir(parents=True, exist_ok=True)
 
     ncm_items = build_ncm_tipi()
-    save_json(NCM_TIPI_FILE, {"items": ncm_items})
-    print(f"[ncm_tipi] {len(ncm_items)} NCMs salvos")
+    save_or_keep(NCM_TIPI_FILE, ncm_items, "ncm_tipi")
 
     cest_rows = fetch_cest_st_sp()
-    save_json(CEST_ST_FILE, {"items": cest_rows})
-    print(f"[cest_st_sp] {len(cest_rows)} linhas CEST/MVA salvas")
+    save_or_keep(CEST_ST_FILE, cest_rows, "cest_st_sp")
 
     pis_cofins_rows = fetch_pis_cofins_especial()
-    save_json(PIS_COFINS_FILE, {"items": pis_cofins_rows})
-    print(f"[pis_cofins_especial] {len(pis_cofins_rows)} linhas salvas")
+    save_or_keep(PIS_COFINS_FILE, pis_cofins_rows, "pis_cofins_especial")
 
 
 if __name__ == "__main__":
