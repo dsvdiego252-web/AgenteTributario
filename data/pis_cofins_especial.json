@@ -1,4 +1,233 @@
 {
-  "items": [],
-  "last_updated": "2026-07-09T10:00:45+00:00"
+  "items": [
+    {
+      "ncm": "27101259",
+      "regime": "monofasico",
+      "codigo_natureza_receita": "101",
+      "descricao": "Gasolinas, Exceto Gasolina de"
+    },
+    {
+      "ncm": "27101921",
+      "regime": "monofasico",
+      "codigo_natureza_receita": "102",
+      "descricao": "Óleo Diesel"
+    },
+    {
+      "ncm": "27111910",
+      "regime": "monofasico",
+      "codigo_natureza_receita": "103",
+      "descricao": "Gás Liqüefeito de Petróleo –"
+    },
+    {
+      "ncm": "27101911",
+      "regime": "monofasico",
+      "codigo_natureza_receita": "104",
+      "descricao": "Querosene de Aviação"
+    },
+    {
+      "ncm": "38249029",
+      "regime": "monofasico",
+      "codigo_natureza_receita": "109",
+      "descricao": "Biodiesel"
+    },
+    {
+      "ncm": "38260000",
+      "regime": "monofasico",
+      "codigo_natureza_receita": "109",
+      "descricao": "Biodiesel"
+    },
+    {
+      "ncm": "22071000",
+      "regime": "monofasico",
+      "codigo_natureza_receita": "112",
+      "descricao": "Álcool, Inclusive para Fins"
+    },
+    {
+      "ncm": "22071000",
+      "regime": "monofasico",
+      "codigo_natureza_receita": "113",
+      "descricao": "Álcool, Inclusive para Fins"
+    },
+    {
+      "ncm": "22071000",
+      "regime": "monofasico",
+      "codigo_natureza_receita": "117",
+      "descricao": "Álcool, Inclusive para Fins"
+    },
+    {
+      "ncm": "22072010",
+      "regime": "monofasico",
+      "codigo_natureza_receita": "1",
+      "descricao": "Carburantes – Venda efetuada"
+    },
+    {
+      "ncm": "22071000",
+      "regime": "monofasico",
+      "codigo_natureza_receita": "117",
+      "descricao": "Álcool, Inclusive para Fins"
+    },
+    {
+      "ncm": "22072010",
+      "regime": "monofasico",
+      "codigo_natureza_receita": "5",
+      "descricao": "Carburantes – Venda efetuada"
+    },
+    {
+      "ncm": "22011000",
+      "regime": "monofasico",
+      "codigo_natureza_receita": "401",
+      "descricao": "Águas Minerais Artificiais e"
+    },
+    {
+      "ncm": "11010010",
+      "regime": "aliquota_zero",
+      "codigo_natureza_receita": "113",
+      "descricao": "Farinha de trigo"
+    },
+    {
+      "ncm": "19021100",
+      "regime": "aliquota_zero",
+      "codigo_natureza_receita": "119",
+      "descricao": "Massas alimentícias classificadas na posição 19.02 da"
+    },
+    {
+      "ncm": "17011400",
+      "regime": "aliquota_zero",
+      "codigo_natureza_receita": "124",
+      "descricao": "Açúcar classificado nos códigos 1701.14.00 e 1701.99.00"
+    },
+    {
+      "ncm": "04051000",
+      "regime": "aliquota_zero",
+      "codigo_natureza_receita": "126",
+      "descricao": "Manteiga classificada no código 0405.10.00 da TIPI"
+    },
+    {
+      "ncm": "15171000",
+      "regime": "aliquota_zero",
+      "codigo_natureza_receita": "127",
+      "descricao": "Margarina classificada no código 1517.10.00"
+    },
+    {
+      "ncm": "48181000",
+      "regime": "aliquota_zero",
+      "codigo_natureza_receita": "130",
+      "descricao": "Papel higiênico classificado no código 4818.10.00 da"
+    },
+    {
+      "ncm": "27101921",
+      "regime": "aliquota_zero",
+      "codigo_natureza_receita": "217",
+      "descricao": "Óleo Diesel"
+    },
+    {
+      "ncm": "27101921",
+      "regime": "aliquota_zero",
+      "codigo_natureza_receita": "217",
+      "descricao": "Óleo Diesel"
+    },
+    {
+      "ncm": "27101921",
+      "regime": "aliquota_zero",
+      "codigo_natureza_receita": "217",
+      "descricao": "Óleo Diesel - As operações no mercado interno ou sobre"
+    },
+    {
+      "ncm": "27101921",
+      "regime": "aliquota_zero",
+      "codigo_natureza_receita": "217",
+      "descricao": "Óleo Diesel - As operações no mercado interno ou sobre"
+    },
+    {
+      "ncm": "27101921",
+      "regime": "aliquota_zero",
+      "codigo_natureza_receita": "217",
+      "descricao": "Óleo Diesel - As operações no mercado interno ou sobre"
+    },
+    {
+      "ncm": "27111910",
+      "regime": "aliquota_zero",
+      "codigo_natureza_receita": "219",
+      "descricao": "GLP* quando destinado ao uso doméstico e envasado em"
+    },
+    {
+      "ncm": "38260000",
+      "regime": "aliquota_zero",
+      "codigo_natureza_receita": "220",
+      "descricao": "Biodiesel – As operações no mercado interno ou sobre"
+    },
+    {
+      "ncm": "38260000",
+      "regime": "aliquota_zero",
+      "codigo_natureza_receita": "220",
+      "descricao": "Biodiesel - As operações no mercado interno ou sobre"
+    },
+    {
+      "ncm": "38260000",
+      "regime": "aliquota_zero",
+      "codigo_natureza_receita": "220",
+      "descricao": "Biodiesel - As operações no mercado interno ou sobre"
+    },
+    {
+      "ncm": "38260000",
+      "regime": "aliquota_zero",
+      "codigo_natureza_receita": "220",
+      "descricao": "Biodiesel - As operações no mercado interno ou sobre"
+    },
+    {
+      "ncm": "27101911",
+      "regime": "aliquota_zero",
+      "codigo_natureza_receita": "221",
+      "descricao": "Querosene de Aviação"
+    },
+    {
+      "ncm": "27101911",
+      "regime": "aliquota_zero",
+      "codigo_natureza_receita": "221",
+      "descricao": "Querosene de Aviação - As operações no mercado interno"
+    },
+    {
+      "ncm": "27101911",
+      "regime": "aliquota_zero",
+      "codigo_natureza_receita": "221",
+      "descricao": "Querosene de Aviação - As operações no mercado interno"
+    },
+    {
+      "ncm": "38260000",
+      "regime": "aliquota_zero",
+      "codigo_natureza_receita": "229",
+      "descricao": "Biodiesel - importação"
+    },
+    {
+      "ncm": "84716090",
+      "regime": "aliquota_zero",
+      "codigo_natureza_receita": "313",
+      "descricao": "Linhas braile classificadas no código 8471.60.90 Ex"
+    },
+    {
+      "ncm": "84719014",
+      "regime": "aliquota_zero",
+      "codigo_natureza_receita": "314",
+      "descricao": "Digitalizadores de imagens - scanners - equipados com"
+    },
+    {
+      "ncm": "84721000",
+      "regime": "aliquota_zero",
+      "codigo_natureza_receita": "315",
+      "descricao": "Duplicadores braile classificados no código 8472.10.00"
+    },
+    {
+      "ncm": "84716053",
+      "regime": "aliquota_zero",
+      "codigo_natureza_receita": "316",
+      "descricao": "Acionadores de pressão classificados no código"
+    },
+    {
+      "ncm": "85258019",
+      "regime": "aliquota_zero",
+      "codigo_natureza_receita": "317",
+      "descricao": "Lupas eletrônicas do tipo utilizado por pessoas com"
+    }
+  ],
+  "last_updated": "2026-07-09T10:09:34+00:00"
 }
