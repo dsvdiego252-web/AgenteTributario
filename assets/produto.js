@@ -38,7 +38,7 @@
   }
 
   function normalize(str) {
-    return stripAccents(String(str || "").toLowerCase()).trim();
+    return stripAccents(String(str || "").toLowerCase()).replace(/\./g, "").trim();
   }
 
   function formatIpi(value) {
@@ -91,7 +91,17 @@
     (cestData.items || []).forEach((it) => {
       if (!it.ncm) return;
       if (!state.cestByNcm.has(it.ncm)) state.cestByNcm.set(it.ncm, []);
-      state.cestByNcm.get(it.ncm).push(it);
+      const lista = state.cestByNcm.get(it.ncm);
+      // A fonte (PDF do Convênio 142/2018) costuma repetir o mesmo CEST várias
+      // vezes — provavelmente histórico de redações embutido no texto. Mantém
+      // só uma linha por CEST, preferindo a descrição mais completa (mais
+      // longa), que tende a ser a de verdade em vez de um fragmento truncado.
+      const existente = lista.find((r) => r.cest && r.cest === it.cest);
+      if (!existente) {
+        lista.push(it);
+      } else if ((it.descricao || "").length > (existente.descricao || "").length) {
+        lista[lista.indexOf(existente)] = it;
+      }
     });
 
     state.pisCofinsByNcm = new Map();
