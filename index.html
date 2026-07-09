@@ -24,6 +24,7 @@
   <nav class="main-tabs" role="tablist" aria-label="Seções principais">
     <button class="tab-btn active" data-tab="reforma" role="tab" aria-selected="true">Reforma Tributária</button>
     <button class="tab-btn" data-tab="icms" role="tab" aria-selected="false">ICMS</button>
+    <button class="tab-btn" data-tab="produto" role="tab" aria-selected="false">Consulta Produto</button>
   </nav>
 </header>
 
@@ -71,12 +72,33 @@
       </div>
     </div>
   </section>
+
+  <!-- ABA CONSULTA PRODUTO -->
+  <section id="tab-produto" class="tab-panel" role="tabpanel">
+    <p class="section-note">
+      Digite a descrição do produto para localizar o NCM e ver a tributação associada (IPI, ICMS, Substituição
+      Tributária e PIS/COFINS). <strong>NCM/IPI (TIPI)</strong>, <strong>CEST/MVA (Portaria CAT 68/2019)</strong> e o
+      enquadramento de <strong>PIS/COFINS monofásico ou alíquota zero (tabelas do SPED Contribuições)</strong> vêm de
+      bases oficiais atualizadas periodicamente. Já <strong>isenção e redução de base de cálculo do ICMS (Anexos I e
+      II do RICMS/SP)</strong> e a <strong>alíquota interna do ICMS</strong> ainda são uma amostra reduzida e
+      curada manualmente — não cobrem todos os produtos. Esta consulta é automática e não substitui a análise de
+      um profissional nem a leitura do texto oficial.
+    </p>
+
+    <div class="panel-toolbar">
+      <input type="search" id="search-produto" class="search-input" placeholder="Digite a descrição do produto (ex.: cerveja, cimento, perfume)…">
+    </div>
+
+    <div id="produto-candidatos" class="produto-candidatos"></div>
+    <div id="produto-resultado" class="produto-resultado"></div>
+  </section>
 </main>
 
 <footer>
-  <p>Fontes: Ministério da Fazenda, Receita Federal, Comitê Gestor do IBS, SEFAZ-SP (legislação e notícias) e portais especializados em tributos. Conteúdo gerado automaticamente para fins informativos — não substitui a consulta ao texto oficial.</p>
+  <p>Fontes: Ministério da Fazenda, Receita Federal, Comitê Gestor do IBS, SEFAZ-SP (legislação e notícias), Siscomex (NCM), TIPI, Portaria CAT 68/2019 (CEST/ST), SPED Contribuições (PIS/COFINS) e portais especializados em tributos. Conteúdo gerado automaticamente para fins informativos — não substitui a consulta ao texto oficial nem a orientação de um profissional.</p>
 </footer>
 
 <script src="assets/app.js"></script>
+<script src="assets/produto.js"></script>
 </body>
 </html>

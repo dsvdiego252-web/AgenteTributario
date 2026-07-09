@@ -1,0 +1,52 @@
+name: Atualizar dados de produto (NCM/TIPI/CEST/PIS-COFINS)
+
+on:
+  schedule:
+    # Segunda-feira, 06:00 UTC = 03:00 em Brasília — tabelas de referência
+    # mudam pouco, não precisa rodar todo dia como as novidades.
+    - cron: "0 6 * * 1"
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - "scripts/update_produto_data.py"
+      - ".github/workflows/update-produto-data.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-produto-data
+  cancel-in-progress: false
+
+jobs:
+  update-produto-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências
+        run: pip install -r scripts/requirements.txt
+
+      - name: Rodar coleta de dados de produto
+        run: python3 scripts/update_produto_data.py
+
+      - name: Commitar dados atualizados
+        run: |
+          git config user.name "agente-tributario-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/ncm_tipi.json data/cest_st_sp.json data/pis_cofins_especial.json
+          if git diff --cached --quiet; then
+            echo "Sem novidades nesta semana."
+          else
+            git commit -m "chore: atualizar dados de produto (NCM/TIPI/CEST/PIS-COFINS)"
+            git push
+          fi

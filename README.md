@@ -1,32 +1,42 @@
 # Agente Tributário
 
-Portal estático (HTML/CSS/JS) com duas abas principais:
+Portal estático (HTML/CSS/JS) com três abas principais:
 
 - **Reforma Tributária** — novidades sobre a Reforma Tributária (IBS, CBS, Imposto Seletivo, Comitê Gestor do IBS), reunidas de fontes oficiais e da imprensa especializada.
 - **ICMS**
   - **Novidades** — repercussão na imprensa sobre Portarias SRE (SEFAZ-SP) do ICMS.
-  - **Base Legal** — registro oficial completo das Portarias SRE, extraído diretamente da listagem da SEFAZ-SP.
+  - **Base Legal** — registro oficial completo das Portarias SRE, extraído diretamente da legislação da SEFAZ-SP, com filtro por setor/segmento.
+- **Consulta Produto** — busca por descrição de produto para localizar o NCM e ver IPI, ICMS (alíquota geral + benefícios de exemplo), Substituição Tributária (CEST/MVA) e PIS/COFINS (monofásico/alíquota zero ou regime geral).
 
-O conteúdo é lido de `data/reforma_tributaria.json`, `data/icms_sre.json` e
-`data/icms_base_legal.json`. Esses arquivos são atualizados automaticamente
-todos os dias por um GitHub Action (`.github/workflows/update-data.yml`), que
-roda `scripts/update_data.py`, faz commit das novidades e assim o site já
-nasce atualizado quando alguém acessa.
+O conteúdo é lido de arquivos JSON em `data/`. Esses arquivos são atualizados
+automaticamente por dois GitHub Actions:
+- `.github/workflows/update-data.yml` — todos os dias, novidades (Reforma
+  Tributária, ICMS Novidades e Base Legal).
+- `.github/workflows/update-produto-data.yml` — semanalmente, dados de
+  referência de produto (NCM/TIPI, CEST/MVA, PIS/COFINS), que mudam pouco.
 
 ## Estrutura
 
 ```
-index.html                        portal (abas Reforma Tributária / ICMS > Novidades, Base Legal)
-assets/style.css                   estilos
-assets/app.js                      carrega os JSON e controla abas/busca
-data/reforma_tributaria.json       novidades da reforma tributária
-data/icms_sre.json                 portarias SRE (ICMS) — repercussão/notícias
-data/icms_base_legal.json          portarias SRE (ICMS) — registro legal oficial completo
-scripts/update_data.py             coleta diária (Python 3, só biblioteca padrão)
-.github/workflows/update-data.yml  agenda diária (cron) + commit automático
+index.html                                 portal (abas Reforma Tributária / ICMS / Consulta Produto)
+assets/style.css                            estilos
+assets/app.js                               Reforma Tributária e ICMS: carrega os JSON e controla abas/busca
+assets/produto.js                           Consulta Produto: busca por NCM e monta a tela de resultado
+data/reforma_tributaria.json                novidades da reforma tributária
+data/icms_sre.json                          portarias SRE (ICMS) — repercussão/notícias
+data/icms_base_legal.json                   portarias SRE (ICMS) — registro legal oficial completo
+data/ncm_tipi.json                          NCM + descrição (Siscomex) + alíquota de IPI (TIPI)
+data/cest_st_sp.json                        CEST/segmento/MVA original (Portaria CAT 68/2019 — ICMS-ST/SP)
+data/pis_cofins_especial.json               NCMs com PIS/COFINS monofásico ou alíquota zero (tabelas SPED)
+data/icms_beneficios_sample.json            amostra curada manualmente de isenção/redução de BC (Anexos I/II RICMS-SP)
+scripts/update_data.py                      coleta diária (Python 3, só biblioteca padrão)
+scripts/update_produto_data.py              coleta semanal de dados de produto (precisa de openpyxl)
+scripts/requirements.txt                    dependências Python (openpyxl)
+.github/workflows/update-data.yml           agenda diária (cron) + commit automático
+.github/workflows/update-produto-data.yml   agenda semanal (cron) + commit automático
 ```
 
-## Como funciona a coleta diária
+## Como funciona a coleta diária (notícias)
 
 `scripts/update_data.py`:
 
@@ -38,24 +48,45 @@ scripts/update_data.py             coleta diária (Python 3, só biblioteca padr
    especializados (LegisWeb, Contábeis, etc.) citando o número da Portaria SRE.
 3. **ICMS → Base Legal**: raspa diretamente a listagem oficial da SEFAZ-SP em
    `legislacao.fazenda.sp.gov.br/Paginas/Atos.aspx?Tipo=Portarias%20CAT/SRE`,
-   uma página por ano. Na primeira execução (arquivo vazio) percorre todo o
-   histórico disponível (2011 em diante); nas execuções seguintes checa apenas
-   o ano corrente e o anterior — suficiente para pegar as novas portarias
-   assim que são publicadas. A data exata (dia/mês) de cada portaria é obtida
-   visitando a página de detalhe, em lotes pequenos por execução (para não
-   sobrecarregar o site oficial), com autopreenchimento gradual ao longo dos
-   dias até que todo o histórico tenha data precisa.
+   uma página por ano. Cada portaria já vem com título, ementa e data exata de
+   publicação embutidos na própria listagem. Na primeira execução (ou se o
+   backfill anterior não completou com sucesso) percorre todo o histórico
+   disponível (2011 em diante); depois disso, checa apenas o ano corrente e o
+   anterior — suficiente para pegar as novas portarias assim que são
+   publicadas.
 4. Os itens novos são mesclados aos já existentes (sem duplicar, por link ou
-   por número da portaria) e ordenados por data, mantendo os mais recentes.
+   por número da portaria, com desempate por número quando a data é igual) e
+   ordenados da mais recente para a mais antiga.
 
 O script é incremental e idempotente: pode ser rodado manualmente quantas
 vezes quiser (`python3 scripts/update_data.py`) sem perder dados já coletados.
 
-> Nota: o ambiente onde este portal foi criado tem acesso de rede restrito, então
-> não foi possível validar ao vivo o scraping de `legislacao.fazenda.sp.gov.br` a
-> partir daqui. O GitHub Actions roda em uma rede sem essa restrição — e já
-> validamos que funciona: a primeira execução automática em produção coletou
-> novidades reais direto do site oficial.
+## Consulta Produto — o que é automático e o que é amostra
+
+A aba **Consulta Produto** combina fontes de qualidades bem diferentes — é
+importante saber qual é qual antes de confiar no resultado:
+
+| Dado | Fonte | Como é obtido |
+|---|---|---|
+| NCM + descrição | Portal Único Siscomex | API pública, automática, cobertura completa |
+| Alíquota de IPI | TIPI (Receita Federal) | Planilha oficial, automática, cobertura completa |
+| CEST / MVA original (ICMS-ST/SP) | Portaria CAT 68/2019 | Raspagem automática dos 22 anexos |
+| PIS/COFINS monofásico / alíquota zero | Tabelas 4.3.10/4.3.13 do SPED Contribuições | Automática |
+| PIS/COFINS regime geral (Lucro Real/Presumido) | Lei 10.637/02, Lei 10.833/03, Lei 9.718/98 | Alíquotas fixas (1,65%/7,60% e 0,65%/3,00%), não variam por produto |
+| **Isenção / redução de base de cálculo do ICMS (Anexos I e II do RICMS/SP)** | `data/icms_beneficios_sample.json` | **Amostra pequena, curada manualmente** — os anexos são texto legal, não uma tabela "NCM → benefício"; exigem interpretação jurídica |
+| **Alíquota interna do ICMS** | — | Valor geral fixo (18% em SP), não calculado por NCM nesta versão |
+
+**A consulta é automática e não substitui a leitura do texto oficial nem a
+orientação de um profissional.** Isso vale especialmente para os dois últimos
+itens da tabela.
+
+`scripts/update_produto_data.py` foi escrito sem poder validar ao vivo os
+formatos reais das páginas de CEST/MVA (Portaria CAT 68/2019) e das tabelas do
+SPED — o acesso a essas fontes estava bloqueado no ambiente onde o script foi
+criado. Por isso ele tem logs de diagnóstico verbosos (`[debug]`), para que,
+se o parser não bater com o formato real na primeira execução em produção,
+dê para corrigir rapidamente lendo os logs do Action — foi assim que
+`scripts/update_data.py` também evoluiu.
 
 ## Publicar no GitHub Pages
 
@@ -65,7 +96,7 @@ vezes quiser (`python3 scripts/update_data.py`) sem perder dados já coletados.
 2. Em **Settings → Pages**, defina "Source" = "Deploy from a branch", branch
    `main`, pasta `/ (root)`.
 3. Pronto: o site fica disponível em `https://<usuario>.github.io/<repo>/` e é
-   atualizado automaticamente a cada novo commit gerado pelo Action diário.
+   atualizado automaticamente a cada novo commit gerado pelos Actions.
 
 ## Rodar localmente
 
@@ -78,4 +109,5 @@ python3 -m http.server 8000
 
 ```bash
 python3 scripts/update_data.py
+pip install -r scripts/requirements.txt && python3 scripts/update_produto_data.py
 ```

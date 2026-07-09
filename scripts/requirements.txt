@@ -1,2 +1,3 @@
-# Nenhuma dependência externa é necessária: update_data.py usa apenas a
-# biblioteca padrão do Python (urllib, xml.etree, re, json).
+# update_data.py usa apenas a biblioteca padrão do Python.
+# update_produto_data.py precisa do openpyxl para ler a planilha TIPI (.xlsx).
+openpyxl
