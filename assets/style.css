@@ -162,6 +162,24 @@ main {
 }
 .sector-select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
 
+.btn-buscar {
+  padding: 0.55rem 1.1rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.btn-buscar:hover { filter: brightness(1.08); }
+.btn-buscar:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+@media (prefers-color-scheme: dark) {
+  .btn-buscar { color: #0b2018; }
+}
+
 .count-badge {
   font-size: 0.78rem;
   color: var(--text-muted);
