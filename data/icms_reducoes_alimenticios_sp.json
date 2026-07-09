@@ -1,0 +1,51 @@
+{
+  "aviso": "Curado manualmente a partir do texto oficial do RICMS/SP (Anexo II — Reduções de Base de Cálculo), artigos 3º e 39, fornecido pelo usuário em 09/07/2026. As condições de aplicação (destinatário, tipo de estabelecimento) dependem da operação concreta, não só do produto — a tela sempre mostra essas condições como alerta, não como um cálculo automático.",
+  "fonte": "RICMS/SP, Anexo II, artigos 3º e 39",
+  "art3_cesta_basica": {
+    "carga_tributaria": "7%",
+    "vigencia_fim": "2026-12-31",
+    "aplicavel_a": "operações internas",
+    "itens": [
+      {"descricao": "Ave, coelho ou gado bovino/suíno/caprino/ovino em pé e produto comestível do abate, em estado natural, resfriado ou congelado", "ncm_prefixos": ["0105", "0201", "0202", "0203", "0204", "0206", "0207", "0208"]},
+      {"descricao": "Leite em pó; leite esterilizado (longa vida), NCM 0401.10.10 e 0401.20.10", "ncm_prefixos": ["0402", "04011010", "04012010"]},
+      {"descricao": "Café torrado, em grão, moído e descafeinado", "ncm_prefixos": ["09012"]},
+      {"descricao": "Óleos vegetais comestíveis refinados/semi-refinados/em bruto/degomados, exceto o de oliva", "ncm_prefixos": ["1507", "1512", "1514", "1515"], "ncm_excecoes": ["1509"]},
+      {"descricao": "Açúcar cristal ou refinado", "ncm_prefixos": ["17011100", "17019900"]},
+      {"descricao": "Alho", "ncm_prefixos": ["07032"]},
+      {"descricao": "Farinha de milho, fubá, inclusive pré-cozido", "ncm_prefixos": ["1102", "1103"]},
+      {"descricao": "Pescados (exceto crustáceos/moluscos), em estado natural, resfriados, congelados, salgados, secos etc., não enlatados nem cozidos", "ncm_prefixos": ["0302", "0303", "0304", "0305"]},
+      {"descricao": "Queijos tipo mussarela, prato e de minas, manteiga, margarina e creme vegetal", "ncm_prefixos": ["0406", "040510", "1517"]},
+      {"descricao": "Apresuntado", "ncm_prefixos": ["16024900"]},
+      {"descricao": "Maçã e pêra (nota: também têm isenção pelo Art. 140/Art. 36 do Anexo I)", "ncm_prefixos": ["0808"]},
+      {"descricao": "Trigo em grão, exceto para semeadura", "ncm_prefixos": ["100100"]},
+      {"descricao": "Farinha de trigo", "ncm_prefixos": ["110100"]},
+      {"descricao": "Mistura pré-preparada de farinha de trigo p/ panificação (mín. 95% farinha de trigo), NCM 1901.20", "ncm_prefixos": ["190120"]},
+      {"descricao": "Massas alimentícias não cozidas, nem recheadas ou preparadas de outro modo, NCM 1902.11 ou 1902.19", "ncm_prefixos": ["190211", "190219"]},
+      {"descricao": "Biscoitos e bolachas derivados do trigo, tipos cream cracker/água e sal/maisena/maria e outros populares, NCM 1905.31, sem cacau/recheio/cobertura", "ncm_prefixos": ["190531"]},
+      {"descricao": "Pão francês ou de sal, até 1000g", "ncm_prefixos": ["190590"]},
+      {"descricao": "Farinha de mandioca, charque e sal de cozinha", "ncm_prefixos": ["1106", "0210", "2501"]},
+      {"descricao": "Arroz e feijão (exceto saída interna a consumidor final, que segue regra própria dos artigos 168/169 do Anexo I)", "ncm_prefixos": ["1006", "0713"]},
+      {"descricao": "Linguiça, mortadela, salsicha, sardinha enlatada e vinagre", "ncm_prefixos": ["1601", "1604", "2209"]},
+      {"descricao": "Ovo de codorna seco, cozido, congelado ou conservado de outro modo", "ncm_prefixos": ["04081"]},
+      {"descricao": "Água mineral em embalagens retornáveis de 10 ou 20 litros", "ncm_prefixos": ["220110"]},
+      {"descricao": "Medicamentos específicos: Paracetamol, Tramadol, Montelucaste de sódio, Amoxicilina+Clavulanato, Levonorgestrel, Carbamazepina, Ibuprofeno, Sulfato de glicosamina/condroitina", "ncm_prefixos": ["3003", "3004"]}
+    ]
+  },
+  "art39_produtos_alimenticios": {
+    "carga_tributaria": "12%",
+    "vigencia_fim": "2026-12-31",
+    "aplicavel_a": "saídas internas realizadas por estabelecimento fabricante ou atacadista",
+    "capitulos_ncm": ["03", "04", "07", "08", "11", "12", "15", "16", "17", "18", "19", "20", "21"],
+    "posicoes_adicionais": ["0902", "0903", "0904", "0905", "0906", "0907", "0908", "0909", "0910", "2209"],
+    "condicoes": [
+      "só se aplica a saídas realizadas por estabelecimento fabricante ou atacadista (não vale para varejista)",
+      "não se aplica a produtos não destinados à alimentação humana",
+      "não se aplica a produtos sujeitos a substituição tributária",
+      "não se aplica a produtos já contemplados com qualquer outro benefício fiscal no RICMS",
+      "não pode ser cumulada com qualquer outro benefício fiscal",
+      "não se aplica quando a saída é destinada a estabelecimento do Simples Nacional",
+      "não se aplica quando a saída é destinada a consumidor final",
+      "quando o remetente é atacadista, exige que suas saídas internas não sejam destinadas preponderantemente ao varejo (>50% do total）"
+    ]
+  }
+}

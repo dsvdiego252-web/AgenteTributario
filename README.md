@@ -30,6 +30,11 @@ data/cest_st_sp.json                        CEST/segmento/MVA (base nacional, Co
                                              em SP é sempre da Portaria CAT 68/2019 e suas alterações
 data/pis_cofins_especial.json               NCMs com PIS/COFINS monofásico ou alíquota zero (tabelas SPED)
 data/icms_beneficios_sample.json            amostra curada manualmente de isenção/redução de BC (Anexos I/II RICMS-SP)
+data/icms_aliquotas_sp.json                 alíquotas internas do ICMS por categoria (RICMS/SP arts. 52 a 56-C), curado
+data/icms_alimenticios_sp.json              Anexo XVI da CAT 68/2019 (ST de produtos alimentícios) com histórico de
+                                             revogações + IVA-ST vigente (Portaria SRE 12/2026), curado
+data/icms_reducoes_alimenticios_sp.json     reduções de BC da Cesta Básica (Art. 3º) e de Produtos Alimentícios
+                                             (Art. 39) do Anexo II do RICMS/SP, curado
 scripts/update_data.py                      coleta diária (Python 3, só biblioteca padrão)
 scripts/update_produto_data.py              coleta semanal de dados de produto (precisa de openpyxl)
 scripts/requirements.txt                    dependências Python (openpyxl)
@@ -75,7 +80,9 @@ importante saber qual é qual antes de confiar no resultado:
 | PIS/COFINS monofásico / alíquota zero | Tabelas 4.3.10/4.3.13 do SPED Contribuições | Automática |
 | PIS/COFINS regime geral (Lucro Real/Presumido) | Lei 10.637/02, Lei 10.833/03, Lei 9.718/98 | Alíquotas fixas (1,65%/7,60% e 0,65%/3,00%), não variam por produto |
 | **Isenção / redução de base de cálculo do ICMS (Anexos I e II do RICMS/SP)** | `data/icms_beneficios_sample.json` | **Amostra pequena, curada manualmente** — os anexos são texto legal, não uma tabela "NCM → benefício"; exigem interpretação jurídica |
-| **Alíquota interna do ICMS** | — | Valor geral fixo (18% em SP), não calculado por NCM nesta versão |
+| **Alíquota interna do ICMS por categoria** | `data/icms_aliquotas_sp.json` | **Curado manualmente** a partir do texto oficial dos artigos 52 a 56-C do RICMS/SP — cobre as alíquotas diferenciadas mais comuns (7%/12%/20%/25%/30% + adicional FECOEP), não todas as exceções pontuais |
+| **ST de Produtos Alimentícios (Anexo XVI da CAT 68/2019) + IVA-ST** | `data/icms_alimenticios_sp.json` | **Curado manualmente** a partir do texto oficial da CAT 68/2019 (com histórico de revogações, incluindo a revogação em massa da Portaria SRE 64/2025) e da Portaria SRE 12/2026 (IVA-ST vigente) |
+| **Reduções de BC de Cesta Básica (Art. 3º) e Produtos Alimentícios (Art. 39) do Anexo II** | `data/icms_reducoes_alimenticios_sp.json` | **Curado manualmente** a partir do texto oficial do RICMS/SP |
 
 **A consulta é automática e não substitui a leitura do texto oficial nem a
 orientação de um profissional.** Isso vale especialmente para os dois últimos

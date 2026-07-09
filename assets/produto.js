@@ -19,6 +19,9 @@
     cestByNcm: new Map(),
     pisCofinsByNcm: new Map(),
     beneficios: [],
+    aliquotasRicms: null,
+    alimenticios: null,
+    reducoesAlimenticios: null,
     loaded: false,
   };
 
@@ -66,12 +69,18 @@
   }
 
   async function loadAll() {
-    const [ncmData, cestData, pisCofinsData, beneficiosData] = await Promise.all([
+    const [ncmData, cestData, pisCofinsData, beneficiosData, aliquotasData, alimenticiosData, reducoesData] = await Promise.all([
       loadJson("data/ncm_tipi.json", { items: [] }),
       loadJson("data/cest_st_sp.json", { items: [] }),
       loadJson("data/pis_cofins_especial.json", { items: [] }),
       loadJson("data/icms_beneficios_sample.json", { items: [] }),
+      loadJson("data/icms_aliquotas_sp.json", null),
+      loadJson("data/icms_alimenticios_sp.json", null),
+      loadJson("data/icms_reducoes_alimenticios_sp.json", null),
     ]);
+    state.aliquotasRicms = aliquotasData;
+    state.alimenticios = alimenticiosData;
+    state.reducoesAlimenticios = reducoesData;
 
     state.ncmList = (ncmData.items || []).map((it) => ({
       ...it,
@@ -177,6 +186,108 @@
     return "Regime geral — ver alíquotas de Lucro Real/Presumido abaixo";
   }
 
+  function matchesAnyPrefix(ncm, prefixos) {
+    return (prefixos || []).some((p) => ncm.startsWith(p.replace(/\D/g, "")));
+  }
+
+  function matchAliquotaInterna(ncm) {
+    const regras = (state.aliquotasRicms && state.aliquotasRicms.regras) || [];
+    let best = null;
+    regras.forEach((r) => {
+      if (!matchesAnyPrefix(ncm, r.ncm_prefixos)) return;
+      if (r.ncm_excecoes && matchesAnyPrefix(ncm, r.ncm_excecoes)) return;
+      const specificity = Math.max(...r.ncm_prefixos.map((p) => p.replace(/\D/g, "").length));
+      if (!best || specificity > best._specificity) best = { ...r, _specificity: specificity };
+    });
+    const fecoep = state.aliquotasRicms && state.aliquotasRicms.adicional_fecoep;
+    const temFecoep = fecoep && matchesAnyPrefix(ncm, fecoep.ncm_prefixos);
+    return { regra: best, fecoep: temFecoep ? fecoep : null };
+  }
+
+  function matchAnexoXVI(ncm) {
+    const itens = (state.alimenticios && state.alimenticios.itens) || [];
+    const candidatos = [];
+    itens.forEach((it) => {
+      const prefixos = it.ncm || [];
+      let melhor = 0;
+      prefixos.forEach((p) => {
+        const digits = p.replace(/\D/g, "");
+        if (ncm.startsWith(digits) && digits.length > melhor) melhor = digits.length;
+      });
+      if (melhor > 0) candidatos.push({ item: it, especificidade: melhor });
+    });
+    if (!candidatos.length) return [];
+    const max = Math.max(...candidatos.map((c) => c.especificidade));
+    return candidatos.filter((c) => c.especificidade === max).map((c) => c.item);
+  }
+
+  function matchReducaoCestaBasica(ncm) {
+    const regra = state.reducoesAlimenticios && state.reducoesAlimenticios.art3_cesta_basica;
+    if (!regra) return null;
+    const item = (regra.itens || []).find((it) => matchesAnyPrefix(ncm, it.ncm_prefixos));
+    return item ? { regra, item } : null;
+  }
+
+  function matchReducaoArt39(ncm) {
+    const regra = state.reducoesAlimenticios && state.reducoesAlimenticios.art39_produtos_alimenticios;
+    if (!regra) return null;
+    const prefixosCapitulo = (regra.capitulos_ncm || []);
+    const prefixosAdicionais = (regra.posicoes_adicionais || []);
+    const bateCapitulo = prefixosCapitulo.some((c) => ncm.startsWith(c));
+    const bateAdicional = prefixosAdicionais.some((p) => ncm.startsWith(p));
+    return (bateCapitulo || bateAdicional) ? regra : null;
+  }
+
+  function renderProdutosAlimenticios(ncm) {
+    const anexoXviMatches = matchAnexoXVI(ncm);
+    const cestaBasica = matchReducaoCestaBasica(ncm);
+    const art39 = matchReducaoArt39(ncm);
+
+    if (!anexoXviMatches.length && !cestaBasica && !art39) return "";
+
+    let html = `<div class="produto-subsection"><h4>Produtos Alimentícios — regras específicas do RICMS/SP</h4>`;
+
+    if (anexoXviMatches.length) {
+      html += anexoXviMatches.map((it) => {
+        const ivaSt = state.alimenticios.iva_st_sre_12_2026 && state.alimenticios.iva_st_sre_12_2026[it.cest];
+        if (it.revogado) {
+          return `
+            <p class="produto-resumo">
+              <strong>CEST ${escapeHtml(it.cest)}</strong> (item ${escapeHtml(it.item)} do Anexo XVI) —
+              ${escapeHtml(it.descricao)}
+            </p>
+            <p class="produto-beneficio-tag" style="color:#a3450b;background:#fde8d8;">
+              ❌ Não é mais ST desde ${escapeHtml(it.revogado_desde)} — revogado pela ${escapeHtml(it.revogado_por)}
+            </p>`;
+        }
+        return `
+          <p class="produto-resumo">
+            <strong>CEST ${escapeHtml(it.cest)}</strong> (item ${escapeHtml(it.item)} do Anexo XVI) —
+            ${escapeHtml(it.descricao)}
+          </p>
+          <p class="produto-beneficio-tag">✅ Sujeito a ICMS-ST${ivaSt ? ` — IVA-ST ${escapeHtml(ivaSt)} (Portaria SRE 12/2026)` : " — IVA-ST não localizado na Portaria SRE 12/2026 para este CEST"}</p>`;
+      }).join("");
+    } else {
+      html += `<p class="produto-obs">Não localizado no Anexo XVI da Portaria CAT 68/2019 (base curada) — não deveria estar sujeito à ST como produto alimentício, mas confirme no texto oficial.</p>`;
+    }
+
+    if (cestaBasica) {
+      html += `
+        <p class="produto-resumo"><strong>Redução de base de cálculo — Cesta Básica (Art. 3º, Anexo II)</strong></p>
+        <p class="produto-obs">${escapeHtml(cestaBasica.item.descricao)} — carga tributária efetiva de <strong>${escapeHtml(cestaBasica.regra.carga_tributaria)}</strong> em operações internas (vigente até ${escapeHtml(cestaBasica.regra.vigencia_fim)}).</p>`;
+    }
+
+    if (art39) {
+      html += `
+        <p class="produto-resumo"><strong>Redução de base de cálculo — Produtos Alimentícios (Art. 39, Anexo II)</strong></p>
+        <p class="produto-obs">Carga tributária efetiva de <strong>${escapeHtml(art39.carga_tributaria)}</strong> em saídas internas de estabelecimento fabricante/atacadista (vigente até ${escapeHtml(art39.vigencia_fim)}), <strong>desde que</strong>:</p>
+        <ul class="produto-obs">${art39.condicoes.map((c) => `<li>${escapeHtml(c)}</li>`).join("")}</ul>`;
+    }
+
+    html += `</div>`;
+    return html;
+  }
+
   function renderIcmsBenefits(ncm) {
     const matches = state.beneficios.filter((b) => ncm.startsWith(b.ncm_prefixo));
     if (!matches.length) {
@@ -277,6 +388,10 @@
     if (!item) return;
 
     const ipiTexto = formatIpi(item.ipi_aliquota) || "Não localizada na TIPI";
+    const aliquotaMatch = matchAliquotaInterna(item.ncm);
+    const aliquotaResumo = aliquotaMatch.regra
+      ? `${escapeHtml(aliquotaMatch.regra.aliquota)} (Art. ${escapeHtml(aliquotaMatch.regra.artigo)})${aliquotaMatch.fecoep ? ` + ${escapeHtml(aliquotaMatch.fecoep.percentual)} FECOEP (Art. ${escapeHtml(aliquotaMatch.fecoep.artigo)})` : ""}`
+      : `18% (regra geral)${aliquotaMatch.fecoep ? ` + ${escapeHtml(aliquotaMatch.fecoep.percentual)} FECOEP (Art. ${escapeHtml(aliquotaMatch.fecoep.artigo)})` : ""}`;
 
     const html = `
       <article class="produto-card">
@@ -292,7 +407,7 @@
               <tr><th>Produto</th><td>${escapeHtml(item.descricao)}</td></tr>
               <tr><th>NCM</th><td>${escapeHtml(formatNcm(item.ncm))}</td></tr>
               <tr><th>IPI</th><td>${ipiTexto}</td></tr>
-              <tr><th>ICMS interna (SP)</th><td>18% (regra geral — ver observação abaixo)</td></tr>
+              <tr><th>ICMS interna (SP)</th><td>${aliquotaResumo}</td></tr>
               <tr><th>Benefício ICMS (Anexo I/II)</th><td>${summarizeBeneficio(item.ncm)}</td></tr>
               <tr><th>Substituição Tributária</th><td>${summarizeSubstituicaoTributaria(item.ncm)}</td></tr>
               <tr><th>PIS/COFINS</th><td>${summarizePisCofins(item.ncm)}</td></tr>
@@ -307,10 +422,17 @@
         </div>
 
         <div class="produto-subsection">
-          <h4>ICMS — alíquota interna (regra geral, SP)</h4>
-          <p class="produto-resumo">18% (alíquota interna geral do Estado de São Paulo). Algumas categorias têm alíquota diferenciada (ex.: 25% para bebidas alcoólicas, perfumaria não essencial, armas, cigarros e combustíveis; ~12% ou menos para itens da cesta básica) — este valor não é calculado por NCM específico nesta versão.</p>
+          <h4>ICMS — alíquota interna (SP)</h4>
+          <p class="produto-resumo">
+            ${aliquotaMatch.regra
+              ? `<strong>${escapeHtml(aliquotaMatch.regra.aliquota)}</strong> — ${escapeHtml(aliquotaMatch.regra.descricao)} (RICMS/SP, art. ${escapeHtml(aliquotaMatch.regra.artigo)})`
+              : `<strong>18%</strong> (alíquota interna geral do Estado de São Paulo, RICMS/SP art. 52, I) — não encontrada nenhuma das alíquotas diferenciadas mapeadas (arts. 53-A a 55-A) para este NCM.`}
+            ${aliquotaMatch.fecoep ? `<br>+ <strong>${escapeHtml(aliquotaMatch.fecoep.percentual)}</strong> de adicional FECOEP (RICMS/SP, art. ${escapeHtml(aliquotaMatch.fecoep.artigo)}) sobre saídas a consumidor final em SP.` : ""}
+          </p>
+          <p class="produto-obs">Cobertura curada a partir do texto oficial dos artigos 52 a 56-C do RICMS/SP — cobre as alíquotas diferenciadas mais comuns, mas não todas as exceções pontuais (ex.: ferros/aços e cerâmicos específicos do art. 54, §§1º e 2º). Confirme casos de fronteira no texto oficial.</p>
         </div>
 
+        ${renderProdutosAlimenticios(item.ncm)}
         ${renderIcmsBenefits(item.ncm)}
         ${renderSubstituicaoTributaria(item.ncm)}
         ${renderPisCofins(item.ncm)}
