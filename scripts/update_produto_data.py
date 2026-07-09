@@ -332,6 +332,43 @@ def extract_pdf_text(raw_bytes):
         return None
 
 
+def extract_doc_text(raw_bytes):
+    """Extrai o texto de um .doc (Word 97-2003, formato binário OLE2) usando o
+    utilitário externo `antiword` (instalado via apt no workflow; não existe
+    biblioteca Python pura confiável para esse formato legado). Retorna None
+    se o binário não estiver disponível ou a extração falhar."""
+    import shutil
+    import subprocess
+    import tempfile
+
+    if shutil.which("antiword") is None:
+        print("[warn] antiword não instalado; não é possível extrair texto de .doc.", file=sys.stderr)
+        return None
+    try:
+        with tempfile.NamedTemporaryFile(suffix=".doc") as tmp:
+            tmp.write(raw_bytes)
+            tmp.flush()
+            result = subprocess.run(
+                ["antiword", tmp.name],
+                capture_output=True,
+                timeout=30,
+            )
+        if result.returncode != 0:
+            print(
+                f"[warn] antiword saiu com código {result.returncode}: "
+                f"{result.stderr.decode('utf-8', errors='ignore')[:500]}",
+                file=sys.stderr,
+            )
+            return None
+        return result.stdout.decode("utf-8", errors="ignore")
+    except Exception as exc:
+        print(f"[warn] falha ao extrair texto do .doc com antiword: {exc}", file=sys.stderr)
+        return None
+
+
+OLE2_SIGNATURE = b"\xd0\xcf\x11\xe0\xa1\xb1\x1a\xe1"
+
+
 def extract_table_rows(html_text):
     """Genérico: retorna uma lista de linhas de tabela, cada uma como lista de
     texto de célula (tags já removidas). Usado tanto para CEST/MVA quanto para
@@ -556,18 +593,29 @@ def extract_ncm_natureza_from_rows(table_rows, regime):
 
 
 def parse_sped_table(raw_text, regime, rows_are_html):
-    """Extrai NCM + código da natureza da receita. Tenta primeiro célula a
-    célula (tabela HTML real ou texto "célula | célula" vindo de xlsx); se não
-    achar nada, cai para uma busca por texto corrido ancorada no rótulo
-    "natureza da receita", como rede de segurança para formatos inesperados."""
+    """Extrai NCM + código da natureza da receita. Tenta, em ordem, algumas
+    formas de dividir o texto em "linhas de tabela" (lista de células por
+    linha) até achar NCM + natureza na mesma linha: tabela HTML real; texto
+    "célula | célula" (vindo de xlsx); colunas separadas por 2+ espaços ou
+    tab (texto extraído de .doc via antiword costuma preservar colunas
+    assim). Se nenhuma bater, cai para uma busca por texto corrido ancorada
+    no rótulo "natureza da receita", como rede de segurança para formatos
+    inesperados."""
     if rows_are_html:
-        table_rows = extract_table_rows(raw_text)
+        row_strategies = [extract_table_rows(raw_text)]
     else:
-        table_rows = [line.split(" | ") for line in raw_text.splitlines() if line.strip()]
+        lines = [line for line in raw_text.splitlines() if line.strip()]
+        row_strategies = [
+            [line.split(" | ") for line in lines],
+            [re.split(r"\s{2,}|\t", line.strip()) for line in lines],
+        ]
 
-    rows = extract_ncm_natureza_from_rows(table_rows, regime)
-    if rows:
-        return rows, len(table_rows)
+    max_table_rows = 0
+    for table_rows in row_strategies:
+        max_table_rows = max(max_table_rows, len(table_rows))
+        rows = extract_ncm_natureza_from_rows(table_rows, regime)
+        if rows:
+            return rows, len(table_rows)
 
     # Rede de segurança: busca em texto corrido.
     fallback_rows = []
@@ -582,7 +630,7 @@ def parse_sped_table(raw_text, regime, rows_are_html):
             "codigo_natureza_receita": codigo_match.group(1),
             "descricao": strip_html(line)[:200],
         })
-    return fallback_rows, len(table_rows)
+    return fallback_rows, max_table_rows
 
 
 def fetch_pis_cofins_especial():
@@ -619,6 +667,15 @@ def fetch_pis_cofins_especial():
                     raw_text = pdf_text
                     rows_are_html = False
                     print(f"[debug] tabela SPED {regime} ({url}): PDF com {len(pdf_text)} chars de texto extraído", file=sys.stderr)
+            elif raw[:8] == OLE2_SIGNATURE:
+                # Formato binário OLE2 (Word 97-2003 .doc, ou Excel 97-2003 .xls
+                # com o mesmo container). Essas tabelas do SPED são publicadas
+                # como .doc, então tentamos antiword primeiro.
+                doc_text = extract_doc_text(raw)
+                if doc_text:
+                    raw_text = doc_text
+                    rows_are_html = False
+                    print(f"[debug] tabela SPED {regime} ({url}): .doc (OLE2) com {len(doc_text)} chars de texto extraído via antiword", file=sys.stderr)
             else:
                 raw_text = raw.decode("utf-8", errors="ignore")
 

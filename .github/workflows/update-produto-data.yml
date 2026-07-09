@@ -36,6 +36,9 @@ jobs:
       - name: Instalar dependências
         run: pip install -r scripts/requirements.txt
 
+      - name: Instalar antiword (extração de texto de .doc do SPED)
+        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends antiword
+
       - name: Rodar coleta de dados de produto
         run: python3 scripts/update_produto_data.py
 

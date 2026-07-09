@@ -1,6 +1,8 @@
 # update_data.py usa apenas a biblioteca padrão do Python.
 # update_produto_data.py precisa do openpyxl para ler a planilha TIPI (.xlsx)
-# e do pdfplumber para extrair texto dos anexos em PDF (CEST/Convênio 142/2018
-# e, possivelmente, as tabelas do SPED Contribuições).
+# e do pdfplumber para extrair texto do PDF de anexos do Convênio 142/2018
+# (CEST/NCM). As tabelas do SPED Contribuições (PIS/COFINS) são publicadas
+# como .doc (Word 97-2003) — a extração usa o utilitário externo `antiword`
+# (instalado via apt no workflow, não é um pacote Python).
 openpyxl
 pdfplumber
