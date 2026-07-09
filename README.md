@@ -70,7 +70,7 @@ importante saber qual é qual antes de confiar no resultado:
 |---|---|---|
 | NCM + descrição | Portal Único Siscomex | API pública, automática, cobertura completa |
 | Alíquota de IPI | TIPI (Receita Federal) | Planilha oficial, automática, cobertura completa |
-| CEST / MVA original (ICMS-ST/SP) | Portaria CAT 68/2019 | Raspagem automática dos 22 anexos |
+| CEST / NCM (segmento de ST) | Convênio ICMS 142/2018 (CONFAZ, nacional) | Raspagem automática; MVA, quando presente, é só valor de referência — pode ter sido atualizado depois por portaria estadual |
 | PIS/COFINS monofásico / alíquota zero | Tabelas 4.3.10/4.3.13 do SPED Contribuições | Automática |
 | PIS/COFINS regime geral (Lucro Real/Presumido) | Lei 10.637/02, Lei 10.833/03, Lei 9.718/98 | Alíquotas fixas (1,65%/7,60% e 0,65%/3,00%), não variam por produto |
 | **Isenção / redução de base de cálculo do ICMS (Anexos I e II do RICMS/SP)** | `data/icms_beneficios_sample.json` | **Amostra pequena, curada manualmente** — os anexos são texto legal, não uma tabela "NCM → benefício"; exigem interpretação jurídica |
@@ -81,12 +81,13 @@ orientação de um profissional.** Isso vale especialmente para os dois últimos
 itens da tabela.
 
 `scripts/update_produto_data.py` foi escrito sem poder validar ao vivo os
-formatos reais das páginas de CEST/MVA (Portaria CAT 68/2019) e das tabelas do
+formatos reais das páginas de CEST/NCM (Convênio 142/2018) e das tabelas do
 SPED — o acesso a essas fontes estava bloqueado no ambiente onde o script foi
 criado. Por isso ele tem logs de diagnóstico verbosos (`[debug]`), para que,
-se o parser não bater com o formato real na primeira execução em produção,
-dê para corrigir rapidamente lendo os logs do Action — foi assim que
-`scripts/update_data.py` também evoluiu.
+se o parser não bater com o formato real numa execução em produção, dê para
+corrigir rapidamente lendo os logs do Action — foi assim que NCM/TIPI e a
+Base Legal também evoluíram (cada uma precisou de 1-2 rodadas de ajuste após
+ver o formato real).
 
 ## Publicar no GitHub Pages
 
