@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "number": "35/2026",
+      "title": "Disciplina a concessão de regime especial para a suspensão do lançamento do ICMS devido no desembaraço aduaneiro de pescados que especifica.",
+      "link": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-35-de-2026.aspx",
+      "date": "2026-07-08",
+      "source": "SEFAZ-SP (legislação oficial)",
+      "summary": "",
+      "sectors": [
+        "Outros"
+      ]
+    },
+    {
       "number": "34/2026",
       "title": "Revoga dispositivos das Portarias CAT 68/19, de 13 de dezembro de 2019, e SRE 32/26, de 26 de junho de 2026, e as Portarias SRE 16/23, de 9 de março de 2023, 15/24, de 15 de março de 2024, 46/24, de 12 de julho de 2024, 86/24, de 26 de novembro de 2024, 78/25, de 6 de novembro de 2025, e 10/26, de 20 de março de 2026, e dá outras providências.",
       "link": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-34-de-2026.aspx",
@@ -4313,5 +4324,5 @@
     }
   ],
   "backfill_complete": true,
-  "last_updated": "2026-07-13T12:17:19+00:00"
+  "last_updated": "2026-07-14T10:56:12+00:00"
 }

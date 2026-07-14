@@ -2,6 +2,28 @@
   "items": [
     {
       "number": null,
+      "title": "Boletim Tributário, Previdenciário e Aduaneiro – Junho 2026 - Demarest",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNNEg4MzZhMU5vekdLOWxuSEpkTWNOcGczSGdlbmR6aVUtV0xOTlk3Vk90UmR4Zm1aMmJRY2Z5N0pkUW1hV3BubjdNanJWWUJHT3lBQ1R0eUk1aEtIcFZrOGNhajhVZm9wWVhnclpLb0NDTFRxUWpoMWlUMy15blJ4V05JYUtoQ2RCYnZpLVV3?oc=5",
+      "date": "2026-07-13",
+      "source": "Demarest",
+      "summary": "Boletim Tributário, Previdenciário e Aduaneiro – Junho 2026 Demarest",
+      "sectors": [
+        "Outros"
+      ]
+    },
+    {
+      "number": "35/2026",
+      "title": "Disciplina a concessão de regime especial para a suspensão do lançamento do ICMS devido no desembaraço aduaneiro de pescados que especifica.",
+      "link": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-35-de-2026.aspx",
+      "date": "2026-07-08",
+      "source": "SEFAZ-SP (legislação oficial)",
+      "summary": "",
+      "sectors": [
+        "Outros"
+      ]
+    },
+    {
+      "number": null,
       "title": "ICMS-ST: SP revoga protocolos para limpeza e rações pet - Portal Contabeis",
       "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdmUxV1pSTFczS0duZEppX1NYZFQ3T0FLaklTVzBRU1dpdXJkYzBWRDc2LXg4eER4N3k5RG1VbE1vMi1ESm5qd2FFQ0EzUnVFd0ZvMERBZGJZX1pwb1owdkt2Y1F3MDQ4SGNTTlpvNUE2eHhiMVRNRDJQR0QwMDU4MG9hRmJhMEt5Um1iZU11OEQ5ZFRrWGxweERjeW02ZlI0?oc=5",
       "date": "2026-07-07",
@@ -137,6 +159,17 @@
       "date": "2026-06-25",
       "source": "Metrópoles",
       "summary": "TJSP manda Tarcísio revelar empresas beneficiadas com isenção de ICMS Metrópoles",
+      "sectors": [
+        "Outros"
+      ]
+    },
+    {
+      "number": null,
+      "title": "Justiça manda governo de SP divulgar empresas beneficiadas por isenções de ICMS - Diário de São Paulo",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOLWs4NFgxcWYzSGZLUFlkbE1Ubmc2U1QzSXNtdEdWTEwwMUJWV2N1RktVbktKM01BRG92UFJMOGcyRmlVdlBhUmNweDZ6R3M0RXk0N25YMTVPOU1YWEVXUWRiUld1UE9HbFp4VFFSM2xaRGFWNGczQW5qTHNObjdTbFF3Q19IN2Z3NjBiMjBtWjBDR2xJTkVXT0xQM1kzbTR3RFJFXzAtMWtoRVVaVFl4d3gtRDE4YXVYVHlTUzg4dDVqQ0hOQjFyMXJyNVjSAdIBQVVfeXFMTXhJeHNDcW83T0NQUmFrcW9hYTh6MXRYWEtkOWdaMVZ0ci1rTDA2eDVOTnlrdlQ5TUtMM1VlVXdlWGgzdG5FaHdVV0FtLUtoWXp0dTg5dnZac0tFc05RZ2NhUk1XMXU4UXAyMXByU1lET1N4RVFaa3RsRWtMMVhFRVlZdG9yRnp2OFdqZlpPRFFwRU1yUE5Hdk9qRF9BeHJvS0Y1dFowWDgzZmZ4OXdTVXktcmFfMVE0bjR2T251RjlsRUVxQlFvWV9zak00QzMwNmlB?oc=5",
+      "date": "2026-06-25",
+      "source": "Diário de São Paulo",
+      "summary": "Justiça manda governo de SP divulgar empresas beneficiadas por isenções de ICMS Diário de São Paulo",
       "sectors": [
         "Outros"
       ]
@@ -422,5 +455,5 @@
       "summary": "Aprimora a norma que rege as operações logísticas de empresas de comércio eletrônico para fins de ICMS em São Paulo."
     }
   ],
-  "last_updated": "2026-07-13T12:17:13+00:00"
+  "last_updated": "2026-07-14T10:56:07+00:00"
 }
