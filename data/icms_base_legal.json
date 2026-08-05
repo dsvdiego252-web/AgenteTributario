@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "number": "36/2026",
+      "title": "Dispõe sobre a composição da Câmara Superior e das Câmaras Julgadoras do Tribunal de Impostos e Taxas - TIT e divulga a lista de suplência para substituição nas Câmaras Julgadoras.",
+      "link": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-36-de-2026.aspx",
+      "date": "2026-07-27",
+      "source": "SEFAZ-SP (legislação oficial)",
+      "summary": "",
+      "sectors": [
+        "Outros"
+      ]
+    },
+    {
       "number": "35/2026",
       "title": "Disciplina a concessão de regime especial para a suspensão do lançamento do ICMS devido no desembaraço aduaneiro de pescados que especifica.",
       "link": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-35-de-2026.aspx",
@@ -4324,5 +4335,5 @@
     }
   ],
   "backfill_complete": true,
-  "last_updated": "2026-08-04T11:33:35+00:00"
+  "last_updated": "2026-08-05T11:28:59+00:00"
 }
