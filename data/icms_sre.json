@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "number": null,
+      "title": "São Paulo simplifica a tributação do ICMS para o segmento de autopeças - technibus.com.br",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOTXNsbGhtT04wVjlPSUlMTjdPb1pXWTVIUmJxS3lqVG95RE9iUFZIZUNCdlBZQ1ExZ01KaXpUSXNlbENhWkpKOVdPUVpHNExodENCM1QxTkt2Wm1zWUZweXB3ajUtaGlHXzB6SmRpNVRQdkszWFhWejhtN0tLVnM4ejZFZzhEMjZJN3F4b0tKSTZlbjFWbGVma1dfMUlRUThDNGlXMTVablNFQQ?oc=5",
+      "date": "2026-08-05",
+      "source": "technibus.com.br",
+      "summary": "São Paulo simplifica a tributação do ICMS para o segmento de autopeças technibus.com.br",
+      "sectors": [
+        "Veículos e Autopeças"
+      ]
+    },
+    {
       "number": "36/2026",
       "title": "Dispõe sobre a composição da Câmara Superior e das Câmaras Julgadoras do Tribunal de Impostos e Taxas - TIT e divulga a lista de suplência para substituição nas Câmaras Julgadoras.",
       "link": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-36-de-2026.aspx",
@@ -555,5 +566,5 @@
       "summary": "Aprimora a norma que rege as operações logísticas de empresas de comércio eletrônico para fins de ICMS em São Paulo."
     }
   ],
-  "last_updated": "2026-08-05T11:28:53+00:00"
+  "last_updated": "2026-08-06T11:32:52+00:00"
 }
