@@ -1,6 +1,18 @@
 {
   "items": [
     {
+      "number": "37/2026",
+      "title": "Estabelece a base de cálculo da substituição tributária na saída de cimento.",
+      "link": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-37-de-2026.aspx",
+      "date": "2026-08-04",
+      "source": "SEFAZ-SP (legislação oficial)",
+      "summary": "",
+      "sectors": [
+        "Materiais de Construção",
+        "Substituição Tributária (geral)"
+      ]
+    },
+    {
       "number": "36/2026",
       "title": "Dispõe sobre a composição da Câmara Superior e das Câmaras Julgadoras do Tribunal de Impostos e Taxas - TIT e divulga a lista de suplência para substituição nas Câmaras Julgadoras.",
       "link": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-36-de-2026.aspx",
@@ -4335,5 +4347,5 @@
     }
   ],
   "backfill_complete": true,
-  "last_updated": "2026-08-11T10:10:24+00:00"
+  "last_updated": "2026-08-12T10:19:50+00:00"
 }
