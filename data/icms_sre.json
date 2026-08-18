@@ -1,6 +1,18 @@
 {
   "items": [
     {
+      "number": "41/2026",
+      "title": "Altera a Portaria SRE 27/26, de 8 de junho de 2026, que divulga valores atualizados para fins de determinação da base de cálculo da substituição tributária de cerveja, chope, refrigerantes e outras bebidas.",
+      "link": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-41-de-2026.aspx",
+      "date": "2026-08-17",
+      "source": "SEFAZ-SP (legislação oficial)",
+      "summary": "",
+      "sectors": [
+        "Bebidas",
+        "Substituição Tributária (geral)"
+      ]
+    },
+    {
       "number": null,
       "title": "Fim do ICMS-ST em SP vira teste de fogo para o caixa de empresas e antecipa desafios da Reforma Tributária - Coluna Política",
       "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPWktOWXZQRUNkT3BHOUhyS2ZMZTNEblk0OXRvbXEwQndVSlhMbFNqMF80ai1WakNlQ0JJSm52azJCdlNlanppR2VqSlZrMy1OUl9ZNjBfbUJuWEdfdFlNZXZWU0RCbzRfZnRoRVBnMTJaNm9TVnpLZWtwV28tWEdVM1JGeV9kdlpHQ21yRFpEMU1ZVzU1WW96LTZjLU1XQ2lDV08tc094WFVxdC15SEF5c05UN3llS0RrZ3BzV01HWnRUOENLN2NKUnZDQklTZjZrTk1vWkRSTkRrQVlNeUE?oc=5",
@@ -612,5 +624,5 @@
       "summary": "Aprimora a norma que rege as operações logísticas de empresas de comércio eletrônico para fins de ICMS em São Paulo."
     }
   ],
-  "last_updated": "2026-08-17T09:56:48+00:00"
+  "last_updated": "2026-08-18T09:48:20+00:00"
 }
