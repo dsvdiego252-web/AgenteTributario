@@ -1,6 +1,18 @@
 {
   "items": [
     {
+      "number": "42/2026",
+      "title": "Altera a Portaria SRE 27/26, de 8 de junho de 2026, que divulga valores atualizados para fins de determinação da base de cálculo da substituição tributária de cerveja, chope, refrigerantes e outras bebidas.",
+      "link": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-42-de-2026.aspx",
+      "date": "2026-08-20",
+      "source": "SEFAZ-SP (legislação oficial)",
+      "summary": "",
+      "sectors": [
+        "Bebidas",
+        "Substituição Tributária (geral)"
+      ]
+    },
+    {
       "number": null,
       "title": "Transportadoras devem exigir DC-e de clientes não contribuintes do ICMS - Portal Contabeis",
       "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPOHF6cEhScFBKNjNlRDdVYm9kMU8yU1ZWQUt0eVN2Q0dNcWt3UURCbDh0dzB3Si1qeFgtOE9Lc1pQaWZrdGNNS0IxTm9pYTdDd3pjYnJBOTEyYVRNdDdxdFlEZ0dnVmgwRE9sOGVjbzNuaXFsZXpSbFU1UkN0R1ZxU2VQcTUyem9xa2Y3QnlXZm9HYk83ckUwdXJmeDlTUUU3dXAzSXdUZ2pPVGtY?oc=5",
@@ -635,5 +647,5 @@
       "summary": "Aprimora a norma que rege as operações logísticas de empresas de comércio eletrônico para fins de ICMS em São Paulo."
     }
   ],
-  "last_updated": "2026-08-24T10:03:22+00:00"
+  "last_updated": "2026-08-25T09:50:57+00:00"
 }

@@ -1,6 +1,18 @@
 {
   "items": [
     {
+      "number": "42/2026",
+      "title": "Altera a Portaria SRE 27/26, de 8 de junho de 2026, que divulga valores atualizados para fins de determinação da base de cálculo da substituição tributária de cerveja, chope, refrigerantes e outras bebidas.",
+      "link": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-42-de-2026.aspx",
+      "date": "2026-08-20",
+      "source": "SEFAZ-SP (legislação oficial)",
+      "summary": "",
+      "sectors": [
+        "Bebidas",
+        "Substituição Tributária (geral)"
+      ]
+    },
+    {
       "number": "41/2026",
       "title": "Altera a Portaria SRE 27/26, de 8 de junho de 2026, que divulga valores atualizados para fins de determinação da base de cálculo da substituição tributária de cerveja, chope, refrigerantes e outras bebidas.",
       "link": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-41-de-2026.aspx",
@@ -4359,5 +4371,5 @@
     }
   ],
   "backfill_complete": true,
-  "last_updated": "2026-08-24T10:03:30+00:00"
+  "last_updated": "2026-08-25T09:51:02+00:00"
 }
