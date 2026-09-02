@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "number": null,
+      "title": "Prevenção contra fraudes do ICMS - O seguro de obrigações contratuais - Migalhas",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQX0J4VXBzY3h2Z1pfUk1LX3NndHFMbEdxT29DRkVBZXdrLURvYzh2MnRtM1ZzeFJiS0ZUYnhBUHZ3VWlMMy1TTUpncHdkdE1KSE9UY2xiMzF3UDFETWFXSHhWbjl6QS02dGh4WVlxQldPa1MtcjZZZDJVTzY3WTJqVmdTVnh1a05pSlhsM3pocURkWGNlTHltbXNGRE94RWtCa2ZXcXl4dm8zMDRRWENn?oc=5",
+      "date": "2026-09-01",
+      "source": "Migalhas",
+      "summary": "Prevenção contra fraudes do ICMS - O seguro de obrigações contratuais Migalhas",
+      "sectors": [
+        "Outros"
+      ]
+    },
+    {
       "number": "42/2026",
       "title": "Altera a Portaria SRE 27/26, de 8 de junho de 2026, que divulga valores atualizados para fins de determinação da base de cálculo da substituição tributária de cerveja, chope, refrigerantes e outras bebidas.",
       "link": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-42-de-2026.aspx",
@@ -658,5 +669,5 @@
       "summary": "Aprimora a norma que rege as operações logísticas de empresas de comércio eletrônico para fins de ICMS em São Paulo."
     }
   ],
-  "last_updated": "2026-09-01T14:08:59+00:00"
+  "last_updated": "2026-09-02T13:39:27+00:00"
 }
