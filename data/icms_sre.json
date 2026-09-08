@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "number": "44/2026",
+      "title": "Altera a Portaria CAT 126/11, de 16 de setembro de 2011, que disciplina a arrecadação de tributos e demais receitas estaduais, bem como a prestação de contas pelas instituições bancárias.",
+      "link": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-44-de-2026.aspx",
+      "date": "2026-09-04",
+      "source": "SEFAZ-SP (legislação oficial)",
+      "summary": "",
+      "sectors": [
+        "Obrigações Acessórias / Administração Tributária"
+      ]
+    },
+    {
+      "number": "43/2026",
+      "title": "Altera a Portaria CAT 125/11, de 9 de setembro de 2011, que institui o Sistema Ambiente de Pagamentos e o Documento de Arrecadação de Receitas Estaduais - DARE-SP.",
+      "link": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-43-de-2026.aspx",
+      "date": "2026-09-04",
+      "source": "SEFAZ-SP (legislação oficial)",
+      "summary": "",
+      "sectors": [
+        "Outros"
+      ]
+    },
+    {
       "number": null,
       "title": "Fim da Substituição Tributária do ICMS exige nova estratégia de precificação no varejo farmacêutico - Abradilan",
       "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOYUJyTnFkMzhENE14a3BFMkd6N3h3cTkzYmY1Qm5DSGFYRTlfYXFMQ2RQamF5bmhxUUE0V19ER2dSREtiZjcwRzA1VTVKYWJ1eklUQnBuWDBDU3JKalZzUWNzV2FzV2MtN1gtY0VaZGVsdDdxaGk3YXIzYm1zSFFTcjNRMnU4MTdmNkRxWmZJaDU4dzdPamhNdG12OWlvQzV4YjdzVkE1d0Ywc1l6U0FDbzVsQWFFTnkySGVUbnd0NjV6cjV3VWZZZjdPVW9lZw?oc=5",
@@ -692,5 +714,5 @@
       "summary": "Aprimora a norma que rege as operações logísticas de empresas de comércio eletrônico para fins de ICMS em São Paulo."
     }
   ],
-  "last_updated": "2026-09-07T15:02:58+00:00"
+  "last_updated": "2026-09-08T13:37:52+00:00"
 }

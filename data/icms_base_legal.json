@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "number": "44/2026",
+      "title": "Altera a Portaria CAT 126/11, de 16 de setembro de 2011, que disciplina a arrecadação de tributos e demais receitas estaduais, bem como a prestação de contas pelas instituições bancárias.",
+      "link": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-44-de-2026.aspx",
+      "date": "2026-09-04",
+      "source": "SEFAZ-SP (legislação oficial)",
+      "summary": "",
+      "sectors": [
+        "Obrigações Acessórias / Administração Tributária"
+      ]
+    },
+    {
+      "number": "43/2026",
+      "title": "Altera a Portaria CAT 125/11, de 9 de setembro de 2011, que institui o Sistema Ambiente de Pagamentos e o Documento de Arrecadação de Receitas Estaduais - DARE-SP.",
+      "link": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-43-de-2026.aspx",
+      "date": "2026-09-04",
+      "source": "SEFAZ-SP (legislação oficial)",
+      "summary": "",
+      "sectors": [
+        "Outros"
+      ]
+    },
+    {
       "number": "42/2026",
       "title": "Altera a Portaria SRE 27/26, de 8 de junho de 2026, que divulga valores atualizados para fins de determinação da base de cálculo da substituição tributária de cerveja, chope, refrigerantes e outras bebidas.",
       "link": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-42-de-2026.aspx",
@@ -4371,5 +4393,5 @@
     }
   ],
   "backfill_complete": true,
-  "last_updated": "2026-09-07T15:03:06+00:00"
+  "last_updated": "2026-09-08T13:37:59+00:00"
 }
