@@ -1,6 +1,18 @@
 {
   "items": [
     {
+      "number": "45/2026",
+      "title": "Altera a Portaria SRE 27/26, de 8 de junho de 2026, que divulga valores atualizados para fins de determinação da base de cálculo da substituição tributária de cerveja, chope, refrigerantes e outras bebidas.",
+      "link": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-45-de-2026.aspx",
+      "date": "2026-09-10",
+      "source": "SEFAZ-SP (legislação oficial)",
+      "summary": "",
+      "sectors": [
+        "Bebidas",
+        "Substituição Tributária (geral)"
+      ]
+    },
+    {
       "number": "44/2026",
       "title": "Altera a Portaria CAT 126/11, de 16 de setembro de 2011, que disciplina a arrecadação de tributos e demais receitas estaduais, bem como a prestação de contas pelas instituições bancárias.",
       "link": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-44-de-2026.aspx",
@@ -714,5 +726,5 @@
       "summary": "Aprimora a norma que rege as operações logísticas de empresas de comércio eletrônico para fins de ICMS em São Paulo."
     }
   ],
-  "last_updated": "2026-09-13T13:48:10+00:00"
+  "last_updated": "2026-09-14T15:53:28+00:00"
 }
