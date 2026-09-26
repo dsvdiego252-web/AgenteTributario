@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "number": null,
+      "title": "Setor de blindagem veicular projeta reajuste de até 16% nos preços em SP após mudanças no ICMS - Sala da Notícia",
+      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQbE9kUGJrQm9JUlR2eV9pbkc2WGdWNXRHeG10NmtMTk1NQTllU1RqQUZ6WFc0ajAxWWVvQ081U3Y5elQ1dm9uNWVQaUhhRzBmZ29COFVLaW9vdkNRZGJuSW43TlEydVMxZnhCLWxwR2tCVVoyaTkyazJKSG9TWElreGhSUDJlZmV1bmVzRGowQWtKT25jMmhNSWN0bkN6dFFlR2loTENncmxwc0R6QWJqY3pheUh0SkxtSTNieXpFTWRFdUtJbjRDTUZtcm5GeUUtdXMwcHlMbkQwRGs?oc=5",
+      "date": "2026-09-26",
+      "source": "Sala da Notícia",
+      "summary": "Setor de blindagem veicular projeta reajuste de até 16% nos preços em SP após mudanças no ICMS Sala da Notícia",
+      "sectors": [
+        "Outros"
+      ]
+    },
+    {
       "number": "45/2026",
       "title": "Altera a Portaria SRE 27/26, de 8 de junho de 2026, que divulga valores atualizados para fins de determinação da base de cálculo da substituição tributária de cerveja, chope, refrigerantes e outras bebidas.",
       "link": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-45-de-2026.aspx",
@@ -726,5 +737,5 @@
       "summary": "Aprimora a norma que rege as operações logísticas de empresas de comércio eletrônico para fins de ICMS em São Paulo."
     }
   ],
-  "last_updated": "2026-09-25T14:36:07+00:00"
+  "last_updated": "2026-09-26T13:44:36+00:00"
 }
