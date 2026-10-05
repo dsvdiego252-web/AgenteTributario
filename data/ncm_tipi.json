@@ -24472,7 +24472,7 @@
     },
     {
       "ncm": "39139050",
-      "descricao": "Quitosan ( Chitosan ), seus sais ou seus derivados",
+      "descricao": "Quitosana, seus sais ou seus derivados",
       "ipi_aliquota": "3.25"
     },
     {
@@ -46011,6 +46011,11 @@
       "ipi_aliquota": "3.25"
     },
     {
+      "ncm": "85181020",
+      "descricao": "Outros microfones, sem suporte",
+      "ipi_aliquota": null
+    },
+    {
       "ncm": "85181090",
       "descricao": "Outros",
       "ipi_aliquota": "9.75"
@@ -52576,5 +52581,5 @@
       "ipi_aliquota": "NT"
     }
   ],
-  "last_updated": "2026-09-28T12:41:34+00:00"
+  "last_updated": "2026-10-05T13:22:34+00:00"
 }
