@@ -2,6 +2,53 @@
   "items": [
     {
       "number": null,
+      "title": "Sefaz/SP exclui 47 itens do ICMS-ST e dá mais um passo à desburocratização do sistema tributário - FecomercioSP",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPcmVIZ3FlTFQzdEttZ0t0Q0txZmlVQnRhQUlUWGZFc2hoMXl5WE0zZlBoN1dnZjh1dEdVNzNtdmcxOWVSRnF3VkJpRDRwRDZmby1LcEV6S21KOVVIWG56MkhBaWFidERDUHVQbUMzNUE0a0pEdGs5RXFGeFBDcC0xZDlXQnhhNUxfNzc1UlU0V0ZaaFBxS2RkaFpEaHVHa2gyVm1pZFE5VlBCblMzMWMxcThfYnFCZ2FHRmVaVEFEYTZvbXB1ZlBSSF9FNTAzTkU?oc=5",
+      "date": "2026-10-18",
+      "source": "FecomercioSP",
+      "summary": "Sefaz/SP exclui 47 itens do ICMS-ST e dá mais um passo à desburocratização do sistema tributário FecomercioSP",
+      "sectors": [
+        "Outros"
+      ]
+    },
+    {
+      "number": "51/2026",
+      "title": "Altera a Portaria SRE 41/23, de 21 de junho de 2023, que disciplina os procedimentos a serem adotados pelos contribuintes do ICMS relativamente às operações que especifica, e dá outras providências.",
+      "link": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-51-de-2026.aspx",
+      "date": "2026-10-16",
+      "source": "SEFAZ-SP (legislação oficial)",
+      "summary": "",
+      "sectors": [
+        "Outros"
+      ]
+    },
+    {
+      "number": "50/2026",
+      "title": "Altera a Portaria CAT 156/10, de 24 de setembro de 2010, que disciplina o cumprimento de obrigações acessórias pelos prestadores de serviços de intermediação comercial em ambiente virtual e pelos prestadores de serviços relacionados ao comércio eletrônico.",
+      "link": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-50-de-2026.aspx",
+      "date": "2026-10-16",
+      "source": "SEFAZ-SP (legislação oficial)",
+      "summary": "",
+      "sectors": [
+        "Comércio Eletrônico",
+        "Obrigações Acessórias / Administração Tributária"
+      ]
+    },
+    {
+      "number": "49/2026",
+      "title": "Altera a Portaria CAT 27/15, de 26 de fevereiro de 2015, que disciplina o reconhecimento de imunidade, a concessão de isenção, a dispensa de pagamento e a restituição relativamente ao Imposto sobre a Propriedade de Veículos Automotores - IPVA, e dá outras providências.",
+      "link": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-49-de-2026.aspx",
+      "date": "2026-10-16",
+      "source": "SEFAZ-SP (legislação oficial)",
+      "summary": "",
+      "sectors": [
+        "Materiais de Construção",
+        "Veículos e Autopeças",
+        "IPVA"
+      ]
+    },
+    {
+      "number": null,
       "title": "Setor de blindagem veicular projeta reajuste de até 16% nos preços em SP após mudanças no ICMS - Sala da Notícia",
       "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQbE9kUGJrQm9JUlR2eV9pbkc2WGdWNXRHeG10NmtMTk1NQTllU1RqQUZ6WFc0ajAxWWVvQ081U3Y5elQ1dm9uNWVQaUhhRzBmZ29COFVLaW9vdkNRZGJuSW43TlEydVMxZnhCLWxwR2tCVVoyaTkyazJKSG9TWElreGhSUDJlZmV1bmVzRGowQWtKT25jMmhNSWN0bkN6dFFlR2loTENncmxwc0R6QWJqY3pheUh0SkxtSTNieXpFTWRFdUtJbjRDTUZtcm5GeUUtdXMwcHlMbkQwRGs?oc=5",
       "date": "2026-09-26",
@@ -737,5 +784,5 @@
       "summary": "Aprimora a norma que rege as operações logísticas de empresas de comércio eletrônico para fins de ICMS em São Paulo."
     }
   ],
-  "last_updated": "2026-10-18T13:16:29+00:00"
+  "last_updated": "2026-10-19T16:27:17+00:00"
 }
