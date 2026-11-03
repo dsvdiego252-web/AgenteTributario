@@ -1,6 +1,377 @@
 {
   "items": [
     {
+      "title": "Game12 - Câmara Municipal de Peruíbe",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9iWkVZNmVXSUQ0OUJYeWVqakM5Y2llYlQwSFo4dUNCU0FEcEhYZU5tSjNOLU42SkRSWVRfdFFuQ1dOYlE3SXNOeXhsc3o4a29qd3dlMm5Xc0xfUVcwMzhhWEZib01hNlNiVDNLemNmNERPSmdtaURF?oc=5",
+      "date": "2026-11-03",
+      "source": "Câmara Municipal de Peruíbe",
+      "summary": "Game12 Câmara Municipal de Peruíbe"
+    },
+    {
+      "title": "87% das transportadoras de cargas analisadas pela Receita já informam a CBS em pelo menos parte dos documentos - Blog do Caminhoneiro",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPcEdlTkFIbzFsdjZ2bTRDLWJqSldJUXlZcHluTXhtYjdldGlWQlA2a3hHWUxzQU9ZblhnLVVtTjhuS3djZG16SG5ZVGNBeGJpLWdnTnhEZjVWWEszcWE4V3A0eW9HRkNsczBtVVBSQmpuN0FkUTAzMFJMREM0Ui1Lcnc1MjVESElReFA4UFJYeDZob19RUHVFZzB5U2c2ckdnUzVGTVRuakNQaXBVaG1TYVBzUTdqNjZtdXlzYkNIZ1ZjNFBwVTM1ZzBHSjBkN203TWlTVld0d0ZKWl9OMlktR09zbw?oc=5",
+      "date": "2026-11-03",
+      "source": "Blog do Caminhoneiro",
+      "summary": "87% das transportadoras de cargas analisadas pela Receita já informam a CBS em pelo menos parte dos documentos Blog do Caminhoneiro"
+    },
+    {
+      "title": "Governo quer enviar MP do Imposto Seletivo ainda hoje ao Congresso - Agência Brasil",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQaFRnTklQZVlCRjVFNjJaY2FDTTVVblVhbVcxbEhlUEs4ZnRGdjY5OXFmTTg3SHZyUkpWUTNnNUpxeUN2ZXBMUnFISVljblVGSWNlUDFMSlhjVFY3bkRNdDVtYUhId0lKTFQtVE9vUjdybXlIcW1LSkhiMGZTN1p6el9BLW44LWFyOVhvRVFHS0hBN0EyemNkbG84a3hYU0RHY3gzM3JOMUozM1NmNmQ5aU1nNEI1RHAtdU8zNXY3b0Zhdw?oc=5",
+      "date": "2026-11-03",
+      "source": "Agência Brasil",
+      "summary": "Governo quer enviar MP do Imposto Seletivo ainda hoje ao Congresso Agência Brasil"
+    },
+    {
+      "title": "Governo envia MP do Imposto Seletivo ao Congresso nesta terça-feira (3) - OpiniãoCE",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNajk3YjV2cmVBS3l4ZGhVOWdxVFNpMHZmQnE3QWJOeTJTNnZrdDZ1aHMwQ2lPb2N3djNnV0VUQXFCSGJaOFZCWmZfbmxfZTNsSHM5RU1ma2Q5SG1PY21vWWFRR04tMkFtTXQ0cVh5c0ZkYkUwa29UNzBmTGFNbTF4UmJJME5KSWRzUXJ1TDhiOXRHR1hHbFBnenJOZ0pwMWQ1NFhWS1owZUZJclJETVJ2Rlg5V0xvbXFNUURn?oc=5",
+      "date": "2026-11-03",
+      "source": "OpiniãoCE",
+      "summary": "Governo envia MP do Imposto Seletivo ao Congresso nesta terça-feira (3) OpiniãoCE"
+    },
+    {
+      "title": "Durigan afirma que MP do \"imposto do pecado\" deve ir nesta 3ª ao Congresso - Metrópoles",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPUGNUaDcyR29BaU5xYTJhY0E5eWlFZEdLdzdrTndld1lxd3JkQXpOUGM2RVNJckR3WTZVVVI2Ymc3aXB6NHRYX1lkTlc3WUE4T1dTRDNSanAxRzc0NjdZekduUlBzTy1zZDVOeXZGQlhPeGxHWlFSc2N2ZG9VVEZ4TDg3X05QU29xeVc1UDNVX3NhbGxXVDZJNGVvYjJzbURMS19YYg?oc=5",
+      "date": "2026-11-03",
+      "source": "Metrópoles",
+      "summary": "Durigan afirma que MP do \"imposto do pecado\" deve ir nesta 3ª ao Congresso Metrópoles"
+    },
+    {
+      "title": "Fazenda envia MP do \"imposto do pecado\" ao Congresso Nacional nesta terça-feira - 180graus",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPYnNpN1g1eVAwQWRmeVVNX1dqR25nR3VqMXROX2ZjNEljM1lfMFdBVUJlaVl6VVlvbHVNU21WZlptVFBrMnpxdEVQbVNNc253TGs3Y1c1bVVDMTNpeEZEZzJsZ1hudjNOUlFGTmtiNFJJNUJiRFh6OE5tOWdwT0xwSE5WMGF2ZkJSdTdHMlJLYVVyOS1aMDNtc2RxSkl3N0RNUy0zWmpEcnU3UW9FZUFaSA?oc=5",
+      "date": "2026-11-03",
+      "source": "180graus",
+      "summary": "Fazenda envia MP do \"imposto do pecado\" ao Congresso Nacional nesta terça-feira 180graus"
+    },
+    {
+      "title": "Governo prepara envio de MP do “imposto do pecado” ao Congresso nesta terça-feira - Portal do Zacarias",
+      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPazJQS3FVNnFEUXhLdk9yYjFLS1F4V0t4ZnRWLUREM2hnclR6R3pKTzFkNjBWYTk1Ti1abFQwdjBrTm9VdHFqQ3gyMGVnN1N4ZVRMemdVSjNYMEVDZVNib3IzSjZaSkJLdlRsSFVLUmpuT1JKdHhnajJtYS1PQWlrY0ZfSW5RYXZlbkhyWnZCemhoa2JkWldiX2N5ZW56UmRuY0ptTUpfU05xY01lQUFna05pXzBEbmE4NjV4eGF4bElpbnFaQno4bjFaWVpZbmRkYlpXQV9Qb3ZjeDA?oc=5",
+      "date": "2026-11-03",
+      "source": "Portal do Zacarias",
+      "summary": "Governo prepara envio de MP do “imposto do pecado” ao Congresso nesta terça-feira Portal do Zacarias"
+    },
+    {
+      "title": "Simples Nacional: prazo para cancelar opções de IBS e CBS começa nesta terça - G1",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMVRXdkxFMm1JNDZSenFDMHRTNGpJOHlxZU9fS05nbUQyYVpGb291S1NPYThNaEpBSmw2cjI2c29SZURUNGx2RmtxZmdTLS1IeHRMbExicGNPZUE4YjJxZnRqVEJuLTY0Nm1CWVNWbVBQY0t4OG93NjNaVElxYzI0T3Q4NVA1MFZPa2hqeE1JNTZUbllURVlmUHZfdkI0My05ZlNXRE0yR2pOcU4wbExSbDRvY0xIYk1qWWVz0gHKAUFVX3lxTE5SNktqRG1zZG1IYzJMSWR6TjJEVUpkSk51ek8zWXNkaU9rU3BJT2VmZHhUOHVLdXZzekVlVWJxVjVmcVl2dFM5SkM0X25GLUNTbjU3UUYzbnEwSzVGUW5xT09zb01kRzJweHJRNlR4NlhVdS1CaVZQUGQ3X2NqTmpnWmxoVEl6U1FNcVlHV0Q1b1FFQThLRzJtVFdIYUdVQWFranQ0Ry1za3ZUSi1YMlFiT0M3MnFqbGdlUlFveGZ4Uy1LRG16ZjM1RGc?oc=5",
+      "date": "2026-11-03",
+      "source": "G1",
+      "summary": "Simples Nacional: prazo para cancelar opções de IBS e CBS começa nesta terça G1"
+    },
+    {
+      "title": "Afinal, o que integra a base de cálculo do IBS e da CBS? - Migalhas",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOeHZMZ2pNMXFuQ0x6R0tUOUtFaTZDWl9vemhOcXVOX3pRUFVuZ3RKWjlUNHVVVTBQcGNxa3lnSk9qaUk2TVdSYmVuQ2Z6dDJ6MURlSEl3dHRLdXNGVUZSV2RlRVFBbm41RmpndlpTOVAzbkFuNURtcUprQ2s3Q1FacTdabTBneDlPVzQ5SEZTOGtpT05LNmpQaG5yWHA?oc=5",
+      "date": "2026-11-03",
+      "source": "Migalhas",
+      "summary": "Afinal, o que integra a base de cálculo do IBS e da CBS? Migalhas"
+    },
+    {
+      "title": "Reforma tributária: Justiça exclui IBS e CBS da base do ICMS em decisão para empresa paulista - Portal do Agronegócio",
+      "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQMmo4WGVlZmkteHJCX0FJdHV0TmVZZWV0akhuazljZHFmUXhrc3YybUJZalJ2ZFhXVjQ5bjU2dTl5c2FXMTljVVZrb0JlTjVrN1JqZEF5UUdFOW1KNlgwZEFoelZOR0pja0Y2eGZJYnBMS2c0eVZtSzBTZW9CaVpLSHdjM25pOUpRTEIyaDJQOE5MTUFmb2ZPVTh3WURpTjlJdXRTQU5iMk9ZVUx2NGlEYUNZUmZQX0o3ODNRSUVXNEMyZ1FkSWVZQWtYeHBxOTlqRE5OLW5MQTA3aTloSXRYQjY3TjlOR0w3WENMTVFWOTNSMkNsS1E?oc=5",
+      "date": "2026-11-03",
+      "source": "Portal do Agronegócio",
+      "summary": "Reforma tributária: Justiça exclui IBS e CBS da base do ICMS em decisão para empresa paulista Portal do Agronegócio"
+    },
+    {
+      "title": "IBS e CBS: prazo para cancelar opção de pagamento começa hoje - iG Economia",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxObjBoNnZsQVdjRkdJU09zSVFxS2RIc2lqRHBBLVZNNTV0UUNoaWhsQTZmd1VzOXg3ajdxd0E4VEZxS3QyLTgtOXlkY2xUYm1ReTkzVWFyb1ZRMUR1Z3kwX01CcEhBODktemcxTEdackV0UjRSTFdMTGh5Rl9nOFlaZ0ZLemVza20tUHg2RHljaWEwWUFKWjZDdFRJYlVMTl83RXZHc1paZ9IBrAFBVV95cUxOS1FtLWR6UUYzSUFvVzZqMU1fX3BfSUJILW1zRkVCRUxYZHh0X1pkTERicWhUSUdTN3F4V0hCWU9IMXl6cGZZSUt5N0tibWZjSjFyNXNtT19hTHdtN3RJZTFjZzF4WVZnZ1AtY3gtM3ozdFE2ZHlQcmttSzh4RFZBbW01YlRnZG41UUl6Y01Ceng2aXhia0Fmc1MyX2tnbW9HVkZhckxYOGxZTThR?oc=5",
+      "date": "2026-11-03",
+      "source": "iG Economia",
+      "summary": "IBS e CBS: prazo para cancelar opção de pagamento começa hoje iG Economia"
+    },
+    {
+      "title": "IBS e CBS: Simples Nacional abre prazo para cancelamento de opções nesta terça - O Liberal",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPeGlCRjZMY1JjR1BFUnIwLXo5Qkd6UkxqSjBmUnV0S21OVHlTSElvc0l3bFVnTlBGa1VrdWh3OTZvRjhaYXNmUHZORk5BNG82TnRKSXhMSllMZ0d3Vk5YMHhQSVpZNUp1UjVkakJGNE41VHlDNUREUHF1S3dIbE1HTW9JcGFVM2VTODNMYjNQeGlQY1VaV204S1lYMmhyaUtEQ25QLW1JbTdQMXhUdE4wRDdlYXBXT1ZKMGJNQW53?oc=5",
+      "date": "2026-11-03",
+      "source": "O Liberal",
+      "summary": "IBS e CBS: Simples Nacional abre prazo para cancelamento de opções nesta terça O Liberal"
+    },
+    {
+      "title": "Simples Nacional: prazo para cancelar opções de IBS e CBS começa nesta terça - Expressão Rondônia",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNT09iOVI5TmthTU5Ecl9fV1hDVWgwYlJlMkttUmhxWm95cVVKVmpvNXhxSDdLdmZrUDYzaU1obm5GbHZMUTdhWExOUmQ5Z2oyamsycl9PbjR4YUFudzM0eGJHNng4dVVNNlZGSERYZktPS2V5MzV2NlNXby0xNE1UbXdPNFpIMC1BejZfUi1DLTZFcV80UnVqaWFzODJ5LWtna1dyQ01RVEE1RW9wU1E?oc=5",
+      "date": "2026-11-03",
+      "source": "Expressão Rondônia",
+      "summary": "Simples Nacional: prazo para cancelar opções de IBS e CBS começa nesta terça Expressão Rondônia"
+    },
+    {
+      "title": "Simples Nacional: veja como cancelar a escolha sobre IBS e CBS até dezembro - Enfoque MS",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPT1ZnWGd1NFBkVG1aY3NzRkFTQ0JyS1dxVWR6aHNnTmNkTFhicFZPUjRwckduN3BCX3Nqc1Vwcko3azZ5dFRVakc2TFEtYlJUSFM0Z3ZfRi1FSnVRZlJDS0QzNksxek5iQ215Sk9EV3MtaVFTRTdaOWxsVUxwbElEMDdzRDREMkRuS2ZTRkdXYTZ5dXhXYXZ6al9CSGFJV3lKS202RXZKNNIBrAFBVV95cUxOd2VLbThYTF9HbjlnQzIwQ2t2ZnlfbldpS2R6RHc0M293LUw3dnhpS2dXUk1SS1BzbGhMZzlwbmVFTlh3WW15eGNBMjFNaTI5Z3ppTnZYWW90Sm1UTmpTbExSZVlfQUdpemdDcFJYQVU3WWFCbjRJdWx0YzlVbFVfN19HVi0tekdLcURyZ2UtNlNCTmd6WEJDQjVpQUpkemljTXpkZFB3WkV3Rm9Y?oc=5",
+      "date": "2026-11-03",
+      "source": "Enfoque MS",
+      "summary": "Simples Nacional: veja como cancelar a escolha sobre IBS e CBS até dezembro Enfoque MS"
+    },
+    {
+      "title": "Simples Nacional: prazo para cancelar opções de IBS e CBS começa nesta terça-feira (03) - News Cariri",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPaVZJeW5sVnpHV29fT25rYTZKOGZXck1HZ18tSWc3Nm1WNzdVLVZxUXFGc3hxVUYyNmpKS1puclcyT3h6MmlTYjRjQllWWXpfZmowZjdNVE5hUkpIdG5QMXVGZC02VzFUWWVwQmNSUnlIVWlYd0t1R0pHbHJZWnJXNDlnTTRnUmEwRk5CUVkxdVc4cy05Q190RmoxMW8zQndZUVBJYmdFWFB5M2JaZnVrV2dFWUN0STBVNWJiMnZhVQ?oc=5",
+      "date": "2026-11-03",
+      "source": "News Cariri",
+      "summary": "Simples Nacional: prazo para cancelar opções de IBS e CBS começa nesta terça-feira (03) News Cariri"
+    },
+    {
+      "title": "Como opinar na consulta do STF sobre disputas do IBS e da CBS, aberta até 16 de novembro - soubrasilia.com",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOZFE0dFdMbE45R0ZSeW4yRXVhV2VWTFZ1ei1EbXBlNGQyTkVqU3ZaM2pqTUFObmdhUFg3UzFxNllHVGhQNThZVm05bkFqSnR6LV84UU43UDYydHA5c3QzU1c4V1NiRVROUE5VSVBVSEFJWnBJY3ZuSkNMdXF6dU5sZUNKdkZfMEZ0RENqRVF6TFYxUQ?oc=5",
+      "date": "2026-11-03",
+      "source": "soubrasilia.com",
+      "summary": "Como opinar na consulta do STF sobre disputas do IBS e da CBS, aberta até 16 de novembro soubrasilia.com"
+    },
+    {
+      "title": "Simples Nacional: empresas têm prazo para cancelar opção de IBS e CBS; entenda o que muda - Diário do Pará",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPVkpSRUJVODZjMHlZSl9qN3NjR2Y3V2ZtRFMwQWtxTXFGRkdXa2xOMjZiT0tYSHlCcURuV1BUdFpvUDM2VDl5bTJJZ3pTVi1FTFNHRlp0b2ZFNldMOG5vZkNVSnI1WnEtekluWHFLdTZCTE4zTDhZcXltUXhsNGVjeTVXV0U3Z2hqaDVWU1VabElDRGVVWUh6NzVjMU55WlR5Vk9jRWFOeWlJWXNMdXlycXJBM2R0eWZjRnlTdk1Wa1hWam9x?oc=5",
+      "date": "2026-11-03",
+      "source": "Diário do Pará",
+      "summary": "Simples Nacional: empresas têm prazo para cancelar opção de IBS e CBS; entenda o que muda Diário do Pará"
+    },
+    {
+      "title": "Prazo para cancelar opção de recolhimento do IBS e da CBS no Simples Nacional começa nesta terça-feira - News Rondônia",
+      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQSUpwM1Y3MXVHWk5fOW1ENWIwQURpY3E3Y010MDB6RzdQblRVRlZtcjc4dmxtQndqSUxlNXNsSVQ4Y2cyRElWczV4Z2JyZzlhYWFSbHBFWHdSUV84bktWRGNzU3NVb1FHVXAwN1EyU3dUSGhiSkU1RUViZlFqcmlHS25LalFfazVOaEZ6RTBmRDFHSXlxa0g2Ti01V0t5SmtLYms0eEdMMUVSVVpKSW1ENWNEVlp1OFNXeU0xYlptOHlpbzVWOEw1WDB0Qm1kMVFRdzlESl8tb3hnMHFhbnZTRmpTQTFpZw?oc=5",
+      "date": "2026-11-03",
+      "source": "News Rondônia",
+      "summary": "Prazo para cancelar opção de recolhimento do IBS e da CBS no Simples Nacional começa nesta terça-feira News Rondônia"
+    },
+    {
+      "title": "Reforma tributária: risco ao caixa das empresas - Seu Crédito Digital",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5OUWwzcWJ6Rl9OelJCN1pFQmRoeV9fcXhHSWhqSnNTN0NNNEwweFVoNUVyaVlIU2hxTmpEQ2lteWU3Q3pMNXE2TGZzNWpQMGRONzU1UF9hY2JaMzJ2dXlucGdPZEhmN011RzMwdjYzNjB3ZTdyd3h6cndNN2dlUmc?oc=5",
+      "date": "2026-11-03",
+      "source": "Seu Crédito Digital",
+      "summary": "Reforma tributária: risco ao caixa das empresas Seu Crédito Digital"
+    },
+    {
+      "title": "Governo deve editar medida do Imposto Seletivo com cobrança só a partir de fevereiro - O GLOBO",
+      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOcDMxUDJxdlhxdldGZWpJaElyMHdESk1vTUtkOE1lWUtiZ0Q0OGtnN29ZenAwczdxb3NqaXpUaVdPRkZCRWtETHFiUjduMUlDWmNRX3A5akF1bnhLZjZ5WGYteDRUWXY0QzlqV05XM0NPWlNZM1F2Ty04bVl1ZlZnTlA1aEwwcXdad25GUmhldWFVbGxrLXBDMlZMeXdaOXY0RzN3SldET0hjTG1JV201dFJtellIZWhRQ182cFcxUjVfa3gyU0dxQVBLdFNFWS15bGNsRC1vT055VjDSAeoBQVVfeXFMTUx1N01TWktaRllhOF9iMmFWWVJfMmJWN01yVTV6MHgyaFpZN1I5SElnZU4zOUpvZVhnMWk1UHE5S1BiRHNTc2ctd1Bjcmw4TDh1UzRYZ0pTLVJLSldDdTF3ajJhR2ZVZU45SEVyLWV1TUtYYlVNRk95U0RyNXUzaW5VWjJYMFJlcHBCMFZyRXhzcmZFTXB6cjVQck9qcDFJT014VGRwV09pYW0zOWtLTXlCdW01LXdMeDFhU3pkS0h0YWRJakEtSlRiYkxOcWl0UE93alh1T2JGNFc1SGNLOUZET1lWdVB6M0lR?oc=5",
+      "date": "2026-11-03",
+      "source": "O GLOBO",
+      "summary": "Governo deve editar medida do Imposto Seletivo com cobrança só a partir de fevereiro O GLOBO"
+    },
+    {
+      "title": "Durigan diz que MP do imposto seletivo será despachada com presidente e possivelmente, enviada nesta terça-feira - Valor Econômico",
+      "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOQmZUSXV0NXBhYW1zYWtpQjZDbjZxelZhTUlUMVJLTHhWakNSZjZPbFlHc2ZBeXhDVmg5TXFuVmhuZmFnd2tzeWpiQTdaWnYyVDVWbElCa0FIaUExS1V1a3M5UjlaNlZGZm1MMXUzNlJQYVg1ZlZmN0NtR21yNDFIUHN1eGJOQTNFT3JFaThfRWJLLXQ4OVBCWnRNcXNncW5wc0Q1T3RMVXNxSFVvUTE0QTlKM3U4THFUSW1UQXdXVFFmakZWaUVKWTVqWGw5MGphUloyZWhMSEdhcEtlaklFVGtSaHZGM3Ffa21kWXoxb3NUNUp2MEpNZ1F3RjR4TDRzb045eWMwb2tBQdIBigJBVV95cUxOQmZUSXV0NXBhYW1zYWtpQjZDbjZxelZhTUlUMVJLTHhWakNSZjZPbFlHc2ZBeXhDVmg5TXFuVmhuZmFnd2tzeWpiQTdaWnYyVDVWbElCa0FIaUExS1V1a3M5UjlaNlZGZm1MMXUzNlJQYVg1ZlZmN0NtR21yNDFIUHN1eGJOQTNFT3JFaThfRWJLLXQ4OVBCWnRNcXNncW5wc0Q1T3RMVXNxSFVvUTE0QTlKM3U4THFUSW1UQXdXVFFmakZWaUVKWTVqWGw5MGphUloyZWhMSEdhcEtlaklFVGtSaHZGM3Ffa21kWXoxb3NUNUp2MEpNZ1F3RjR4TDRzb045eWMwb2tBQQ?oc=5",
+      "date": "2026-11-03",
+      "source": "Valor Econômico",
+      "summary": "Durigan diz que MP do imposto seletivo será despachada com presidente e possivelmente, enviada nesta terça-feira Valor Econômico"
+    },
+    {
+      "title": "Governo deve enviar nesta terça (3) alíquota do Imposto Seletivo ao Congresso, diz ministro - Folha de S.Paulo",
+      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNUzdLY2R1QWpieFV0SWl6LXZBMVNseW1QSVdEZmYyZjhieW1McDl6X3hQMzFjeGlOSDY2R2lIcDAwMHg3alkwUkNlWUl2WUhIdEo4bS1pc2FIaWpqbk5HQW5XdVpvVjdaYzJYWEVoSUZIM3gyRzQ3bnFoOFJhQ3hVX241YVpHQVdPWmpHS3pSc3dsQ3RycldCZWZQVWpSVkpDY0pUWG5KTjJXTmJLT08td3ljejJlN053WEc3SGVwcVFvV0FQd1Q2S2FqLUV3Wm8wT1lReUdOZw?oc=5",
+      "date": "2026-11-03",
+      "source": "Folha de S.Paulo",
+      "summary": "Governo deve enviar nesta terça (3) alíquota do Imposto Seletivo ao Congresso, diz ministro Folha de S.Paulo"
+    },
+    {
+      "title": "Governo enviará medida do Imposto Seletivo nesta 3ª, diz Durigan - Poder360",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPdFFka3hCNERBZFBtWFU0Q2ZFY3lZUUh3WUcxcTNEUjB0NnVzWlQ5NlQ5Q0xiQUY2M1ZtakdoWUxqcU5jeWFwSFl1TmZ6MTZ1U3lLOVlIcFQzbE5lek1oT3h3OTlUMGxWelEzSjhhbm1VTzhKcWNUcUpiTTQ5THk1SFFLdjI1dklBQ1lFLXlfX0VpbU9PQVYwTVRhRHlRTks3T2NUTW1YU1p2TTVVLUVFbTR6ZUM5QjQ?oc=5",
+      "date": "2026-11-03",
+      "source": "Poder360",
+      "summary": "Governo enviará medida do Imposto Seletivo nesta 3ª, diz Durigan Poder360"
+    },
+    {
+      "title": "Governo Lula prevê enviar MP do Imposto Seletivo ao Congresso nesta terça - CartaCapital",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZTJBdHg3aFhxbnRhRGkzRW9XYTRtVnZPMWhtRXlvYnJQNmpiUjFoQ3ZITEtIWXRvQWc5Uk9ucHg0VmFPTVBGUkJWWVFrZ3M2RUFzakhvZ1RyUk1DWGdKX3VuSGEyUlRqMGE0YnhONWpBRXF6TWc5XzNqWk9fM0x2S01tWXByN2pUN19BMEZiMjBWS3lPU2FUUzRFQzNyX3NvYUs3bVpicmc5N0tURVFPdjBldWktZw?oc=5",
+      "date": "2026-11-03",
+      "source": "CartaCapital",
+      "summary": "Governo Lula prevê enviar MP do Imposto Seletivo ao Congresso nesta terça CartaCapital"
+    },
+    {
+      "title": "Governo envia ao Congresso MP que regulamenta o \"imposto do pecado\" - Agência Brasil",
+      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQYUNkcHF3UU5rZ3ZVNzUweXl4ZWxwOTNuekJDeWdYVmktME5VU3FwYjhWbl9hc3dJTEs0OUkzLTJGRlQ3RWVrenR0eGdHeDNNQ01WbUtLb1R5N0IzMXNPTDA1Rlhhem9GeGwtQ3d4Qk1TU25QZENyNFVVVEh6QXhnd002VmNxR1FSUVprSXlqZXkxU2dOSlBHcUc5aUZwbDVYNDZXVmdSaWt6MEE3a1UtRVdISlhuaDhFLXVBQmUxakpULVZQb1lLcWoxUFdqTGMwTG4wX1VTMDJ4cW8?oc=5",
+      "date": "2026-11-03",
+      "source": "Agência Brasil",
+      "summary": "Governo envia ao Congresso MP que regulamenta o \"imposto do pecado\" Agência Brasil"
+    },
+    {
+      "title": "Ministro da Fazenda diz que alíquota do Imposto Seletivo deve ser mantida e MP pode ser enviada hoje ao Congresso - O GLOBO",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPRTNWYmdUc1JjRmlqcHdXY3hDY0trblJVWlVVT0l1dTNOVEQ0SFhweENtM2dYc2lJYWljMHFRTTBWUWlXOFRwemRmc2loMDJmODd2MlJNUTIzbXJQMmtuanFjOHVhLWhhZ3NOZW83OVo3LWVXd05oV2xEYVlMbkJqc1hIR1hmb0lLRFl4cWo5b9IBngFBVV95cUxQR2FiUGdlaHA3MkJoMTFUUGJ2Vk5yei1CSnpIMDJzSm9aZ1l4V3hjdnNQQnd6ejNzRWl6ZUdfdXBIOWQ4NXhCNFZHM0FjcFZNRERaRWFHOE93c3JENTltdW5RNFNheFhHZGduTVZTU3g5aVNFaUx5THJsRTQ1Z0FWNW5mTlotOGFTZGVNYTFzcWZ5dXUybUNSWlhwa2tsQQ?oc=5",
+      "date": "2026-11-03",
+      "source": "O GLOBO",
+      "summary": "Ministro da Fazenda diz que alíquota do Imposto Seletivo deve ser mantida e MP pode ser enviada hoje ao Congresso O GLOBO"
+    },
+    {
+      "title": "Governo planeja regulamentação do Imposto Seletivo para 2027 - Portal VV8",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQNExkLWs3SUhZU1E3ZWs1R05kVEl0d2ExT1FoZVRQRTJBQzJSUUNwUDEzQ2tUT05ITjlucUdpOVRZdkpoVGJ3dlN6YjZ5OXdwQk1YRjVlc2hQRDlVdW4wNFdWSm8yczRQLXpmeDQxb0dYcy05NC1oOW51dkdsNnFuUUJzSkxXcGtOdnZuMGpsbTFjWUk4TTgtLVpOQ1dlVUhO?oc=5",
+      "date": "2026-11-03",
+      "source": "Portal VV8",
+      "summary": "Governo planeja regulamentação do Imposto Seletivo para 2027 Portal VV8"
+    },
+    {
+      "title": "Pendências podem adiar a reforma tributária - Valor Econômico",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOLVAzZFgzb2N6Mmg5aS13ZVdJcFRzbURVRUc2QmZPMFdzSGNUUDN2amVJN0xHMzIxV1JZRmlGanN2WnMtSFpOVTRCSjNNWUtINmN6V3gyM0pqbFIyT1A2ZmJBLTFCTXF4b3ZPQ3E5VHlvT1J5UzR0b2FucDJfSkxweVFabjUzZ0YyMnpBUGZOR2doSXd0SkdZM1BlYm1YbG50NDRF0gGyAUFVX3lxTFBhM05GQmhsbWhiN2ZyeUZnZ1ozNEtKMmpzblc3T2M2X005T2dyQ0d1TURRMXgwRXNBR0s3TV85MmFlTHphQTNXSHBXaTVQYlhqVGhHLUlaZ05nZWM5OHBfbjdvWmk2YU5pR1BERUx4bUFBUG5IcXN0bU9zLUdzVUgwQ1hDRk9Zbms2M0NpVU94RUp1VWpxRTRGdFlkTU9PN2VqR0owZWxsMndtUV9mcU5SeGc?oc=5",
+      "date": "2026-11-03",
+      "source": "Valor Econômico",
+      "summary": "Pendências podem adiar a reforma tributária Valor Econômico"
+    },
+    {
+      "title": "Governo quer enviar MP sobre imposto seletivo nesta terça-feira (3) - CNN Brasil",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPX3EyNl9SZkJfZEFEblN5eDc0WVlXTjROWXZXbnBXN1FiSXJKMUZzOVBCNVIyRVh5aHM4OW9DYzMxM3ZLaTVOLWxvcFBhWUdmNWlYSXRINlhHbW10Ty11RDFwQVBNTThsNVllVF9Xbm92R3hGZWxRMi1qcGVLMWo5UExIclg1akVRdmFTdU5GWFpOSlpsdjFRYTNMMS0yaXh1Tk43ajhrY1B5R05CQWRNRG4zSGxnaVJmbDhYQTNfNHotdw?oc=5",
+      "date": "2026-11-03",
+      "source": "CNN Brasil",
+      "summary": "Governo quer enviar MP sobre imposto seletivo nesta terça-feira (3) CNN Brasil"
+    },
+    {
+      "title": "Fazenda envia MP do Imposto Seletivo e prevê transição com manutenção do IPI - MundoCoop",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPYWFGSnhaZ2laOUF0LUFWS3RGYUk2dVotS084Tl94Y3I5cnJKT3MtdkVXVXh4WE1PS3VvdU5pZnJoVFJsOHVWYlg0c1dhQWRVdGNfal9GN2kyb0xUMnBtZ1NuM3dZLTEzWnJJSnBzNURfYTBndWZjNW96OTh4UEhIckEzSHEydE9DSHZraGI2ZU5kbm1jRlNNbUktaFdNRUljMC15WEJQQkZsdV8xOTlJRjA1bVJESXpETkFnRw?oc=5",
+      "date": "2026-11-03",
+      "source": "MundoCoop",
+      "summary": "Fazenda envia MP do Imposto Seletivo e prevê transição com manutenção do IPI MundoCoop"
+    },
+    {
+      "title": "Governo deve enviar MP do Imposto Seletivo ao Congresso nesta terça, diz Durigan - Exame",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOMUFtMVp1N0lVVC1MajdkWE9yUzAzRHVWdUItTFE4ZHdpaVFIREFoRmlYMDRMdmNNZnJDTGJZWUh4WGlmeVpzTjd1S0RKV0Z0OENkRUYyMEx3MW05MnE2LTBlREQ2Z3RSWmEzczdOaXV4bmd2QldIWnU2ZU8zRktwUEJfb0dhX3NvbTdJdjVjSEJIYUN2aGFQdWhTX0F4RElJY0VuSE4xYl95QzA?oc=5",
+      "date": "2026-11-03",
+      "source": "Exame",
+      "summary": "Governo deve enviar MP do Imposto Seletivo ao Congresso nesta terça, diz Durigan Exame"
+    },
+    {
+      "title": "Ministro da Fazenda diz que alíquota do Imposto Seletivo deve ser menor do que 'expectativas geradas - Folha PE",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPWVQ4dVZ1cmxjLUI0ZWN1bnBPakVESjNFbHMxRllEckV0UFpIcWhQYUZuNHZyRkZSTUR0NjRSZVdOc045M1BJRktLcE5TU1ZnVGx5RmprSkNmbmszWjIxZVpOOEMtZm96VUxOamFVcjBkWkppZjdoekFrTlAzQU5NWWJjQ2lLR09leFhGZGMzbW5rM2M1dVI0cXhMQld3aDVGNHFYTmRNVHRIU1ZCUU1nY0hB0gGyAUFVX3lxTE9ZVDh1VnVybGMtQjRlY3VucE9qRURKM0VsczFGWURyRXRQWkhxaFBhRm40dnJGRlJNRHQ2NFJlV05zTjkzUElGS0twTlNTVmdUbHlGamtKQ2ZuazNaMjFlWk44Qy1mb3pVTE5qYVVyMGRaSmlmN2h6QWtOUDNBTk1ZYmNDaUtHT2V4WEZkYzNtbmszYzV1UjRxeExCV3doNUY0cVhOZE1UdEhTVkJRTWdjSEE?oc=5",
+      "date": "2026-11-03",
+      "source": "Folha PE",
+      "summary": "Ministro da Fazenda diz que alíquota do Imposto Seletivo deve ser menor do que 'expectativas geradas Folha PE"
+    },
+    {
+      "title": "Governo deve enviar nesta terça ao Congresso alíquota do Imposto Seletivo ao Congresso, o “imposto do pecado” - Bem Paraná",
+      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQSEdmNWZ1QWpnYWJHdDVSbzJ0bkFBX2pZOWpYbVRhOGhSVkd1R1M2RG9zSUkwSWYxY050VzdwVjJDVVBtUUNjdFc3Wk11Mm5ZSGtoLVZQNXZtaDRsdTNlRWhQR0c0bjZXUktEWUlXYWNRa0ZuQTlUbXI5OUI1Z21RWUo5bmtmWWQwOF9zc09mN1VvMG41Yk5ITWxCUFdMQ29WUExYZmswbTlGWHFFb3JOSzBUSU1HTk1DUUlhQVIzOVdaeHJsUGFFNnVrY244NHczdkg1cmVteDFVTVZRWVVZVEVZVFU3eFd2enfSAe8BQVVfeXFMUFVKc1RodzBWU0ZiVS1pMFdZNGROcUVzM2x6dVphU1Z1Z0JUcExjR2loeHdrUEJxaUNnQzRURk5Ndi1NNDRLUTBlbHZ3STBaVTdrUFhGOWN2WEU3Wkw5OVVCaHRCcUh1TWQ1RGdENGpxakpqd3JFamRWaWhibHotblRPakl6a1VGRFhINDVrMWJrdnBJS3hjcXhNYThTTFEtOUlhNWtGMnUzOWVPa0xRLVBBbTR0dDZTOEpJU0ZpWjlQNzg0UGhtbVdGNnd5X3cyenJTWUk3MllwNnctVDIzR0paX09EVDFNOVEwRFBZZEk?oc=5",
+      "date": "2026-11-03",
+      "source": "Bem Paraná",
+      "summary": "Governo deve enviar nesta terça ao Congresso alíquota do Imposto Seletivo ao Congresso, o “imposto do pecado” Bem Paraná"
+    },
+    {
+      "title": "Durigan prevê alíquota menor para ‘imposto do pecado’, mas cobrança atrasa para 2027 - InfoMoney",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOMXg3V2dBUWFoMkpmQUJDemJPSEh5YXJIMnZSb1JIWXI1dmc1RWpwUlRjS2doZjR3ZzFnU080WnczSm91dlpGai1ZY2ZFN0NvVXg2Rjc1eF94SDlCLXRmR0lsZGZISTctc0N0c0Z1dExKS0F0c0lxM2UyQjVfVk1zNUN0cEluNUZoRkNjaUlsSW4xNXgwUXVJODdJZ0lFLVRjRWFGSjQ1dTkxTUM5T2dCUHlSNDdZdFZlcVhGS9IBwgFBVV95cUxPazVnZWlpWmczS2d5ZDduekRhM1N4cEpwUnJycHJnczFjaURWSUpqTlpKRTdzcU9OVTRKNHY1R3dFd0JZaHd2ZWRjbW90NmhBVkdfWXhFQ2hFdVM0bjg5d2tTd1B6ODc3MkJBa3AzVTQ4NnhUNGk0NUFFd2tXUTVTUkZtNk0zYmdVM0xOYjJ0RjN5eFBNeW9MRGJraEFpVUNMbVhJNFBTM1k2MG5mMmJjRl8wUDhiNGFxYk1iZGw4R1VjZw?oc=5",
+      "date": "2026-11-03",
+      "source": "InfoMoney",
+      "summary": "Durigan prevê alíquota menor para ‘imposto do pecado’, mas cobrança atrasa para 2027 InfoMoney"
+    },
+    {
+      "title": "Ministro da Fazenda informa envio de medida provisória sobre o Imposto Seletivo ao Congresso - Portal VV8",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOdHpJNGI2UmFqbHp4dnNucklOdTQxU2d3eDVGbVNRX2Q1U2pEMFdfQkVzWUxlOWs3SW9SQXlrV2tiTnV5cXJMVUJsUkFjU2tRTmNpcFpfakM4eW5tTE5fTlRlNVJyMjV4WV9VdGZxVUc5OHlxOG8zOHpBX0J1b1lCSFdXS1oxTHJKY2p1NnQ3bVFNWmJKWXpFdTFsdnV6VzhyUkhsR0FlazBGaWs4cWM0QW03d0hYX0E4OW9WRUJxRUR4dDJLSjc1MC1EVQ?oc=5",
+      "date": "2026-11-03",
+      "source": "Portal VV8",
+      "summary": "Ministro da Fazenda informa envio de medida provisória sobre o Imposto Seletivo ao Congresso Portal VV8"
+    },
+    {
+      "title": "Governo deve enviar nesta terça (3) alíquota do Imposto Seletivo ao Congresso, diz ministro - Jornal de Brasília",
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNSmtPbG5DTndlV3NLRjlxVER1a1piREpiUE9IcXVpOHZIRGZqR1lSLVhNelpNeUdzSWNFem14amMxYXpMVVZPRUtsdlpiUm9HRlpXYUtER21QdzRETkhhS09RT3Nla2xDelp4QlpnRXY2ZjJjb3NOVWpXWU5fNGxUNEZPTzlXenE2b0xnZ3FrQ2NTbWlzTTE1Ujc5dDFhX1RBZWt5TVppYWZtRUpnQTA0b0tvYktJelBQUk5saGR0MmE2N19Pc18za2s5eFpoT081SzBGR25B?oc=5",
+      "date": "2026-11-03",
+      "source": "Jornal de Brasília",
+      "summary": "Governo deve enviar nesta terça (3) alíquota do Imposto Seletivo ao Congresso, diz ministro Jornal de Brasília"
+    },
+    {
+      "title": "Governo deve enviar proposta do Imposto Seletivo ao Congresso - iG Economia",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdlpzeDRMSEN1RGFGVDl4Ni1WNVIzNFdkOXp3XzRXQWVxVm5yN0U1V0RVVWhsRDJPOE9zc1BPdzRlQnNQWGVmWWk4WE9EWGsyQ2NWcWNRajJTTDkwaDdxNk9CNVI3NmlvYU4zaUQ3cWNRdUgxTGZCV1RKU3QwV0lhNlJhOXR4WlFfcEhaU1d5ZDFJSl9lNERnWXJOQnBMWWp2ZFBzeEk2QdIBrAFBVV95cUxORjFydmZiM214R1FMdHFfN295Y25nQl94ZC03Z24ycGVnZFQ2QVNvZGhzX2FQcnBzTVViaWtIVnVfaU5oZFZMbGUxN2VzSWU2SUljeUZ0X295ZEE2RWV6RzhLOFBZZUJGRnEwdTdFT0hfY0ZObDZZRGhUanFfdnRUcWNnbklaSkZnU3Fncmxtdkc0Wm95Vk91VGxPSmlEOVVwYkp4bDM4MlNael91?oc=5",
+      "date": "2026-11-03",
+      "source": "iG Economia",
+      "summary": "Governo deve enviar proposta do Imposto Seletivo ao Congresso iG Economia"
+    },
+    {
+      "title": "Imposto Seletivo começa em fevereiro de 2027; veja regras - Times Brasil | CNBC",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNU2FxM09CQTd2c0JtNmIteTAtSmtXbkh1MXJOTGRZNjQ2NENVYV9ZUHJ2SmVlZ1FPUm5GUmNoUEhZRllseEozWndFSHJCQ2RZUkZWQ3VnWGhqalVhWVNKTHg4UkRLYlRrMmEtQ2M4NjFhNWh6NGlqbDVZV2JQS0gxdTlOVWR5cTFqdUxTWEpZckE0c2JFUF9SZlRDWWU5YlhGbDZrSVlMbVl5YXUxRW1tMWZIQ2VpMjNtdE4tWER0OHg?oc=5",
+      "date": "2026-11-03",
+      "source": "Times Brasil | CNBC",
+      "summary": "Imposto Seletivo começa em fevereiro de 2027; veja regras Times Brasil | CNBC"
+    },
+    {
+      "title": "Durigan prevê alíquota menor no 'imposto do pecado' - BPMoney",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxON2FHeE1uS0RXQldMQ3hCVUFTRk5mZXlSNC1IWVpTUDZXbEY0RWxYRGJTRTlMNU52RndjOEI1RzlpUWhESUdpMEF5N0phdncyOFFOYTJxQVNSOHNPVE5pek9rMW1RUURsV2UwVEZGUWVIMWp6MHNqTWh0RmJvcmJuQmV2aWV3Y19TSEU0Ui1FR0o?oc=5",
+      "date": "2026-11-03",
+      "source": "BPMoney",
+      "summary": "Durigan prevê alíquota menor no 'imposto do pecado' BPMoney"
+    },
+    {
+      "title": "Imposto Seletivo: governo prepara aumento de impostos a partir de 2028 - Gazeta do Paraná",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPWHlTS1hhZWN4RnFIVVNzRXJnRGctQWM3WHZRbGVzblV0dlJRZUpYczdaME1tMUE2cG9KeGl2N0RuRjI3andxM2pIT0JUQUpVb1FPM2V6eVZGeHAzeHEyaFBDWHFTSjdTeXhCOG4wblpSNWxicWlnT0pUR29hdFlIYU0tWTk1dkVzbmFmLUd5OVZ6WnBIcUVIOUp5QXotc0pLLWx3SW9vcVR6NDA?oc=5",
+      "date": "2026-11-03",
+      "source": "Gazeta do Paraná",
+      "summary": "Imposto Seletivo: governo prepara aumento de impostos a partir de 2028 Gazeta do Paraná"
+    },
+    {
+      "title": "Governo deve enviar MP do Imposto Seletivo ao Congresso ainda nesta terça - R7",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOc08xTi1rYlhJa1llZEpVdkR3WXF6Wm5QLW0wLTdOdWNpbHk5NUpyV1VNYnRhTFo2bDNNYmNXM3dMdnNtMWpkaTFFYXd3aVNmckdzWVpVbDJVRklsMWRGZS0xZGhHUHdtNlA3eTJfdWthSEh3cGpFWTAteDF3VkNIQUFTeWI0ZkxOMWhWOEgzeDhlcWVrcUl1MUVpaVFlQi1xb2k4SlJIOWpUTzBwODFLaHVtTnpYREh4VnRV?oc=5",
+      "date": "2026-11-03",
+      "source": "R7",
+      "summary": "Governo deve enviar MP do Imposto Seletivo ao Congresso ainda nesta terça R7"
+    },
+    {
+      "title": "Imposto do pecado: Durigan prevê alíquotas menores em 2027 - ISTOÉ DINHEIRO",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbDZSdVVQak8yMTIzTmRPWHZzMTU0LUhQTGMxRTdnb1N5am5kTHpVRDE5aXFncUdMUjhaRVdsZDA4ZDBQcDhXMk5HdUJiLWZneDhjeUxDM3ZhRVExaVZ5dF9kdlZWaU5FVU1pVVJLdXJDblFMSzd1OFBvUm5oSjB6dFRjdC1GQl9mWDF4TnNR?oc=5",
+      "date": "2026-11-03",
+      "source": "ISTOÉ DINHEIRO",
+      "summary": "Imposto do pecado: Durigan prevê alíquotas menores em 2027 ISTOÉ DINHEIRO"
+    },
+    {
+      "title": "Governo envia ao Congresso MP que regulamenta o 'imposto do pecado' nesta terça - Rádio Itatiaia",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNaXE3U3h5TEhwSG5FN0JTSDRvN0twRDkwdHpXZS1taTVWVXhpVnpHbEg5V0VXR3ZwLUdmRkhfOEptaDZObEhBSktzZVJZZVRsY2k5WWpqNGU3NXNscmVReW9kanRjMF8zSnI0SGtXdldjOG92blpBWHNRdkZQMHFBc1IyQTkySXRfWko2Q2t0NmpBMzRMMzY1QlZvT2N0a1JqNUVSREhsaE5hZHM2TnlVVFNmamQ3QQ?oc=5",
+      "date": "2026-11-03",
+      "source": "Rádio Itatiaia",
+      "summary": "Governo envia ao Congresso MP que regulamenta o 'imposto do pecado' nesta terça Rádio Itatiaia"
+    },
+    {
+      "title": "Fazenda envia MP do Imposto Seletivo e projeta redução gradual de alíquotas - Brasil 247",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQOTdIUmlReFVaNkxyc2VVSkhOVGtleHZYaHBYeUxsYWZ6bmVPQXhYSEh2VGVWOWduWGVLSHE5Rzhud1gzU2FYZERWemZuLXFVZzdMcHNVRXI1X2xDRWRyb0V6bEEwSEl1TURVOEZtSjJib2xDOGUtdGtaY3VLZlhjTmtRS3dvNXIxekROdW84cUFBUkRWTy1PQTI4QUVJU21tN1FOWC1MZ0s4TDBaTzFhTw?oc=5",
+      "date": "2026-11-03",
+      "source": "Brasil 247",
+      "summary": "Fazenda envia MP do Imposto Seletivo e projeta redução gradual de alíquotas Brasil 247"
+    },
+    {
+      "title": "Atraso no Imposto Seletivo pode deixar veículos sem IPI e novo tributo em janeiro - Diário do Comércio",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQRVNHVmZCNmtJUmRMUmI4SHZHeFRPeXFMTEcwRVd3TDlNcnJDaHlYanpjdm9BZHgta2NDNnZaYTRBTEpkS1BHWmNNelBCdnFqTnBBWXVhSE9GV3d2UzZTeVl0eERUY09DZ1dRZWJnMHNsVG5fNVZIR0hUSjJPUGdUazhYR3BIOFoxR1BhQjJYRQ?oc=5",
+      "date": "2026-11-03",
+      "source": "Diário do Comércio",
+      "summary": "Atraso no Imposto Seletivo pode deixar veículos sem IPI e novo tributo em janeiro Diário do Comércio"
+    },
+    {
+      "title": "Jéssica Sant'Ana: MP do Imposto Seletivo será enviada hoje a Lula, diz Durigan - UOL Economia",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPQVVmaERhS3ZfMzRnZXFfbnJzQ3ZiYldWcGRtWVktZ0hKOFlYOFdBTGZySzZwd2M3Qll0UlpRcXNiQVNEMGg5TzJ2NHFZZ2praHhtVkhhUW1UWTNNaEM0VjJGTkctSkU1Qk1XbTN6S3RSM3hpVEZENTRkUWRob2NtcXBJWl9qMUhlaEhOeVpCNDBHZ3JGd0RzSC1xYlMyYkNvbGgtaGUwU1prS0NrdGsyS2tJVUEyeUFRenBCZkNSd2hzSkM4WlE?oc=5",
+      "date": "2026-11-03",
+      "source": "UOL Economia",
+      "summary": "Jéssica Sant'Ana: MP do Imposto Seletivo será enviada hoje a Lula, diz Durigan UOL Economia"
+    },
+    {
+      "title": "Governo quer enviar MP do Imposto do Pecado nesta terça - SBT News",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOaFFjVjZqZVhwYjR3U2s2ODQwaVpqV084U2syeXVBRi0zRmNHWXhhTzJJUE5xTHBiQzBRYjZsUm9qUGtRc0syZVF3UHNRUGxLcnNFQldCM0FwZENtRWxzM3M2b1hRblNDR2gwR1k5VFMtUkpDUHpmR3pNVmdoTm9IaVgxOGJKOGxRZkQzWkF1WFBDSDdVN1pKOGRLQlpBczBS?oc=5",
+      "date": "2026-11-03",
+      "source": "SBT News",
+      "summary": "Governo quer enviar MP do Imposto do Pecado nesta terça SBT News"
+    },
+    {
+      "title": "Durigan diz que MP do Imposto Seletivo já saiu da Fazenda e que despacha hoje com Lula - Tribuna do Norte",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOTkZSRHk4NTFmNWM2SC1COWlFRm1RNzhJclJmbDRPZEp2VnF4OTFqWjFCZ2p2WmhlOVdsWENReFNLMWRDUHlDbV9jVFgzZ2UwZWpfSy1QemFGNm5VdVI1XzM3M2g3V0NRRVppZ09rQ2VGXzBOMlo4WHRLSDlOZU5lY3pQazVwVjloQkRVQlpnRW1Xb1czbFRGNU04LTJndTlVWGpWSjUtdE9UTUN1OVRRYzlFOE5naTV1UFpMUkNjR1dlSHY4?oc=5",
+      "date": "2026-11-03",
+      "source": "Tribuna do Norte",
+      "summary": "Durigan diz que MP do Imposto Seletivo já saiu da Fazenda e que despacha hoje com Lula Tribuna do Norte"
+    },
+    {
+      "title": "Durigan confirma reunião com Lula para discutir medida provisória do Imposto Seletivo - Tribuna do Sertão",
+      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPVjFMbTBCbHQtMTZxOTZleXJXeEJrb08tX1hmaml2TXVPdjN0WnJOSktJYjY0U2tmZ1NadEN3X2FHeWxmYTJEMzFQMG1ZdjhEem1yajFxWFpzRmhRSEpGUkJQVkgzaF9tTHktVTZmRi13VWthLWJEY1ZyRmdOc3piLUJNZ0NHeEQ1QjR1ZlIySDgzejV5RUlkemJPY21ITE40aGNSQlFWS2NVb1c3Y3J6RlpBZ3N6NDRHUXVaODR3VmJTVHZqdVd3NWdtUU9ZdEw4Y2dCRFdpa19kbVNUc3c?oc=5",
+      "date": "2026-11-03",
+      "source": "Tribuna do Sertão",
+      "summary": "Durigan confirma reunião com Lula para discutir medida provisória do Imposto Seletivo Tribuna do Sertão"
+    },
+    {
+      "title": "Governo envia ao Congresso MP que define alíquota do imposto do pecado - Imirante.com",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVFE0ZDYzN29KRVdJWHVZUTJVTjNVclY1cGN4SXJJWWsyY1NtTXUyTTdUTEpTTC11NHoxb1o4SXlYc3ZNczFabS1PMVZsYlh5WkUybFZLWWZYd21wOTEtdjRRcUpDQmk1Rkx3cks4TDRKUFdUT3Y3TWFxblJLUnpVajY2eVRiWFVyNFhORzlTZFJhY3VNZTVfWUJmY2tDanpmeXlXTk1DaDQ2cWpEMDdaX0pyTW8zai01SlUw0gG7AUFVX3lxTFBUUTRkNjM3b0pFV0lYdVlRMlVOM1VyVjVwY3hJcklZazJjU21NdTJNN1RMSlNMLXU0ejFvWjhJeVhzdk1zMVptLU8xVmxiWHlaRTJsVktZZlh3bXA5MS12NFFxSkNCaTVGTHdySzhMNEpQV1RPdjdNYXFuUktSelVqNjZ5VGJYVXI0WE5HOVNkUmFjdU1lNV9ZQmZja0NqemZ5eVdOTUNoNDZxakQwN1pfSnJNbzNqLTVKVTA?oc=5",
+      "date": "2026-11-03",
+      "source": "Imirante.com",
+      "summary": "Governo envia ao Congresso MP que define alíquota do imposto do pecado Imirante.com"
+    },
+    {
+      "title": "DURIGAN ANUNCIA NOVO IMPOSTO DO PECADO QUE PODE ENCARECER BEBIDAS, CIGARROS E VEÍCULOS EM 2027 - Diário 360",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOM25QYUlwclVnZ0ZYalg2SXNMQmpvekRtNHljdGhXbWdxSEMycWhETTlCVmZ6T19GYlI0VTBzV0FyVU9paVhvUDhCUnp4M1E3Z0R2aVNNQXd1eUJlYXRRX0tTVVlUQkQxNndUaDVmUm1wY3N3SUNJclVBZU80c1hKOGw2LTc3Q0pUZUszeVFmZjc0Q3hXN2pqOExHbWVmU2JrVHNBd3ZtU2pSR2xnblRyUWF6NW9lRkJjZDFTZ3VGZWowUnhkdGtoMW5n?oc=5",
+      "date": "2026-11-03",
+      "source": "Diário 360",
+      "summary": "DURIGAN ANUNCIA NOVO IMPOSTO DO PECADO QUE PODE ENCARECER BEBIDAS, CIGARROS E VEÍCULOS EM 2027 Diário 360"
+    },
+    {
+      "title": "Durigan se reúne com Lula para tratar da medida do Imposto Seletivo - Tribuna do Agreste",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVkc0N211UkkxbEt3SThudmhZdWhvVUc3clhsRTZ6TDRrb0pFb0NZVmhtMTZEZEtjUWpEaGEzV2FhVG4xS3gxbnFXQUtaN0dWTFZzbk12OWpSNXp6YjVMNzFqczhBcUxFQXN1c0JDN0JjQVN6T0JXRUJreUVla0ZZVFZTM0dGTHpBTjAwc2hicTlRNE9LbFFfUk12R21GeHF4SFB4TXl6eUJQZ2pSem9UWmZKQ3dIeHRveTdna2FORnZIUzd3NElR?oc=5",
+      "date": "2026-11-03",
+      "source": "Tribuna do Agreste",
+      "summary": "Durigan se reúne com Lula para tratar da medida do Imposto Seletivo Tribuna do Agreste"
+    },
+    {
+      "title": "Split payment da reforma tributária força empresas a rever caixa e contratos desde já - Exame",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPdUhZTkdIY2NKV2tNTkwzVTVLNmswOUtvWmhWcmpJZHNqY19XNUpyNzJHZWlLTHZTcnBEbWJMcHNxTWp2RnN2NEtJUGpjcVZtSXNaeEpJZnhnVTg4TWZRLVV0aWNOZFVMSlZvbnhxN2ZtSFFmVTdzd3FidGdkOEYyVjlrRU9NNUlCTUg2eTd3dFk0YUg2aHpLQ3NUVDVYMDFuWHAzSkVGd1RxbnFFNzNPck9XVQ?oc=5",
+      "date": "2026-11-03",
+      "source": "Exame",
+      "summary": "Split payment da reforma tributária força empresas a rever caixa e contratos desde já Exame"
+    },
+    {
       "title": "baixar betpix365 - Câmara Municipal de Peruíbe",
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBReE5iSVFfOUY2cThrbGdMQlpmYjk1ZWhUQnpZTXhFRTQ3X3M1a0tRZDRfbTJXYk83SHl0c0ducWZIZnZlazZ3bXc0cVhodXhKbnNSSk1aTGpJcU8xM25rV3pzOU53YTJCVklGYjZ6YndKSE5FRlp5OUtuNVhfRk0?oc=5",
       "date": "2026-11-02",
@@ -20,6 +391,55 @@
       "date": "2026-11-02",
       "source": "JOTA Info",
       "summary": "O IBS e a CBS não são receita do produtor rural, e o Funrural precisa reconhecer isso JOTA Info"
+    },
+    {
+      "title": "Conheça as novas regras para a emissão de nota fiscal de serviços eletrônica - Agência Brasília",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOYjkxVVZZcU5iSlhqd1RsVTM0aUNpaE9yS2FMV3VUSEJtMHp2R2pxVE9jUENNWHFJMjVEd0xSMkFVUFAwZzJDLW5ucDZyVy1JUE92elFQTy03RkdMWUh3TlhvSXlEVTl2SnFpaUZiS0pKTkJ6eHU3ak1sOGdJdVZ4M1luZ1pXZVdEdmtMUm5zOTZxNVd3ZXRDVVhvSkowWmJMWXdpc2dhbUtPbnhZdHZqV3JqTEQ1NzA?oc=5",
+      "date": "2026-11-02",
+      "source": "Agência Brasília",
+      "summary": "Conheça as novas regras para a emissão de nota fiscal de serviços eletrônica Agência Brasília"
+    },
+    {
+      "title": "Portal da Nota Fiscal Eletrônica do Gás - Portal dos Documentos Fiscais Eletrônicos",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBtZ3c4T1NVdkhNc2FjRGlUSkVrQUlfQjBhVmRadnNtUmtlckw1WFpURS02SWFmd0dGR0hOa0xGRkZVUWlNR1dYekNhcU90WVpIelVFb21lTzlGTmNVb1UyRm1zSQ?oc=5",
+      "date": "2026-11-02",
+      "source": "Portal dos Documentos Fiscais Eletrônicos",
+      "summary": "Portal da Nota Fiscal Eletrônica do Gás Portal dos Documentos Fiscais Eletrônicos"
+    },
+    {
+      "title": "Alíquota da nova CBS é tudo de que um Lula gastador precisava - Gazeta do Povo",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMUhSeHdKLThGaDVEbm5EX0FtQkhlNzB6Rnd2S250RHpUUFRRclZwckxYS0RSWWswWlJ3TkgtRjk5WjI1cFlINHBLb28xWGpPZnZDZXZUcWsyVHEtbFVhN2JNSFZsc0UzQ3A0dEpBY09qcERkajJ2MzZhdmNnc3pmQm9wYUUweHpRZmFLa0hhbi1pR00?oc=5",
+      "date": "2026-11-02",
+      "source": "Gazeta do Povo",
+      "summary": "Alíquota da nova CBS é tudo de que um Lula gastador precisava Gazeta do Povo"
+    },
+    {
+      "title": "CBS de 11,3% e IVA de 30%: por que é tão difícil reduzir a carga tributária? - Estadão",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWEljZVJ1UlRHa21pcjJCdEUwVFZXU29vNTAycHVQeDA5dDI2NC1Ta0tnUjZVRlhsTWVyeGNXbGpBNVVXTlppeHRrSVhtajZHdDJsS1NqN0JJNXltbVdRUU92N0FMN2hzQmRHZ0laNUNIVkNRX0tYV0NFMXNfSENJS1cyUmtDeGJLSVVmZWl1Z1ZMaExkSzVpRVpPZTJ6ZERibXBmU2t4bHhCd9IBrwFBVV95cUxObmZMT0txQmppOXliaDhHajM3eVo0NnJhejBId3dZdFowZmlTUzF6OTcwRG5pWTNiUmNfZi1uZUlYMVlOOXhsNUF2SC0ySGFQcV84U1V4U0ZaaDJiWVcyVF80WXA4dEdBR056X1IxYlBxaFBjOFVvb3RibDVRZlBMVEdWN1gwa2hpZXhtOE9SQWVPRWxDY1NweFhMU3VGQ0VoUVNDdFlTQ2dYTWJDTVVZ?oc=5",
+      "date": "2026-11-02",
+      "source": "Estadão",
+      "summary": "CBS de 11,3% e IVA de 30%: por que é tão difícil reduzir a carga tributária? Estadão"
+    },
+    {
+      "title": "Reforma tributária: alíquota da CBS deve ser definida pelo Senado até 15 de dezembro - Capital News",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPXzlhbEJOMHpRQ2tvUWVHcmVleTdOaDRRWEE5RzdQbFRmWmZtSVRfU0Z5bWhodWtxYlFpQzg0OGgtZlBRZWY2UFdHOUs1MU9zNE90OUpuX01adnl5YlhFcThBVjRJR3EzenJCNllrZUNoc0RSQjVRYnF6Vm8ycThtNHVNNDRFQ3NpNVVYdVBJSy1mUE9CN3o5Y1pucHYtM2tyNzkzRElVVF92V0M5bTBoclFRelF1Q3VRclBKY3BkSVpSQlVZdGlBTWR3?oc=5",
+      "date": "2026-11-02",
+      "source": "Capital News",
+      "summary": "Reforma tributária: alíquota da CBS deve ser definida pelo Senado até 15 de dezembro Capital News"
+    },
+    {
+      "title": "TCU propõe alíquota de 11,3% para CBS em 2027; taxa pode superar a de países desenvolvidos - Jornal Somos",
+      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQWUlCSTZZVDMwVjVIYmJyTUVSSFNERVk3UDFaa0ZDY1hJYUo2RzBiWDF3VGM2MmVuU1pNZ21HUWo3YWpfb3lnNlU5WmVPelRVOERaX09uTllETl9HWFBabGh3UVFWZnJpLUxQNEo0YllTckVZM0prQVJvTTVaX3QwRlFHYTdadVBXTjE3S1BFNFBxeVRoNDdLQy00TWc1d01HWXAxczVNcTU0UFVCVXNOOU11M0lvSDRxRmZVWm94aXRqYUJucnhFeUR4aTZ5SUdISk5XT0lnYUVtQQ?oc=5",
+      "date": "2026-11-02",
+      "source": "Jornal Somos",
+      "summary": "TCU propõe alíquota de 11,3% para CBS em 2027; taxa pode superar a de países desenvolvidos Jornal Somos"
+    },
+    {
+      "title": "Brasil terá o maior imposto do mundo em 2027, podendo superar os 30% com alta acima do esperado da CBS - Guia do Investidor",
+      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNaGI4VE1PUzdidnQtZ3ZFRmZ2VDdvYndZV3h0aXEyRHhvZ3ZUMU1ZOXNkYXVIQkRCbTJ5OC15RjlrNll4c3VEYnlTd2o5Qzl3VzJHOGpnZkkzUDhzRzRVdmpUNnBkdW5wMEVIQXRzbWI4b19YWVhmMXlwZUlGc3A2TElCNk1aODZkLXdYWjk2ajZwMG5qMDc3UEZxMm5CU2FTQncwRllXajJvQUVGaGxueGhrdGd6R0haQ2t1RkNtcHJyeWVIYzVzSkFLT3FRalVPYWRyR1AxQ3pQUQ?oc=5",
+      "date": "2026-11-02",
+      "source": "Guia do Investidor",
+      "summary": "Brasil terá o maior imposto do mundo em 2027, podendo superar os 30% com alta acima do esperado da CBS Guia do Investidor"
     },
     {
       "title": "Reforma tributária entra em fase decisiva e setor produtivo teme aumento de impostos - Brasil 247",
@@ -62,6 +482,27 @@
       "date": "2026-11-01",
       "source": "MZ Notícia",
       "summary": "Reforma tributária: novo imposto de 11,3% para 2027 preocupa empresas e pode pressionar preços no Brasil MZ Notícia"
+    },
+    {
+      "title": "60% dos restaurantes despreparados para a reforma tributária - www.guairanews.com",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5sZlNKTEdhcklQV1JlYmQ3MF9GcUZzZHlnQnAzM3VMaW5Pd1JaODZsMUZKQ1BONm9oT0VqTk15V1BsZUNCeWlIcU5NaG5uSlJKY1owX0xCWFZVbHJNOEZlQkc3ZFl3X091blItLU04TmpUVjE2cTRvbUJB?oc=5",
+      "date": "2026-11-01",
+      "source": "www.guairanews.com",
+      "summary": "60% dos restaurantes despreparados para a reforma tributária www.guairanews.com"
+    },
+    {
+      "title": "CBS e IBS podem superar 30% e pressionar construção, agro e indústria - BPMoney",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOa0piY1RFN3RYYzhjM0tzdEpoZGF5MHZMLUpMUmUtd3Nod3R6YWQ4ZWJsRkNzd1BsRi1fRElLSTJRWHo0dHYxM3J3M0gtUFRxS25ibkFZRmhzelRBel9kaXhnN0ZPV21VNU1HYUI0YUd6RjQ2WGpHZlNHX0xnS2d0TXhOT2xEUWhmV1JVWW9jb3hMZHJOMUxCc3Vnbnh3QlQyY2c?oc=5",
+      "date": "2026-11-01",
+      "source": "BPMoney",
+      "summary": "CBS e IBS podem superar 30% e pressionar construção, agro e indústria BPMoney"
+    },
+    {
+      "title": "CBS e IBS: cálculo aponta carga acima de 30% - SpaceMoney",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQWEJWSm0wbnpmRTA1OGYtcV93N1hOZ3JnY01wOHE4OXZPS01uR0JhMmtmOXEzaVc4WjNqMHpZcjdpWm52WGVJTnktTUN5M1RoaTlrbTNCRm9EcUk3dUtUaG5PQl9zeTFGQUo2SUk3OHFqLUtQY0ZlUjZCU0Vyd1dmaA?oc=5",
+      "date": "2026-11-01",
+      "source": "SpaceMoney",
+      "summary": "CBS e IBS: cálculo aponta carga acima de 30% SpaceMoney"
     },
     {
       "title": "Resolução CGSN nº 194/2026 - Imprensa Nacional - IN.gov.br",
@@ -209,6 +650,20 @@
       "date": "2026-10-31",
       "source": "GOV.BR",
       "summary": "Últimas Notícias GOV.BR"
+    },
+    {
+      "title": "Saiba o que muda na emissão de notas fiscais para pequenos e médios empresários - G1",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOMkNuNXBwZnlkRHBCSnNxUlM4WFdkNnFvTE9VMEJqNy1JdGxlNmxodjlMd3BWRXpNcFRPVXZsajh2N2VQWVFOQ1NqWWlwZ29LYnRnc1JyRk43V3RmVWFQMlJXN3pRcXVqUGJCT21OdW9HR0p2ai1ycnJKX3FHRThrcHhmbUNHdFZNS19pd1NXcjNNVnJPZWZnUHl3d1g2cVJmLUUxNFhHWkQ0RVhLWkw3RUJRT1BxSTZoRWVsM09EUTBvNkFleHh0c2FyS1J2dmhld3c5aDhRN2Y?oc=5",
+      "date": "2026-10-31",
+      "source": "G1",
+      "summary": "Saiba o que muda na emissão de notas fiscais para pequenos e médios empresários G1"
+    },
+    {
+      "title": "Cooperativas têm até 31 de outubro para optar por regime específico de IBS e CBS - Portal Contabeis",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQZFl2TlJEMC1GX2p0dERkOFdaRDlHT3lzQjVxdURFMndtX084czBxZmI0SE9OejZPZWRUMHdDcGpZLTZzWlBOT2g4M1pycWlBQVNBX2lMV0V1Ti1NQ0FsRHQ1MkJiT2dLUlFPYVUwWEMtU21WMHl2dklLMWFaR2c0bndjZzFMQzJFZW5zWDJvcFV6M2VaWFZCQXU3aGo3YXVvLVpEZmtXcw?oc=5",
+      "date": "2026-10-31",
+      "source": "Portal Contabeis",
+      "summary": "Cooperativas têm até 31 de outubro para optar por regime específico de IBS e CBS Portal Contabeis"
     },
     {
       "title": "Arsae-MG adequa tarifas de água e de esgoto à Reforma Tributária do Consumo com foco na transparência ao usuário - arsae-mg",
@@ -554,6 +1009,20 @@
       "summary": "Split payment, recolhimento pelo adquirente e o fluxo de caixa das empresas em 2027 Migalhas"
     },
     {
+      "title": "O que muda a partir de 30 de outubro de 2026? - Prefeitura Municipal de Vitória da Conquista - PMVC",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNS3h1MUMzdlpiNDlvTy1GQklHVEtPaVgwZkhyWGlRVnFEc2NSZk1nOE5GcUNZTGkxUGE0R1pjVmlRbTlVLXhlSzJTdE1XZV9YMzhPeE03c3VnTWlQZm5TUEtid3Nqa08yc25hRzhXUzlQRnk1NXRlYkE3UUU5TVZMQjh3YmlxUE0wZVpJ?oc=5",
+      "date": "2026-10-30",
+      "source": "Prefeitura Municipal de Vitória da Conquista - PMVC",
+      "summary": "O que muda a partir de 30 de outubro de 2026? Prefeitura Municipal de Vitória da Conquista - PMVC"
+    },
+    {
+      "title": "Reforma tributária: prazo extra para IBS e CBS na nota é a última chance de arrumar a casa - Portal Revista Kdea 360",
+      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPc2xyN0RrSDB0N3Uwa0NEc2hyRnlpeS1zb252dl80dVV6eWgwUzBfZGZ4elA3NHpMVTlPaXdvMFNIVzJuaVVCVVlWN3Q0anAyQkNXcHQ2VklHZlBMNkktM08yRDh1OVItU085V19PejdlY2JYRDItMDRMZWg1dEhWcFBwaHJkM1IxUHhKWGpwaVlaZExyM0dOTE5rMVVuZHZFY2lTdktiYXl0SFRtbjJoU1VYZlYxaTllbTFsd2ZFWjVxa01XUWxJSWstQlNYUQ?oc=5",
+      "date": "2026-10-30",
+      "source": "Portal Revista Kdea 360",
+      "summary": "Reforma tributária: prazo extra para IBS e CBS na nota é a última chance de arrumar a casa Portal Revista Kdea 360"
+    },
+    {
       "title": "Receita Federal e CGIBS discutem ampliação do prazo de opção pelo regime específico da CBS e do IBS para as cooperativas até 30 de novembro - GOV.BR",
       "link": "https://news.google.com/rss/articles/CBMitAJBVV95cUxNVWJnejRYVU15QUJKdFppRWhkMnphYnNWMVZJcXI2eXJGM2dOWEJvdjVOcGxDRnRqdUJjTkxxUHRibmtyZlNyaUVzdFlwUzVPNEpTVVpmREpoSXptVE5RWU1OYUtFbENjYjJ6a1lWV2lvcHBVNlU4MGxqTXU3NDFJSGxyVElrV1ZrbmQ4TzdHd01kVnd1QmFIVk5kc0haTnVzdGZQN1V5X1VLQnV6YWpyd3ZPVnVSX1N4TVkzbm4zT2Z4bXhkeUlpUzRhMXhYTUFvdkIxSl9Xd1JjNi1vdkhhM2pOUTlvUHJzYlUyYXFMNXl1cW5NYmR2STlUSzRsUVMwY3pUWURHdDB0bmpfSG5ITzBNRXpTRGxoTGNKdzlhYjl0WGZaVzFDdlgyQ2R0aEt3VmFWQw?oc=5",
       "date": "2026-10-29",
@@ -580,476 +1049,7 @@
       "date": "2026-10-29",
       "source": "Portal Contabeis",
       "summary": "União empresta R$ 950 milhões para implantação do CGIBS Portal Contabeis"
-    },
-    {
-      "title": "Governo federal libera R$ 950 milhões para estruturar o Comitê do IBS - SB24HORAS",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTkE0NXBFOVFrSDhZd1VHNkc5cVNrYXQxN2gzTGNRb2tCQXhjM3l4S2VrbV9TcENaVmtpdG5PZHY5dXdUTDdqRVZWdFo1TmRmVFRkMGFfLURGa0NjTExteHo2dlo4cDR0bUc3NFhlQU5PSmRzUVFmYV92WVNmeDVycDFPY2JmbmpmMTMyemRQMDJ1VDcyQkhTU3hB?oc=5",
-      "date": "2026-10-29",
-      "source": "SB24HORAS",
-      "summary": "Governo federal libera R$ 950 milhões para estruturar o Comitê do IBS SB24HORAS"
-    },
-    {
-      "title": "CBS de 11,3% surpreende e acende alerta para alta de impostos em 2027 - InfoMoney",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWnZ0dG9vdmlnZ3Mta0N1WjBsUlk2dG9PMEVBb2R4d2hxWGxXRk1IRHRuenpiSVRyVGRyS3R6ZVpNQ29SRTN4MDJuWEwyN1J3Z2FkR3JaTEx4YXVmano2MGtCTy0zQVBCdldNQlJCYXVoVFBqNGtWRldxVE1WMlpXaDZza0dTdWpzQ0lvYTRUWXI5OHZSdTFGU2pxZkRUZlhNOTc1bDhKTUNSQdIBrwFBVV95cUxPUk9yTHN6V3c5UDBWdk1uSXZudUZIa2pVOEpzUWYzYVl3Zmc3UTI4Um5FS3ktY0NDNGZfN3JleGtrd2pkaGh5ZjZ4V1IwRzA5MlRWYVNxWTVJY0NPeFRaX2ZDTUFHX2ZRbEs1MWU1VWd5TXU3UHJ6ODVKdzJrRkI3a253U201ZXBGQzJRWGY1QzJZRjRieVJ0NHBhNkhSQ29WeEpQVWl1LWVoTEp6cnQw?oc=5",
-      "date": "2026-10-29",
-      "source": "InfoMoney",
-      "summary": "CBS de 11,3% surpreende e acende alerta para alta de impostos em 2027 InfoMoney"
-    },
-    {
-      "title": "Governo federal repassa R$ 950 milhões para estruturar comitê do IBS - Agora Litoral",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeU9aOXpWc2VKSEFXMUczRG8zaUJsUWpCb2RXQ0U4eXF2OUdFV3lsWUlRaEJwSmdkcVhYSHh2OWk5c0ZPc2Jjb0dlV3Z0aXFiR1VCMTZfU1h0QU12c19aNmU0blNyMGtFZ3Z2Rmg1bUplOFdWZ2hsdTVzN1Ewbm9JQUdwNU0yODI1c3M5QmxoTnd1TVE1NHNldnA4MVd3eVBfakk3MzhiSHh6aDg?oc=5",
-      "date": "2026-10-29",
-      "source": "Agora Litoral",
-      "summary": "Governo federal repassa R$ 950 milhões para estruturar comitê do IBS Agora Litoral"
-    },
-    {
-      "title": "União libera R$ 950 milhões para financiar instalação do Comitê Gestor do IBS da Reforma Tributária - News Rondônia",
-      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQSGVHOWREd1lUeTFVdkpiYllvV2ZCR1RTRUJRTnhQVmM1d3NDX2JmenE3Q0FCYkJqWFc1ZGI2ZDFPQjZwTXFlUW9yak5kcjRhaFdkSXF6LVNRWDhlM3VDc0RmbFdEd3U3Qk1CMHRoUkpVMENqaTVtZW1qTDdMbFUzYnJVRDFQUG1SNDBwUUlSQlM2aEdSSGh3bi1qbFRVckpKOXZLQ3BvcWRvdktZRWs0RmY3TDVYODN2a3Frd1JWczlrVEdqeEFEcmg3X0JFak5ON0M0cHVqQzZDVVpmbDE5WA?oc=5",
-      "date": "2026-10-29",
-      "source": "News Rondônia",
-      "summary": "União libera R$ 950 milhões para financiar instalação do Comitê Gestor do IBS da Reforma Tributária News Rondônia"
-    },
-    {
-      "title": "União libera R$ 950 milhões para instalar Comitê do IBS - Portal do Lobão",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOWFMwZjdMNkI3WFV1SXJhbEdCRHZacTlKUm1remJGT2Zyc2duUUZDalZ5b3oxbHZScTFrTlpISUpYbGRvb0NWLUFpa3cxeEh6R0FkNUI3aUVhTkM4ZVlYaDE3MklmNk9jUWVaZU84VXVFdTFxTjhNVDFhQTF4VC1IRjFOZmJLNDJiWXlNMQ?oc=5",
-      "date": "2026-10-29",
-      "source": "Portal do Lobão",
-      "summary": "União libera R$ 950 milhões para instalar Comitê do IBS Portal do Lobão"
-    },
-    {
-      "title": "Reforma Tributária: Receita Federal e CGIBS discutem ampliação do prazo de opção pelo regime específico da CBS e do IBS para as cooperativas até 30 de novembro - LegisWeb",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9FNDNnQzRUTVBvV1ZhTDc4LVl1cE9yVGQxaTQ1Tm4tblMyMHdIdkQxRDBBRy00V3dRYlluQW82YzVKdmY1ZHBTaXdJZ2ZDQm1VXzJUTVV1ZU4?oc=5",
-      "date": "2026-10-29",
-      "source": "LegisWeb",
-      "summary": "Reforma Tributária: Receita Federal e CGIBS discutem ampliação do prazo de opção pelo regime específico da CBS e do IBS para as cooperativas até 30 de novembro LegisWeb"
-    },
-    {
-      "title": "Regra de cálculo do CBS foi definida na emenda constitucional - O GLOBO",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQVh6cFh5cG56blN6aGlLUk02Q0k4OG1zdU9Eb2VmU3BpWElkdTdIdm11MGwtdnRFWW5ma0ZmZll1ZnIzMUd6UmlnWXBVdnZMZno2VFdfYXJlYmR0VnhscnJmWWxudklWZlcyeHBXemE1ajhqV0MzQzlFaE9MY2UtOWJkYTBhNENya0NzTUY1QXVJdGhuMUdxa2VFMFB5RHRyMW5wckRfblBUaGl4M01NdDg3b2MyODhoYlEtOdIBywFBVV95cUxQQXJ6MDIxVmlycUZXT3ZfNXduS2FwVVZxRFlCWWJXSXI4b3FRWXhlbFpZZ0l6VDFDcHl1YUduZnZxWFRhM180SUlTMWp5NTd6eGZwU1JjUHg4bUVtdEMzdGFxOFlTeHdwVHpKZk9OSFdJdUtRalhFdkhQQS1RYzZwSjdWdFp6TS1MeXhWSmlxZlNlRHBjaE5TcHVPVmozUWxzcFhCd1FxZ1NybHNMY3lhRHp0ekt2c2VFNFRZV1F4R1U1TlhXZjNDTWg1NA?oc=5",
-      "date": "2026-10-29",
-      "source": "O GLOBO",
-      "summary": "Regra de cálculo do CBS foi definida na emenda constitucional O GLOBO"
-    },
-    {
-      "title": "Famílias do CadÚnico vão ter de volta o imposto da conta de luz, da água e do botijão, e a contagem começa em janeiro de 2027 - Jornal do Brasil",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQVGFEMVpOMG85eXZjR0hTUmpHb2FVWFBNNDUyakNVYUNqNVVtVmg0QmNlR3dmdmR0QVctM1JYMS12WTVBNjlUZHptN3lNOHVzc0pxRC1oMnE5NWFJbDBDb3RpQ2hOd21ORnUzczlhOVhOQkk3RURHWkE1R3JUcEo1UHV2aWpiZV9xeVJDalpsUHplRU9FMW5GWmQ4NW8?oc=5",
-      "date": "2026-10-29",
-      "source": "Jornal do Brasil",
-      "summary": "Famílias do CadÚnico vão ter de volta o imposto da conta de luz, da água e do botijão, e a contagem começa em janeiro de 2027 Jornal do Brasil"
-    },
-    {
-      "title": "Por previsibilidade, indústria cobra definição rápida de tributo - SIMMMEM",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNDdocnBIQ2d6aEkxNElFdEFDS2gyaTNKTXRONndCeGZwUWlqNmkxMU4ydzdBR1FOLUlBODE5NEtMdW5rS2lVV3ZlcUVkLVRmXzVaMUo2bFZsUXllakRyZjJGZE0tejNpUmViVGlsV1J4VU5YTzJJRllBcUVwYmFicXVoLVVTOUplU2p0YlFYTDVJa21LZ1E?oc=5",
-      "date": "2026-10-29",
-      "source": "SIMMMEM",
-      "summary": "Por previsibilidade, indústria cobra definição rápida de tributo SIMMMEM"
-    },
-    {
-      "title": "Dólar abre em alta, de olho em dados de inflação e atividade nos EUA - Expressão Rondônia",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdEdRbm9KRnhmSkdkWU1JcHdEUnNLc25ldUJYdkxpV0txSnRCYzJlSThfRXZxN2gwRHFqUkRwTmxBT2R2RUhVYlJWbG9PSy1yTFcwbnFrUnZhSGhqdkJOdHFsYWtPc09GVmlzOFZCcV9aNU5Uc2FwNlpkd2taRE52bkE5NGdnTWlfSEVMMEdNRDFzRWxERlA3aHFiZ2h6bUR1WktZ?oc=5",
-      "date": "2026-10-29",
-      "source": "Expressão Rondônia",
-      "summary": "Dólar abre em alta, de olho em dados de inflação e atividade nos EUA Expressão Rondônia"
-    },
-    {
-      "title": "Dólar sobe a R$ 5,36 e mercado cobra clareza fiscal de Lula - TV Sim Brasil",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVGZDeGhySjhOUHRka204Tl9USkhlMTNZWl9DZm1xS1pJZEFYaVBvd2JiS2dZekhCUnpGRVZsZ1E3eWpYX0NOZHJyU2JNUTBkUk95WFVhMFJIQmpWbW54WHY4b1hWYlNvQ3NldXAtLWJ4alR4T191N0NSclpZR2hEcGg0T2pGSmRMRlcyZkY2QlRlZXVFWjAtVXZDYmhRNndEUzdtQjBxQ0VwNkZpRWRF?oc=5",
-      "date": "2026-10-29",
-      "source": "TV Sim Brasil",
-      "summary": "Dólar sobe a R$ 5,36 e mercado cobra clareza fiscal de Lula TV Sim Brasil"
-    },
-    {
-      "title": "NCM é suficiente para a aplicação das alíquotas reduzidas do IBS e da CBS? - Consultor Jurídico",
-      "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPc2gwOWhvdjZTcWd0M3VuQ3d3TXJ1amVCajFqSDJMVlJ2RFJvQ0RDM05Ua3FFQXBVWGRiWlY0OWVKeW5XR0JKMFVUNnhNSzItLVNnNEl0UGt6aS1BRmdnZVppV2kwUmJDM2tKNEowVlZtUjQ3SjVHOHI4eXRhT2ItRjY5VGZhQXhGYTBWbkI1eG1GZHBEcUkxNUtIbjhheTdpVWVkR3kxUDRhYTkwNjVjanh6Nnk1MmdqVDFTelY0dF9ZVUsxdy1NOWlkVXlvanB1cWtRUUJXQzVSNElsMTYwMmpzY3dWT1k?oc=5",
-      "date": "2026-10-29",
-      "source": "Consultor Jurídico",
-      "summary": "NCM é suficiente para a aplicação das alíquotas reduzidas do IBS e da CBS? Consultor Jurídico"
-    },
-    {
-      "title": "Reforma Tributária: veja por que o novo imposto sobre o consumo pode ficar maior que o esperado - O GLOBO",
-      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPNEVnSERHVmpsS2N2QUhIQXFIZ25QR0Q0ZmlkczNGUW9rSHMwdzZuRXVYNW94VkoyX3hvWjVVd3RvZkRKT295SzBhQkZscVZBaEtRUVh1eURTMVdPQl96RmxxNjV1aXlHSXNPd2NPZ213YUpxZk5aX0pSZWNpWldiRDNpWGwxY2FSWjZyS1gxWHlnTHRWdm9zTF84YktIM3BNbDh5cVVndHRFQzNpTEotaXMtOUxkejJTTlpHRjRjeXRGLXNLNy1mWnJmVnhHX1hYY1lrdk5hUnI2OXVCSktiYVBURmZ2SFlw0gH3AUFVX3lxTE8tUWFKbHd1YmJZRzlOQzBOTmNudUVqNUYtNm9aUkhfOU16Q3Zrckw2S2M1bWtILUFNWHhvcWpGZ0lpZE5NUHI5aG4xRDJSbWtBTWI4SHBWWmJ1SVdiTjcxRGhiaWk2QTl0RkE0dE1Bd0NoRFJ4SS1zNDlDbUNZQnUzVHFWMy1CbEkwdXBYakh4Q3QyMDdoRUVaN1U4dGtJS2pfQVBydGg2OEJ6eFV6cmE0b0hRMU8zMmRHZG5PdEFyVkxlTUhld015SEl6dzdRN0xHaFNtc3JmZmt2eFJCSmZjZ0RpZFVaTVhwLWxiNnJTY1U3cTM3YWs?oc=5",
-      "date": "2026-10-29",
-      "source": "O GLOBO",
-      "summary": "Reforma Tributária: veja por que o novo imposto sobre o consumo pode ficar maior que o esperado O GLOBO"
-    },
-    {
-      "title": "TCU surpreende com alíquota de 11,3% para CBS e acende alerta - Valor Econômico",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPN0o4UE5aQ3dyVEgzdUdIVGZhVGMyY3A4NXJiSXZJemZzS1dqUW5LMHZSZkxQUlNZR1N5ZWsyNjRCN1hFTWNVclZfN0RMelctU2pwUVhSN2NuLVAyYjk4czRPNE5icGxYLXRoVDNmS2t2Z3diM1prMkYtd1RJYVVWUU0yVjU3LWdzVEpNdzFRMUhnaHNGSTNGR3BpQjd5Zi0wb1k2YnBPQ0hORWhwMEZhOEZjQ2hjZ9IBxAFBVV95cUxONmNyWnhqemV3ZUV1aFlyX0NSbzVuNVRPbFV5bVFjLUp1QU5WYzd1enpFQmF1X1dVZzZXVWo1NlJQR0V0Nlc1amR1dHprM2YyMm5lUnpiT2hSZlBVV1BDTWt0U3pFQTJMWENsdDZxZWZMdlBNTVJsZjlENDB2NHRBTGFMNEU1eGVzVnR4MHRYaEVQTTU2VnVkbGh6U2VnQ0lHa0Fid0pqYnUwc1gyZ1pXVlNqVVFUWXFCM2RJdS1xZXluSnZu?oc=5",
-      "date": "2026-10-29",
-      "source": "Valor Econômico",
-      "summary": "TCU surpreende com alíquota de 11,3% para CBS e acende alerta Valor Econômico"
-    },
-    {
-      "title": "CBS a 11,3% pesa em Serviços e cria maior IVA do mundo, dizem especialistas - UOL Economia",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOQ3hxSFFWcXNZZGFUQTlzUTRsQWZEeWpNV2JmbTB2U2pKYzdrWWNGajk1aV9UcXhEV3liR2g5bmF5cGtnUWFQNDVWTnJuRktLWUtkRWYwZ1A4TXcxcjVQVDdNZjA3dy1ZRWg5b01FQnNSUnQwSHhSNEVFOEw3MFV5bVF1c2JCRkI5RUdpLU03bHFmeWt0ZmZCRC1rOVd5WERobVZlSHdLcTBMT25NY3BRRUhiT2locF9rZWNVWkJud2pkRzJu?oc=5",
-      "date": "2026-10-29",
-      "source": "UOL Economia",
-      "summary": "CBS a 11,3% pesa em Serviços e cria maior IVA do mundo, dizem especialistas UOL Economia"
-    },
-    {
-      "title": "Transportadoras do Simples Nacional têm até 30 de outubro para decidir sobre IBS e CBS - Mundo Logística",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTFh4T3RfQjVuTFpvX0ZtZTlHUlg2UGo5Qmp6UE9nZFFHamZFR1hLVlNmbG5FZU5mcGI1RDBNbUVWcGhBRWctYk0wRU9FUmFsQml6VmNncElILUhGc0VIejg5b3F2NzhUT0tvX21VQWRocmotQjMtTFYyWVVhQ09VZ3FrVzdvdi1wVHotekpRNGNSYlB0RGZOdg?oc=5",
-      "date": "2026-10-29",
-      "source": "Mundo Logística",
-      "summary": "Transportadoras do Simples Nacional têm até 30 de outubro para decidir sobre IBS e CBS Mundo Logística"
-    },
-    {
-      "title": "Proposta do TCU para CBS acende alerta para IVA de 30% no Brasil - CNN Brasil",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNMnJaeWFGZUYxdHUwbDY5VXVKVTFzWk93M3dDNUFCRm9SbmZjcjRJaWZVYXQ1ZFRMZE9TRHFKS09oRkJ0c2xhQ3J1WmRZSldSbzNDSFpYUkFiNXM2WF9zS2lLZUcwOWxKSlZBdTBsRTNQc2I2U3p1dXJveDY2X3l4WXY2akc1aTFQY0VTcVlrcGtWS295VDRIcTRTNjNEaWZpVXk3cA?oc=5",
-      "date": "2026-10-29",
-      "source": "CNN Brasil",
-      "summary": "Proposta do TCU para CBS acende alerta para IVA de 30% no Brasil CNN Brasil"
-    },
-    {
-      "title": "Reforma tributária: alíquota da CBS deve ser definida pelo Senado até 15 de dezembro - Brasil 61",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOOHZ6NF9FOFBFNUhmVFIwRUQ3dVhOU2RwYktzZklueHdaNkJDWWxMWEd2TWtxRUhWUGxDbFdxa3VNcE1zc1V2eElaRTFHNlJaRHJXa01zT3d2NVNURS16Rk9EYlRIeXFXSGVGOTBqdGc4VzljdnRsam9SSVRXM3l2ZGJQTGVwVG9ScTc4VjgwNTNFUGJzc0FWTWlWaFdMNXBCQ2pXdm5Cem1IbmtUSVEyQUw4TEhiNk8zWnfSAb8BQVVfeXFMTXBTZkFZc1hvVlVPM051S3dwNGtHekxyREljSkVFcUxNdW5nSDNnVmpJMG5VQm4zU3huc0lkRjRGXzZPYkpLbzg0SThEQ3pIUHdRcExqczQtT0M5N09JbURvOGFLdVhLOG93Yk9nWkRJcjNBRWJlTGZPS200WTRqQlVScUtadFBrSUU0bU43clpjQm0zLUg0VUpBbGlWeG1oNklkeG4xd3FFQ0VUa1ZmOVBleXJYN2RYRUV4YmFKUDg?oc=5",
-      "date": "2026-10-29",
-      "source": "Brasil 61",
-      "summary": "Reforma tributária: alíquota da CBS deve ser definida pelo Senado até 15 de dezembro Brasil 61"
-    },
-    {
-      "title": "Farmácias revisam notas e cadastros para a Reforma Tributária; 81% dos emissores de notas ao consumidor já informam a CBS - PFARMA.com.br",
-      "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOY1EzUUZsck9CemhuSFdSWlI3MVpJNnFkNHc4SUFGWXRPUW0zR3IteWV6Tk1EUTJnNC1rWEZQTTdPX2N2YTZKR0pPWEFTUWZsdWhpTV9LYmg3RnM0NE9IcDBfN1ZOcHBvblhzMkRUaEtUcGdPMFVKZnl2dHRnVUtrZHZzemVJeGFrZTZFakhlUXRLdU5FenRmZzVkbmpNNURaS0FpMWRIRmFtVWZ0N3c1OGVfTjJxOUZ2eWQxUEVLcnFYLTY3ZlRfNnNMS3M1NTcxRTNJd1dLQnAxN1VnTDZTUEtkZFN6T3p4ZzE5cVd6UzRDQ0hNd1Y2Yng5UGNoTERaR3JJdDh3SG1VVE5fb243SkZTbXBUUQ?oc=5",
-      "date": "2026-10-29",
-      "source": "PFARMA.com.br",
-      "summary": "Farmácias revisam notas e cadastros para a Reforma Tributária; 81% dos emissores de notas ao consumidor já informam a CBS PFARMA.com.br"
-    },
-    {
-      "title": "Reforma Tributária: 81% das notas fiscais do varejo já mostram a nova CBS, aponta Receita - bra1.com.br",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOdkcxTjdLQVA5eDRaaDJLN3dTbV8xbGtnQ0dFUkp0TXhRSFNYV2xTSUlnUDV1UC1RLWdmZXA0akgyMVdKdWFBb0NQQ1ZacXV4aHNSUzhJUzB5bzNJam5PbkFuMEVTb3czdTJPbThfWk9rQ3U3SUdkdmVVYkpzMGlnYm9mOHFxOHJQUmtwS1RiWXl0bTJrRDY0ODFyeUlQRHVZVjBnMTRGMkNsb1VaNUoxQ3dXeDVkbm83RjlvZlJlWi11OTAzNFI0QlR5SHc?oc=5",
-      "date": "2026-10-29",
-      "source": "bra1.com.br",
-      "summary": "Reforma Tributária: 81% das notas fiscais do varejo já mostram a nova CBS, aponta Receita bra1.com.br"
-    },
-    {
-      "title": "“Imposto do pecado” deve ser definido nesta semana: veja quais itens podem ter aumento de preços - Gazeta do Povo",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE13SG5xTjJxSWkxc0FXbUt2RXhzMFlBdmVycEs1VFQycEFCdUc0TU92Q2RTaUZBdkFIb2hLWkdqRTBoYUItRHpuanRJSzlfZk1fU2NnODJ2RmNYbTZUTHhrclNCM05JSjJkT09ubC1tQ3FCYWVYd3dj?oc=5",
-      "date": "2026-10-29",
-      "source": "Gazeta do Povo",
-      "summary": "“Imposto do pecado” deve ser definido nesta semana: veja quais itens podem ter aumento de preços Gazeta do Povo"
-    },
-    {
-      "title": "Imposto do pecado define novas alíquotas para 10 produtos em 2027. Veja a lista - Tribuna do Paraná",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQcDRIQ1dvVXFUeDRqUDdXS2tSenVWUmZ5dEhoRUVuUEZUWS1wb1hERG9xU1k0OWVVWHN1VFo5Z0tmRDNMbXdBcTJURk4tOGx1R3Rwb1hGYzMwa3pyUnRaY1JaMmhTRUVGVzNSU2NwU3Nfc19UR0hXSy1tanY3TnpfSzZ3bkZWVEo5M3B6RlJVVUZ5RTR4WGF0b3phQ291ZlVRY2J3WlJDZkZEZ9IBrwFBVV95cUxNaUZ4VU9XRDFnUjNuOXg3TUk0Zmw4TFB3ai1lU2QxWC11VndyNUxTNGVmQmg0N2U5cjBpOFBQVnJSSU44Z0tOVzA1cEJrZUd2NVczeVFodUp4VHJlZ01nYTlzMnFWWUhpaDFDY0R6dk03b0NXdG5yTUg0Z1h1VXBoSjBzRkJFeWlJQ2lfZk1BZFR3T0xGalJ1eU94MS12RGJXc1ZVM0xrc1p4WVFRTENZ?oc=5",
-      "date": "2026-10-29",
-      "source": "Tribuna do Paraná",
-      "summary": "Imposto do pecado define novas alíquotas para 10 produtos em 2027. Veja a lista Tribuna do Paraná"
-    },
-    {
-      "title": "Governo Lula deve definir alíquotas do “imposto do pecado” nesta semana - GP1",
-      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQcTkxOFN4bjJIRXNxejdJMElQODVoV3V0bUV1eGhNVzNHQVFCSkVlRTZlaVFmZkVtaXVxam1XMV9JSUItLUt0Y1dvblY2RVBvOU14ZGh0cGpXalNRV1hERkhpVndvdXZEREJoYkY0SDhLUXdLRlBYcVFRVjJ0VWYyZUlYdk5YWlgtNHM1NDFVTEFpWnhtM2cwYkJTdmloaF9yMmR6bHFPZjhoc1BHUlhMYjMxT0tBdHQ3dTFPdFNLY3F2bkpqaEVNc1c5NTBVR1IyeE5MdTVWVFdNSkHSAeABQVVfeXFMTVRlQVg0ZWRneUFKaHMtaW00WWxNbG43cWJ4d2ZuTGxpWjZObkZJUk1WUU5uRzlkWU93R1hJb1QtT0t1ZWd1NlJFRVZpYkVVazVGWlpWbW16TmR2eEwza3Z6MzBrbmdDZU5vUV9sYVFCcFhRYXQtUXp1TXdHejdveE00UnZ6ODVkMkpwXzA1Y1VMQWd5OTJjX2F0TENvNmdmeUVnNkE1aUtvUzlFMDN5MTc3VWZHY1JXSXJSeWd4VnZFSGtZekl1andZNzMtM1FJOEItTjBKbUZBczhwOE45eHA?oc=5",
-      "date": "2026-10-29",
-      "source": "GP1",
-      "summary": "Governo Lula deve definir alíquotas do “imposto do pecado” nesta semana GP1"
-    },
-    {
-      "title": "Consequências do split payment para o contencioso tributário - Valor Econômico",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOelVLdVBNZVdRdElrbGN2ODl0eVdWcE9aaHZBZUpoZEh5Yko1Rm51azdLdUJTWGJrRU16MnZsaDlyS19PVVhFd2hoQzFBVW9kdjRIdnVkaG13eG9qZ1VWZXdCZWN4ZWFSSUtEX3VCQWtZUHEyX2NidmdhdzEwMWlaWGtTWUxObTRFYm5acEp0MlpkN0wwNDhpZW1HYVlkQlVaRTFuWHB0b2w2WEtk0gG7AUFVX3lxTE0xelVyckk1N1Y2azhldEdWalM4YThrZjRRbTAySGFlZTlNMGNxbUN5T1VfZmJCQUd6aHgtdUI1X2hHeUZlOWp1X1lfS0pObk1VenRGOWZXNkdPTEd2dlVWSFhJemljamhwNTNhekMtWlBiZG5LUGVQcHJQQXdhano4ZllQTGRCM190UzhIUmVGeDNqeHoyMVhsdXVUOEp0NGJfRV9sUVg2cElKeHhpbFk4ekptNFRBUlFVOVU?oc=5",
-      "date": "2026-10-29",
-      "source": "Valor Econômico",
-      "summary": "Consequências do split payment para o contencioso tributário Valor Econômico"
-    },
-    {
-      "title": "Reforma tributária e split payment exigem nova negociação de preços - Baguete",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNdWdla2czWVVMQWpLZEZKS2M3Umpkb2R5NzJJc1NBTkdtbU02bUt6X3h5aHQwTUxrNFZ4ZXMyWUt1eGJxRk1BMXpCV1RHN25Pd2t1Skc2cGliUGVhWEl0cEJBOVo0ZVM0VnQ1YUo1Tko3M0F5N0tnbUczWW5nMFhoR0lFaWgtR1NKRzRrYXlOWXhTeVJVdmc0Z0RqZFY2dHR2MmNhT2tR?oc=5",
-      "date": "2026-10-29",
-      "source": "Baguete",
-      "summary": "Reforma tributária e split payment exigem nova negociação de preços Baguete"
-    },
-    {
-      "title": "Appy projeta redução da alíquota do IVA para menos de 29% - Valor Econômico",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPODlQWmdHdF9yOXV5al8wRm9tM2hZWU14b1Jla3VqYjlJTEEwTXR1eExwTkRNWTNIX3JDZ3hmN3dZemN6UDAyUS1MbDVSU0RPSHhwN2RSNkdnaE42Q3k0V0RuZm1SSnZLSUlFclhnUXl1RGVWTGJZNGRYQkNINFJ6Ti0xZGxlbC1FQWItOWYwY2xGYXdCLUpDRjFmNGl2SzV1MHRrcENFSEhvb1JQbU1XRUp30gHAAUFVX3lxTE9Uem15TVRaXzNub3RabndsWVB0dXdyei1IRjE5NFlUQ3U5bjgxTUw4ZkxUcUZVQTZrNTQwazlUdk1xVGxSYlBfWjYzU01XUUphOG83QzhCTUhoT0Q3dTExS0g5VW5kMWdjOWFUeDJDak5ZR1FGUlBEOW9XcC1qZ0ItNFVRaGs4TnhFN2R6RDZ6SHc0VUVlSDZjc1VQVGdvbUdBU3hjMjhiNmNVTU5GQ3JVaGp3UXk0QnJ6dmdKYjRLeA?oc=5",
-      "date": "2026-10-29",
-      "source": "Valor Econômico",
-      "summary": "Appy projeta redução da alíquota do IVA para menos de 29% Valor Econômico"
-    },
-    {
-      "title": "Mais de 1 milhão de contribuintes já optaram pelo regime regular do IBS e da CBS — Receita Federal - GOV.BR",
-      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPbXRzUUpsS0FuSmU2TFV3Z3ZDSlRYdWZWS1lkM29YaTBKcjNxRlJ2RWwycERab09iaWphWnk0aFNhSzhoT1RrZVRkRXY4X1pzMWxKZ1dqeHFfNVBJSk5jSWVIdkd1VFlxbEVrN2FrdGRJTW9VZ2ItYW1JdWNTSFdkcGc2VFBpUUhtNkItVVJURTIxV041UkxCcEVoUTlZVHJmYlVobFVUcDAyaVAwSWlqbUVfLXVJanZwQ2tZWDBCZlJxZVNTeDRVRHc2NGVid3hkNnlQaVc0empRTWNFTkpfaVdCMDRxdw?oc=5",
-      "date": "2026-10-29",
-      "source": "GOV.BR",
-      "summary": "Mais de 1 milhão de contribuintes já optaram pelo regime regular do IBS e da CBS — Receita Federal GOV.BR"
-    },
-    {
-      "title": "Mais de 1 milhão de contribuintes já optaram pelo regime regular do IBS e da CBS — Ministério da Fazenda - www.gov.br",
-      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPaDlZaGs1N2ZCSG9feUR0WS1udG12ZmVURzNuWUNpR25rRWkyZEllaUp0RzZZYk1QcnpXZFNtXzNoa29nUU5sYUJYaUZReHJSN3VGdURzb1hRMWNaUVJvNnR2eUdJR0k2emZMdDNqcmtOZldUQzlhemppZmU4MjR1TWJxcnY1bkY2RnpWVDUzbWtrbW5HSVNIOGdLb1UwSUtiS2pJWjl0enFIVTFhZDdpX18xbkd3UDctWGhmSWRMUFFOeE5EVF9Bczh0YkxTNFVLWVEzZ2NsTVVzS284?oc=5",
-      "date": "2026-10-29",
-      "source": "www.gov.br",
-      "summary": "Mais de 1 milhão de contribuintes já optaram pelo regime regular do IBS e da CBS — Ministério da Fazenda www.gov.br"
-    },
-    {
-      "title": "Receita Federal e CGIBS discutem ampliação do prazo de opção pelo regime específico da CBS e do IBS para as cooperativas até 30 de novembro - Sistema FENACON",
-      "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNMVFlNG1xOUFQaDJWSmRhb3VSOGtXWXdYbnJnV0VDUzdmb2Q5U3pzcmVWQTVoZE1IMHRYTlVacDRBaDM1VC1FMWFOY25ocmFXY0RvSWFDdG9JOGdReV81cGlTaGFhU3RQZmItV21CMWZDR2FzRGlJSkFldXNod0VKbjdqV3BsSFBaNzlPYUp5R0tBVmhySFVDaVlWRDZ5T3FaUTA2dFNEYWN5Sm9PN0g1dUpNVHNjSXFXSk9VRGtkYzQzakdPZTY1bTJfaVIwcEZwUFlzVmxJNDdwbVN3SDZmQWExc29EcFdHTnRSTFNYNHFhckhoMl9PaW5JeFZXQXoxWm9jcktUNHF6dzRPbDgw?oc=5",
-      "date": "2026-10-29",
-      "source": "Sistema FENACON",
-      "summary": "Receita Federal e CGIBS discutem ampliação do prazo de opção pelo regime específico da CBS e do IBS para as cooperativas até 30 de novembro Sistema FENACON"
-    },
-    {
-      "title": "Simples Nacional: NFS-e Nacional será obrigatória para ME e EPP a partir de 1º de novembro de 2026 - Sistema FENACON",
-      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNeGJrNHNPMEEtX2FtOG10WHlERUZOeGxCcjFtYTlTTlZDWkp5TVl4UlE2azd5M3VTM1BWU2FURDlUUlZyMUtxRnduYzVSakpCMFdETmtrZlp5bDRTTDU2T3pWUEtpOVNxSF8zNWtvQV85WWJOOEFzNXZ0Ml9qVVVQWF9ybEt2bVlmbXR3dnNWZmxVaDMtaE5GVGZUc0Y0aVE5WVFab3V6cVhnaUtRTE1aSmc0eEVmVjBBY0JzMmVvbWVpSTZ2c1RCelN3?oc=5",
-      "date": "2026-10-29",
-      "source": "Sistema FENACON",
-      "summary": "Simples Nacional: NFS-e Nacional será obrigatória para ME e EPP a partir de 1º de novembro de 2026 Sistema FENACON"
-    },
-    {
-      "title": "Em 2027 conta chega - Correio Braziliense",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQi1TWVFCTERDVktxdllHdkZpSmNVTS1uelFGT2l2b29ZOEtGdEUwRUd3akg5Xy1EUjhiQjROM0RKVS14T0RRY2hmZFFBdVJBNHZTN25yNEtTM1lzUFowcW5ENWlaMzRIWDY4S0taeEptTDNNZ1dVczJVbEJJV2UtaEtqWC0xTnJJQXFYaVFSa2hNMW5hanRZ?oc=5",
-      "date": "2026-10-29",
-      "source": "Correio Braziliense",
-      "summary": "Em 2027 conta chega Correio Braziliense"
-    },
-    {
-      "title": "Governo Lula alerta: É falso que a ‘taxa das blusinhas’ voltará a ser cobrada em 2027 - Partido dos Trabalhadores",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTHFsdWNscnhPZ3BITTlMcHU3Rk9mMWdBNVRzTDk0b1pPeXBhUVdyN0hnSHlHVFB0dGl5MTVLd0MxVDhqQ2Z1TkQ0Z2xLX2hRVVB4NE5GRHZWNmVvTWNacUo5dHcxRE1xbXlselp2N01UVlVuYjdoeHZJUVRhYWJHN2RvUFZ2UThoVGR4ZnFzOWQ5WWVmZW1tRWtOT3NwU1lraUNB0gGrAUFVX3lxTE1oYTJwQTYtdWhINUltZWpEVU9Ec3Z6Mk83VkJpb2pRUVltRnZBOXVGQ0dXai1PQTMyS0hjYUcta3AtaEpBZjlZY2FNaVl1Z3hHa20zOUIwUlF0d1ZrRlhfUUpMM1dBZllzSUFGbWlacnpPQ0NyS1hfSDF3d25MZmYwZGFRT0J0VXg2RUpqUlpoaXdINEp1azFVODRhN0hvSU5IblFpTllmOW1SNA?oc=5",
-      "date": "2026-10-29",
-      "source": "Partido dos Trabalhadores",
-      "summary": "Governo Lula alerta: É falso que a ‘taxa das blusinhas’ voltará a ser cobrada em 2027 Partido dos Trabalhadores"
-    },
-    {
-      "title": "MGI prevê CNU a cada dois anos e aguarda aval do Congresso para nova edição em 2027 - Folha de S.Paulo",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPay1HbzJIang5Wk1GZC1pNms3T3Mxc3hHNHRhNVh6cmtaWEg5cm1YM1RfQXYzTkJNcWtNQUlheU55NlFXVmU0N3hnYVZrOV9FbTBld05xSXBJelpTSHp3WElQS0ZpOVRwX2V6eDFPVkhCMEQwN051WnppUjJldDg1NHBnTzA0dkhBSVhEOXRNZDlXN2JfZnJOSzJUZHRwWHRBMGx2WTdaTDJCa3FqQTlfVDFUbGNJbUlsQy00?oc=5",
-      "date": "2026-10-29",
-      "source": "Folha de S.Paulo",
-      "summary": "MGI prevê CNU a cada dois anos e aguarda aval do Congresso para nova edição em 2027 Folha de S.Paulo"
-    },
-    {
-      "title": "Com apoio da FPA, Congresso aprova auxílio a canavieiros e novas linhas de financiamento para o setor produtivo - Notícias Agrícolas",
-      "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxQcTFnNWF6am4wNFBvY1dqdEd0RG1tT1cxSDlQUEZxbU1GSk5nTkVSTUxGbE10LXQzTmlaRV9jX1hPUnQ2Z3ZNLThWTm1sR0tINDVRS0ZJYlh5NUNOZmd4LWlxM2lFMHFvRjVwcG84OG5WTV9SZE9ESW4zTGZUOWd0cnpPWnEyNnlxTU9uZE54ZWhrc1JGNmZlNnhUai1WU2pjejhXbHlmTUdJM1hBSXpESFdiUGg3V0tNb1Z0di04U1dnTk03dm52OWNrLW14SlFBUDUtVGFlYTlzMy1YUmQ3cXo1UGI4SDhBWjZxSkc3YjFIMUxkVnpsZmhSNmFSQUlLRzlzUy11VEZ2NEdIR1RVSUp6MkXSAZoCQVVfeXFMUHIxUVNzTjlvNkZFUkpucmRuMGRGV0VYYkRiaUJWTEZvVzB1YnV6bmJTb3ZUV0xvVzlkcXNzbDFCZlFuZGhIbm0yYWc5RnFZSWtXLTJfeXpCYTZPQWZoSUhzQmt3VDVtTlZvc3hSTDN2cW9NWE9DLXVfU2I4SzRaUG9NbHlfYmNERFNhY2h3blFpLTJnZmhQQjRCa2pSQ0FBN1NCSEV0UzZFZGw5YTRQZWUyUXBxQkZ0blBpQ3hSRW5ibVlRcnYyUzdUY1dpN0Y0U25vV29fcGl4dXVLd0JEN3BWRGZ0czl6amROejJtMDh1bkI5UHRZYkhlY2VKcGxBc3JObVA1Tm9QT1lfMWJEd3hVWjc1ZHM4ZTlR?oc=5",
-      "date": "2026-10-29",
-      "source": "Notícias Agrícolas",
-      "summary": "Com apoio da FPA, Congresso aprova auxílio a canavieiros e novas linhas de financiamento para o setor produtivo Notícias Agrícolas"
-    },
-    {
-      "title": "Comissão aprova projeto para ampliar o acesso a remédios de uso contínuo no SUS - Manchete Popular",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPQzhyOV9zMlpiSDV6UEdTQ3cydnQ0bDQ2cncwbktYczJBVHhWdkVfX2h3a1EycnY3TUlHcmRNWmRxVGY5WHRsRVVkbHc0SmppeWZhMlBuNElOdk52eTBzelI2TkVodWp1TjJvWHBWOHNFNVBTelkybEIwVUxwaUdKMjU2Sm9TNzNVaFhWRlBBc0lScGFVNXNtZ0IyZVRRRkl0YmNnTXY3ZExiWXhoVjEyUg?oc=5",
-      "date": "2026-10-29",
-      "source": "Manchete Popular",
-      "summary": "Comissão aprova projeto para ampliar o acesso a remédios de uso contínuo no SUS Manchete Popular"
-    },
-    {
-      "title": "TCU aprova cálculo de referência de 11,3% para CBS em 2027; especialistas analisam - Migalhas",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOclZsdW5JSGYyVFlwX2dHU05FSU9ES2xGNDJqby1xd3p4MzFDUmpzYzZ3VlVEbFFVeDMydkdhWlEzX3E1bnFJaVFLMXZ2elFqQnh5UExIclo2U2QzZ0R1OUh3QkpCSUdYQW9KUUswQ1pZV1I2anVDdG51Ylo4bUFRc2hXV3c1QTFiRWJ1X2tOT2g1WGFyMkNpVmlsOTdwVmc0UTJGTzgzTVRvTU0?oc=5",
-      "date": "2026-10-29",
-      "source": "Migalhas",
-      "summary": "TCU aprova cálculo de referência de 11,3% para CBS em 2027; especialistas analisam Migalhas"
-    },
-    {
-      "title": "Reforma Tributária: TCU propõe CBS de 11,3% para 2027 - Portal Contabeis",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZ3lKOTF6c1BWZEtXNHdmN2lUSC1DVmJyeUhFQ2MyeUpBdFBGWkd0d0E5YkhMTWpLbWdyMXhpNGR6SjRrU1VsZkdpYVJWWUJ3c3FiU2xQZ1ZRU05ONTl3QzBIU2RwajFSYXpuOEpBNTU4VlZiVFRtN051cXhJZnlRMHJqYzM0NlY1aFA5NnhPWklRU3ViZlNHVnZXSTE?oc=5",
-      "date": "2026-10-29",
-      "source": "Portal Contabeis",
-      "summary": "Reforma Tributária: TCU propõe CBS de 11,3% para 2027 Portal Contabeis"
-    },
-    {
-      "title": "NFS-e Nacional: confira as orientações sobre leiaute em produção, regras de preenchimento de IBS/CBS e status da Nota Técnica 009 - Sistema FENACON",
-      "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPT3kzNVZtd0JVQUtUX2dhTG5SNXdaQl82SlhqR2ltWWhKSGxVTkM4ajI2UEdUWkRVUXdtUE5LX1pQbWktSTNZS3dqNnFDSU4zRzV1WW5naW45UDJkeTJnTjdKT05JenhreWZpUHgxMWZEdUFBdHM5dUYtQXk5dEg1dm53QVNMQ05KSExEdGJWX3BlcDFIdXg5OEZEYUYyTmdDRzVNODk5SkFqVmtENHU3NzJiOUowYXlSTFJkXzg3cGJuR0Q3cjdiYUYya0ZZaFBQd2R1OHdOM0JvRFZmTnhtaHVER0NzSTAzR19vd2tLYl9EcWwzRGJVOFkxUEVkTEk?oc=5",
-      "date": "2026-10-29",
-      "source": "Sistema FENACON",
-      "summary": "NFS-e Nacional: confira as orientações sobre leiaute em produção, regras de preenchimento de IBS/CBS e status da Nota Técnica 009 Sistema FENACON"
-    },
-    {
-      "title": "Reforma Tributária: entenda como o TCU chegou à alíquota de 11,3% para a CBS - O GLOBO",
-      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQUm03OFliaGlwb1BBajlNc2JNaU12VFZycmlRZlVoa1NyNXFtWXZnNU5jbFdXbTV5TkxhMVRrRWtGVnRiTGU1b3JYWWtfRWdBV200WE42clp6M3E2TllPdE9fOW5RNkM0UlhEb2d4TC1sbUN6dXRxX1ExSkQzSm1QVEpNRFJpS2RoMlpUTkV6c2lyR1huelp6SExzelN4enlEQUFMUmNqa0p0RlZKV0pKV2VZMm5adklTSDdiSko4bGJTMktfWGhDNWgydUxwRHJQaVBBV3Nn0gHkAUFVX3lxTE1fR2ZNT04ydlpEN2FhRTNfcndMeHJCeFlFRnhYY1hsZWJrZ0hrUTJtOTFQZWQtZUpSc3VKUXc2YTJJZ1VCd3BBNHBNeVhYNFhpZV9Wc2tocVlVcFRoV3V4eFFHTEt6ZXNyTUhBMEtxSHVDQUVGa2pNRXVSRUtFTllqbDkxU2NEN3NLbTUzWkFHVzNZZGp1cjJxckV1UHM4LTBsT1hmZEJBdU54V0pFZmd3VFhhQ3FDdjJ6N2RoSm9kR3djajNXQjlHc3BzdkhDY2xWOG9zeHNMcV8xY0U4Q1dxWnI5Qw?oc=5",
-      "date": "2026-10-29",
-      "source": "O GLOBO",
-      "summary": "Reforma Tributária: entenda como o TCU chegou à alíquota de 11,3% para a CBS O GLOBO"
-    },
-    {
-      "title": "A reforma tributária começa a andar, mas fantasma de alíquota recorde assusta - NeoFeed",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQOEk5ZmoyV3pQR1N4bHpVTkduVlR2YWtNZGZxQW1yNExvT3N2QVNkcS1rdmJhX3lKUnVVVUkwODNOTE1NM21FVVlkMS1UWkxVb2dfLUxlVVUwbUcyeDY5M3hDWVlPbVJoejhob1dxM0NOdFhIVV83UVExTHpNbl9wUjQ2TjhQdDEwWHJrZUt4cmJIMklhb0hqdTF2SHM1V1JrYkQwaEZvYTQ0QUZ4VFE?oc=5",
-      "date": "2026-10-29",
-      "source": "NeoFeed",
-      "summary": "A reforma tributária começa a andar, mas fantasma de alíquota recorde assusta NeoFeed"
-    },
-    {
-      "title": "Setor de tecnologia alerta para atraso em regras da reforma tributária - Congresso em Foco",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNbklKN0MtTDlPN0twZVQtbU45amJCRHRHamtxMVFQU0UzX0NWeXlRVUpNZE1ON205aG05U2ozRVZpUGVhTFBJYl9ENC1qREQ0NWxjWXhQWnNJdjMtY014OWQzeU1BQ2Y2X2RNRnR1a0FrNE1XRGpiQWNrLXdPLVFTMFZCVkoycGxsanJkQ2ctVGxQZkVkczlKYlNBeUlTQVpiQ0NGLUNLeDJJUlc3WlJocXBHUWJuUDJwTkExUg?oc=5",
-      "date": "2026-10-29",
-      "source": "Congresso em Foco",
-      "summary": "Setor de tecnologia alerta para atraso em regras da reforma tributária Congresso em Foco"
-    },
-    {
-      "title": "Advogados, médicos, salões de beleza: veja o que muda com a alíquota de 11,3% da nova CBS - O GLOBO",
-      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQSGJmTWphWHpVVXcxY1VUNFRiSWlBT3l1T20wRzFiS2xQTzBMbnZnQ2Zuek5hLXQwNzhfYkk3TC14amlLNm5CSHhhMTdyc25IUjNwSUxTbjgwVmIwSnhKczItWHZPejY2SHFoYkxONnRXN1VKZ2Z6T0ZZaV9LRFhGWDhIVV93YXktbG1MYVlTWWJlRkxDdXpSRUp3ZF9vNGd6NXgwZ1BfMDI3WjNKbmhUaXl1b1dZc1FsRUtXR2c1a29Remc4Nmp6WUh30gHYAUFVX3lxTE5PeGQ2V1pPQ0dEOERNSER3SE9rYm80aGtMaEU5NERTanVWTUJDVDlYNHpPOHFyOHl0WjVWMzJhMjlsNkFmeldCTmVkNGJSM29sU2w3b0VfbFU3LVVHYTlfM0ltMTM1dDlGSlpyMnN2eHNxQUw3WUp5cHY0NGNPNmlWUFFQcGZqWGdSb2p5Mm5mSVhkWVBrc05SdVpNbHZnVVlqeGFUaFVwTFpJWTN2aVV2STh0TFA3YUx3U0pJN3FsUHJjZWFKcjJHWktvM2dkZjZ5Q3puWlN0Xw?oc=5",
-      "date": "2026-10-29",
-      "source": "O GLOBO",
-      "summary": "Advogados, médicos, salões de beleza: veja o que muda com a alíquota de 11,3% da nova CBS O GLOBO"
-    },
-    {
-      "title": "Reforma tributária: por que hotéis, parques e restaurantes podem não gerar créditos? - Panrotas",
-      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQMXl4ZzV5X2VsNjZBdlBmTElsY0JQN0RXcXJKREM4ejFhMTVHaXhHRGhCeDhSUTdJb1VfR0ZQSklLaFpOTlFBMVNKNVNWYWZLNmxnTmxDQ0FSdXB3MWh1TmtSWl84ZGRITy1iYUtZNmpnYmhEcS1xLUEzSHc0WmZCbkppRGNwVERBcFpiY3I0UkY4c0FCQ29uYUdLMzNSSlBXemlvRlpuYl82MVZheDlrbnZDWDR1UUhCMTlfOFo2c041T3ZSZzNjckpsb2ZuWXFYRE82SEZ3cVYxRjlVenc?oc=5",
-      "date": "2026-10-29",
-      "source": "Panrotas",
-      "summary": "Reforma tributária: por que hotéis, parques e restaurantes podem não gerar créditos? Panrotas"
-    },
-    {
-      "title": "Reforma tributária: IBS e CBS podem aumentar imposto pago pelas empresas - Gazeta do Paraná",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQUGgxdS1fdXRNSzYwQkVjYnktUXltdDlITGdqYXdDa2h4OGJ6NUdLZWVfbmtIblFKLXQxZE9iMVJmT2VhcHZ6VGdBVDVqelBMdjQxcjZobVFJX0JYYVVPXzA3cHpXVEh6NTF2dzdXakFfQk9MRUJBME9EbUZ6X0xaSXZwZERVUQ?oc=5",
-      "date": "2026-10-29",
-      "source": "Gazeta do Paraná",
-      "summary": "Reforma tributária: IBS e CBS podem aumentar imposto pago pelas empresas Gazeta do Paraná"
-    },
-    {
-      "title": "Simples Nacional: prazo para opção pelo regime regular do IBS e da CBS termina nesta sexta-feira - Sistema FENACON",
-      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTFU4NjJmZWc4ZXVobnpZalBnWlBGOVV4RC1KQklCQ3I4TlpzdnBSUVlvZmJLZC1wTlZsRWZDbjl5UEw3WlhBREo2WDV6S2dDaXZzVWlfcXlLdnJkQnlPMUxHa1RRQTBHM1RhOGoxOVJpeEhnVFZBbzlMSVNxNEVQY2lvUzhJZnA1OWNTdUNMaG1LMWpNSUdMSW9JZmNwUDUyZWg2TDhKUmFubnFDaVczOEp1RktvUVlNRTREbDBMOFlPNUpLb1NN?oc=5",
-      "date": "2026-10-29",
-      "source": "Sistema FENACON",
-      "summary": "Simples Nacional: prazo para opção pelo regime regular do IBS e da CBS termina nesta sexta-feira Sistema FENACON"
-    },
-    {
-      "title": "CBS de 11,3% leva projeção do IVA brasileiro a 30% - Portal Contabeis",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQld0bUlEUUdXOEcyLWJCdURWcFdMY2ZYUnhGX2tYeUcya3kzT2xsUVEzZFNTajd3bDEyYjlOOENxLVcyOVY1LVR1S3VhVzgxbF8zcVF6RU9sZUxLd3VmQ3VPQjN5LURCZlhfRUc4b1FFdl9yaXlER3FjNXJITmNDQXBBdHBWamNYTGdPZGM3ekVnSWM2VjVmbA?oc=5",
-      "date": "2026-10-29",
-      "source": "Portal Contabeis",
-      "summary": "CBS de 11,3% leva projeção do IVA brasileiro a 30% Portal Contabeis"
-    },
-    {
-      "title": "CBS inflado pelo governo frustra empresas e pode elevar impostos - Gazeta do Povo",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE42V3BDWlllMHFWR0pCeFVqUWkteDRNOW50YmF5ajZOdFpMWnRxdE9SQWRGSzFxRlh5WmFVNmQxMncxRWxEV1BDejdDa1B0V1FrMTc3VFRZSUhpMVlnVHFRdUhmWVBuLURxVldjRXlSZUFMR0JiSlRVZGZJUV8zbWs?oc=5",
-      "date": "2026-10-29",
-      "source": "Gazeta do Povo",
-      "summary": "CBS inflado pelo governo frustra empresas e pode elevar impostos Gazeta do Povo"
-    },
-    {
-      "title": "Empresas temem que Reforma tributária pode comprometer capital de giro - Contadores.cnt.br",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOdUJpeERfQXVaQVVxeHN6QkxzNVpTeUtsSjhCWmlkMmxjVzgtT3BoZUdsNTdyU2ZRaEhQTmhtZ3B6bER5YlBlanJGaGg5TF9YRFB0RlVEZXJGLUVEMWc4R2lRRU1HSkwySnZpQUI3dFJoeFZHb1lyMmFucVo5NGtST2h2UEVNa1B1NEtFX3NnSlhIYXo2b2NxV2VudTA0djRhbHUxb05HQTk5VERWcDA3NDZyN2ctaVN0U3RfNlEzVDdGUWxjWTFzTlhnQlpjeUk?oc=5",
-      "date": "2026-10-29",
-      "source": "Contadores.cnt.br",
-      "summary": "Empresas temem que Reforma tributária pode comprometer capital de giro Contadores.cnt.br"
-    },
-    {
-      "title": "Setor produtivo defende solução conjunta para reduzir insegurança no contencioso da reforma tributária - DComercio",
-      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNT0tjam52TTdIbU9WS1d0Nk5mUVVPdm1aR0M1ajRLZllIT1d6dlR0MEJWdnJxX2trSTZJZGFSLWpJOWV3eDItbzlKZlRZUUIxZjhQMm5EQm5ZOHFJZ0FkRGwwOXJKamJ1SzZNazNGNzR2TTRrd1J5UXVoNzdKd0t3ZTdzMFdhNTB4dUVjbTBqRXp2eWczQW5JSFlZWjR6YU9RTE9aX2l6a2l6MGFtR1FlTFFfUWRNZ050a3hmeWg3OW1TSzNnWGh4TXVhM1U2NklrMUZrbm9kTQ?oc=5",
-      "date": "2026-10-29",
-      "source": "DComercio",
-      "summary": "Setor produtivo defende solução conjunta para reduzir insegurança no contencioso da reforma tributária DComercio"
-    },
-    {
-      "title": "Adesão ao regime híbrido do IBS e CBS vence nesta sexta-feira; cooperativas podem ter prazo estendido - DComercio",
-      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPdl9MOWtOMVc3d0hUV0d0NkhDOHBrd3NLRGE3VE9md3N2bS1tODRHamxfb3g5WlN1SmpDQkY0LW1DenQwUTBINmxjTmFGQ1lCcGhlVzZPVzdwRnJqdjJmWnBnbHRTY0NEYlFSMW5LUXI1TEpjbV84WFpmcHB0SFl5OE1rOE4ySExkbG5wRlZMSS13UEhnWktKRUxWVEk1akloaEs4WUlFeUNodVQ5dko0TzZlQ1RUOWszbmc0VWdMVEkwa2pyMWNCWVhIRkxSTTRmcExyUA?oc=5",
-      "date": "2026-10-29",
-      "source": "DComercio",
-      "summary": "Adesão ao regime híbrido do IBS e CBS vence nesta sexta-feira; cooperativas podem ter prazo estendido DComercio"
-    },
-    {
-      "title": "Imposto Seletivo: Congresso deve receber alíquotas até 3 de novembro - Senado",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQSjFiMG4ybi1zX1Q1S2thWFFpOC02VWgwcE82ZDlvaktNZE5GczBYV01VdnlhUktac0NUcUZKYUlJbDBnVnZVZ2F3ZnFLbW9pajlLcEJXcTB6ekpLZmpVel9PMlh3b0ZNUFRlQVhOVjFlWF9ZcFJrOGxmSlZJSzFOY3lGZkd2bDNEMHR4b3J1bzBDNW9sNWZiLVdmMnYzVnM0eVdrbUI3QzIzZUViQVBkdkM4dEhyQjNIMmVLMzRUTQ?oc=5",
-      "date": "2026-10-29",
-      "source": "Senado",
-      "summary": "Imposto Seletivo: Congresso deve receber alíquotas até 3 de novembro Senado"
-    },
-    {
-      "title": "Janeiro sem Imposto Seletivo? A noventena pode mudar o calendário da Reforma - Contadores.cnt.br",
-      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxObmNXMlNxdVZsMHhCXzhzYWVJR3Qzc1lEd0ZYaVl3NGVJZm9GT2NONXRDclFxdzl1N3p4Yk15cGJHN3JMbFYybEpLQ2ZaUjRDVjN3dS1nRGc0TUM5YVJXeWxILTNUZEtZZzgxRTBJUS1xSlQybC1lSVVXc0lPaGFzMzc4UHFrMEFGTnZZNlJsLS1NZGtqMVBTSmFlbHUyM1pUNVFSSnJlYTBYZy15QTNjcDdhdkF6NW1NXzRGck9rdXJ0UzNxdWJ1ZllsU1dRenNQcVp6d0t3?oc=5",
-      "date": "2026-10-29",
-      "source": "Contadores.cnt.br",
-      "summary": "Janeiro sem Imposto Seletivo? A noventena pode mudar o calendário da Reforma Contadores.cnt.br"
-    },
-    {
-      "title": "Reforma tributária pressiona governo Lula a definir alíquotas - Claudio Dantas",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQOXRNcV90MWpJbW9GVDEyYW1ZUjNDM0U0UnBHLThLdEh1RnlTVEl1SmNKSnJka3NaVzMxcHRSRU9nZGx4R3R1VHdEYnlrc3U5YlRtLWw3ZTU2YWZpOE9FLVphVkpjSDE3NjVDamJJRVhRNFU0NmdlZDlnOVVIWDZISXVXalFrV0VIdGJwZ0R1VWtCWHYwZ1E?oc=5",
-      "date": "2026-10-29",
-      "source": "Claudio Dantas",
-      "summary": "Reforma tributária pressiona governo Lula a definir alíquotas Claudio Dantas"
-    },
-    {
-      "title": "Jéssica Sant'Ana: 4 fatores que puxaram para cima novo imposto da reforma tributária - UOL Economia",
-      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOVTJRVEFMdDczX0FuV0xMT3hBdk1mN0FDUDQ2ajM3NXBkdllWUmU5dFQzMDFjNi1wd1hhekNQM3NJY0EwQmJqMmg3WVl1YkRMR2RJZmpTbHEtWUxFSTV4ejRNYjBOUEd0dDV5ZkJvb0l5azlaVlN1RHRJLUNEWExfTUFrcmptS3BqenJkVTVSOU1feHBzZXF6MVZlOFJ0cElkSHM0UGNwMHlTR2Z4d0xselBvZDNETlllNXZISy13bmZkalN1WE1TNktHUHlpVE5x?oc=5",
-      "date": "2026-10-29",
-      "source": "UOL Economia",
-      "summary": "Jéssica Sant'Ana: 4 fatores que puxaram para cima novo imposto da reforma tributária UOL Economia"
-    },
-    {
-      "title": "JP1: Novo imposto pode pesar no bolso; veja os produtos atingidos - sampi.net.br",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVjg4UFM0VEdCcW1MZHF2Y24xT0hXMnNJVnlwamtQeXI4djByQjVRT290QU8xbkJSNGYtc3RraWdJSE10bk9nNnVISHExQ3BVV1I5X2R5eC1aVDk2ZkFRUTF5U1llY1V3NW1KVmhQcUVpWGxUc2FuRWhBaUo0azgyMmJFMTZBTzJnQVNuZDRQUUJOZkVDZ0FXQ3ZIM1M4TTdzVXBLb0dLTUlqdkR6aWo5Z3dLemp5NkZvaW45Y2tROFM?oc=5",
-      "date": "2026-10-29",
-      "source": "sampi.net.br",
-      "summary": "JP1: Novo imposto pode pesar no bolso; veja os produtos atingidos sampi.net.br"
-    },
-    {
-      "title": "Programa da Reforma Tributária do Consumo — Receita Federal - GOV.BR",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQd0dBN3hGSUZ5ZUlGc2lOd05CZDdFYTBsWDg0OUpXWlZzRUlERmNvZExyNFBvWEpYa2NnYzdJdTRSLVNUaGV6Wkh3VFZMa0JiLXZVb0JyRGxBdk1UTVgwWVY5c2xGSTc5WWFJUnRGeS1ieUI5UWRtbjdQQVBGQ1RRNG03cmJlRjBCbXlUUVBIcTVtWE9zU1lSRzU2cXZFNTUxZ1JwSE5oSENuSkE?oc=5",
-      "date": "2026-10-29",
-      "source": "GOV.BR",
-      "summary": "Programa da Reforma Tributária do Consumo — Receita Federal GOV.BR"
-    },
-    {
-      "title": "ato técnico conjunto rfb/sufis/cgibs/diretoria-executiva nº 10, de 29 de outubro de 2026 - Comitê Gestor do IBS",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQWW05LTNWczhMazJQT2NLOVNwWTYwendoX01UMzlOMUI0cncwTGRpUU93RFJfMGJyOEtBbmVFUnFrUVFydWVWN0Zoc05neWVVc3ZHb2pYTGlidG80T2Q1dFBnaldZTEVwTEdUamY5WVExSG5GVmNUZ1lRSU1FZF9OZ2N6UGU4RGtGVWhid0dFQXU1N2ZJcUJjMVhRZ05BVDAxTkRucA?oc=5",
-      "date": "2026-10-29",
-      "source": "Comitê Gestor do IBS",
-      "summary": "ato técnico conjunto rfb/sufis/cgibs/diretoria-executiva nº 10, de 29 de outubro de 2026 Comitê Gestor do IBS"
-    },
-    {
-      "title": "Governo começa a receber propostas de alteração na Nomenclatura Brasileira de Serviços - GOV.BR",
-      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOV0Rkc3J6QVJ5VTBLbjQyV0NfbVI2LVY3NEJUY0FZVE96bkViNWM2VndDeWlPYmdiTTJTZVZyUElXTkNROE1DaDhBeXN4QmpKbVljeF9zdE5VaFdaaURRemg5N3JaWFJpVUh5QVcwWWd2MklEYjlodWNPUmoxR21EXzQ4ZU5TcnZfVXRTOVJOZ0JzdnFRb1U5cHh3UWExZ2M2XzhHNVd4NHlBQklvcXZYUDhJYUNRVWt3R0RlRk1xTHRUWmYySG81elN1X0E4bk94MEhYVTU2VnZqZGFyT3RxYQ?oc=5",
-      "date": "2026-10-29",
-      "source": "GOV.BR",
-      "summary": "Governo começa a receber propostas de alteração na Nomenclatura Brasileira de Serviços GOV.BR"
-    },
-    {
-      "title": "Regime específico da CBS e do IBS — Receita Federal - GOV.BR",
-      "link": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxNTGlCRnd0TEVIZldCdXZpcF9rcFB0TGJXT3lDNzQ1WWw0QWhnR0JSdUVCNGdSZy1uR21EQ3dmbFVXOVJCa2tmdl8tV29VdEFQNkdZNlBpNTVVUnZmWDlneDBORjZpLUM3eGluSjA5ckRrWjhNQm5ER3VScW8yMUdkWk45dFpOZnV2ZUUxZVBrTUNfNU1WQ0hKcGJYdGl2X3JVMTVDZi1PZS1hZF9OdkdEak4zaHY3R25jTnNnR0JwRm95X1NYM19xWl9sRFZPalpEcHdBc1VpaW91Y0VIN2V6eTFJUll0bnpJMkFTWjZDYWl4d3JwcWp1Y042UEQ5eE9Dem01UWRaUmVscFVPVDRPSl92dFZ0S0ZLWElTaDRidzdvalM0Z1JEMjgzRm5SN2FRV09RckFaWVpEYWRpRW5ndGlaTGFhOEoyNTliYmFYeXZWeUhJZVE?oc=5",
-      "date": "2026-10-29",
-      "source": "GOV.BR",
-      "summary": "Regime específico da CBS e do IBS — Receita Federal GOV.BR"
-    },
-    {
-      "title": "Comissão aprova projeto para ampliar o acesso a remédios de uso contínuo no SUS - Portal da Câmara dos Deputados",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPd29wcExQeHlqekx0OGRSNWctOUFxMlFVSGJIR0JiaFRWc2JiMVYzWnA1cVo3YzFxZG0xRS1aTlI0VnRoY1N4bnZLaTVxRzk2dXZ0cEtZT3FHR0liN29KU3lNbHhXTXZHdG5sNW03QkNneWZYS0FBYkRUc0k4dWl1bno2VTNiaGJQYlpCdTdqN2lZakxLS2xneG05WVkzR3cxb0ZXd2g4cC1pWktuRG5ST05kalFnMWRzVHhFbC15RQ?oc=5",
-      "date": "2026-10-29",
-      "source": "Portal da Câmara dos Deputados",
-      "summary": "Comissão aprova projeto para ampliar o acesso a remédios de uso contínuo no SUS Portal da Câmara dos Deputados"
-    },
-    {
-      "title": "STF propõe regra para evitar decisões conflitantes sobre IBS e CBS - A Crítica de Campo Grande",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQT2ozT3k3RU9tTlNMa0ZpMnNLSkdMdm9FU3ItQUJCME9LZGJJdXBDanVkN3ZnM3h2SW94TDg0SklZbW1BR19KQUdsVFhCQnl4cW5qM0ozdjdGSFh2OHppOGtqcEN2TDhnMXZfZFpXVGZyc1ZHWTZhLWpyWXVEaHIxTEVqcE5nQVBjUEpleVQwcHphUGhFRHMzdXZVTzVIQQ?oc=5",
-      "date": "2026-10-29",
-      "source": "A Crítica de Campo Grande",
-      "summary": "STF propõe regra para evitar decisões conflitantes sobre IBS e CBS A Crítica de Campo Grande"
-    },
-    {
-      "title": "Reforma tributária: TCU calcula CBS de 11,3% para 2027; definição cabe ao Senado - Portal do Agronegócio",
-      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPWmdqcnJKRDAxZzVJOVBxQmJ2VC1qOE9HSG9reGduRTRaZUpZLUdXMDlMMHpneHdxOXBjSnVUTTBURERnNUxuLTJPbzE0dlhzbG9jcnpjelYxams0dmNqTXB2WURPTEdzc2pOVmVrVkxFazBfajM2TmxIOXdTY0ZKVlVGNGRXUm1jbXRlY2FUZ1dXUE9LSk84ZEV5QkF6Zkl6b3JLSURDbllCNHlHOERaM3lRaHRRSGV4ck9qaW5TSkhpWC1xaUktWG5tSEJWa2NoeC1FY21nMDFaN0NMaExzcGJB?oc=5",
-      "date": "2026-10-29",
-      "source": "Portal do Agronegócio",
-      "summary": "Reforma tributária: TCU calcula CBS de 11,3% para 2027; definição cabe ao Senado Portal do Agronegócio"
-    },
-    {
-      "title": "CBS em 2027: TCU propõe alíquota de 11,3% - Contadores.cnt.br",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOR3czd0N0UjFXNWFlV080UXJPWjFSY0dUei1aMFBlTUdiRDJ4NWxEVjhScE5jcmo0UGhOYk5jZDJjUlZwM0NSWnZqaW45Z1hseTdzaE80ODVUV0pGdWJSMGtSNll1aXB5TzBVOWhnbDJUTFJ4SnZ0RHJITGNrOF83RjRUVEJVZGZteUhGOTB2aXp2MV9FT1dBazR4VDlsakc0c0ZLUUxB?oc=5",
-      "date": "2026-10-29",
-      "source": "Contadores.cnt.br",
-      "summary": "CBS em 2027: TCU propõe alíquota de 11,3% Contadores.cnt.br"
-    },
-    {
-      "title": "Cooperativas: prazo para optar pelo regime de IBS e CBS pode mudar - Jornal Contábil",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMFBhOXU5UFVaWEVVU1lVTEVMcDFBWUx1UFBjUk1aZGF6Z2prX3BwNGdRQURwVWtXOFd3dkdOOE92UGJ3OEk2TFNJbS12R1RScERnVjFKUkhxMDFlM3JFd01jY3YtOUhDMTFWbDBmdWdGTkZqYTk4WHNDYUtZb3VnX0VUZUpKcFNyTk1IUXpZQ2ZQLWpPV1hvUmNIbjFEZzdSQVFfOFpqd9IBrAFBVV95cUxOZFBuZ3RRRERmSWFBanRyUnFkUHZySGFHZ3NvR19iMm9UeDhiTk5RU2xoV1VneHlid2toTUo5cFNwM056QkpuZFVwQVFtZk9ZQ3ltM1FQZVRVSkg3ODlxNVR5WVduc0VwZXJRN1BxS1BnLVpOeTFCdU91Q21lakxfMlhBTDBpVzh4TXFjODVRUFVNM01BTGc3dWNfWF8yb1UtX19tNDlDdmlWc1dM?oc=5",
-      "date": "2026-10-29",
-      "source": "Jornal Contábil",
-      "summary": "Cooperativas: prazo para optar pelo regime de IBS e CBS pode mudar Jornal Contábil"
-    },
-    {
-      "title": "Entenda o que é o 'imposto do pecado' e veja quais produtos serão taxados a partir de 2027 - OpiniãoCE",
-      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPYnZLUkphZGlYM1JyeHlyTzQwLXhnV2RrTV9BdlJmMFNpa2ZvMlVqZ2V6NU11dENJdjRqU2ZCTVpQckd5bkI0WGhpNGxyMGtxbWg5YVgyR1piaGRRMTZNejhLdEF6bFpsSDJnR3ZBMTV5RExkQmFkTWpQdjVnQTdKaU9vSkdNenhqUXNYSDBrdnBMVDlraUZiOXhuUmF6NVpybDJCR25oVUw5LTEzcnBWYnRBN1dQNmVnX3JjUlRZM0dVbERLLS01UG9hbDV2M1pQaHFDSA?oc=5",
-      "date": "2026-10-29",
-      "source": "OpiniãoCE",
-      "summary": "Entenda o que é o 'imposto do pecado' e veja quais produtos serão taxados a partir de 2027 OpiniãoCE"
-    },
-    {
-      "title": "Áudio: Imposto Seletivo: governo define alíquotas nos próximos dias - lucianapombo.com.br",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcEIwQU9hZmZYRnB3WnlUZVNjSm1LNDI3T3Vhc25zcWVEb29PUFFMYzQ5RTQxcHhfOVFFZjAyZnQwNjFZOXJUcGZNSXVXV25RbGZTSWFMQklEcEZwOHl2b3dDV1dXS0dHUzBtZ3F5T05xa2RzUkt4NDk4bmdzeERabWp4XzNwVU1sU0FCblJOdFRzaGx3UWUzQTZfNGtJcVB5X0RiMXpkWmE5cmhjZ19Ncg?oc=5",
-      "date": "2026-10-29",
-      "source": "lucianapombo.com.br",
-      "summary": "Áudio: Imposto Seletivo: governo define alíquotas nos próximos dias lucianapombo.com.br"
-    },
-    {
-      "title": "Reforma Tributária: testes do split payment acendem alerta para o caixa das empresas - Testo Notícias",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTGpWNkF3QWlZTWg1b3dBM3NYY3J5UjI3amVlb3RwM0x6d0ZRNk14ZXFYOWdIenFJdGt3cVkzQzdCZGNQMm5ja3RPNk5zbFU3cXoxQk5JZ29PUUJUZ28xV2lkY1lYYXVuTkhOLW93WktzTlVENThHdjAyTmlZekJOR2E2SUhicWRXMUhaYmJpd2FCamg1TkRIWnlR?oc=5",
-      "date": "2026-10-29",
-      "source": "Testo Notícias",
-      "summary": "Reforma Tributária: testes do split payment acendem alerta para o caixa das empresas Testo Notícias"
     }
   ],
-  "last_updated": "2026-11-02T19:28:40+00:00"
+  "last_updated": "2026-11-03T17:01:31+00:00"
 }
