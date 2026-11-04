@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "number": "52/2026",
+      "title": "Revoga dispositivos da Portaria CAT 68/19, de 13 de dezembro de 2019, e das Portarias SRE 12/26, de 24 de março de 2026, e 32/26, de 26 de junho de 2026, e a Portaria SRE 88/25, de 27 de novembro de 2025, e dá outras providências.",
+      "link": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-52-de-2026.aspx",
+      "date": "2026-11-29",
+      "source": "SEFAZ-SP (legislação oficial)",
+      "summary": "",
+      "sectors": [
+        "Outros"
+      ]
+    },
+    {
+      "number": "53/2026",
+      "title": "Altera a Portaria SRE 40/24, de 5 de julho de 2024, e revoga a Portaria CAT 106/15, de 10 de setembro de 2015.",
+      "link": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-53-de-2026.aspx",
+      "date": "2026-11-03",
+      "source": "SEFAZ-SP (legislação oficial)",
+      "summary": "",
+      "sectors": [
+        "Outros"
+      ]
+    },
+    {
       "number": null,
       "title": "ICMS/SP: Nova Regra de Emissão da NF-e por Contribuintes Varejistas - LegisWeb",
       "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAwVWdqbVdhbUlRaDFOa3FLUWFPa0g2bUxPOXpDbFhkQk51ZGtmUGhwUmtLWkNvQzlnVEZJTk5NVjNYSlloclVLalgtWXA5bzk2T3RMa3gtN1I?oc=5",
@@ -873,5 +895,5 @@
       "summary": "Aprimora a norma que rege as operações logísticas de empresas de comércio eletrônico para fins de ICMS em São Paulo."
     }
   ],
-  "last_updated": "2026-11-03T17:01:33+00:00"
+  "last_updated": "2026-11-04T17:13:52+00:00"
 }
